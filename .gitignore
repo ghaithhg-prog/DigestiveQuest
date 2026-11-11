@@ -1,0 +1,25 @@
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Ll]ogs/
+.utmp/
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+
+# OS generated
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Builds backup
+Builds/Android/*_BackUpThisFolder_ButDontShipItWithYourGame/
