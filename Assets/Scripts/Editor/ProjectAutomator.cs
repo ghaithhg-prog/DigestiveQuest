@@ -90,33 +90,23 @@ public static class ProjectAutomator
         scaler.matchWidthOrHeight = 0.5f;
         canvasGo.AddComponent<GraphicRaycaster>();
 
-        Font defaultFont = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        Font defaultFont = AssetDatabase.LoadAssetAtPath<Font>("Assets/Fonts/TahomaBold.ttf");
+        if (defaultFont == null) defaultFont = AssetDatabase.LoadAssetAtPath<Font>("Assets/Fonts/Tahoma.ttf");
+        if (defaultFont == null) defaultFont = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
 
-        // --- أ. الشريط العلوي مع أزرار اللغات وأزرار النافذة ---
+        // --- أ. الشريط العلوي النظيف والأنيق (بدون أزرار النافذة الزائدة، ومع خط Tahoma النظيف) ---
         GameObject headerPanel = CreateUIBox("HeaderPanel", canvasGo.transform, new Vector2(1860, 90), new Vector2(0, 485), new Color(0.09f, 0.13f, 0.22f, 0.95f));
 
-        Text titleText = CreateText("TitleText", headerPanel.transform, new Vector2(1000, 42), new Vector2(-220, 16), ArabicTextFixer.Fix("مغامرة استكشاف الجهاز الهضمي - Digestive Quest"), 30, new Color(1.0f, 0.85f, 0.2f), defaultFont, TextAnchor.MiddleCenter);
-        Text subText = CreateText("SubText", headerPanel.transform, new Vector2(1000, 30), new Vector2(-220, -20), ArabicTextFixer.Fix("انقر على أي عضو في المجسم أو اختر من الأزرار بالأسفل لبدء التحدي!"), 20, new Color(0.85f, 0.92f, 1.0f), defaultFont, TextAnchor.MiddleCenter);
+        Text titleText = CreateText("TitleText", headerPanel.transform, new Vector2(1100, 44), new Vector2(-180, 16), ArabicTextFixer.Fix("مغامرة استكشاف الجهاز الهضمي"), 34, new Color(1.0f, 0.85f, 0.2f), defaultFont, TextAnchor.MiddleCenter);
+        Text subText = CreateText("SubText", headerPanel.transform, new Vector2(1100, 30), new Vector2(-180, -22), ArabicTextFixer.Fix("انقر على أي عضو في المجسم أو اختر من البطاقات الجانبية لبدء التحدي!"), 21, new Color(0.85f, 0.92f, 1.0f), defaultFont, TextAnchor.MiddleCenter);
 
-        // أزرار اللغات
-        GameObject langContainer = CreateUIBox("LanguageBar", headerPanel.transform, new Vector2(360, 54), new Vector2(490, 0), new Color(0.14f, 0.20f, 0.32f, 0.85f));
-        Button btnAr = CreateButton("Btn_Arabic", langContainer.transform, new Vector2(110, 44), new Vector2(-115, 0), new Color(0.18f, 0.55f, 0.32f), ArabicTextFixer.Fix("العربية"), Color.white, 19, defaultFont);
-        Button btnEn = CreateButton("Btn_English", langContainer.transform, new Vector2(110, 44), new Vector2(0, 0), new Color(0.20f, 0.40f, 0.65f), "English", Color.white, 19, defaultFont);
-        Button btnFr = CreateButton("Btn_French", langContainer.transform, new Vector2(110, 44), new Vector2(115, 0), new Color(0.65f, 0.35f, 0.20f), "Français", Color.white, 19, defaultFont);
+        // أزرار اللغات في أقصى اليمين
+        GameObject langContainer = CreateUIBox("LanguageBar", headerPanel.transform, new Vector2(360, 54), new Vector2(680, 0), new Color(0.14f, 0.20f, 0.32f, 0.85f));
+        Button btnAr = CreateButton("Btn_Arabic", langContainer.transform, new Vector2(110, 44), new Vector2(-115, 0), new Color(0.18f, 0.55f, 0.32f), ArabicTextFixer.Fix("العربية"), Color.white, 20, defaultFont);
+        Button btnEn = CreateButton("Btn_English", langContainer.transform, new Vector2(110, 44), new Vector2(0, 0), new Color(0.20f, 0.40f, 0.65f), "English", Color.white, 20, defaultFont);
+        Button btnFr = CreateButton("Btn_French", langContainer.transform, new Vector2(110, 44), new Vector2(115, 0), new Color(0.65f, 0.35f, 0.20f), "Français", Color.white, 20, defaultFont);
 
-        // أزرار التحكم بالنافذة في أقصى اليمين (تصغير، تكبير، إغلاق)
-        GameObject winBar = CreateUIBox("WindowControlsBar", headerPanel.transform, new Vector2(190, 54), new Vector2(795, 0), new Color(0.12f, 0.16f, 0.26f, 0.90f));
-        Button btnMin = CreateButton("Btn_WinMinimize", winBar.transform, new Vector2(52, 44), new Vector2(-60, 0), new Color(0.22f, 0.28f, 0.40f), "—", Color.white, 22, defaultFont);
-        Button btnMax = CreateButton("Btn_WinMaximize", winBar.transform, new Vector2(52, 44), new Vector2(0, 0), new Color(0.22f, 0.28f, 0.40f), "[ ]", Color.white, 17, defaultFont);
-        Button btnClose = CreateButton("Btn_WinClose", winBar.transform, new Vector2(52, 44), new Vector2(60, 0), new Color(0.85f, 0.22f, 0.22f), "X", Color.white, 20, defaultFont);
-
-        btnMin.onClick.AddListener(() => windowCtrl.MinimizeWindow());
-        btnMax.onClick.AddListener(() => windowCtrl.ToggleMaximizeWindow());
-        btnClose.onClick.AddListener(() => windowCtrl.CloseApplication());
-
-        // --- ب. أزرار الأعضاء السريعة في أسفل الشاشة ---
-        GameObject bottomBar = CreateUIBox("BottomOrganBar", canvasGo.transform, new Vector2(1860, 90), new Vector2(0, -485), new Color(0.09f, 0.13f, 0.22f, 0.95f));
-
+        // --- ب. البطاقات الجانبية الأنيقة للأعضاء (تستغل المساحات الفارغة على اليمين واليسار) ---
         Button[] bottomButtons = new Button[5];
         Text[] bottomTexts = new Text[5];
         string[] rawLabels = {
@@ -126,20 +116,44 @@ public static class ProjectAutomator
             "4. الأمعاء الدقيقة",
             "5. الأمعاء الغليظة والمستقيم"
         };
-        Color[] btnColors = {
-            new Color(0.82f, 0.32f, 0.42f),
-            new Color(0.85f, 0.22f, 0.22f),
-            new Color(0.60f, 0.20f, 0.15f),
-            new Color(0.85f, 0.52f, 0.22f),
-            new Color(0.68f, 0.32f, 0.32f)
+        Color[] accentColors = {
+            new Color(0.88f, 0.35f, 0.42f),
+            new Color(0.82f, 0.25f, 0.25f),
+            new Color(0.55f, 0.18f, 0.15f),
+            new Color(0.88f, 0.55f, 0.25f),
+            new Color(0.70f, 0.35f, 0.35f)
         };
 
-        for (int i = 0; i < 5; i++)
+        // الجانب الأيسر: الأعضاء 0 و 1 و 2
+        for (int i = 0; i < 3; i++)
         {
-            float posX = -720 + (i * 360);
-            bottomButtons[i] = CreateButton($"OrganBtn_{i}", bottomBar.transform, new Vector2(340, 68), new Vector2(posX, 0), btnColors[i], ArabicTextFixer.Fix(rawLabels[i]), Color.white, 20, defaultFont);
-            bottomTexts[i] = bottomButtons[i].GetComponentInChildren<Text>();
+            float posY = 130 - (i * 140);
+            GameObject cardGo = CreateUIBox($"OrganCard_{i}", canvasGo.transform, new Vector2(340, 120), new Vector2(-750, posY), new Color(0.10f, 0.15f, 0.24f, 0.94f));
+            CreateUIBox("Accent", cardGo.transform, new Vector2(10, 120), new Vector2(-165, 0), accentColors[i]);
+
+            bottomButtons[i] = CreateButton($"OrganBtn_{i}", cardGo.transform, new Vector2(310, 110), new Vector2(10, 0), new Color(0, 0, 0, 0.01f), "", Color.white, 20, defaultFont);
+            bottomTexts[i] = CreateText($"Label_{i}", cardGo.transform, new Vector2(290, 40), new Vector2(15, 20), ArabicTextFixer.Fix(rawLabels[i]), 22, Color.white, defaultFont, TextAnchor.MiddleRight);
+            CreateText($"Sub_{i}", cardGo.transform, new Vector2(290, 30), new Vector2(15, -20), ArabicTextFixer.Fix("3 مستويات استكشافية | 30 سؤالاً"), 16, new Color(0.7f, 0.82f, 0.95f), defaultFont, TextAnchor.MiddleRight);
         }
+
+        // الجانب الأيمن: الأعضاء 3 و 4 + بطاقة استكشاف 3D
+        for (int i = 3; i < 5; i++)
+        {
+            int rightIdx = i - 3;
+            float posY = 130 - (rightIdx * 140);
+            GameObject cardGo = CreateUIBox($"OrganCard_{i}", canvasGo.transform, new Vector2(340, 120), new Vector2(750, posY), new Color(0.10f, 0.15f, 0.24f, 0.94f));
+            CreateUIBox("Accent", cardGo.transform, new Vector2(10, 120), new Vector2(165, 0), accentColors[i]);
+
+            bottomButtons[i] = CreateButton($"OrganBtn_{i}", cardGo.transform, new Vector2(310, 110), new Vector2(-10, 0), new Color(0, 0, 0, 0.01f), "", Color.white, 20, defaultFont);
+            bottomTexts[i] = CreateText($"Label_{i}", cardGo.transform, new Vector2(290, 40), new Vector2(-15, 20), ArabicTextFixer.Fix(rawLabels[i]), 22, Color.white, defaultFont, TextAnchor.MiddleLeft);
+            CreateText($"Sub_{i}", cardGo.transform, new Vector2(290, 30), new Vector2(-15, -20), ArabicTextFixer.Fix("3 مستويات استكشافية | 30 سؤالاً"), 16, new Color(0.7f, 0.82f, 0.95f), defaultFont, TextAnchor.MiddleLeft);
+        }
+
+        // بطاقة إرشادات التفاعل 3D في أسفل اليمين
+        GameObject tipCard = CreateUIBox("TipCard_3D", canvasGo.transform, new Vector2(340, 120), new Vector2(750, -150), new Color(0.08f, 0.18f, 0.28f, 0.92f));
+        CreateUIBox("AccentTip", tipCard.transform, new Vector2(10, 120), new Vector2(165, 0), new Color(0.2f, 0.8f, 0.7f));
+        CreateText("TipTitle", tipCard.transform, new Vector2(290, 35), new Vector2(-15, 22), ArabicTextFixer.Fix("استكشاف تفاعلي 360°"), 20, new Color(1.0f, 0.85f, 0.2f), defaultFont, TextAnchor.MiddleCenter);
+        CreateText("TipDesc", tipCard.transform, new Vector2(290, 48), new Vector2(-15, -18), ArabicTextFixer.Fix("اسحب بالفأرة لتدوير الجسم\nوانقر مباشرة على أي عضو لفتحه!"), 16, new Color(0.85f, 0.92f, 1.0f), defaultFont, TextAnchor.MiddleCenter);
 
         // --- ج. نافذة اختيار المراحل (Stages Modal) ---
         GameObject stagesModal = CreateUIBox("StagesModalPanel", canvasGo.transform, new Vector2(1920, 1080), Vector2.zero, new Color(0, 0, 0, 0.82f));

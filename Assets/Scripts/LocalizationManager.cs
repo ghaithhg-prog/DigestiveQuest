@@ -24,8 +24,8 @@ public class LocalizationManager : MonoBehaviour
     private static readonly Dictionary<string, string[]> Dict = new Dictionary<string, string[]>()
     {
         // [Key] = { Arabic, English, French }
-        { "app_title", new[] { "مغامرة استكشاف الجهاز الهضمي - Digestive Quest", "Digestive System Quest", "Aventure du Système Digestif" } },
-        { "app_subtitle", new[] { "انقر على أي عضو في المجسم أو اختر من الأزرار بالأسفل لبدء التحدي!", "Click any organ on the 3D model or bottom buttons to start!", "Cliquez sur un organe du modèle 3D ou en bas pour commencer !" } },
+        { "app_title", new[] { "مغامرة استكشاف الجهاز الهضمي", "Digestive System Quest", "Aventure du Système Digestif" } },
+        { "app_subtitle", new[] { "انقر على أي عضو في المجسم أو اختر من البطاقات الجانبية لبدء التحدي!", "Click any organ on the 3D model or side cards to start!", "Cliquez sur un organe du modèle 3D ou les cartes latérales !" } },
 
         // الأعضاء (نصوص نقية دون إيموجي مشوه)
         { "organ_0", new[] { "1. الفم والمريء", "1. Mouth & Esophagus", "1. Bouche et Œsophage" } },
