@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
-/// سكربت متحكم واجهة اللعبة والأسئلة (QuizGameController) مع دعم كامل للغات الثلاث والشكل العربي السليم.
+/// سكربت متحكم واجهة اللعبة والأسئلة (QuizGameController).
+/// يضمن صياغة جملة النتيجة بالشكل الصحيح ("حصلت على 4 من 10 إجابات صحيحة") دون أي قلب أو تشويه.
 /// </summary>
 public class QuizGameController : MonoBehaviour
 {
@@ -112,7 +113,6 @@ public class QuizGameController : MonoBehaviour
     {
         AppLanguage lang = LocalizationManager.CurrentLanguage;
 
-        // تحديث عنوان الشريط العلوي
         if (stageTitleTextUI != null)
         {
             string organName = LocalizationManager.Get($"organ_{currentOrganId}");
@@ -127,21 +127,17 @@ public class QuizGameController : MonoBehaviour
         {
             QuestionItem q = activeQuestions[currentQuestionIndex];
 
-            // 1. نص السؤال المترجم والمشكل باللغة المطلوبة
             if (questionTextUI != null)
                 questionTextUI.text = q.GetQuestionText(lang);
 
-            // 2. عداد الأسئلة
             if (progressCounterTextUI != null)
             {
                 progressCounterTextUI.text = LocalizationManager.Get("question_prefix") + (currentQuestionIndex + 1) + LocalizationManager.Get("of_prefix") + activeQuestions.Count;
             }
 
-            // 3. شريط التقدم
             if (progressBarUI != null)
                 progressBarUI.value = currentQuestionIndex;
 
-            // 4. خيارات الإجابة
             string[] opts = q.GetOptions(lang);
             for (int i = 0; i < optionButtons.Length; i++)
             {
@@ -185,7 +181,6 @@ public class QuizGameController : MonoBehaviour
         QuestionItem currentQ = activeQuestions[currentQuestionIndex];
         bool isCorrect = (selectedOptionIndex == currentQ.correctOptionIndex);
 
-        // تلوين الزر المختار
         if (selectedOptionIndex < optionButtons.Length)
         {
             Image selectedImg = optionButtons[selectedOptionIndex].GetComponent<Image>();
@@ -195,7 +190,6 @@ public class QuizGameController : MonoBehaviour
             }
         }
 
-        // تلوين الزر الصحيح بالأخضر إذا أخطأ
         if (!isCorrect && currentQ.correctOptionIndex < optionButtons.Length)
         {
             Image correctImg = optionButtons[currentQ.correctOptionIndex].GetComponent<Image>();
@@ -260,9 +254,25 @@ public class QuizGameController : MonoBehaviour
             if (stageCompleteTitleText != null)
                 stageCompleteTitleText.text = LocalizationManager.Get("win_title");
 
+            // صياغة دقيقة وصحيحة ومضبوطة حسب اللغة
+            AppLanguage lang = LocalizationManager.CurrentLanguage;
             if (finalScoreText != null)
             {
-                finalScoreText.text = LocalizationManager.Get("win_score_prefix") + correctAnswersCount + LocalizationManager.Get("of_prefix") + activeQuestions.Count + LocalizationManager.Get("win_score_suffix");
+                if (lang == AppLanguage.Arabic)
+                {
+                    // صياغة عربية متصلة ومباشرة بالضبط كما طلب المستخدم:
+                    // "حصلت على 4 من 10 إجابات صحيحة"
+                    string fullArabicSentence = $"حصلت على {correctAnswersCount} من {activeQuestions.Count} إجابات صحيحة";
+                    finalScoreText.text = ArabicTextFixer.Fix(fullArabicSentence);
+                }
+                else if (lang == AppLanguage.French)
+                {
+                    finalScoreText.text = $"Tu as obtenu {correctAnswersCount} sur {activeQuestions.Count} bonnes réponses !";
+                }
+                else
+                {
+                    finalScoreText.text = $"You got {correctAnswersCount} out of {activeQuestions.Count} correct answers!";
+                }
             }
 
             if (retryButtonText != null)

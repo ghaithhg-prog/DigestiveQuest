@@ -93,7 +93,7 @@ public class Organ3DSelector : MonoBehaviour
     /// دالة اختيار العضو وتأكيد الضغط:
     /// مهمتها: فتح نافذة اختيار المراحل الثلاث الخاصة بهذا العضو للطفل.
     /// </summary>
-    private void OnOrganSelected()
+    public void OnOrganSelected()
     {
         Debug.Log($"[Organ3DSelector] تم لمس واختيار: {organArabicName} (معرف العضو: {organId})");
 

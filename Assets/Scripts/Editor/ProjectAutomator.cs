@@ -13,62 +13,63 @@ public static class ProjectAutomator
     [MenuItem("DigestiveQuest/1. تجهيز المشهد آلياً (Setup Game Scene)")]
     public static void SetupGameScene()
     {
-        Debug.Log("[ProjectAutomator] بدء بناء واجهة اللعبة الاحترافية ثلاثية اللغات...");
+        Debug.Log("[ProjectAutomator] بدء بناء واجهة اللعبة الاحترافية المضبوطة...");
 
         var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
 
-        // 1. الكاميرا
+        // 1. الكاميرا مع مستشعر النقر المباشر على الأعضاء
         GameObject camGo = new GameObject("Main Camera");
         Camera cam = camGo.AddComponent<Camera>();
         cam.clearFlags = CameraClearFlags.SolidColor;
-        cam.backgroundColor = new Color(0.06f, 0.08f, 0.13f); // أزرق داكن ليلي فخم
-        camGo.transform.position = new Vector3(0, 1.25f, -3.5f);
-        camGo.transform.rotation = Quaternion.Euler(5f, 0f, 0f);
+        cam.backgroundColor = new Color(0.06f, 0.08f, 0.13f);
+        camGo.transform.position = new Vector3(0, 0.18f, -3.25f);
+        camGo.transform.rotation = Quaternion.Euler(3.5f, 0f, 0f);
         camGo.tag = "MainCamera";
 
-        // 2. إضاءة الاستوديو ثلاثية النقاط (3-Point Studio Lighting)
-        // إضاءة رئيسية دافئة (Key Light)
+        // إضافة سكربت النقر المباشر على الكاميرا
+        camGo.AddComponent<OrganRaycastClicker>();
+
+        // 2. إضاءة الاستوديو ثلاثية النقاط
         GameObject keyLightGo = new GameObject("Key Light");
         Light keyLight = keyLightGo.AddComponent<Light>();
         keyLight.type = LightType.Directional;
-        keyLight.color = new Color(1.0f, 0.96f, 0.92f);
+        keyLight.color = new Color(1.0f, 0.97f, 0.92f);
         keyLight.intensity = 1.35f;
         keyLightGo.transform.rotation = Quaternion.Euler(45f, -30f, 0f);
 
-        // إضاءة ملء ناعمة باردة (Fill Light)
         GameObject fillLightGo = new GameObject("Fill Light");
         Light fillLight = fillLightGo.AddComponent<Light>();
         fillLight.type = LightType.Directional;
-        fillLight.color = new Color(0.65f, 0.78f, 1.0f);
-        fillLight.intensity = 0.65f;
+        fillLight.color = new Color(0.65f, 0.80f, 1.0f);
+        fillLight.intensity = 0.70f;
         fillLightGo.transform.rotation = Quaternion.Euler(-20f, 140f, 0f);
 
-        // إضاءة حواف خلفية لإبراز التجسيم (Rim Light)
         GameObject rimLightGo = new GameObject("Rim Light");
         Light rimLight = rimLightGo.AddComponent<Light>();
         rimLight.type = LightType.Directional;
-        rimLight.color = new Color(0.45f, 0.85f, 1.0f);
-        rimLight.intensity = 0.85f;
-        rimLightGo.transform.rotation = Quaternion.Euler(-55f, 180f, 0f);
+        rimLight.color = new Color(0.40f, 0.85f, 1.0f);
+        rimLight.intensity = 0.80f;
+        rimLightGo.transform.rotation = Quaternion.Euler(-50f, 180f, 0f);
 
-        // 3. النظم المركزية (Systems)
+        // 3. النظم المركزية
         GameObject systemsGo = new GameObject("Systems");
         systemsGo.AddComponent<QuestionBankManager>();
         systemsGo.AddComponent<LocalizationManager>();
 
-        // 4. EventSystem للمس والماوس
+        // 4. EventSystem
         GameObject eventSysGo = new GameObject("EventSystem");
         eventSysGo.AddComponent<UnityEngine.EventSystems.EventSystem>();
         eventSysGo.AddComponent<UnityEngine.EventSystems.StandaloneInputModule>();
 
-        // 5. استيراد المجسم التشريحي فائق النعومة
+        // 5. استيراد المجسم التشريحي المتناسق
         GameObject modelPrefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Models/DigestiveSystemFull.fbx");
         if (modelPrefab != null)
         {
             GameObject digestiveModel = (GameObject)PrefabUtility.InstantiatePrefab(modelPrefab);
             digestiveModel.name = "DigestiveSystem_3D";
-            digestiveModel.transform.position = new Vector3(0, -0.2f, 0);
-            digestiveModel.transform.localScale = Vector3.one * 1.25f;
+            // ضبط الحجم والموضع بدقة ليكون في منتصف الشاشة تماماً دون أي تغطية من الأشرطة
+            digestiveModel.transform.position = new Vector3(0, -0.08f, 0);
+            digestiveModel.transform.localScale = Vector3.one * 0.92f;
             digestiveModel.AddComponent<ModelRotator>();
 
             SetupOrgan(digestiveModel, "Organ_Mouth_Esophagus", 0, "الفم والمريء");
@@ -90,29 +91,29 @@ public static class ProjectAutomator
 
         Font defaultFont = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
 
-        // --- أ. الشريط العلوي الفخم مع أزرار اللغات ---
-        GameObject headerPanel = CreateUIBox("HeaderPanel", canvasGo.transform, new Vector2(1860, 95), new Vector2(0, 480), new Color(0.09f, 0.13f, 0.22f, 0.95f));
-        
-        Text titleText = CreateText("TitleText", headerPanel.transform, new Vector2(1100, 48), new Vector2(-150, 18), ArabicTextFixer.Fix("🌟 مغامرة استكشاف الجهاز الهضمي (Digestive Quest) 🌟"), 32, new Color(1.0f, 0.85f, 0.2f), defaultFont, TextAnchor.MiddleCenter);
-        Text subText = CreateText("SubText", headerPanel.transform, new Vector2(1100, 32), new Vector2(-150, -22), ArabicTextFixer.Fix("اختر عضواً من المجسم ثلاثي الأبعاد أو من الأزرار بالأسفل لبدء التحدي!"), 20, new Color(0.85f, 0.92f, 1.0f), defaultFont, TextAnchor.MiddleCenter);
+        // --- أ. الشريط العلوي (بدون أي إيموجي مشوه) ---
+        GameObject headerPanel = CreateUIBox("HeaderPanel", canvasGo.transform, new Vector2(1860, 90), new Vector2(0, 485), new Color(0.09f, 0.13f, 0.22f, 0.95f));
 
-        // أزرار اللغات الثلاث في أعلى اليمين
-        GameObject langContainer = CreateUIBox("LanguageBar", headerPanel.transform, new Vector2(380, 65), new Vector2(680, 0), new Color(0.14f, 0.20f, 0.32f, 0.85f));
-        Button btnAr = CreateButton("Btn_Arabic", langContainer.transform, new Vector2(115, 50), new Vector2(-120, 0), new Color(0.18f, 0.55f, 0.32f), ArabicTextFixer.Fix("العربية"), Color.white, 19, defaultFont);
-        Button btnEn = CreateButton("Btn_English", langContainer.transform, new Vector2(115, 50), new Vector2(0, 0), new Color(0.20f, 0.40f, 0.65f), "English", Color.white, 19, defaultFont);
-        Button btnFr = CreateButton("Btn_French", langContainer.transform, new Vector2(115, 50), new Vector2(120, 0), new Color(0.65f, 0.35f, 0.20f), "Français", Color.white, 19, defaultFont);
+        Text titleText = CreateText("TitleText", headerPanel.transform, new Vector2(1100, 42), new Vector2(-150, 16), ArabicTextFixer.Fix("مغامرة استكشاف الجهاز الهضمي - Digestive Quest"), 30, new Color(1.0f, 0.85f, 0.2f), defaultFont, TextAnchor.MiddleCenter);
+        Text subText = CreateText("SubText", headerPanel.transform, new Vector2(1100, 30), new Vector2(-150, -20), ArabicTextFixer.Fix("انقر على أي عضو في المجسم أو اختر من الأزرار بالأسفل لبدء التحدي!"), 20, new Color(0.85f, 0.92f, 1.0f), defaultFont, TextAnchor.MiddleCenter);
+
+        // أزرار اللغات
+        GameObject langContainer = CreateUIBox("LanguageBar", headerPanel.transform, new Vector2(380, 60), new Vector2(680, 0), new Color(0.14f, 0.20f, 0.32f, 0.85f));
+        Button btnAr = CreateButton("Btn_Arabic", langContainer.transform, new Vector2(115, 48), new Vector2(-120, 0), new Color(0.18f, 0.55f, 0.32f), ArabicTextFixer.Fix("العربية"), Color.white, 19, defaultFont);
+        Button btnEn = CreateButton("Btn_English", langContainer.transform, new Vector2(115, 48), new Vector2(0, 0), new Color(0.20f, 0.40f, 0.65f), "English", Color.white, 19, defaultFont);
+        Button btnFr = CreateButton("Btn_French", langContainer.transform, new Vector2(115, 48), new Vector2(120, 0), new Color(0.65f, 0.35f, 0.20f), "Français", Color.white, 19, defaultFont);
 
         // --- ب. أزرار الأعضاء السريعة في أسفل الشاشة ---
-        GameObject bottomBar = CreateUIBox("BottomOrganBar", canvasGo.transform, new Vector2(1860, 100), new Vector2(0, -475), new Color(0.09f, 0.13f, 0.22f, 0.95f));
+        GameObject bottomBar = CreateUIBox("BottomOrganBar", canvasGo.transform, new Vector2(1860, 90), new Vector2(0, -485), new Color(0.09f, 0.13f, 0.22f, 0.95f));
 
         Button[] bottomButtons = new Button[5];
         Text[] bottomTexts = new Text[5];
         string[] rawLabels = {
-            "👄 1. الفم والمريء",
-            "🫁 2. المعدة",
-            "🫀 3. الكبد والبنكرياس والمرارة",
-            "🌀 4. الأمعاء الدقيقة",
-            "⭕ 5. الأمعاء الغليظة والمستقيم"
+            "1. الفم والمريء",
+            "2. المعدة",
+            "3. الكبد والبنكرياس والمرارة",
+            "4. الأمعاء الدقيقة",
+            "5. الأمعاء الغليظة والمستقيم"
         };
         Color[] btnColors = {
             new Color(0.82f, 0.32f, 0.42f),
@@ -125,7 +126,7 @@ public static class ProjectAutomator
         for (int i = 0; i < 5; i++)
         {
             float posX = -720 + (i * 360);
-            bottomButtons[i] = CreateButton($"OrganBtn_{i}", bottomBar.transform, new Vector2(340, 70), new Vector2(posX, 0), btnColors[i], ArabicTextFixer.Fix(rawLabels[i]), Color.white, 20, defaultFont);
+            bottomButtons[i] = CreateButton($"OrganBtn_{i}", bottomBar.transform, new Vector2(340, 68), new Vector2(posX, 0), btnColors[i], ArabicTextFixer.Fix(rawLabels[i]), Color.white, 20, defaultFont);
             bottomTexts[i] = bottomButtons[i].GetComponentInChildren<Text>();
         }
 
@@ -133,7 +134,7 @@ public static class ProjectAutomator
         GameObject stagesModal = CreateUIBox("StagesModalPanel", canvasGo.transform, new Vector2(1920, 1080), Vector2.zero, new Color(0, 0, 0, 0.82f));
         GameObject modalCard = CreateUIBox("ModalCard", stagesModal.transform, new Vector2(900, 600), Vector2.zero, new Color(0.11f, 0.16f, 0.26f, 0.99f));
 
-        Text modalTitle = CreateText("ModalTitle", modalCard.transform, new Vector2(850, 55), new Vector2(0, 245), ArabicTextFixer.Fix("🌟 رحلة استكشاف: المعدة"), 32, new Color(1.0f, 0.85f, 0.2f), defaultFont, TextAnchor.MiddleCenter);
+        Text modalTitle = CreateText("ModalTitle", modalCard.transform, new Vector2(850, 55), new Vector2(0, 245), ArabicTextFixer.Fix("رحلة استكشاف: المعدة"), 32, new Color(1.0f, 0.85f, 0.2f), defaultFont, TextAnchor.MiddleCenter);
 
         Button[] stageBtns = new Button[3];
         Text[] stageBtnTexts = new Text[3];
@@ -151,14 +152,14 @@ public static class ProjectAutomator
             float posY = 120 - (i * 135);
             stageBtns[i] = CreateButton($"StageBtn_{i+1}", modalCard.transform, new Vector2(800, 105), new Vector2(0, posY), new Color(0.18f, 0.5f, 0.8f), "", Color.white, 24, defaultFont);
             stageBtnTexts[i] = CreateText($"NameText_{i}", stageBtns[i].transform, new Vector2(550, 80), new Vector2(-100, 0), ArabicTextFixer.Fix(stageNames[i]), 24, Color.white, defaultFont, TextAnchor.MiddleLeft);
-            stageStarTexts[i] = CreateText($"StarText_{i}", stageBtns[i].transform, new Vector2(220, 40), new Vector2(270, 0), "⭐⭐⭐", 22, Color.yellow, defaultFont, TextAnchor.MiddleRight);
+            stageStarTexts[i] = CreateText($"StarText_{i}", stageBtns[i].transform, new Vector2(220, 40), new Vector2(270, 0), "", 22, Color.yellow, defaultFont, TextAnchor.MiddleRight);
 
             GameObject lockObj = CreateUIBox($"Lock_{i}", stageBtns[i].transform, new Vector2(40, 40), new Vector2(-360, 0), Color.white);
             lockObj.SetActive(false);
             lockIcons[i] = lockObj;
         }
 
-        Button closeModalBtn = CreateButton("CloseModalBtn", modalCard.transform, new Vector2(280, 60), new Vector2(0, -250), new Color(0.45f, 0.45f, 0.52f), ArabicTextFixer.Fix("✕ رجوع للجسم"), Color.white, 22, defaultFont);
+        Button closeModalBtn = CreateButton("CloseModalBtn", modalCard.transform, new Vector2(280, 60), new Vector2(0, -250), new Color(0.45f, 0.45f, 0.52f), ArabicTextFixer.Fix("رجوع للجسم"), Color.white, 22, defaultFont);
         stagesModal.SetActive(false);
 
         // --- د. نافذة الأسئلة الكاملة (Quiz Screen) ---
@@ -169,7 +170,7 @@ public static class ProjectAutomator
         Text progressCounterText = CreateText("ProgressCounterText", quizTopBar.transform, new Vector2(300, 45), new Vector2(180, 0), ArabicTextFixer.Fix("السؤال 1 من 10"), 22, Color.white, defaultFont, TextAnchor.MiddleCenter);
 
         Slider progressBar = CreateSimpleSlider("ProgressBar", quizTopBar.transform, new Vector2(450, 22), new Vector2(-120, 0));
-        Button closeQuizBtn = CreateButton("CloseQuizBtn", quizTopBar.transform, new Vector2(180, 55), new Vector2(720, 0), new Color(0.85f, 0.22f, 0.22f), ArabicTextFixer.Fix("🏠 خروج"), Color.white, 22, defaultFont);
+        Button closeQuizBtn = CreateButton("CloseQuizBtn", quizTopBar.transform, new Vector2(180, 55), new Vector2(720, 0), new Color(0.85f, 0.22f, 0.22f), ArabicTextFixer.Fix("خروج"), Color.white, 22, defaultFont);
 
         // بطاقة السؤال
         GameObject questionCard = CreateUIBox("QuestionCard", quizPanel.transform, new Vector2(1400, 230), new Vector2(0, 240), new Color(0.13f, 0.19f, 0.30f));
@@ -193,24 +194,28 @@ public static class ProjectAutomator
 
         // نافذة التغذية الراجعة
         GameObject feedbackBox = CreateUIBox("FeedbackBox", quizPanel.transform, new Vector2(1000, 320), new Vector2(0, -220), new Color(0.10f, 0.14f, 0.22f, 0.99f));
-        Text feedbackTitle = CreateText("FeedbackTitle", feedbackBox.transform, new Vector2(950, 50), new Vector2(0, 115), ArabicTextFixer.Fix("🌟 إجابة ممتازة وصحيحة!"), 30, Color.green, defaultFont, TextAnchor.MiddleCenter);
+        Text feedbackTitle = CreateText("FeedbackTitle", feedbackBox.transform, new Vector2(950, 50), new Vector2(0, 115), ArabicTextFixer.Fix("إجابة ممتازة وصحيحة!"), 30, Color.green, defaultFont, TextAnchor.MiddleCenter);
         Text feedbackTip = CreateText("FeedbackTip", feedbackBox.transform, new Vector2(950, 190), new Vector2(0, -20), "", 24, Color.white, defaultFont, TextAnchor.MiddleCenter);
         feedbackBox.SetActive(false);
 
         // نافذة انتهاء المرحلة والاحتفال
         GameObject completeBox = CreateUIBox("CompleteBox", quizPanel.transform, new Vector2(950, 580), Vector2.zero, new Color(0.10f, 0.15f, 0.25f, 0.99f));
-        Text completeTitle = CreateText("CompleteTitle", completeBox.transform, new Vector2(850, 60), new Vector2(0, 230), ArabicTextFixer.Fix("🎉 أحسنت يا بطل! أنهيت المستوى بنجاح 🎉"), 32, new Color(1.0f, 0.85f, 0.2f), defaultFont, TextAnchor.MiddleCenter);
+        Text completeTitle = CreateText("CompleteTitle", completeBox.transform, new Vector2(850, 60), new Vector2(0, 230), ArabicTextFixer.Fix("أحسنت يا بطل! أنهيت المستوى بنجاح"), 32, new Color(1.0f, 0.85f, 0.2f), defaultFont, TextAnchor.MiddleCenter);
 
         GameObject[] stars = new GameObject[3];
+        Sprite goldStarSprite = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Sprites/star_gold.png");
         for (int i = 0; i < 3; i++)
         {
             float posX = -130 + (i * 130);
-            stars[i] = CreateText($"Star_{i}", completeBox.transform, new Vector2(90, 90), new Vector2(posX, 125), "⭐", 65, Color.yellow, defaultFont, TextAnchor.MiddleCenter).gameObject;
+            GameObject sGo = CreateUIBox($"Star_{i}", completeBox.transform, new Vector2(85, 85), new Vector2(posX, 125), Color.white);
+            if (goldStarSprite != null) sGo.GetComponent<Image>().sprite = goldStarSprite;
+            stars[i] = sGo;
         }
 
-        Text finalScore = CreateText("FinalScore", completeBox.transform, new Vector2(850, 50), new Vector2(0, 20), ArabicTextFixer.Fix("حصلت على 9 من 10 إجابات صحيحة!"), 26, Color.white, defaultFont, TextAnchor.MiddleCenter);
-        Button retryBtn = CreateButton("RetryBtn", completeBox.transform, new Vector2(440, 70), new Vector2(0, -75), new Color(0.18f, 0.65f, 0.32f), ArabicTextFixer.Fix("🔄 أسئلة عشوائية جديدة"), Color.white, 22, defaultFont);
-        Button backMapBtn = CreateButton("BackMapBtn", completeBox.transform, new Vector2(440, 70), new Vector2(0, -165), new Color(0.20f, 0.45f, 0.75f), ArabicTextFixer.Fix("🗺️ العودة لخريطة الأعضاء"), Color.white, 22, defaultFont);
+        // نص النتيجة المضبوط والمصاغ بدقة
+        Text finalScore = CreateText("FinalScore", completeBox.transform, new Vector2(850, 50), new Vector2(0, 20), ArabicTextFixer.Fix("حصلت على 4 من 10 إجابات صحيحة"), 28, Color.white, defaultFont, TextAnchor.MiddleCenter);
+        Button retryBtn = CreateButton("RetryBtn", completeBox.transform, new Vector2(440, 70), new Vector2(0, -75), new Color(0.18f, 0.65f, 0.32f), ArabicTextFixer.Fix("أسئلة عشوائية جديدة"), Color.white, 22, defaultFont);
+        Button backMapBtn = CreateButton("BackMapBtn", completeBox.transform, new Vector2(440, 70), new Vector2(0, -165), new Color(0.20f, 0.45f, 0.75f), ArabicTextFixer.Fix("العودة لخريطة الأعضاء"), Color.white, 22, defaultFont);
         completeBox.SetActive(false);
         quizPanel.SetActive(false);
 
@@ -364,10 +369,9 @@ public static class ProjectAutomator
             selector.organId = organId;
             selector.organArabicName = arabicName;
 
-            if (child.gameObject.GetComponent<Collider>() == null)
-            {
-                child.gameObject.AddComponent<MeshCollider>();
-            }
+            var col = child.gameObject.GetComponent<MeshCollider>();
+            if (col == null) col = child.gameObject.AddComponent<MeshCollider>();
+            col.convex = true; // جعل المصادم محدباً ليلتقط Physics.Raycast بدقة تامة وبلا أي خطأ
         }
     }
 
