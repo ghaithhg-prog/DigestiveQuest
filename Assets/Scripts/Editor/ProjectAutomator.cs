@@ -55,7 +55,7 @@ public static class ProjectAutomator
         GameObject systemsGo = new GameObject("Systems");
         systemsGo.AddComponent<QuestionBankManager>();
         systemsGo.AddComponent<LocalizationManager>();
-        WindowController windowCtrl = systemsGo.AddComponent<WindowController>();
+        systemsGo.AddComponent<WindowController>();
 
         // 4. EventSystem
         GameObject eventSysGo = new GameObject("EventSystem");
@@ -94,11 +94,18 @@ public static class ProjectAutomator
         if (defaultFont == null) defaultFont = AssetDatabase.LoadAssetAtPath<Font>("Assets/Fonts/Tahoma.ttf");
         if (defaultFont == null) defaultFont = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
 
-        // --- أ. الشريط العلوي النظيف والأنيق (بدون أزرار النافذة الزائدة، ومع خط Tahoma النظيف) ---
+        // --- أ. الشريط العلوي النظيف والأنيق ---
         GameObject headerPanel = CreateUIBox("HeaderPanel", canvasGo.transform, new Vector2(1860, 90), new Vector2(0, 485), new Color(0.09f, 0.13f, 0.22f, 0.95f));
 
-        Text titleText = CreateText("TitleText", headerPanel.transform, new Vector2(1100, 44), new Vector2(-180, 16), ArabicTextFixer.Fix("مغامرة استكشاف الجهاز الهضمي"), 34, new Color(1.0f, 0.85f, 0.2f), defaultFont, TextAnchor.MiddleCenter);
-        Text subText = CreateText("SubText", headerPanel.transform, new Vector2(1100, 30), new Vector2(-180, -22), ArabicTextFixer.Fix("انقر على أي عضو في المجسم أو اختر من البطاقات الجانبية لبدء التحدي!"), 21, new Color(0.85f, 0.92f, 1.0f), defaultFont, TextAnchor.MiddleCenter);
+        // زر تصفير الحساب والبدء من جديد (أقصى اليسار)
+        Button resetProgressBtn = CreateButton("ResetProgressBtn", headerPanel.transform, new Vector2(170, 46), new Vector2(-790, 0), new Color(0.75f, 0.22f, 0.22f), ArabicTextFixer.Fix("تصفير الحساب"), Color.white, 18, defaultFont);
+
+        // شارة اسم الطالب (بجانب زر التصفير)
+        Text studentBadgeText = CreateText("StudentBadge", headerPanel.transform, new Vector2(300, 40), new Vector2(-540, 0), "", 20, new Color(1.0f, 0.88f, 0.4f), defaultFont, TextAnchor.MiddleRight);
+
+        // العنوان والعنوان الفرعي (في المنتصف)
+        Text titleText = CreateText("TitleText", headerPanel.transform, new Vector2(760, 44), new Vector2(30, 16), ArabicTextFixer.Fix("مغامرة استكشاف الجهاز الهضمي"), 30, new Color(1.0f, 0.85f, 0.2f), defaultFont, TextAnchor.MiddleCenter);
+        Text subText = CreateText("SubText", headerPanel.transform, new Vector2(760, 30), new Vector2(30, -22), ArabicTextFixer.Fix("انقر على أي عضو في المجسم أو اختر من البطاقات الجانبية لبدء التحدي!"), 19, new Color(0.85f, 0.92f, 1.0f), defaultFont, TextAnchor.MiddleCenter);
 
         // أزرار اللغات في أقصى اليمين
         GameObject langContainer = CreateUIBox("LanguageBar", headerPanel.transform, new Vector2(360, 54), new Vector2(680, 0), new Color(0.14f, 0.20f, 0.32f, 0.85f));
@@ -106,7 +113,7 @@ public static class ProjectAutomator
         Button btnEn = CreateButton("Btn_English", langContainer.transform, new Vector2(110, 44), new Vector2(0, 0), new Color(0.20f, 0.40f, 0.65f), "English", Color.white, 20, defaultFont);
         Button btnFr = CreateButton("Btn_French", langContainer.transform, new Vector2(110, 44), new Vector2(115, 0), new Color(0.65f, 0.35f, 0.20f), "Français", Color.white, 20, defaultFont);
 
-        // --- ب. البطاقات الجانبية الأنيقة للأعضاء (تستغل المساحات الفارغة على اليمين واليسار) ---
+        // --- ب. البطاقات الجانبية للأعضاء ---
         Button[] bottomButtons = new Button[5];
         Text[] bottomTexts = new Text[5];
         string[] rawLabels = {
@@ -139,44 +146,37 @@ public static class ProjectAutomator
         // الجانب الأيمن: الأعضاء 3 و 4 + بطاقة استكشاف 3D
         for (int i = 3; i < 5; i++)
         {
-            int rightIdx = i - 3;
-            float posY = 130 - (rightIdx * 140);
+            float posY = 130 - ((i - 3) * 140);
             GameObject cardGo = CreateUIBox($"OrganCard_{i}", canvasGo.transform, new Vector2(340, 120), new Vector2(750, posY), new Color(0.10f, 0.15f, 0.24f, 0.94f));
             CreateUIBox("Accent", cardGo.transform, new Vector2(10, 120), new Vector2(165, 0), accentColors[i]);
 
             bottomButtons[i] = CreateButton($"OrganBtn_{i}", cardGo.transform, new Vector2(310, 110), new Vector2(-10, 0), new Color(0, 0, 0, 0.01f), "", Color.white, 20, defaultFont);
-            bottomTexts[i] = CreateText($"Label_{i}", cardGo.transform, new Vector2(290, 40), new Vector2(-15, 20), ArabicTextFixer.Fix(rawLabels[i]), 22, Color.white, defaultFont, TextAnchor.MiddleLeft);
-            CreateText($"Sub_{i}", cardGo.transform, new Vector2(290, 30), new Vector2(-15, -20), ArabicTextFixer.Fix("3 مستويات استكشافية | 30 سؤالاً"), 16, new Color(0.7f, 0.82f, 0.95f), defaultFont, TextAnchor.MiddleLeft);
+            bottomTexts[i] = CreateText($"Label_{i}", cardGo.transform, new Vector2(290, 40), new Vector2(-15, 20), ArabicTextFixer.Fix(rawLabels[i]), 22, Color.white, defaultFont, TextAnchor.MiddleRight);
+            CreateText($"Sub_{i}", cardGo.transform, new Vector2(290, 30), new Vector2(-15, -20), ArabicTextFixer.Fix("3 مستويات استكشافية | 30 سؤالاً"), 16, new Color(0.7f, 0.82f, 0.95f), defaultFont, TextAnchor.MiddleRight);
         }
 
-        // بطاقة إرشادات التفاعل 3D في أسفل اليمين
-        GameObject tipCard = CreateUIBox("TipCard_3D", canvasGo.transform, new Vector2(340, 120), new Vector2(750, -150), new Color(0.08f, 0.18f, 0.28f, 0.92f));
-        CreateUIBox("AccentTip", tipCard.transform, new Vector2(10, 120), new Vector2(165, 0), new Color(0.2f, 0.8f, 0.7f));
-        CreateText("TipTitle", tipCard.transform, new Vector2(290, 35), new Vector2(-15, 22), ArabicTextFixer.Fix("استكشاف تفاعلي 360°"), 20, new Color(1.0f, 0.85f, 0.2f), defaultFont, TextAnchor.MiddleCenter);
-        CreateText("TipDesc", tipCard.transform, new Vector2(290, 48), new Vector2(-15, -18), ArabicTextFixer.Fix("اسحب بالفأرة لتدوير الجسم\nوانقر مباشرة على أي عضو لفتحه!"), 16, new Color(0.85f, 0.92f, 1.0f), defaultFont, TextAnchor.MiddleCenter);
+        // بطاقة الإرشاد التفاعلي ثلاثي الأبعاد
+        GameObject tipCardGo = CreateUIBox("OrganCard_Tip", canvasGo.transform, new Vector2(340, 120), new Vector2(750, -150), new Color(0.08f, 0.12f, 0.20f, 0.94f));
+        CreateUIBox("AccentTip", tipCardGo.transform, new Vector2(10, 120), new Vector2(165, 0), new Color(0.2f, 0.7f, 0.9f));
+        CreateText("TipTitle", tipCardGo.transform, new Vector2(290, 40), new Vector2(-15, 20), ArabicTextFixer.Fix("استكشاف تفاعلي 360"), 20, new Color(0.3f, 0.85f, 1.0f), defaultFont, TextAnchor.MiddleRight);
+        CreateText("TipBody", tipCardGo.transform, new Vector2(290, 50), new Vector2(-15, -20), ArabicTextFixer.Fix("اسحب بالفأرة لتدوير الجسم في أي اتجاه، وانقر مباشرة على أي عضو لفتحه!"), 15, new Color(0.8f, 0.88f, 0.98f), defaultFont, TextAnchor.MiddleRight);
 
         // --- ج. نافذة اختيار المراحل (Stages Modal) ---
-        GameObject stagesModal = CreateUIBox("StagesModalPanel", canvasGo.transform, new Vector2(1920, 1080), Vector2.zero, new Color(0, 0, 0, 0.82f));
-        GameObject modalCard = CreateUIBox("ModalCard", stagesModal.transform, new Vector2(900, 600), Vector2.zero, new Color(0.11f, 0.16f, 0.26f, 0.99f));
-
-        Text modalTitle = CreateText("ModalTitle", modalCard.transform, new Vector2(850, 55), new Vector2(0, 245), ArabicTextFixer.Fix("رحلة استكشاف: المعدة"), 32, new Color(1.0f, 0.85f, 0.2f), defaultFont, TextAnchor.MiddleCenter);
+        GameObject stagesModal = CreateUIBox("StagesModalPanel", canvasGo.transform, new Vector2(1920, 1080), Vector2.zero, new Color(0, 0, 0, 0.70f));
+        GameObject modalCard = CreateUIBox("ModalCard", stagesModal.transform, new Vector2(900, 620), Vector2.zero, new Color(0.10f, 0.15f, 0.25f, 0.98f));
+        Text modalTitle = CreateText("ModalTitle", modalCard.transform, new Vector2(800, 60), new Vector2(0, 240), ArabicTextFixer.Fix("رحلة استكشاف العضو"), 32, new Color(1.0f, 0.85f, 0.2f), defaultFont, TextAnchor.MiddleCenter);
 
         Button[] stageBtns = new Button[3];
         Text[] stageBtnTexts = new Text[3];
-        Text[] stageStarTexts = new Text[3];
         GameObject[] lockIcons = new GameObject[3];
-
-        string[] stageNames = {
-            "المستوى 1: تشريح واستكشاف (سهل)",
-            "المستوى 2: وظائف وكيمياء الهضم (متوسط)",
-            "المستوى 3: صحة وألغاز ذكاء (متقدم)"
-        };
+        Text[] stageStarTexts = new Text[3];
 
         for (int i = 0; i < 3; i++)
         {
-            float posY = 120 - (i * 135);
-            stageBtns[i] = CreateButton($"StageBtn_{i+1}", modalCard.transform, new Vector2(800, 105), new Vector2(0, posY), new Color(0.18f, 0.5f, 0.8f), "", Color.white, 24, defaultFont);
-            stageBtnTexts[i] = CreateText($"NameText_{i}", stageBtns[i].transform, new Vector2(550, 80), new Vector2(-100, 0), ArabicTextFixer.Fix(stageNames[i]), 24, Color.white, defaultFont, TextAnchor.MiddleLeft);
+            float posY = 110 - (i * 110);
+            stageBtns[i] = CreateButton($"StageBtn_{i+1}", modalCard.transform, new Vector2(800, 85), new Vector2(0, posY), new Color(0.18f, 0.65f, 0.32f), "", Color.white, 24, defaultFont);
+            stageBtnTexts[i] = stageBtns[i].GetComponentInChildren<Text>();
+
             stageStarTexts[i] = CreateText($"StarText_{i}", stageBtns[i].transform, new Vector2(220, 40), new Vector2(270, 0), "", 22, Color.yellow, defaultFont, TextAnchor.MiddleRight);
 
             GameObject lockObj = CreateUIBox($"Lock_{i}", stageBtns[i].transform, new Vector2(40, 40), new Vector2(-360, 0), Color.white);
@@ -190,18 +190,26 @@ public static class ProjectAutomator
         // --- د. نافذة الأسئلة الكاملة (Quiz Screen) ---
         GameObject quizPanel = CreateUIBox("QuizGamePanel", canvasGo.transform, new Vector2(1920, 1080), Vector2.zero, new Color(0.06f, 0.09f, 0.15f, 0.99f));
 
-        GameObject quizTopBar = CreateUIBox("QuizTopBar", quizPanel.transform, new Vector2(1700, 80), new Vector2(0, 485), new Color(0.11f, 0.16f, 0.26f));
-        Text stageTitleText = CreateText("StageTitleText", quizTopBar.transform, new Vector2(600, 45), new Vector2(-500, 0), ArabicTextFixer.Fix("المعدة - المستوى 1"), 26, new Color(1.0f, 0.85f, 0.2f), defaultFont, TextAnchor.MiddleLeft);
-        Text progressCounterText = CreateText("ProgressCounterText", quizTopBar.transform, new Vector2(300, 45), new Vector2(180, 0), ArabicTextFixer.Fix("السؤال 1 من 10"), 22, Color.white, defaultFont, TextAnchor.MiddleCenter);
+        // شريط رأس الامتحان (QuizTopBar): توزيع عناصر خالي تماماً من التداخل مع مسافات آمنة جداً
+        GameObject quizTopBar = CreateUIBox("QuizTopBar", quizPanel.transform, new Vector2(1750, 80), new Vector2(0, 485), new Color(0.11f, 0.16f, 0.26f));
 
-        Slider progressBar = CreateSimpleSlider("ProgressBar", quizTopBar.transform, new Vector2(450, 22), new Vector2(-120, 0));
-        Button closeQuizBtn = CreateButton("CloseQuizBtn", quizTopBar.transform, new Vector2(180, 55), new Vector2(720, 0), new Color(0.85f, 0.22f, 0.22f), ArabicTextFixer.Fix("خروج"), Color.white, 22, defaultFont);
+        // 1. عنوان المرحلة (أقصى اليسار: -810 إلى -270)
+        Text stageTitleText = CreateText("StageTitleText", quizTopBar.transform, new Vector2(540, 45), new Vector2(-540, 0), ArabicTextFixer.Fix("المعدة - المستوى 1"), 24, new Color(1.0f, 0.85f, 0.2f), defaultFont, TextAnchor.MiddleLeft);
+
+        // 2. شريط التقدم الأخضر (الوسط: -120 إلى +240) - مسافة فاصلة 150 بكسل عن العنوان لمنع أي تداخل
+        Slider progressBar = CreateSimpleSlider("ProgressBar", quizTopBar.transform, new Vector2(360, 22), new Vector2(60, 0));
+
+        // 3. عداد الأسئلة (بجانب شريط التقدم: +280 إلى +520)
+        Text progressCounterText = CreateText("ProgressCounterText", quizTopBar.transform, new Vector2(240, 45), new Vector2(400, 0), ArabicTextFixer.Fix("السؤال 1 من 10"), 22, Color.white, defaultFont, TextAnchor.MiddleCenter);
+
+        // 4. زر خروج (أقصى اليمين: +650 إلى +810)
+        Button closeQuizBtn = CreateButton("CloseQuizBtn", quizTopBar.transform, new Vector2(150, 52), new Vector2(730, 0), new Color(0.85f, 0.22f, 0.22f), ArabicTextFixer.Fix("خروج"), Color.white, 22, defaultFont);
 
         // بطاقة السؤال
         GameObject questionCard = CreateUIBox("QuestionCard", quizPanel.transform, new Vector2(1400, 230), new Vector2(0, 240), new Color(0.13f, 0.19f, 0.30f));
         Text questionText = CreateText("QuestionText", questionCard.transform, new Vector2(1300, 190), Vector2.zero, ArabicTextFixer.Fix("أين تبدأ أولى خطوات رحلة هضم الطعام في جسم الإنسان؟"), 32, Color.white, defaultFont, TextAnchor.MiddleCenter);
 
-        // خيارات الإجابة
+        // خيارات الإجابة الأربعة
         Button[] optionBtns = new Button[4];
         Text[] optionTexts = new Text[4];
         Vector2[] optPositions = {
@@ -217,32 +225,66 @@ public static class ProjectAutomator
             optionTexts[i] = optionBtns[i].GetComponentInChildren<Text>();
         }
 
-        // نافذة التغذية الراجعة
-        GameObject feedbackBox = CreateUIBox("FeedbackBox", quizPanel.transform, new Vector2(1000, 320), new Vector2(0, -220), new Color(0.10f, 0.14f, 0.22f, 0.99f));
-        Text feedbackTitle = CreateText("FeedbackTitle", feedbackBox.transform, new Vector2(950, 50), new Vector2(0, 115), ArabicTextFixer.Fix("إجابة ممتازة وصحيحة!"), 30, Color.green, defaultFont, TextAnchor.MiddleCenter);
-        Text feedbackTip = CreateText("FeedbackTip", feedbackBox.transform, new Vector2(950, 190), new Vector2(0, -20), "", 24, Color.white, defaultFont, TextAnchor.MiddleCenter);
+        // نافذة التغذية الراجعة (مع زر "السؤال التالي" لتجاوز الانتظار فوراً)
+        GameObject feedbackBox = CreateUIBox("FeedbackBox", quizPanel.transform, new Vector2(1000, 340), new Vector2(0, -220), new Color(0.10f, 0.14f, 0.22f, 0.99f));
+        Text feedbackTitle = CreateText("FeedbackTitle", feedbackBox.transform, new Vector2(950, 50), new Vector2(0, 125), ArabicTextFixer.Fix("إجابة ممتازة وصحيحة!"), 30, Color.green, defaultFont, TextAnchor.MiddleCenter);
+        Text feedbackTip = CreateText("FeedbackTip", feedbackBox.transform, new Vector2(950, 140), new Vector2(0, 20), "", 24, Color.white, defaultFont, TextAnchor.MiddleCenter);
+        Button nextQuestionBtn = CreateButton("NextQuestionBtn", feedbackBox.transform, new Vector2(260, 52), new Vector2(0, -100), new Color(0.18f, 0.65f, 0.32f), ArabicTextFixer.Fix("السؤال التالي ➔"), Color.white, 22, defaultFont);
         feedbackBox.SetActive(false);
 
-        // نافذة انتهاء المرحلة والاحتفال
-        GameObject completeBox = CreateUIBox("CompleteBox", quizPanel.transform, new Vector2(950, 580), Vector2.zero, new Color(0.10f, 0.15f, 0.25f, 0.99f));
-        Text completeTitle = CreateText("CompleteTitle", completeBox.transform, new Vector2(850, 60), new Vector2(0, 230), ArabicTextFixer.Fix("أحسنت يا بطل! أنهيت المستوى بنجاح"), 32, new Color(1.0f, 0.85f, 0.2f), defaultFont, TextAnchor.MiddleCenter);
+        // نافذة انتهاء المرحلة والاحتفال (مع إمكانية إرسال التقرير بالبريد)
+        GameObject completeBox = CreateUIBox("CompleteBox", quizPanel.transform, new Vector2(960, 680), Vector2.zero, new Color(0.10f, 0.15f, 0.25f, 0.99f));
+        Text completeTitle = CreateText("CompleteTitle", completeBox.transform, new Vector2(850, 60), new Vector2(0, 280), ArabicTextFixer.Fix("أحسنت يا بطل! أنهيت المستوى بنجاح"), 32, new Color(1.0f, 0.85f, 0.2f), defaultFont, TextAnchor.MiddleCenter);
 
         GameObject[] stars = new GameObject[3];
         Sprite goldStarSprite = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Sprites/star_gold.png");
         for (int i = 0; i < 3; i++)
         {
             float posX = -130 + (i * 130);
-            GameObject sGo = CreateUIBox($"Star_{i}", completeBox.transform, new Vector2(85, 85), new Vector2(posX, 125), Color.white);
+            GameObject sGo = CreateUIBox($"Star_{i}", completeBox.transform, new Vector2(85, 85), new Vector2(posX, 195), Color.white);
             if (goldStarSprite != null) sGo.GetComponent<Image>().sprite = goldStarSprite;
             stars[i] = sGo;
         }
 
-        // نص النتيجة المضبوط والمصاغ بدقة
-        Text finalScore = CreateText("FinalScore", completeBox.transform, new Vector2(850, 50), new Vector2(0, 20), ArabicTextFixer.Fix("حصلت على 4 من 10 إجابات صحيحة"), 28, Color.white, defaultFont, TextAnchor.MiddleCenter);
-        Button retryBtn = CreateButton("RetryBtn", completeBox.transform, new Vector2(440, 70), new Vector2(0, -75), new Color(0.18f, 0.65f, 0.32f), ArabicTextFixer.Fix("أسئلة عشوائية جديدة"), Color.white, 22, defaultFont);
-        Button backMapBtn = CreateButton("BackMapBtn", completeBox.transform, new Vector2(440, 70), new Vector2(0, -165), new Color(0.20f, 0.45f, 0.75f), ArabicTextFixer.Fix("العودة لخريطة الأعضاء"), Color.white, 22, defaultFont);
+        // نص النتيجة النهائي
+        Text finalScore = CreateText("FinalScore", completeBox.transform, new Vector2(850, 50), new Vector2(0, 110), ArabicTextFixer.Fix("حصلت على 4 من 10 إجابات صحيحة"), 28, Color.white, defaultFont, TextAnchor.MiddleCenter);
+
+        // زر إرسال تقرير النتيجة بالبريد
+        Button sendReportBtn = CreateButton("SendReportBtn", completeBox.transform, new Vector2(460, 65), new Vector2(0, 20), new Color(0.28f, 0.25f, 0.65f), ArabicTextFixer.Fix("إرسال التقرير بالبريد ✉"), Color.white, 22, defaultFont);
+        Text reportStatusText = CreateText("ReportStatusText", completeBox.transform, new Vector2(600, 35), new Vector2(0, -35), "", 20, new Color(0.25f, 0.90f, 0.85f), defaultFont, TextAnchor.MiddleCenter);
+
+        Button retryBtn = CreateButton("RetryBtn", completeBox.transform, new Vector2(460, 65), new Vector2(0, -110), new Color(0.18f, 0.65f, 0.32f), ArabicTextFixer.Fix("أسئلة عشوائية جديدة"), Color.white, 22, defaultFont);
+        Button backMapBtn = CreateButton("BackMapBtn", completeBox.transform, new Vector2(460, 65), new Vector2(0, -195), new Color(0.20f, 0.45f, 0.75f), ArabicTextFixer.Fix("العودة لخريطة الأعضاء"), Color.white, 22, defaultFont);
         completeBox.SetActive(false);
         quizPanel.SetActive(false);
+
+        // --- هـ. نافذة تسجيل وإنشاء حساب التلميذ لأول مرة (Student Account Modal) ---
+        GameObject accountModal = CreateUIBox("StudentAccountModal", canvasGo.transform, new Vector2(840, 600), Vector2.zero, new Color(0.08f, 0.12f, 0.22f, 0.99f));
+        CreateUIBox("AccentHeader", accountModal.transform, new Vector2(840, 8), new Vector2(0, 296), new Color(0.2f, 0.65f, 0.9f));
+        Text accountModalTitle = CreateText("AccountModalTitle", accountModal.transform, new Vector2(760, 50), new Vector2(0, 235), ArabicTextFixer.Fix("إنشاء ملف التلميذ / الطالب"), 32, new Color(1.0f, 0.85f, 0.2f), defaultFont, TextAnchor.MiddleCenter);
+        CreateText("AccountModalSub", accountModal.transform, new Vector2(760, 35), new Vector2(0, 190), ArabicTextFixer.Fix("سجل بياناتك لحفظ نتائجك ومستوياتك وإرسال التقارير"), 20, new Color(0.8f, 0.88f, 0.98f), defaultFont, TextAnchor.MiddleCenter);
+
+        CreateText("Lbl_Name", accountModal.transform, new Vector2(700, 30), new Vector2(0, 140), ArabicTextFixer.Fix("اسم التلميذ / الطالب:"), 22, Color.white, defaultFont, TextAnchor.MiddleRight);
+        InputField inputName = CreateInputField("Input_Name", accountModal.transform, new Vector2(700, 50), new Vector2(0, 95), ArabicTextFixer.Fix("أدخل اسم التلميذ هنا..."), defaultFont, 22);
+
+        CreateText("Lbl_Grade", accountModal.transform, new Vector2(700, 30), new Vector2(0, 45), ArabicTextFixer.Fix("الصف أو المستوى الدراسي:"), 22, Color.white, defaultFont, TextAnchor.MiddleRight);
+        InputField inputGrade = CreateInputField("Input_Grade", accountModal.transform, new Vector2(700, 50), new Vector2(0, 0), ArabicTextFixer.Fix("مثال: السنة الرابعة متوسط / ثانوية..."), defaultFont, 22);
+
+        CreateText("Lbl_Email", accountModal.transform, new Vector2(700, 30), new Vector2(0, -50), ArabicTextFixer.Fix("البريد الإلكتروني للمعلم أو ولي الأمر (لإرسال النتائج):"), 22, Color.white, defaultFont, TextAnchor.MiddleRight);
+        InputField inputEmail = CreateInputField("Input_Email", accountModal.transform, new Vector2(700, 50), new Vector2(0, -95), "teacher.parent@example.com", defaultFont, 22);
+
+        Button saveAccountBtn = CreateButton("Btn_SaveAccount", accountModal.transform, new Vector2(400, 65), new Vector2(0, -195), new Color(0.18f, 0.65f, 0.32f), ArabicTextFixer.Fix("حفظ وبدء المغامرة ➔"), Color.white, 24, defaultFont);
+        accountModal.SetActive(false);
+
+        // --- و. نافذة التحذير الصريح (Warning Modal: احذر عند تصفير الحساب) ---
+        GameObject warningModal = CreateUIBox("WarningModal", canvasGo.transform, new Vector2(780, 440), Vector2.zero, new Color(0.15f, 0.08f, 0.10f, 0.99f));
+        CreateUIBox("AccentDanger", warningModal.transform, new Vector2(780, 8), new Vector2(0, 216), new Color(0.9f, 0.2f, 0.2f));
+        Text warningTitle = CreateText("WarningTitle", warningModal.transform, new Vector2(700, 50), new Vector2(0, 135), ArabicTextFixer.Fix("تحذير واحتراس!"), 32, new Color(1.0f, 0.35f, 0.25f), defaultFont, TextAnchor.MiddleCenter);
+        Text warningBody = CreateText("WarningBody", warningModal.transform, new Vector2(700, 140), new Vector2(0, 30), ArabicTextFixer.Fix("احذر: هل أنت متأكد من رغبتك في مسح كافة نتائج وتاريخ الطالب والبدء من جديد كحساب جديد؟ لن يمكنك استرجاع الدرجات السابقة!"), 23, Color.white, defaultFont, TextAnchor.MiddleCenter);
+
+        Button confirmResetBtn = CreateButton("Btn_ConfirmReset", warningModal.transform, new Vector2(320, 60), new Vector2(-180, -120), new Color(0.85f, 0.22f, 0.22f), ArabicTextFixer.Fix("نعم، امسح وابدأ من جديد"), Color.white, 22, defaultFont);
+        Button cancelResetBtn = CreateButton("Btn_CancelReset", warningModal.transform, new Vector2(320, 60), new Vector2(180, -120), new Color(0.25f, 0.35f, 0.50f), ArabicTextFixer.Fix("إلغاء"), Color.white, 22, defaultFont);
+        warningModal.SetActive(false);
 
         // --- ربط المكونات بالسكربتات ---
         BodyExplorerUI explorerUI = canvasGo.AddComponent<BodyExplorerUI>();
@@ -272,10 +314,17 @@ public static class ProjectAutomator
         quizCtrl.feedbackPanel = feedbackBox;
         quizCtrl.feedbackTitleText = feedbackTitle;
         quizCtrl.feedbackTipText = feedbackTip;
+        quizCtrl.nextQuestionButton = nextQuestionBtn;
+        quizCtrl.nextQuestionButtonText = nextQuestionBtn.GetComponentInChildren<Text>();
+
         quizCtrl.stageCompletePanel = completeBox;
         quizCtrl.stageCompleteTitleText = completeTitle;
         quizCtrl.finalScoreText = finalScore;
         quizCtrl.starIcons = stars;
+        quizCtrl.sendReportButton = sendReportBtn;
+        quizCtrl.sendReportButtonText = sendReportBtn.GetComponentInChildren<Text>();
+        quizCtrl.reportStatusText = reportStatusText;
+
         quizCtrl.closeQuizButton = closeQuizBtn;
         quizCtrl.closeQuizButtonText = closeQuizBtn.GetComponentInChildren<Text>();
         quizCtrl.retryButton = retryBtn;
@@ -284,6 +333,26 @@ public static class ProjectAutomator
         quizCtrl.backToMapButtonText = backMapBtn.GetComponentInChildren<Text>();
 
         explorerUI.quizController = quizCtrl;
+
+        // ربط مدير حساب وملف الطالب
+        StudentProfileManager profileMgr = canvasGo.AddComponent<StudentProfileManager>();
+        profileMgr.accountModalPanel = accountModal;
+        profileMgr.accountModalTitle = accountModalTitle;
+        profileMgr.inputStudentName = inputName;
+        profileMgr.inputStudentGrade = inputGrade;
+        profileMgr.inputStudentEmail = inputEmail;
+        profileMgr.saveAccountButton = saveAccountBtn;
+        profileMgr.saveAccountButtonText = saveAccountBtn.GetComponentInChildren<Text>();
+        profileMgr.studentNameBadgeText = studentBadgeText;
+        profileMgr.resetProgressButton = resetProgressBtn;
+        profileMgr.resetProgressButtonText = resetProgressBtn.GetComponentInChildren<Text>();
+        profileMgr.warningModalPanel = warningModal;
+        profileMgr.warningModalTitle = warningTitle;
+        profileMgr.warningModalBody = warningBody;
+        profileMgr.confirmResetButton = confirmResetBtn;
+        profileMgr.confirmResetButtonText = confirmResetBtn.GetComponentInChildren<Text>();
+        profileMgr.cancelResetButton = cancelResetBtn;
+        profileMgr.cancelResetButtonText = cancelResetBtn.GetComponentInChildren<Text>();
 
         // حفظ المشهد
         string scenesDir = "Assets/Scenes";
@@ -295,7 +364,7 @@ public static class ProjectAutomator
             new EditorBuildSettingsScene(ScenePath, true)
         };
 
-        Debug.Log("[ProjectAutomator] تم بناء واجهة اللعبة الاحترافية والمشهد بنجاح تام!");
+        Debug.Log("[ProjectAutomator] تم بناء وتجهيز وحفظ المشهد بالكامل بنجاح!");
     }
 
     private static GameObject CreateUIBox(string name, Transform parent, Vector2 size, Vector2 anchoredPos, Color color)
@@ -351,6 +420,55 @@ public static class ProjectAutomator
         t.color = color;
         t.alignment = align;
         return t;
+    }
+
+    private static InputField CreateInputField(string name, Transform parent, Vector2 size, Vector2 anchoredPos, string placeholderStr, Font font, int fontSize = 22)
+    {
+        GameObject go = new GameObject(name);
+        go.transform.SetParent(parent, false);
+        RectTransform rt = go.AddComponent<RectTransform>();
+        rt.sizeDelta = size;
+        rt.anchoredPosition = anchoredPos;
+
+        Image img = go.AddComponent<Image>();
+        img.color = new Color(0.06f, 0.10f, 0.18f, 0.95f);
+
+        // نص الإدخال
+        GameObject textGo = new GameObject("Text");
+        textGo.transform.SetParent(go.transform, false);
+        RectTransform textRt = textGo.AddComponent<RectTransform>();
+        textRt.anchorMin = Vector2.zero;
+        textRt.anchorMax = Vector2.one;
+        textRt.sizeDelta = new Vector2(-24, -10);
+        textRt.anchoredPosition = Vector2.zero;
+        Text t = textGo.AddComponent<Text>();
+        t.font = font;
+        t.fontSize = fontSize;
+        t.color = Color.white;
+        t.alignment = TextAnchor.MiddleCenter;
+        t.supportRichText = false;
+
+        // النص الإرشادي التوضيحي (Placeholder)
+        GameObject phGo = new GameObject("Placeholder");
+        phGo.transform.SetParent(go.transform, false);
+        RectTransform phRt = phGo.AddComponent<RectTransform>();
+        phRt.anchorMin = Vector2.zero;
+        phRt.anchorMax = Vector2.one;
+        phRt.sizeDelta = new Vector2(-24, -10);
+        phRt.anchoredPosition = Vector2.zero;
+        Text ph = phGo.AddComponent<Text>();
+        ph.font = font;
+        ph.fontSize = fontSize;
+        ph.color = new Color(0.65f, 0.72f, 0.85f, 0.55f);
+        ph.alignment = TextAnchor.MiddleCenter;
+        ph.text = placeholderStr;
+
+        InputField input = go.AddComponent<InputField>();
+        input.textComponent = t;
+        input.placeholder = ph;
+        input.lineType = InputField.LineType.SingleLine;
+
+        return input;
     }
 
     private static Slider CreateSimpleSlider(string name, Transform parent, Vector2 size, Vector2 anchoredPos)

@@ -27,7 +27,7 @@ public class LocalizationManager : MonoBehaviour
         { "app_title", new[] { "مغامرة استكشاف الجهاز الهضمي", "Digestive System Quest", "Aventure du Système Digestif" } },
         { "app_subtitle", new[] { "انقر على أي عضو في المجسم أو اختر من البطاقات الجانبية لبدء التحدي!", "Click any organ on the 3D model or side cards to start!", "Cliquez sur un organe du modèle 3D ou les cartes latérales !" } },
 
-        // الأعضاء (نصوص نقية دون إيموجي مشوه)
+        // الأعضاء
         { "organ_0", new[] { "1. الفم والمريء", "1. Mouth & Esophagus", "1. Bouche et Œsophage" } },
         { "organ_1", new[] { "2. المعدة", "2. Stomach", "2. Estomac" } },
         { "organ_2", new[] { "3. الكبد والبنكرياس والمرارة", "3. Liver, Pancreas & Gallbladder", "3. Foie, Pancréas et Vésicule" } },
@@ -51,11 +51,28 @@ public class LocalizationManager : MonoBehaviour
         { "feedback_correct", new[] { "إجابة ممتازة وصحيحة!", "Excellent! Correct Answer!", "Bravo ! Excellente réponse !" } },
         { "feedback_wrong", new[] { "حاول التركيز!", "Try to focus!", "Essaie de te concentrer !" } },
         { "correct_was", new[] { "الإجابة الصحيحة هي: ", "The correct answer is: ", "La bonne réponse est : " } },
+        { "btn_next_question", new[] { "السؤال التالي", "Next Question", "Question suivante" } },
 
-        // شاشة الفوز
+        // شاشة الفوز والنتائج
         { "win_title", new[] { "أحسنت يا بطل! أنهيت المستوى بنجاح", "Awesome Champ! Level Completed!", "Félicitations champion ! Niveau réussi !" } },
         { "btn_retry", new[] { "أسئلة عشوائية جديدة", "New Random Questions", "Nouvelles questions aléatoires" } },
         { "btn_back_map", new[] { "العودة لخريطة الأعضاء", "Back to Organ Map", "Retour à la carte des organes" } },
+        { "btn_send_report", new[] { "إرسال التقرير بالبريد", "Send Report via Email", "Envoyer le rapport par e-mail" } },
+        { "report_sent_status", new[] { "تم تجهيز التقرير وفتح برنامج البريد!", "Report ready & mail app opened!", "Rapport prêt et application e-mail ouverte !" } },
+
+        // حساب الطالب
+        { "student_profile_title", new[] { "إنشاء ملف التلميذ / الطالب", "Student Account Setup", "Création du profil élève" } },
+        { "lbl_student_name", new[] { "اسم التلميذ / الطالب:", "Student Name:", "Nom de l'élève :" } },
+        { "lbl_student_grade", new[] { "الصف أو المستوى الدراسي:", "Grade / Level:", "Classe ou niveau :" } },
+        { "lbl_student_email", new[] { "بريد المعلم / ولي الأمر (للتقارير):", "Teacher/Parent Email (for reports):", "E-mail enseignant/parent (pour rapports) :" } },
+        { "btn_save_start", new[] { "حفظ وبدء المغامرة", "Save & Start Adventure", "Enregistrer et commencer" } },
+        { "btn_reset_account", new[] { "تصفير الحساب", "Reset Account", "Réinitialiser" } },
+
+        // نافذة التحذير
+        { "warning_reset_title", new[] { "تحذير واحتراس!", "Warning & Alert!", "Attention !" } },
+        { "warning_reset_body", new[] { "احذر: هل أنت متأكد من رغبتك في مسح كافة نتائج وتاريخ الطالب والبدء من جديد كحساب جديد؟ لن يمكنك استرجاع الدرجات السابقة!", "Watch out: Are you sure you want to erase all student scores and start fresh with a new account? This cannot be undone!", "Attention : Voulez-vous vraiment effacer tous les résultats et recommencer avec un nouveau compte ? Action irréversible !" } },
+        { "btn_confirm_reset", new[] { "نعم، امسح وابدأ من جديد", "Yes, Reset & Start Over", "Oui, effacer et recommencer" } },
+        { "btn_cancel", new[] { "إلغاء", "Cancel", "Annuler" } }
     };
 
     private void Awake()

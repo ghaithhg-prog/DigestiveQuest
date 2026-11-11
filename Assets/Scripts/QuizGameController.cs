@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 /// <summary>
 /// سكربت متحكم واجهة اللعبة والأسئلة (QuizGameController).
-/// يضمن صياغة جملة النتيجة بالشكل الصحيح ("حصلت على 4 من 10 إجابات صحيحة") دون أي قلب أو تشويه.
+/// - إصلاح صياغة عداد الأسئلة ليظهر بدقة: "السؤال 7 من 10".
+/// - إضافة زر "السؤال التالي" لتخطي مهلة الـ 3 ثوانٍ فورياً.
+/// - إضافة زر إرسال تقرير النتيجة بالبريد الإلكتروني للمعلم أو ولي الأمر.
 /// </summary>
 public class QuizGameController : MonoBehaviour
 {
@@ -26,12 +28,17 @@ public class QuizGameController : MonoBehaviour
     public GameObject feedbackPanel;
     public Text feedbackTitleText;
     public Text feedbackTipText;
+    public Button nextQuestionButton;
+    public Text nextQuestionButtonText;
 
     [Header("نافذة إنهاء المرحلة والاحتفال")]
     public GameObject stageCompletePanel;
     public Text stageCompleteTitleText;
     public Text finalScoreText;
     public GameObject[] starIcons;
+    public Button sendReportButton;
+    public Text sendReportButtonText;
+    public Text reportStatusText;
 
     [Header("أزرار التنقل")]
     public Button closeQuizButton;
@@ -48,6 +55,7 @@ public class QuizGameController : MonoBehaviour
     private List<QuestionItem> activeQuestions = new List<QuestionItem>();
     private int currentQuestionIndex = 0;
     private int correctAnswersCount = 0;
+    private Coroutine transitionCoroutine = null;
 
     private void Start()
     {
@@ -65,6 +73,16 @@ public class QuizGameController : MonoBehaviour
         {
             backToMapButton.onClick.RemoveAllListeners();
             backToMapButton.onClick.AddListener(CloseQuiz);
+        }
+        if (nextQuestionButton != null)
+        {
+            nextQuestionButton.onClick.RemoveAllListeners();
+            nextQuestionButton.onClick.AddListener(OnNextQuestionClicked);
+        }
+        if (sendReportButton != null)
+        {
+            sendReportButton.onClick.RemoveAllListeners();
+            sendReportButton.onClick.AddListener(OnSendReportClicked);
         }
 
         LocalizationManager.OnLanguageChanged += RefreshCurrentView;
@@ -123,6 +141,9 @@ public class QuizGameController : MonoBehaviour
         if (closeQuizButtonText != null)
             closeQuizButtonText.text = LocalizationManager.Get("btn_exit_quiz");
 
+        if (nextQuestionButtonText != null)
+            nextQuestionButtonText.text = LocalizationManager.Get("btn_next_question");
+
         if (currentQuestionIndex < activeQuestions.Count)
         {
             QuestionItem q = activeQuestions[currentQuestionIndex];
@@ -130,9 +151,22 @@ public class QuizGameController : MonoBehaviour
             if (questionTextUI != null)
                 questionTextUI.text = q.GetQuestionText(lang);
 
+            // صياغة عداد الأسئلة بشكل صحيح تماماً: "السؤال 7 من 10"
             if (progressCounterTextUI != null)
             {
-                progressCounterTextUI.text = LocalizationManager.Get("question_prefix") + (currentQuestionIndex + 1) + LocalizationManager.Get("of_prefix") + activeQuestions.Count;
+                if (lang == AppLanguage.Arabic)
+                {
+                    string arabicCounter = $"السؤال {currentQuestionIndex + 1} من {activeQuestions.Count}";
+                    progressCounterTextUI.text = ArabicTextFixer.Fix(arabicCounter);
+                }
+                else if (lang == AppLanguage.French)
+                {
+                    progressCounterTextUI.text = $"Question {currentQuestionIndex + 1} sur {activeQuestions.Count}";
+                }
+                else
+                {
+                    progressCounterTextUI.text = $"Question {currentQuestionIndex + 1} of {activeQuestions.Count}";
+                }
             }
 
             if (progressBarUI != null)
@@ -228,7 +262,29 @@ public class QuizGameController : MonoBehaviour
             if (feedbackTipText != null) feedbackTipText.text = explanation;
         }
 
-        StartCoroutine(TransitionToNextQuestionRoutine());
+        if (transitionCoroutine != null)
+        {
+            StopCoroutine(transitionCoroutine);
+        }
+        transitionCoroutine = StartCoroutine(TransitionToNextQuestionRoutine());
+    }
+
+    /// <summary>
+    /// الانتقال الفوري للسؤال التالي عند الضغط على زر "التالي" دون انتظار
+    /// </summary>
+    public void OnNextQuestionClicked()
+    {
+        if (transitionCoroutine != null)
+        {
+            StopCoroutine(transitionCoroutine);
+            transitionCoroutine = null;
+        }
+
+        if (feedbackPanel != null)
+            feedbackPanel.SetActive(false);
+
+        currentQuestionIndex++;
+        DisplayCurrentQuestion();
     }
 
     private IEnumerator TransitionToNextQuestionRoutine()
@@ -254,14 +310,11 @@ public class QuizGameController : MonoBehaviour
             if (stageCompleteTitleText != null)
                 stageCompleteTitleText.text = LocalizationManager.Get("win_title");
 
-            // صياغة دقيقة وصحيحة ومضبوطة حسب اللغة
             AppLanguage lang = LocalizationManager.CurrentLanguage;
             if (finalScoreText != null)
             {
                 if (lang == AppLanguage.Arabic)
                 {
-                    // صياغة عربية متصلة ومباشرة بالضبط كما طلب المستخدم:
-                    // "حصلت على 4 من 10 إجابات صحيحة"
                     string fullArabicSentence = $"حصلت على {correctAnswersCount} من {activeQuestions.Count} إجابات صحيحة";
                     finalScoreText.text = ArabicTextFixer.Fix(fullArabicSentence);
                 }
@@ -281,6 +334,12 @@ public class QuizGameController : MonoBehaviour
             if (backToMapButtonText != null)
                 backToMapButtonText.text = LocalizationManager.Get("btn_back_map");
 
+            if (sendReportButtonText != null)
+                sendReportButtonText.text = LocalizationManager.Get("btn_send_report");
+
+            if (reportStatusText != null)
+                reportStatusText.text = "";
+
             int earnedStars = 1;
             if (correctAnswersCount >= 8) earnedStars = 3;
             else if (correctAnswersCount >= 5) earnedStars = 2;
@@ -295,6 +354,23 @@ public class QuizGameController : MonoBehaviour
         }
     }
 
+    public void OnSendReportClicked()
+    {
+        string organName = LocalizationManager.Get($"organ_{currentOrganId}");
+        string stageName = LocalizationManager.Get($"stage_{currentStageId}_name");
+
+        int earnedStars = 1;
+        if (correctAnswersCount >= 8) earnedStars = 3;
+        else if (correctAnswersCount >= 5) earnedStars = 2;
+
+        if (StudentProfileManager.Instance != null)
+        {
+            StudentProfileManager.Instance.SendQuizReport(organName, stageName, correctAnswersCount, activeQuestions.Count, earnedStars);
+            if (reportStatusText != null)
+                reportStatusText.text = LocalizationManager.Get("report_sent_status");
+        }
+    }
+
     public void RetryWithNewRandomQuestions()
     {
         StartNewQuizSession(currentOrganId, currentStageId);
@@ -302,6 +378,12 @@ public class QuizGameController : MonoBehaviour
 
     public void CloseQuiz()
     {
+        if (transitionCoroutine != null)
+        {
+            StopCoroutine(transitionCoroutine);
+            transitionCoroutine = null;
+        }
+
         if (quizPanel != null)
             quizPanel.SetActive(false);
     }
