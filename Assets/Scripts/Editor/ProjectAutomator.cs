@@ -27,7 +27,7 @@ public static class ProjectAutomator
         camGo.tag = "MainCamera";
 
         // إضافة سكربت النقر المباشر على الكاميرا
-        camGo.AddComponent<OrganRaycastClicker>();
+        OrganRaycastClicker clicker = camGo.AddComponent<OrganRaycastClicker>();
 
         // 2. إضاءة الاستوديو ثلاثية النقاط
         GameObject keyLightGo = new GameObject("Key Light");
@@ -116,6 +116,8 @@ public static class ProjectAutomator
         // --- ب. البطاقات الجانبية للأعضاء ---
         Button[] bottomButtons = new Button[5];
         Text[] bottomTexts = new Text[5];
+        GameObject[] cardRoots = new GameObject[5];
+        Image[] cardAccents = new Image[5];
         string[] rawLabels = {
             "1. الفم والمريء",
             "2. المعدة",
@@ -136,11 +138,20 @@ public static class ProjectAutomator
         {
             float posY = 130 - (i * 140);
             GameObject cardGo = CreateUIBox($"OrganCard_{i}", canvasGo.transform, new Vector2(340, 120), new Vector2(-750, posY), new Color(0.10f, 0.15f, 0.24f, 0.94f));
-            CreateUIBox("Accent", cardGo.transform, new Vector2(10, 120), new Vector2(-165, 0), accentColors[i]);
+            Button cardBtn = cardGo.AddComponent<Button>();
+            bottomButtons[i] = cardBtn;
+            cardRoots[i] = cardGo;
 
-            bottomButtons[i] = CreateButton($"OrganBtn_{i}", cardGo.transform, new Vector2(310, 110), new Vector2(10, 0), new Color(0, 0, 0, 0.01f), "", Color.white, 20, defaultFont);
+            GameObject accentGo = CreateUIBox("Accent", cardGo.transform, new Vector2(10, 120), new Vector2(-165, 0), accentColors[i]);
+            Image accentImg = accentGo.GetComponent<Image>();
+            accentImg.raycastTarget = false;
+            cardAccents[i] = accentImg;
+
             bottomTexts[i] = CreateText($"Label_{i}", cardGo.transform, new Vector2(290, 40), new Vector2(15, 20), ArabicTextFixer.Fix(rawLabels[i]), 22, Color.white, defaultFont, TextAnchor.MiddleRight);
-            CreateText($"Sub_{i}", cardGo.transform, new Vector2(290, 30), new Vector2(15, -20), ArabicTextFixer.Fix("3 مستويات استكشافية | 30 سؤالاً"), 16, new Color(0.7f, 0.82f, 0.95f), defaultFont, TextAnchor.MiddleRight);
+            bottomTexts[i].raycastTarget = false;
+
+            Text sub = CreateText($"Sub_{i}", cardGo.transform, new Vector2(290, 30), new Vector2(15, -20), ArabicTextFixer.Fix("3 مستويات استكشافية | 30 سؤالاً"), 16, new Color(0.7f, 0.82f, 0.95f), defaultFont, TextAnchor.MiddleRight);
+            sub.raycastTarget = false;
         }
 
         // الجانب الأيمن: الأعضاء 3 و 4 + بطاقة استكشاف 3D
@@ -148,18 +159,48 @@ public static class ProjectAutomator
         {
             float posY = 130 - ((i - 3) * 140);
             GameObject cardGo = CreateUIBox($"OrganCard_{i}", canvasGo.transform, new Vector2(340, 120), new Vector2(750, posY), new Color(0.10f, 0.15f, 0.24f, 0.94f));
-            CreateUIBox("Accent", cardGo.transform, new Vector2(10, 120), new Vector2(165, 0), accentColors[i]);
+            Button cardBtn = cardGo.AddComponent<Button>();
+            bottomButtons[i] = cardBtn;
+            cardRoots[i] = cardGo;
 
-            bottomButtons[i] = CreateButton($"OrganBtn_{i}", cardGo.transform, new Vector2(310, 110), new Vector2(-10, 0), new Color(0, 0, 0, 0.01f), "", Color.white, 20, defaultFont);
+            GameObject accentGo = CreateUIBox("Accent", cardGo.transform, new Vector2(10, 120), new Vector2(165, 0), accentColors[i]);
+            Image accentImg = accentGo.GetComponent<Image>();
+            accentImg.raycastTarget = false;
+            cardAccents[i] = accentImg;
+
             bottomTexts[i] = CreateText($"Label_{i}", cardGo.transform, new Vector2(290, 40), new Vector2(-15, 20), ArabicTextFixer.Fix(rawLabels[i]), 22, Color.white, defaultFont, TextAnchor.MiddleRight);
-            CreateText($"Sub_{i}", cardGo.transform, new Vector2(290, 30), new Vector2(-15, -20), ArabicTextFixer.Fix("3 مستويات استكشافية | 30 سؤالاً"), 16, new Color(0.7f, 0.82f, 0.95f), defaultFont, TextAnchor.MiddleRight);
+            bottomTexts[i].raycastTarget = false;
+
+            Text sub = CreateText($"Sub_{i}", cardGo.transform, new Vector2(290, 30), new Vector2(-15, -20), ArabicTextFixer.Fix("3 مستويات استكشافية | 30 سؤالاً"), 16, new Color(0.7f, 0.82f, 0.95f), defaultFont, TextAnchor.MiddleRight);
+            sub.raycastTarget = false;
         }
 
         // بطاقة الإرشاد التفاعلي ثلاثي الأبعاد
         GameObject tipCardGo = CreateUIBox("OrganCard_Tip", canvasGo.transform, new Vector2(340, 120), new Vector2(750, -150), new Color(0.08f, 0.12f, 0.20f, 0.94f));
-        CreateUIBox("AccentTip", tipCardGo.transform, new Vector2(10, 120), new Vector2(165, 0), new Color(0.2f, 0.7f, 0.9f));
-        CreateText("TipTitle", tipCardGo.transform, new Vector2(290, 40), new Vector2(-15, 20), ArabicTextFixer.Fix("استكشاف تفاعلي 360"), 20, new Color(0.3f, 0.85f, 1.0f), defaultFont, TextAnchor.MiddleRight);
-        CreateText("TipBody", tipCardGo.transform, new Vector2(290, 50), new Vector2(-15, -20), ArabicTextFixer.Fix("اسحب بالفأرة لتدوير الجسم في أي اتجاه، وانقر مباشرة على أي عضو لفتحه!"), 15, new Color(0.8f, 0.88f, 0.98f), defaultFont, TextAnchor.MiddleRight);
+        GameObject tipAccent = CreateUIBox("AccentTip", tipCardGo.transform, new Vector2(10, 120), new Vector2(165, 0), new Color(0.2f, 0.7f, 0.9f));
+        tipAccent.GetComponent<Image>().raycastTarget = false;
+        Text tipTitle = CreateText("TipTitle", tipCardGo.transform, new Vector2(290, 40), new Vector2(-15, 20), ArabicTextFixer.Fix("استكشاف تفاعلي 360"), 20, new Color(0.3f, 0.85f, 1.0f), defaultFont, TextAnchor.MiddleRight);
+        tipTitle.raycastTarget = false;
+        Text tipBody = CreateText("TipBody", tipCardGo.transform, new Vector2(290, 50), new Vector2(-15, -20), ArabicTextFixer.Fix("اسحب بالفأرة لتدوير الجسم في أي اتجاه، وانقر مباشرة على أي عضو لفتحه!"), 15, new Color(0.8f, 0.88f, 0.98f), defaultFont, TextAnchor.MiddleRight);
+        tipBody.raycastTarget = false;
+
+        // نافذة رسالة التحويم ثلاثية الأبعاد (Organ Hover Tooltip)
+        GameObject tooltipPanel = CreateUIBox("OrganHoverTooltip", canvasGo.transform, new Vector2(260, 52), Vector2.zero, new Color(0.08f, 0.12f, 0.22f, 0.95f));
+        CanvasGroup tooltipCg = tooltipPanel.AddComponent<CanvasGroup>();
+        tooltipCg.blocksRaycasts = false;
+        tooltipPanel.GetComponent<Image>().raycastTarget = false;
+
+        GameObject ttAccent = CreateUIBox("TTAccent", tooltipPanel.transform, new Vector2(6, 52), new Vector2(-127, 0), new Color(1.0f, 0.85f, 0.2f));
+        ttAccent.GetComponent<Image>().raycastTarget = false;
+
+        Text tooltipText = CreateText("TTText", tooltipPanel.transform, new Vector2(240, 44), new Vector2(6, 0), "", 20, new Color(1.0f, 0.92f, 0.5f), defaultFont, TextAnchor.MiddleCenter);
+        tooltipText.raycastTarget = false;
+        tooltipPanel.SetActive(false);
+
+        // ربط عناصر التول تيب بالكاميرا
+        clicker.tooltipPanel = tooltipPanel;
+        clicker.tooltipText = tooltipText;
+        clicker.canvasRect = scaler.GetComponent<RectTransform>();
 
         // --- ج. نافذة اختيار المراحل (Stages Modal) ---
         GameObject stagesModal = CreateUIBox("StagesModalPanel", canvasGo.transform, new Vector2(1920, 1080), Vector2.zero, new Color(0, 0, 0, 0.70f));
@@ -302,6 +343,9 @@ public static class ProjectAutomator
         explorerUI.closeModalButton = closeModalBtn;
         explorerUI.bottomOrganButtons = bottomButtons;
         explorerUI.bottomOrganTexts = bottomTexts;
+        explorerUI.organCardRoots = cardRoots;
+        explorerUI.organCardAccents = cardAccents;
+        explorerUI.defaultAccentColors = accentColors;
 
         QuizGameController quizCtrl = canvasGo.AddComponent<QuizGameController>();
         quizCtrl.quizPanel = quizPanel;

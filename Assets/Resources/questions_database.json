@@ -2849,6 +2849,3906 @@
         "Les viandes en boîte"
       ],
       "educationalTip_fr": "Les fibres absorbent l'eau et facilitent le transit intestinal régulier."
+    },
+    {
+      "id": 96,
+      "organId": 0,
+      "stageId": 1,
+      "questionText": "ما هي أقسى وأصلب مادة في جسم الإنسان والتي تغطي تاج الأسنان؟",
+      "options": [
+        "مينا الأسنان",
+        "عاج السن",
+        "العظم الصدغي",
+        "الملاط"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "مينا الأسنان هي أصلب نسيج حيوي في جسم الإنسان وتتكون بنسبة 96% من معادن الكالسيوم والفوسفات.",
+      "questionText_en": "What is the hardest substance in the human body covering tooth crowns?",
+      "options_en": [
+        "Tooth enamel",
+        "Dentin",
+        "Temporal bone",
+        "Cementum"
+      ],
+      "educationalTip_en": "Enamel is the hardest biological tissue in humans, composed of 96% minerals.",
+      "questionText_fr": "Quelle est la substance la plus dure du corps humain recouvrant les dents ?",
+      "options_fr": [
+        "L'émail dentaire",
+        "La dentine",
+        "L'os temporal",
+        "Le cément"
+      ],
+      "educationalTip_fr": "L'émail est le tissu le plus dur du corps humain, composé à 96% de minéraux."
+    },
+    {
+      "id": 97,
+      "organId": 0,
+      "stageId": 1,
+      "questionText": "كم عدد الأسنان اللبنية عند الأطفال قبل سقوطها؟",
+      "options": [
+        "20 سناً",
+        "24 سناً",
+        "28 سناً",
+        "32 سناً"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "يمتلك الأطفال 20 سناً لبنية تبدأ بالظهور من عمر 6 أشهر وتسقط تدريجياً لتحل محلها الأسنان الدائمة.",
+      "questionText_en": "How many primary (milk) teeth do children have?",
+      "options_en": [
+        "20 teeth",
+        "24 teeth",
+        "28 teeth",
+        "32 teeth"
+      ],
+      "educationalTip_en": "Children have 20 baby teeth which are replaced by 32 permanent teeth.",
+      "questionText_fr": "Combien de dents de lait les enfants ont-ils ?",
+      "options_fr": [
+        "20 dents",
+        "24 dents",
+        "28 dents",
+        "32 dents"
+      ],
+      "educationalTip_fr": "Les enfants ont 20 dents temporaires remplacées par 32 dents définitives."
+    },
+    {
+      "id": 98,
+      "organId": 0,
+      "stageId": 1,
+      "questionText": "ما النسيج الذي يربط اللسان بقاع تجويف الفم؟",
+      "options": [
+        "لجام اللسان",
+        "الحنك الرخو",
+        "اللهاة",
+        "البلعوم الأنفي"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "لجام اللسان (Lingual Frenulum) هو ثنية مخاطية سفلية تساعد في توجيه وتثبيت حركة اللسان أثناء النطق والبلع.",
+      "questionText_en": "What tissue anchors the tongue to the floor of the mouth?",
+      "options_en": [
+        "Lingual frenulum",
+        "Soft palate",
+        "Uvula",
+        "Nasopharynx"
+      ],
+      "educationalTip_en": "The lingual frenulum is a small fold of mucous membrane securing the tongue.",
+      "questionText_fr": "Quel tissu relie la langue au plancher buccal ?",
+      "options_fr": [
+        "Le frein lingual",
+        "Le voile du palais",
+        "La luette",
+        "Le nasopharynx"
+      ],
+      "educationalTip_fr": "Le frein lingual est un repli muqueux stabilisant la langue."
+    },
+    {
+      "id": 99,
+      "organId": 0,
+      "stageId": 2,
+      "questionText": "ما هو الإنزيم اللعابي المسؤول عن بدء هضم الدهون في الفم؟",
+      "options": [
+        "الليباز اللعابي",
+        "الأميلاز",
+        "البيبسين",
+        "المالتاز"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "يفرز إنزيم الليباز اللعابي من الغدد اللسانية ويبدأ بهضم جزء من الدهون حتى في الوسط الحمضي للمعدة.",
+      "questionText_en": "Which salivary enzyme begins fat digestion in the mouth?",
+      "options_en": [
+        "Lingual lipase",
+        "Salivary amylase",
+        "Pepsin",
+        "Maltase"
+      ],
+      "educationalTip_en": "Lingual lipase starts triglyceride breakdown in the oral cavity.",
+      "questionText_fr": "Quelle enzyme salivaire commence la digestion des lipides ?",
+      "options_fr": [
+        "La lipase linguale",
+        "L'amylase salivaire",
+        "La pepsine",
+        "La maltase"
+      ],
+      "educationalTip_fr": "La lipase linguale amorce la dégradation des graisses dans la bouche."
+    },
+    {
+      "id": 100,
+      "organId": 0,
+      "stageId": 2,
+      "questionText": "ما هي المادة المخاطية في اللعاب التي تجعل اللقمة رطبة وسهلة الانزلاق؟",
+      "options": [
+        "الميوسين",
+        "الكيراتين",
+        "الألبومين",
+        "الفيبرين"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الميوسين (Mucin) هو بروتين سكري يرتبط بالماء ليعطي اللعاب لزوجته الانزلاقية ويحمي بطانة المريء.",
+      "questionText_en": "What salivary component lubricates food for smooth swallowing?",
+      "options_en": [
+        "Mucin",
+        "Keratin",
+        "Albumin",
+        "Fibrin"
+      ],
+      "educationalTip_en": "Mucin is a glycoprotein that lubricates the food bolus.",
+      "questionText_fr": "Quelle substance salivaire lubrifie le bol alimentaire pour faciliter la déglutition ?",
+      "options_fr": [
+        "La mucine",
+        "La kératine",
+        "L'albumine",
+        "La fibrine"
+      ],
+      "educationalTip_fr": "La mucine est une glycoprotéine qui hydrate et lubrifie les aliments."
+    },
+    {
+      "id": 101,
+      "organId": 0,
+      "stageId": 2,
+      "questionText": "ما وظيفة إنزيم الليزوزيم (Lysozyme) الموجود في اللعاب؟",
+      "options": [
+        "القضاء على جدران البكتيريا",
+        "تفكيك النشا إلى سكر",
+        "تخثر الدم",
+        "تنشيط حمض المعدة"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الليزوزيم هو مضاد حيوي طبيعي في اللعاب يفكك جدران الخلايا البكتيرية لحماية تجويف الفم.",
+      "questionText_en": "What is the role of lysozyme in saliva?",
+      "options_en": [
+        "Destroying bacterial cell walls",
+        "Breaking starch to sugar",
+        "Clotting blood",
+        "Activating stomach acid"
+      ],
+      "educationalTip_en": "Lysozyme acts as an antibacterial agent protecting the oral cavity.",
+      "questionText_fr": "Quel est le rôle du lysozyme salivaire ?",
+      "options_fr": [
+        "Détruire les parois bactériennes",
+        "Découper l'amidon en sucre",
+        "Coaguler le sang",
+        "Activer l'acide gastrique"
+      ],
+      "educationalTip_fr": "Le lysozyme agit comme un rempart antibactérien naturel."
+    },
+    {
+      "id": 102,
+      "organId": 0,
+      "stageId": 2,
+      "questionText": "كم لتراً من اللعاب تقريباً يفرزه الإنسان البالغ يومياً؟",
+      "options": [
+        "1 إلى 1.5 لتر",
+        "نصف لتر فقط",
+        "3 إلى 4 لترات",
+        "5 لترات"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تفرز الغدد اللعابية يومياً ما بين 1 إلى 1.5 لتر من اللعاب لترطيب الفم وتسهيل الكلام والهضم.",
+      "questionText_en": "Approximately how much saliva does an adult produce per day?",
+      "options_en": [
+        "1 to 1.5 liters",
+        "0.5 liter",
+        "3 to 4 liters",
+        "5 liters"
+      ],
+      "educationalTip_en": "Salivary glands secrete between 1 and 1.5 liters daily.",
+      "questionText_fr": "Quelle quantité de salive un adulte produit-il par jour environ ?",
+      "options_fr": [
+        "1 à 1,5 litre",
+        "0,5 litre seulement",
+        "3 à 4 litres",
+        "5 litres"
+      ],
+      "educationalTip_fr": "Les glandes salivaires sécrètent entre 1 et 1,5 litre de salive chaque jour."
+    },
+    {
+      "id": 103,
+      "organId": 0,
+      "stageId": 2,
+      "questionText": "ما الرقم الهيدروجيني (pH) التقريبي للعاب الطبيعي؟",
+      "options": [
+        "6.5 إلى 7.5 (متعادل تقريباً)",
+        "1.5 إلى 2 (شديد الحموضة)",
+        "9 إلى 10 (قاعدي قوي)",
+        "3.5 إلى 4.5"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "يتراوح pH اللعاب بين 6.5 و 7.5 وهو وسط مثالي لعمل إنزيم الأميلاز وحماية مينا الأسنان من التآكل الحمضي.",
+      "questionText_en": "What is the normal pH of saliva?",
+      "options_en": [
+        "6.5 to 7.5 (near neutral)",
+        "1.5 to 2 (strongly acidic)",
+        "9 to 10 (strongly basic)",
+        "3.5 to 4.5"
+      ],
+      "educationalTip_en": "Salivary pH is near neutral to optimize enzyme function and protect teeth.",
+      "questionText_fr": "Quel est le pH normal de la salive ?",
+      "options_fr": [
+        "6,5 à 7,5 (presque neutre)",
+        "1,5 à 2 (très acide)",
+        "9 à 10 (basique)",
+        "3,5 à 4,5"
+      ],
+      "educationalTip_fr": "Le pH salivaire est proche de la neutralité pour protéger l'émail."
+    },
+    {
+      "id": 104,
+      "organId": 0,
+      "stageId": 3,
+      "questionText": "ما هي الغدة اللعابية التي تلتهب وتتضخم عند الإصابة بمرض النكاف (أبو كعب)؟",
+      "options": [
+        "الغدة النكفية",
+        "الغدة تحت اللسان",
+        "الغدة تحت الفك",
+        "الغدة الدرقية"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "فيروس النكاف يصيب ويؤدي لتضخم الغدة النكفية (Parotid Gland) الواقعة أمام وأسفل الأذن.",
+      "questionText_en": "Which salivary gland swells during mumps infection?",
+      "options_en": [
+        "Parotid gland",
+        "Sublingual gland",
+        "Submandibular gland",
+        "Thyroid gland"
+      ],
+      "educationalTip_en": "The mumps virus targets the parotid salivary glands located in front of the ears.",
+      "questionText_fr": "Quelle glande salivaire gonfle lors des oreillons ?",
+      "options_fr": [
+        "La glande parotide",
+        "La glande sous-linguale",
+        "La glande sous-maxillaire",
+        "La glande thyroïde"
+      ],
+      "educationalTip_fr": "Le virus des oreillons s'attaque principalement aux glandes parotides."
+    },
+    {
+      "id": 105,
+      "organId": 0,
+      "stageId": 3,
+      "questionText": "ما اسم الحالة التي يحدث فيها ارتداد حمض المعدة إلى المريء مسبباً حرقة الصدر؟",
+      "options": [
+        "الارتجاع المعدي المريئي (GERD)",
+        "التهاب الزائدة",
+        "قرحة الإثني عشر",
+        "حصوات المرارة"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الارتجاع المريئي ينتج عن ضعف العاصرة المريئية السفلية، مما يسمح بارتداد الحمض المعدي وتهيج المريء.",
+      "questionText_en": "What condition is caused by stomach acid flowing back into the esophagus?",
+      "options_en": [
+        "Gastroesophageal Reflux (GERD)",
+        "Appendicitis",
+        "Duodenal ulcer",
+        "Gallstones"
+      ],
+      "educationalTip_en": "GERD occurs when the lower esophageal sphincter relaxes inappropriately.",
+      "questionText_fr": "Comment appelle-t-on la remontée d'acide gastrique dans l'œsophage ?",
+      "options_fr": [
+        "Le reflux gastro-œsophagien (RGO)",
+        "L'appendicite",
+        "L'ulcère duodénal",
+        "Les calculs biliaires"
+      ],
+      "educationalTip_fr": "Le RGO est causé par un défaut de fermeture du sphincter œsophagien inférieur."
+    },
+    {
+      "id": 106,
+      "organId": 0,
+      "stageId": 3,
+      "questionText": "لغز: عضو عضلي مرن يملك حليمات تذوق، لا يملك أي عظم، ويتحرك في كل اتجاه. ما هو؟",
+      "options": [
+        "اللسان",
+        "المريء",
+        "البلعوم",
+        "الحنك"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "اللسان مكون من 8 عضلات متعامدة ولا يحتوي على أي عظم، ويساعد في النطق والتذوق ودفع اللقمة.",
+      "questionText_en": "Riddle: A muscular flexible organ with taste buds and no bones that moves in all directions. What is it?",
+      "options_en": [
+        "The tongue",
+        "The esophagus",
+        "The pharynx",
+        "The palate"
+      ],
+      "educationalTip_en": "The tongue has 8 muscles, zero bones, and is essential for taste and speech.",
+      "questionText_fr": "Énigme : Organe musculaire souple sans aucun os doté de papilles gustatives. Qui suis-je ?",
+      "options_fr": [
+        "La langue",
+        "L'œsophage",
+        "Le pharynx",
+        "Le palais"
+      ],
+      "educationalTip_fr": "La langue est un organe musculaire très agile composé de 8 muscles entrelacés."
+    },
+    {
+      "id": 107,
+      "organId": 0,
+      "stageId": 3,
+      "questionText": "لماذا ينصح الأطباء بعدم النوم مباشرة بعد تناول وجبة دسمة؟",
+      "options": [
+        "لمنع ارتداد الحمض إلى المريء بفعل الجاذبية",
+        "لتجنب توقف نبض القلب",
+        "لأن الكبد يتوقف عن العمل ليلاً",
+        "لتبريد حرارة الجسم"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الاستلقاء مباشرة يلغي تأثير الجاذبية الأرضية التي تبقي العصارة المعدية داخل المعدة، مما يزيد خطر الارتجاع.",
+      "questionText_en": "Why is lying down immediately after eating discouraged?",
+      "options_en": [
+        "To prevent acid reflux via gravity",
+        "To avoid heart stoppage",
+        "Because the liver sleeps",
+        "To cool the body"
+      ],
+      "educationalTip_en": "Gravity helps keep acid inside the stomach while standing or sitting upright.",
+      "questionText_fr": "Pourquoi déconseille-t-on de s'allonger juste après un repas copieux ?",
+      "options_fr": [
+        "Pour empêcher le reflux acide grâce à la gravité",
+        "Pour éviter l'arrêt cardiaque",
+        "Car le foie dort la nuit",
+        "Pour refroidir le corps"
+      ],
+      "educationalTip_fr": "La position verticale aide la gravité à maintenir les sucs acides dans l'estomac."
+    },
+    {
+      "id": 108,
+      "organId": 0,
+      "stageId": 3,
+      "questionText": "ما هو المعدن الأساسي الذي يقوي مينا الأسنان ويحميها من التسوس ويضاف لمعجون الأسنان؟",
+      "options": [
+        "الفلورايد",
+        "الحديد",
+        "الزنك",
+        "النحاس"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الفلورايد يتحد مع بلورات الكالسيوم ليشكل 'الفلوروأباتيت' المقاوم للأحماض البكتيرية.",
+      "questionText_en": "Which mineral strengthens dental enamel against cavities?",
+      "options_en": [
+        "Fluoride",
+        "Iron",
+        "Zinc",
+        "Copper"
+      ],
+      "educationalTip_en": "Fluoride remineralizes enamel and makes it resistant to bacterial acid decay.",
+      "questionText_fr": "Quel minéral renforce l'émail dentaire contre les caries ?",
+      "options_fr": [
+        "Le fluor",
+        "Le fer",
+        "Le zinc",
+        "Le cuivre"
+      ],
+      "educationalTip_fr": "Le fluor renforce l'émail en formant de la fluoroapatite résistante aux acides."
+    },
+    {
+      "id": 109,
+      "organId": 0,
+      "stageId": 3,
+      "questionText": "ما هي الحركات اللاإرادية التي تدفع الطعام على طول المريء حتى في حال الوقوف على الرأس؟",
+      "options": [
+        "الحركات الدودية (التمعجية)",
+        "الاهتزازات الصوتية",
+        "الجاذبية الأرضية فقط",
+        "الضغط الأسموزي"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "التمعج (Peristalsis) هو انقباضات وانبساطات عضلية موجية متعاقبة تدفع الطعام نحو المعدة بقوة عضلية ذاتية.",
+      "questionText_en": "What involuntary contractions propel food through the esophagus even upside down?",
+      "options_en": [
+        "Peristalsis",
+        "Acoustic vibration",
+        "Gravity alone",
+        "Osmotic pressure"
+      ],
+      "educationalTip_en": "Peristalsis consists of coordinated muscular contractions driving food downward.",
+      "questionText_fr": "Comment nomme-t-on les contractions qui font avancer les aliments dans l'œsophage ?",
+      "options_fr": [
+        "Le péristaltisme",
+        "Les vibrations sonores",
+        "La gravité seule",
+        "La pression osmotique"
+      ],
+      "educationalTip_fr": "Le péristaltisme propulse activement le bol alimentaire par ondes musculaires."
+    },
+    {
+      "id": 110,
+      "organId": 0,
+      "stageId": 3,
+      "questionText": "أين تتواجد براعم التذوق المسؤولة عن تمييز الطعم في الفم؟",
+      "options": [
+        "في حليمات سطح اللسان",
+        "في الأسنان الضاحكة",
+        "في بطانة المريء",
+        "في الغدة النكفية"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تحتوي حليمات اللسان على آلاف براعم التذوق التي تميز الطعوم الأساسية الخمسة: الحلو، المالح، الحامض، المر، والأومامي.",
+      "questionText_en": "Where are taste buds primarily located?",
+      "options_en": [
+        "On tongue papillae",
+        "In premolar teeth",
+        "Inside esophageal lining",
+        "In the parotid gland"
+      ],
+      "educationalTip_en": "Taste buds reside in tongue papillae detecting sweet, salty, sour, bitter, and umami.",
+      "questionText_fr": "Où se situent principalement les bourgeons du goût ?",
+      "options_fr": [
+        "Sur les papilles de la langue",
+        "Dans les prémolaires",
+        "Dans l'œsophage",
+        "Dans la parotide"
+      ],
+      "educationalTip_fr": "Les papilles linguales abritent les récepteurs gustatifs."
+    },
+    {
+      "id": 111,
+      "organId": 1,
+      "stageId": 1,
+      "questionText": "ما هي الثنيات الداخلية التي تسمح للمعدة بالتمدد واستيعاب وجبات الطعام الكبيرة؟",
+      "options": [
+        "الغضون أو الثنيات المعدية (Rugae)",
+        "الخملات المعوية",
+        "الأشرطة القولونية",
+        "الأهداب التنفسية"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الثنيات المعدية (Rugae) تسمح للمعدة بالتوسع من حجم نصف لتر إلى ما يزيد عن 2 إلى 4 لترات بعد الوجبات الكبيرة.",
+      "questionText_en": "What gastric mucosal folds allow the stomach to expand?",
+      "options_en": [
+        "Gastric rugae",
+        "Intestinal villi",
+        "Teniae coli",
+        "Respiratory cilia"
+      ],
+      "educationalTip_en": "Gastric rugae unfold as the stomach fills, accommodating large meals.",
+      "questionText_fr": "Quels replis permettent à l'estomac de se distendre pour accueillir les repas ?",
+      "options_fr": [
+        "Les plis gastriques (rugae)",
+        "Les villosités",
+        "Les bandelettes",
+        "Les cils"
+      ],
+      "educationalTip_fr": "Les rugae gastriques se déplient pour augmenter le volume de l'estomac."
+    },
+    {
+      "id": 112,
+      "organId": 1,
+      "stageId": 1,
+      "questionText": "ما اسم الصمام العضلي الذي يربط بين نهاية المريء وبداية المعدة؟",
+      "options": [
+        "الفؤاد (العاصرة المريئية السفلية)",
+        "البواب",
+        "الصمام اللفائفي الأعوري",
+        "العاصرة الشرجية"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "صمام الفؤاد (Cardia) يفتح ليسمح بمرور الطعام إلى المعدة وينغلق فوراً لمنع ارتداد الحمض.",
+      "questionText_en": "What muscular valve connects the esophagus to the stomach entrance?",
+      "options_en": [
+        "Cardiac sphincter",
+        "Pyloric sphincter",
+        "Ileocecal valve",
+        "Anal sphincter"
+      ],
+      "educationalTip_en": "The cardiac sphincter controls entry into the stomach and prevents acid reflux.",
+      "questionText_fr": "Quel sphincter relie l'œsophage à l'entrée de l'estomac ?",
+      "options_fr": [
+        "Le cardia",
+        "Le pylore",
+        "La valvule iléo-cæcale",
+        "Le sphincter anal"
+      ],
+      "educationalTip_fr": "Le cardia est la porte d'entrée gastrique empêchant le reflux acide."
+    },
+    {
+      "id": 113,
+      "organId": 1,
+      "stageId": 1,
+      "questionText": "ما هو الجزء القمعي السفلي من المعدة الذي ينتهي بصمام البواب؟",
+      "options": [
+        "غار المعدة (Antrum)",
+        "قاع المعدة (Fundus)",
+        "جسم المعدة",
+        "البريتون"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "غار المعدة (Pyloric Antrum) هو منطقة عضلية قوية تطحن الطعام وتدفعه بحذر إلى صمام البواب.",
+      "questionText_en": "What lower funneled portion of the stomach connects to the pylorus?",
+      "options_en": [
+        "Gastric antrum",
+        "Gastric fundus",
+        "Stomach body",
+        "Peritoneum"
+      ],
+      "educationalTip_en": "The antrum grinds chyme before metering it through the pyloric sphincter.",
+      "questionText_fr": "Quelle partie inférieure de l'estomac précède le sphincter pylorique ?",
+      "options_fr": [
+        "L'antre gastrique",
+        "Le fundus",
+        "Le corps",
+        "Le péritoine"
+      ],
+      "educationalTip_fr": "L'antre gastrique broie le chyme avant son passage vers le duodénum."
+    },
+    {
+      "id": 114,
+      "organId": 1,
+      "stageId": 1,
+      "questionText": "كم عدد الطبقات العضلية الملساء في جدار المعدة؟",
+      "options": [
+        "3 طبقات (طولية ودائرية ومائلة)",
+        "طبقة واحدة فقط",
+        "طبقتان",
+        "5 طبقات"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تتميز المعدة بوجود 3 طبقات عضلية متعامدة تمكنها من العصر والطحن في كافة الاتجاهات ثلاثية الأبعاد.",
+      "questionText_en": "How many smooth muscle layers does the stomach wall possess?",
+      "options_en": [
+        "3 layers (longitudinal, circular, oblique)",
+        "1 layer only",
+        "2 layers",
+        "5 layers"
+      ],
+      "educationalTip_en": "The stomach is unique with three muscle layers enabling multi-directional churning.",
+      "questionText_fr": "Combien de couches musculaires l'estomac possède-t-il ?",
+      "options_fr": [
+        "3 couches (longitudinale, circulaire, oblique)",
+        "Une seule",
+        "2 couches",
+        "5 couches"
+      ],
+      "educationalTip_fr": "L'estomac possède 3 couches de muscles lisses pour broyer efficacement les aliments."
+    },
+    {
+      "id": 115,
+      "organId": 1,
+      "stageId": 1,
+      "questionText": "ما اسم الجزء العلوي المقبب من المعدة الذي يتجمع فيه الهواء والغازات؟",
+      "options": [
+        "قاع المعدة (Fundus)",
+        "البواب",
+        "الصائم",
+        "المستقيم"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "قاع المعدة (Fundus) يقع أعلى مدخل الفؤاد ويكون عادة ممتلئاً بفقاعة الهواء التي تظهر في صور الأشعة السينية.",
+      "questionText_en": "What is the dome-shaped upper part of the stomach where gas collects?",
+      "options_en": [
+        "Gastric fundus",
+        "Pylorus",
+        "Jejunum",
+        "Rectum"
+      ],
+      "educationalTip_en": "The fundus is the dome-shaped upper region often containing trapped swallowed air.",
+      "questionText_fr": "Quelle partie en dôme supérieure de l'estomac contient la bulle d'air ?",
+      "options_fr": [
+        "Le fundus gastrique",
+        "Le pylore",
+        "Le jéjunum",
+        "Le rectum"
+      ],
+      "educationalTip_fr": "Le fundus est la poche supérieure qui stocke temporairement l'air avalé."
+    },
+    {
+      "id": 116,
+      "organId": 1,
+      "stageId": 2,
+      "questionText": "ما هو الحمض القوي الذي تفرزه الخلايا الجدارية في المعدة؟",
+      "options": [
+        "حمض الهيدروكلوريك (HCl)",
+        "حمض الكبريتيك",
+        "حمض الستريك",
+        "حمض اللاكتيك"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تفرز المعدة حمض الهيدروكلوريك (HCl) بتركيز عالٍ يخفض الـ pH إلى 1.5 - 2.0 لقتل الميكروبات وتنشيط الإنزيمات.",
+      "questionText_en": "Which strong acid is secreted by gastric parietal cells?",
+      "options_en": [
+        "Hydrochloric acid (HCl)",
+        "Sulfuric acid",
+        "Citric acid",
+        "Lactic acid"
+      ],
+      "educationalTip_en": "Parietal cells secrete HCl, creating a pH of 1.5-2 to kill pathogens and activate pepsin.",
+      "questionText_fr": "Quel acide puissant est sécrété par les cellules pariétales de l'estomac ?",
+      "options_fr": [
+        "L'acide chlorhydrique (HCl)",
+        "L'acide sulfurique",
+        "L'acide citrique",
+        "L'acide lactique"
+      ],
+      "educationalTip_fr": "L'acide chlorhydrique (HCl) crée un milieu très acide pour détruire les germes."
+    },
+    {
+      "id": 117,
+      "organId": 1,
+      "stageId": 2,
+      "questionText": "ما هي الصورة غير النشطة التي يفرز بها إنزيم البيبسين لحماية خلايا المعدة من هضم نفسها؟",
+      "options": [
+        "البيبسينوجين",
+        "التربسين",
+        "الكيموسين",
+        "الأميلاز"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "يفرز البيبسين كطليعة خاملة تسمى 'بيبسينوجين' (Pepsinogen)، ولا يتحول لبيبسين نشط إلا عند ملامسة حمض HCl.",
+      "questionText_en": "In what inactive precursor form is pepsin secreted?",
+      "options_en": [
+        "Pepsinogen",
+        "Trypsin",
+        "Chymosin",
+        "Amylase"
+      ],
+      "educationalTip_en": "Chief cells secrete pepsinogen, which only activates into pepsin upon contacting acid.",
+      "questionText_fr": "Sous quelle forme inactive la pepsine est-elle d'abord sécrétée ?",
+      "options_fr": [
+        "Le pepsinogène",
+        "La trypsine",
+        "La chymosine",
+        "L'amylase"
+      ],
+      "educationalTip_fr": "Le pepsinogène est inactif pour éviter que l'estomac ne digère ses propres parois."
+    },
+    {
+      "id": 118,
+      "organId": 1,
+      "stageId": 2,
+      "questionText": "ما المادة الأساسية التي يفرزها جدار المعدة لامتصاص فيتامين B12 في الأمعاء؟",
+      "options": [
+        "العامل الداخلي (Intrinsic Factor)",
+        "الهرمون المانع للتبول",
+        "الإنسولين",
+        "الكالسيتونين"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "العامل الداخلي (Intrinsic Factor) بروتين سكري تفرزه المعدة يرتبط بفيتامين B12 ويسمح بامتصاصه في نهاية الأمعاء.",
+      "questionText_en": "What essential factor does the stomach produce to absorb vitamin B12?",
+      "options_en": [
+        "Intrinsic factor",
+        "Antidiuretic hormone",
+        "Insulin",
+        "Calcitonin"
+      ],
+      "educationalTip_en": "Intrinsic factor binds vitamin B12, ensuring its later absorption in the terminal ileum.",
+      "questionText_fr": "Quel facteur indispensable à l'absorption de la vitamine B12 est produit par l'estomac ?",
+      "options_fr": [
+        "Le facteur intrinsèque",
+        "L'ADH",
+        "L'insuline",
+        "La calcitonine"
+      ],
+      "educationalTip_fr": "Le facteur intrinsèque est indispensable pour absorber la vitamine B12."
+    },
+    {
+      "id": 119,
+      "organId": 1,
+      "stageId": 2,
+      "questionText": "ما هو الهرمون الذي يفرزه غار المعدة عند وصول الطعام لتحفيز إفراز الحمض؟",
+      "options": [
+        "الجاسترين (Gastrin)",
+        "الميلاتونين",
+        "الجلوكاجون",
+        "الثايروكسين"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "هرمون الجاسترين يفرز من خلايا G استجابة للبروتينات في الطعام ويدور في الدم ليحفز إفراز كميات إضافية من حمض HCl.",
+      "questionText_en": "Which hormone stimulates stomach acid secretion upon food arrival?",
+      "options_en": [
+        "Gastrin",
+        "Melatonin",
+        "Glucagon",
+        "Thyroxine"
+      ],
+      "educationalTip_en": "Gastrin is released by G-cells to stimulate parietal cells to produce HCl.",
+      "questionText_fr": "Quelle hormone stimule la sécrétion d'acide lors de l'arrivée des aliments ?",
+      "options_fr": [
+        "La gastrine",
+        "La mélatonine",
+        "Le glucagon",
+        "La thyroxine"
+      ],
+      "educationalTip_fr": "La gastrine incite les cellules gastriques à libérer l'acide chlorhydrique."
+    },
+    {
+      "id": 120,
+      "organId": 1,
+      "stageId": 2,
+      "questionText": "ماذا يسمى السائل الكثيف شبه المهضوم الناتج عن خلط الطعام بالعصارة المعدية؟",
+      "options": [
+        "الكيموس (Chyme)",
+        "الكيلوس",
+        "البلعة",
+        "الصفراء"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "يتحول الطعام في المعدة إلى سائل سميك وحمضي يسمى 'الكيموس' (Chyme) قبل مروره تدريجياً للإثني عشر.",
+      "questionText_en": "What is the acidic semi-fluid mixture of partially digested food in the stomach?",
+      "options_en": [
+        "Chyme",
+        "Chyle",
+        "Bolus",
+        "Bile"
+      ],
+      "educationalTip_en": "Chyme is the pulpy semi-fluid mass of partly digested food expelled into the duodenum.",
+      "questionText_fr": "Comment appelle-t-on la bouillie semi-liquide formée dans l'estomac ?",
+      "options_fr": [
+        "Le chyme",
+        "Le chyle",
+        "Le bol",
+        "La bile"
+      ],
+      "educationalTip_fr": "Le chyme est la matière acide et crémeuse issue du broyage gastrique."
+    },
+    {
+      "id": 121,
+      "organId": 1,
+      "stageId": 2,
+      "questionText": "كم من الوقت تقريباً يستغرقه تفريغ وجبة متوازنة عادية من المعدة؟",
+      "options": [
+        "2 إلى 4 ساعات",
+        "10 دقائق",
+        "12 إلى 18 ساعة",
+        "يومان"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تفرغ المعدة محتوياتها بمعدل بطيء ومحسوب (بضع مليلترات في كل انقباضة بوابية) خلال 2 إلى 4 ساعات.",
+      "questionText_en": "About how long does it take for a normal meal to empty from the stomach?",
+      "options_en": [
+        "2 to 4 hours",
+        "10 minutes",
+        "12 to 18 hours",
+        "2 days"
+      ],
+      "educationalTip_en": "Stomach emptying of a typical mixed meal takes roughly 2 to 4 hours.",
+      "questionText_fr": "Combien de temps faut-il environ à l'estomac pour se vider après un repas normal ?",
+      "options_fr": [
+        "2 à 4 heures",
+        "10 minutes",
+        "12 à 18 heures",
+        "2 jours"
+      ],
+      "educationalTip_fr": "La vidange gastrique dure généralement de 2 à 4 heures."
+    },
+    {
+      "id": 122,
+      "organId": 1,
+      "stageId": 2,
+      "questionText": "ما الذي يحمي بطانة المعدة من التآكل بفعل حمض الهيدروكلوريك الحارق؟",
+      "options": [
+        "طبقة مخاطية سميكة غنية بالبيكربونات",
+        "طبقة عظمية واقية",
+        "بروتينات الكيراتين الجافة",
+        "حمض الكبريتيك المعاكس"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تفرز الخلايا السطحية مخاطاً قلوياً غنياً بأيونات البيكربونات يشكل حاجزاً فيزيائياً وكيميائياً يحمي جدار المعدة.",
+      "questionText_en": "What protects the stomach lining from its own corrosive acid?",
+      "options_en": [
+        "Thick mucus layer with bicarbonate",
+        "A bony shield",
+        "Dry keratin proteins",
+        "Counter-acting sulfuric acid"
+      ],
+      "educationalTip_en": "A bicarbonate-rich mucous barrier neutralizes acid at the epithelial cell surface.",
+      "questionText_fr": "Qu'est-ce qui protège la paroi de l'estomac de l'agression acide ?",
+      "options_fr": [
+        "Un mucus épais riche en bicarbonate",
+        "Une couche osseuse",
+        "De la kératine",
+        "De l'acide sulfurique"
+      ],
+      "educationalTip_fr": "Le mucus alcalin neutralise l'acide au contact direct des cellules."
+    },
+    {
+      "id": 123,
+      "organId": 1,
+      "stageId": 2,
+      "questionText": "ما هو الإنزيم الذي يساعد الرضع على تخثير وهضم بروتين الحليب في المعدة؟",
+      "options": [
+        "الرينين أو الكيموسين",
+        "الأميلاز",
+        "المالتاز",
+        "السكراز"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الرينين (Rennin) يخثر بروتين الكازين في حليب الأم مما يبطئ مروره ويتيح وقتاً كافياً لهضمه وامتصاصه.",
+      "questionText_en": "Which enzyme curdles milk protein in infant stomachs for better digestion?",
+      "options_en": [
+        "Rennin (Chymosin)",
+        "Amylase",
+        "Maltase",
+        "Sucrase"
+      ],
+      "educationalTip_en": "Rennin curdles casein in milk, slowing its passage for thorough protein digestion.",
+      "questionText_fr": "Quelle enzyme coagule les protéines du lait chez le nourrisson ?",
+      "options_fr": [
+        "La rénine (chymosine)",
+        "L'amylase",
+        "La maltase",
+        "La sucrase"
+      ],
+      "educationalTip_fr": "La présure (chymosine) fait cailler le lait pour optimiser sa digestion."
+    },
+    {
+      "id": 124,
+      "organId": 1,
+      "stageId": 2,
+      "questionText": "أي نوع من الأغذية يبقى لأطول فترة داخل المعدة أثناء الهضم؟",
+      "options": [
+        "الأطعمة الغنية بالدهون",
+        "السكريات البسيطة",
+        "الماء والسوائل",
+        "الفيتامينات الذائبة"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الدهون تبطئ حركة المعدة وتفرز هرمون CCK في الإثني عشر الذي يثبط تفريغ المعدة ليتيح وقتاً لهضمها المعقد.",
+      "questionText_en": "Which dietary component stays longest in the stomach during digestion?",
+      "options_en": [
+        "Fat-rich foods",
+        "Simple sugars",
+        "Water and liquids",
+        "Soluble vitamins"
+      ],
+      "educationalTip_en": "Fats delay gastric emptying through CCK hormonal feedback from the duodenum.",
+      "questionText_fr": "Quel type d'aliment séjourne le plus longtemps dans l'estomac ?",
+      "options_fr": [
+        "Les aliments gras (lipides)",
+        "Les sucres simples",
+        "L'eau et les liquides",
+        "Les vitamines"
+      ],
+      "educationalTip_fr": "Les graisses ralentissent la vidange gastrique par stimulation hormonale."
+    },
+    {
+      "id": 125,
+      "organId": 1,
+      "stageId": 2,
+      "questionText": "ما هي الخلايا المسؤولة عن إفراز حمض الهيدروكلوريك والعامل الداخلي معاً؟",
+      "options": [
+        "الخلايا الجدارية (Parietal Cells)",
+        "الخلايا الرئيسية",
+        "الخلايا الكأسية",
+        "الخلايا الصباغية"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الخلايا الجدارية (Parietal Cells) تتميز بمضخات بروتون قوية تنتج شوارد الهيدروجين لتصنيع الحمض.",
+      "questionText_en": "Which cells secrete both hydrochloric acid and intrinsic factor?",
+      "options_en": [
+        "Parietal cells",
+        "Chief cells",
+        "Goblet cells",
+        "Melanocytes"
+      ],
+      "educationalTip_en": "Parietal (oxyntic) cells pump protons to produce HCl and secrete intrinsic factor.",
+      "questionText_fr": "Quelles cellules produisent à la fois l'acide HCl et le facteur intrinsèque ?",
+      "options_fr": [
+        "Les cellules pariétales",
+        "Les cellules principales",
+        "Les cellules caliciformes",
+        "Les mélanocytes"
+      ],
+      "educationalTip_fr": "Les cellules pariétales possèdent des pompes à protons très puissantes."
+    },
+    {
+      "id": 126,
+      "organId": 1,
+      "stageId": 3,
+      "questionText": "ما هي البكتيريا الحلزونية الشهيرة التي تسبب معظم حالات قرحة المعدة والتهابها؟",
+      "options": [
+        "جرثومة المعدة (Helicobacter pylori)",
+        "الإشريكية القولونية",
+        "السالمونيلا",
+        "المكورات العنقودية"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "هيليكوباكتر بيلوري (H. pylori) تفرز إنزيم اليورييز لإنتاج الأمونيا القلوية لحماية نفسها من حمض المعدة.",
+      "questionText_en": "Which spiral bacterium causes most stomach ulcers?",
+      "options_en": [
+        "Helicobacter pylori",
+        "Escherichia coli",
+        "Salmonella",
+        "Staphylococcus aureus"
+      ],
+      "educationalTip_en": "H. pylori survives gastric acid via urease, causing chronic gastritis and ulcers.",
+      "questionText_fr": "Quelle bactérie spiralée est responsable de la plupart des ulcères gastriques ?",
+      "options_fr": [
+        "Helicobacter pylori",
+        "Escherichia coli",
+        "Salmonella",
+        "Staphylocoque"
+      ],
+      "educationalTip_fr": "H. pylori produit de l'uréase pour neutraliser l'acide et coloniser la muqueuse."
+    },
+    {
+      "id": 127,
+      "organId": 1,
+      "stageId": 3,
+      "questionText": "لغز: كيس عضلي على شكل حرف J يفرز سائلاً حمضياً قادراً على إذابة المعادن، ولا يذوب هو نفسه. ما هو؟",
+      "options": [
+        "المعدة",
+        "المرارة",
+        "المثانة",
+        "الكبد"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "المعدة تشبه حرف J بفضل انحنائها الصغير والكبير، وتحمي نفسها ببطانة مخاطية متجددة باستمرار.",
+      "questionText_en": "Riddle: A J-shaped muscular pouch that produces acid strong enough to dissolve metal yet protects itself. What is it?",
+      "options_en": [
+        "The stomach",
+        "The gallbladder",
+        "The bladder",
+        "The liver"
+      ],
+      "educationalTip_en": "The stomach is J-shaped and renews its protective epithelial lining every few days.",
+      "questionText_fr": "Énigme : Poche musculaire en J produisant un acide capable de dissoudre le métal sans s'autodétruire. Qui suis-je ?",
+      "options_fr": [
+        "L'estomac",
+        "La vésicule",
+        "La vessie",
+        "Le foie"
+      ],
+      "educationalTip_fr": "L'estomac possède une forme caractéristique en J et un revêtement très résistant."
+    },
+    {
+      "id": 128,
+      "organId": 1,
+      "stageId": 3,
+      "questionText": "ما الفحص الطبي الشائع الذي يسمح للطبيب برؤية بطانة المعدة عبر كاميرا مرنة؟",
+      "options": [
+        "تنظير المعدة (Gastroscopy)",
+        "تخطيط القلب",
+        "الأشعة فوق البنفسجية",
+        "التصوير المقطعي للقدم"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تنظير الجهاز الهضمي العلوي يدخل فيه أنبوب مرن به كاميرا وضوء لفحص بطانة المريء والمعدة وأخذ خزعات.",
+      "questionText_en": "What procedure uses a lighted flexible tube and camera to view the stomach lining?",
+      "options_en": [
+        "Gastroscopy (Endoscopy)",
+        "Electrocardiogram",
+        "UV imaging",
+        "Ankle CT scan"
+      ],
+      "educationalTip_en": "Upper gastrointestinal endoscopy visualizes the mucosal surface directly.",
+      "questionText_fr": "Quel examen permet d'observer la paroi de l'estomac avec une caméra souple ?",
+      "options_fr": [
+        "La gastroscopie (endoscopie)",
+        "L'électrocardiogramme",
+        "Les UV",
+        "Le scanner du pied"
+      ],
+      "educationalTip_fr": "La gastroscopie utilise un tube optique souple introduit par la bouche."
+    },
+    {
+      "id": 129,
+      "organId": 1,
+      "stageId": 3,
+      "questionText": "ما هو الدواء الذي يثبط مضخات البروتون ويقلل إفراز حمض المعدة لعلاج القرحة؟",
+      "options": [
+        "مثبطات مضخة البروتون (مثل أوميبرازول)",
+        "المضادات الحيوية للجلد",
+        "الأسبرين",
+        "مسكنات الباراسيتامول"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "أدوية PPIs تغلق مضخات H+/K+ ATPase في الخلايا الجدارية، مما يعطي القرحة فرصة للالتئام.",
+      "questionText_en": "Which class of drugs blocks proton pumps to treat acid ulcers?",
+      "options_en": [
+        "Proton pump inhibitors (e.g. Omeprazole)",
+        "Skin antibiotics",
+        "Aspirin",
+        "Paracetamol"
+      ],
+      "educationalTip_en": "PPIs selectively inhibit the H+/K+ ATPase enzyme in parietal cells.",
+      "questionText_fr": "Quel médicament bloque les pompes à protons pour soigner les ulcères ?",
+      "options_fr": [
+        "Les inhibiteurs de la pompe à protons (IPP)",
+        "Les crèmes",
+        "L'aspirine",
+        "Le paracétamol"
+      ],
+      "educationalTip_fr": "Les IPP bloquent la sécrétion acide pour favoriser la cicatrisation."
+    },
+    {
+      "id": 130,
+      "organId": 1,
+      "stageId": 3,
+      "questionText": "لماذا قد يؤدي الإفراط في تناول الأسبرين والأدوية المضادة للالتهاب (NSAIDs) إلى قرحة المعدة؟",
+      "options": [
+        "لأنها تثبط البروستاجلاندين المسؤول عن حماية بطانة المعدة",
+        "لأنها تزيد بكتيريا الفم",
+        "لأنها ترفع السكر",
+        "لأنها تذوب الكالسيوم"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تثبط هذه المسكنات إنزيم COX-1 وتقلل البروستاجلاندين الوقائي، مما يقلل إفراز المخاط الواقي ويزيد خطر التقرح.",
+      "questionText_en": "Why can frequent NSAID or aspirin use lead to stomach ulcers?",
+      "options_en": [
+        "They inhibit protective prostaglandins in the gastric mucosa",
+        "They multiply oral bacteria",
+        "They spike blood sugar",
+        "They dissolve calcium"
+      ],
+      "educationalTip_en": "NSAIDs suppress COX-1 and protective prostaglandins, compromising the mucosal barrier.",
+      "questionText_fr": "Pourquoi l'abus d'anti-inflammatoires (AINS) favorise-t-il les ulcères gastriques ?",
+      "options_fr": [
+        "Ils bloquent les prostaglandines protectrices de la muqueuse",
+        "Ils créent des bactéries",
+        "Ils montent la glycémie",
+        "Ils détruisent le calcium"
+      ],
+      "educationalTip_fr": "Les AINS privent l'estomac de son bouclier protecteur de mucus."
+    },
+    {
+      "id": 131,
+      "organId": 1,
+      "stageId": 3,
+      "questionText": "كم مرة تقريباً تتجدد خلايا بطانة المعدة السطحية بالكامل لحماية نفسها؟",
+      "options": [
+        "كل 3 إلى 5 أيام",
+        "مرة واحدة كل 10 سنوات",
+        "كل شهرين",
+        "لا تتجدد أبداً"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تعد خلايا بطانة المعدة من أسرع خلايا الجسم انقساماً وتجدداً (كل 3 - 5 أيام) لتعويض أي خلل ناجم عن الحمض.",
+      "questionText_en": "How often is the surface epithelial lining of the stomach completely replaced?",
+      "options_en": [
+        "Every 3 to 5 days",
+        "Once every 10 years",
+        "Every 2 months",
+        "Never"
+      ],
+      "educationalTip_en": "Gastric epithelial cells rapidly regenerate every 3 to 5 days to resist chemical erosion.",
+      "questionText_fr": "À quelle fréquence les cellules épithéliales de l'estomac se renouvellent-elles ?",
+      "options_fr": [
+        "Tous les 3 à 5 jours",
+        "Tous les 10 ans",
+        "Tous les 2 mois",
+        "Jamais"
+      ],
+      "educationalTip_fr": "L'épithélium gastrique se régénère en 3 à 5 jours pour réparer les microlésions."
+    },
+    {
+      "id": 132,
+      "organId": 1,
+      "stageId": 3,
+      "questionText": "ما هو التقيؤ ولماذا يحدث كآلية دفاعية في المعدة؟",
+      "options": [
+        "انعكاس لطرد المواد السامة والضارة بالقوة خارج الجسم",
+        "عملية هضم طبيعية يومية",
+        "طريقة للتنفس السريع",
+        "وسيلة لامتصاص الماء"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "التقيؤ منعكس وقائي يتحكم به مركز القيء في الدماغ يهدف لإفراغ المعدة السريع عند استشعار سموم أو بكتيريا.",
+      "questionText_en": "Why is vomiting a protective reflex of the stomach?",
+      "options_en": [
+        "To forcefully expel toxic or irritating substances",
+        "Normal daily digestion",
+        "Method for rapid breathing",
+        "Way to absorb water"
+      ],
+      "educationalTip_en": "Vomiting is a brain-mediated reflex purging irritants or pathogens from the upper GI tract.",
+      "questionText_fr": "Pourquoi le vomissement est-il un réflexe de défense de l'estomac ?",
+      "options_fr": [
+        "Pour expulser rapidement les substances toxiques",
+        "Pour faciliter la digestion",
+        "Pour mieux respirer",
+        "Pour absorber l'eau"
+      ],
+      "educationalTip_fr": "Le vomissement évacue d'urgence les toxines avant leur absorption intestinale."
+    },
+    {
+      "id": 133,
+      "organId": 1,
+      "stageId": 3,
+      "questionText": "ما هو العرض الأكثر شيوعاً الذي يشعر به المريض المصاب بقرحة المعدة؟",
+      "options": [
+        "ألم حارق في أعلى منتصف البطن يزداد أو يتغير مع الأكل",
+        "ألم شديد في أصابع القدمين",
+        "فقدان حاسة السمع",
+        "طنين في الأذن"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "ألم القرحة يكون حارقاً أو ناخراً في المنطقة الشرسوفية (Epigastrium) بسبب ملامسة الحمض للقرحة المكشوفة.",
+      "questionText_en": "What is the most characteristic symptom of a peptic ulcer?",
+      "options_en": [
+        "Burning pain in upper central abdomen related to food",
+        "Pain in toes",
+        "Hearing loss",
+        "Tinnitus"
+      ],
+      "educationalTip_en": "Ulcers classically present as burning epigastric discomfort.",
+      "questionText_fr": "Quel est le symptôme typique d'un ulcère de l'estomac ?",
+      "options_fr": [
+        "Une brûlure au creux de l'estomac liée aux repas",
+        "Une douleur aux orteils",
+        "Une surdité",
+        "Des acouphènes"
+      ],
+      "educationalTip_fr": "La douleur ulcéreuse prend la forme d'une brûlure épigastrique intense."
+    },
+    {
+      "id": 134,
+      "organId": 1,
+      "stageId": 3,
+      "questionText": "ما هو فحص النفخ باليوريا (Urea Breath Test) المستخدم في تشخيص أمراض المعدة؟",
+      "options": [
+        "فحص لكشف وجود جرثومة المعدة H. pylori",
+        "فحص لكمية الأكسجين في الرئتين",
+        "فحص لنسبة الكوليسترول",
+        "فحص لسلامة الأسنان"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "يقوم الفحص على كشف غاز ثاني أكسيد الكربون المشع الذي تنتجه إنزيمات جرثومة المعدة عند تكسيرها لليوريا.",
+      "questionText_en": "What is the Urea Breath Test used to diagnose?",
+      "options_en": [
+        "H. pylori bacterial infection",
+        "Lung oxygen capacity",
+        "Blood cholesterol",
+        "Tooth health"
+      ],
+      "educationalTip_en": "It detects ammonia and CO2 produced by H. pylori's urease enzyme.",
+      "questionText_fr": "Que détecte le test respiratoire à l'urée ?",
+      "options_fr": [
+        "L'infection par Helicobacter pylori",
+        "L'oxygène pulmonaire",
+        "Le cholestérol",
+        "La santé des dents"
+      ],
+      "educationalTip_fr": "Il détecte l'activité uréasique spécifique de la bactérie H. pylori."
+    },
+    {
+      "id": 135,
+      "organId": 1,
+      "stageId": 3,
+      "questionText": "لغز: حارس قوي عند مخرج المعدة، يفتح بابه قليلاً جداً كل دقيقة ليمر الكيموس بالقطرات، من هو؟",
+      "options": [
+        "العاصرة البوابية (صمام البواب)",
+        "المرارة",
+        "اللسان",
+        "القولون"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "صمام البواب (Pylorus) ينظم مرور الطعام بحصص دقيقة جداً (بضع مليلترات) لمنع إرهاق الأمعاء الدقيقة.",
+      "questionText_en": "Riddle: A muscular gatekeeper at the stomach exit that releases chyme drop by drop. Who is it?",
+      "options_en": [
+        "The pyloric sphincter",
+        "The gallbladder",
+        "The tongue",
+        "The colon"
+      ],
+      "educationalTip_en": "The pyloric sphincter precisely regulates chyme passage into the duodenum.",
+      "questionText_fr": "Énigme : Gardien musclé à la sortie de l'estomac qui libère le chyme au compte-gouttes. Qui suis-je ?",
+      "options_fr": [
+        "Le sphincter pylorique",
+        "La vésicule",
+        "La langue",
+        "Le côlon"
+      ],
+      "educationalTip_fr": "Le pylore dose méticuleusement le passage des aliments vers l'intestin."
+    },
+    {
+      "id": 136,
+      "organId": 2,
+      "stageId": 1,
+      "questionText": "ما هو أكبر عضو غدي صلب وداخلي في جسم الإنسان؟",
+      "options": [
+        "الكبد",
+        "البنكرياس",
+        "الطحال",
+        "الرئة اليسرى"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الكبد يزن حوالي 1.5 كيلوغرام عند البالغين ويقع في الجزء العلوي الأيمن من تجويف البطن تحت الحجاب الحاجز.",
+      "questionText_en": "What is the largest solid internal organ and gland in the human body?",
+      "options_en": [
+        "The liver",
+        "The pancreas",
+        "The spleen",
+        "The left lung"
+      ],
+      "educationalTip_en": "The liver weighs about 1.5 kg and performs over 500 vital biochemical functions.",
+      "questionText_fr": "Quel est le plus grand organe plein et la plus grosse glande du corps ?",
+      "options_fr": [
+        "Le foie",
+        "Le pancréas",
+        "La rate",
+        "Le poumon gauche"
+      ],
+      "educationalTip_fr": "Le foie pèse environ 1,5 kg et occupe l'hypochondre droit sous le diaphragme."
+    },
+    {
+      "id": 137,
+      "organId": 2,
+      "stageId": 1,
+      "questionText": "كم عدد الفصوص الرئيسية التي يتكون منها كبد الإنسان تشريحياً؟",
+      "options": [
+        "4 فصوص (الأيمن، الأيسر، المذنب، المربع)",
+        "فص واحد غير مجزأ",
+        "6 فصوص متطابقة",
+        "8 فصوص كروية"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "يتكون الكبد من فصين كبيرين (أيمن وأيسر) وفصين أصغر (المذنب Caudate والمربع Quadrate).",
+      "questionText_en": "How many anatomical lobes does the human liver have?",
+      "options_en": [
+        "4 lobes (right, left, caudate, quadrate)",
+        "1 undivided lobe",
+        "6 identical lobes",
+        "8 spherical lobes"
+      ],
+      "educationalTip_en": "The liver is anatomically divided into right, left, quadrate, and caudate lobes.",
+      "questionText_fr": "Combien de lobes anatomiques le foie comprend-il ?",
+      "options_fr": [
+        "4 lobes (droit, gauche, caudé, carré)",
+        "Un seul",
+        "6 lobes",
+        "8 lobes"
+      ],
+      "educationalTip_fr": "Le foie se divise en 4 lobes distincts : droit, gauche, carré et caudé."
+    },
+    {
+      "id": 138,
+      "organId": 2,
+      "stageId": 1,
+      "questionText": "أين تستقر المرارة (كيس الصفراء) بالنسبة للكبد؟",
+      "options": [
+        "تحت السطح السفلي للفص الأيمن للكبد",
+        "فوق قمة الحجاب الحاجز",
+        "خلف العمود الفقري مباشرة",
+        "داخل الطحال"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "المرارة كيس كمثري الشكل يلتصق بالوجه السفلي للكبد ويخزن ويركز العصارة الصفراوية.",
+      "questionText_en": "Where is the gallbladder situated in relation to the liver?",
+      "options_en": [
+        "Under the inferior surface of the right liver lobe",
+        "Above the diaphragm",
+        "Behind the spine",
+        "Inside the spleen"
+      ],
+      "educationalTip_en": "The pear-shaped gallbladder nests under the right lobe of the liver.",
+      "questionText_fr": "Où se trouve la vésicule biliaire par rapport au foie ?",
+      "options_fr": [
+        "Sous la face inférieure du lobe droit du foie",
+        "Au-dessus du diaphragme",
+        "Derrière la colonne",
+        "Dans la rate"
+      ],
+      "educationalTip_fr": "La vésicule est logée sous le lobe droit du foie."
+    },
+    {
+      "id": 139,
+      "organId": 2,
+      "stageId": 1,
+      "questionText": "ما اسم القناة الجامعة التي تنقل الصفراء من الكبد والمرارة وتصب في الإثني عشر؟",
+      "options": [
+        "القناة الصفراوية المشتركة (Choledochus)",
+        "القناة الصدرية",
+        "الحالب الأيمن",
+        "القناة الشريانية"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تلتقي القناة الكبدية المشتركة مع القناة المرارية لتشكيل القناة الصفراوية العامة التي تصب في الإثني عشر.",
+      "questionText_en": "What is the main duct carrying bile to the duodenum?",
+      "options_en": [
+        "Common bile duct (Choledochus)",
+        "Thoracic duct",
+        "Right ureter",
+        "Ductus arteriosus"
+      ],
+      "educationalTip_en": "The common bile duct conveys bile from the liver and gallbladder into the duodenum.",
+      "questionText_fr": "Quel canal principal achemine la bile jusqu'au duodénum ?",
+      "options_fr": [
+        "Le cholédoque (canal biliaire commun)",
+        "Le canal thoracique",
+        "L'uretère",
+        "Le canal artériel"
+      ],
+      "educationalTip_fr": "Le cholédoque résulte de la fusion du canal cystique et du canal hépatique."
+    },
+    {
+      "id": 140,
+      "organId": 2,
+      "stageId": 1,
+      "questionText": "ما هو العضو الإسفنجي ذو اللون الأصفر الذهبي المستلقي خلف المعدة أفقياً؟",
+      "options": [
+        "البنكرياس",
+        "المرارة",
+        "القولون النازل",
+        "الزائدة الدودية"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "البنكرياس غدة مستطيلة يبلغ طولها حوالي 15 سم تقع خلف المعدة وتتصل بالإثني عشر عبر قناتها الخاصة.",
+      "questionText_en": "What yellowish retroperitoneal gland lies horizontally behind the stomach?",
+      "options_en": [
+        "The pancreas",
+        "The gallbladder",
+        "Descending colon",
+        "Appendix"
+      ],
+      "educationalTip_en": "The pancreas lies behind the stomach with its head embraced by the duodenum.",
+      "questionText_fr": "Quelle glande allongée se trouve horizontalement derrière l'estomac ?",
+      "options_fr": [
+        "Le pancréas",
+        "La vésicule biliaire",
+        "Le côlon",
+        "L'appendice"
+      ],
+      "educationalTip_fr": "Le pancréas est une glande mixte allongée située derrière l'estomac."
+    },
+    {
+      "id": 141,
+      "organId": 2,
+      "stageId": 1,
+      "questionText": "ما اسم الفتحة المشتركة التي تصب فيها قناة البنكرياس والقناة الصفراوية في الإثني عشر؟",
+      "options": [
+        "أمبولة فاتر (Ampulla of Vater)",
+        "ثقبة ماجندي",
+        "حلقة البواب",
+        "الصمام الميترالي"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تلتقي قناة البنكرياس مع القناة الصفراوية في 'أمبولة فاتر' المحاطة بعضلة عاصرة قوية تسمى عاصرة أودي.",
+      "questionText_en": "At what duodenal junction do the pancreatic and bile ducts merge?",
+      "options_en": [
+        "Ampulla of Vater",
+        "Foramen of Magendie",
+        "Pyloric ring",
+        "Mitral valve"
+      ],
+      "educationalTip_en": "The hepatopancreatic ampulla (ampulla of Vater) empties via the sphincter of Oddi.",
+      "questionText_fr": "Où se rejoignent le canal pancréatique et le cholédoque dans le duodénum ?",
+      "options_fr": [
+        "L'ampoule de Vater",
+        "Le trou de Magendie",
+        "Le pylore",
+        "La valvule mitrale"
+      ],
+      "educationalTip_fr": "L'ampoule de Vater s'abouche dans le duodénum sous le contrôle du sphincter d'Oddi."
+    },
+    {
+      "id": 142,
+      "organId": 2,
+      "stageId": 1,
+      "questionText": "ما الوعاء الدموي الضخم الذي يجلب الدم المحمل بالغذاء الممتص من الأمعاء مباشرة إلى الكبد؟",
+      "options": [
+        "الوريد البابي الكبدي (Portal Vein)",
+        "الشريان الأبهر",
+        "الوريد الأجوف السفلي",
+        "الشريان السباتي"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الوريد البابي ينقل 75% من الدم الوارد للكبد، وهو غني بالمواد الغذائية الممتصة لكي يقوم الكبد بمعالجتها وتنبيتها.",
+      "questionText_en": "Which major vessel carries nutrient-rich blood from the intestines to the liver?",
+      "options_en": [
+        "Hepatic portal vein",
+        "Aorta",
+        "Inferior vena cava",
+        "Carotid artery"
+      ],
+      "educationalTip_en": "The portal vein delivers blood rich in absorbed nutrients directly from the gut to the liver.",
+      "questionText_fr": "Quel gros vaisseau achemine les nutriments de l'intestin vers le foie ?",
+      "options_fr": [
+        "La veine porte hépatique",
+        "L'aorte",
+        "La veine cave",
+        "La carotide"
+      ],
+      "educationalTip_fr": "La veine porte draine le sang de tout le tube digestif vers le foie."
+    },
+    {
+      "id": 143,
+      "organId": 2,
+      "stageId": 1,
+      "questionText": "ما هي الأجزاء التشريحية الرئيسية الثلاثة للبنكرياس؟",
+      "options": [
+        "الرأس والجسم والذيل",
+        "القمة والقاع والجذر",
+        "الفص الأمامي والوسطي والخلفي",
+        "المدخل والمخرج والحجرة"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "يستقر رأس البنكرياس في منحنى الإثني عشر، ويمتد جسمه خلف المعدة، بينما يلامس ذيله الطحال.",
+      "questionText_en": "What are the three main anatomical regions of the pancreas?",
+      "options_en": [
+        "Head, body, and tail",
+        "Apex, fundus, and root",
+        "Anterior, middle, posterior",
+        "Inlet, outlet, chamber"
+      ],
+      "educationalTip_en": "The head is nestled in the duodenum, followed by the body and tail touching the spleen.",
+      "questionText_fr": "Quelles sont les trois parties anatomiques du pancréas ?",
+      "options_fr": [
+        "La tête, le corps et la queue",
+        "L'apex, le fond et la racine",
+        "L'antérieur, médian et postérieur",
+        "L'entrée, sortie et chambre"
+      ],
+      "educationalTip_fr": "La tête est nichée dans le duodénum et la queue pointe vers la rate."
+    },
+    {
+      "id": 144,
+      "organId": 2,
+      "stageId": 1,
+      "questionText": "ما هو الغشاء الليفي المحيط بالكبد لحمايته؟",
+      "options": [
+        "محفظة غليسون (Glisson's capsule)",
+        "غشاء التامور",
+        "غشاء الجنب",
+        "الأم الجافية"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "محفظة غليسون هي طبقة ضامة قوية تحيط بنسيج الكبد وأوعيته الدموية وتحميه من الصدمات.",
+      "questionText_en": "What fibrous capsule encloses the liver parenchyma?",
+      "options_en": [
+        "Glisson's capsule",
+        "Pericardium",
+        "Pleura",
+        "Dura mater"
+      ],
+      "educationalTip_en": "Glisson's capsule is a thin layer of connective tissue surrounding the liver.",
+      "questionText_fr": "Comment s'appelle la capsule fibreuse enveloppant le foie ?",
+      "options_fr": [
+        "La capsule de Glisson",
+        "Le péricarde",
+        "La plèvre",
+        "La dure-mère"
+      ],
+      "educationalTip_fr": "La capsule de Glisson est la membrane fibreuse protectrice du foie."
+    },
+    {
+      "id": 145,
+      "organId": 2,
+      "stageId": 1,
+      "questionText": "كم سعة المرارة الطبيعية من العصارة الصفراوية تقريباً عند الإنسان؟",
+      "options": [
+        "30 إلى 50 ملليلتر",
+        "لتران كاملان",
+        "نصف ملليلتر",
+        "10 لترات"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تتسع المرارة لحوالي 30-50 مل، ولكنها تركز الصفراء بمقدار 5 إلى 10 أضعاف عبر امتصاص الماء والأملاح.",
+      "questionText_en": "What is the average storage capacity of the human gallbladder?",
+      "options_en": [
+        "30 to 50 milliliters",
+        "2 full liters",
+        "0.5 milliliter",
+        "10 liters"
+      ],
+      "educationalTip_en": "The gallbladder holds 30-50 mL, concentrating liver bile 5- to 10-fold.",
+      "questionText_fr": "Quelle est la contenance moyenne de la vésicule biliaire ?",
+      "options_fr": [
+        "30 à 50 millilitres",
+        "2 litres",
+        "0,5 millilitre",
+        "10 litres"
+      ],
+      "educationalTip_fr": "La vésicule stocke 30 à 50 ml de bile en la concentrant fortement."
+    },
+    {
+      "id": 146,
+      "organId": 2,
+      "stageId": 2,
+      "questionText": "ما هي الوظيفة الأساسية لأملاح العصارة الصفراوية (Bile) في عملية الهضم؟",
+      "options": [
+        "استحلاب وتفتيت الدهون إلى قطيرات مجهرية",
+        "هضم البروتينات إلى أحماض أمينية",
+        "تكسير النشا إلى جلوكوز",
+        "إفراز حمض الهيدروكلوريك"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الصفراء تعمل كالصابون تماماً: تفتت كتل الدهون الكبيرة إلى مستحلب دهني دقيق لتتمكن إنزيمات الليباز من هضمها.",
+      "questionText_en": "What is the primary digestive function of bile salts?",
+      "options_en": [
+        "Emulsifying fats into microscopic droplets",
+        "Digesting proteins into amino acids",
+        "Breaking starch into glucose",
+        "Secreting hydrochloric acid"
+      ],
+      "educationalTip_en": "Bile acts like a biological detergent, emulsifying dietary lipids for lipase action.",
+      "questionText_fr": "Quel est le rôle digestif majeur des sels biliaires ?",
+      "options_fr": [
+        "Émulsionner les graisses en micro-gouttelettes",
+        "Digérer les protéines en acides aminés",
+        "Découper l'amidon",
+        "Sécréter l'acide chlorhydrique"
+      ],
+      "educationalTip_fr": "La bile agit comme un détergent naturel en dispersant les graisses."
+    },
+    {
+      "id": 147,
+      "organId": 2,
+      "stageId": 2,
+      "questionText": "ما هي الهرمونات الحيوية التي يفرزها البنكرياس في الدم لتنظيم نسبة السكر؟",
+      "options": [
+        "الإنسولين والجلوكاجون",
+        "الأدرينالين والكورتيزول",
+        "الثايروكسين والإستروجين",
+        "الميلاتونين والدوبامين"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تفرز جزر لانجرهانس هرمون الإنسولين (لخفض سكر الدم) وهرمون الجلوكاجون (لرفع سكر الدم عند الصيام).",
+      "questionText_en": "Which vital hormones are secreted by the pancreas to regulate blood glucose?",
+      "options_en": [
+        "Insulin and glucagon",
+        "Adrenaline and cortisol",
+        "Thyroxine and estrogen",
+        "Melatonin and dopamine"
+      ],
+      "educationalTip_en": "Islets of Langerhans produce insulin (lowers blood sugar) and glucagon (raises it).",
+      "questionText_fr": "Quelles hormones pancréatiques régulent le taux de sucre sanguin ?",
+      "options_fr": [
+        "L'insuline et le glucagon",
+        "L'adrénaline et le cortisol",
+        "La thyroxine et l'œstrogène",
+        "La mélatonine et la dopamine"
+      ],
+      "educationalTip_fr": "L'insuline abaisse la glycémie et le glucagon la remonte en cas de jeûne."
+    },
+    {
+      "id": 148,
+      "organId": 2,
+      "stageId": 2,
+      "questionText": "لماذا تعد العصارة البنكرياسية قلوية غنية بأيونات البيكربونات (Bicarbonate)؟",
+      "options": [
+        "لمعادلة حموضة كيموس المعدة وحماية الأمعاء",
+        "لقتل خلايا الأمعاء",
+        "لتخزين الكالسيوم",
+        "لصناعة الأنسولين"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تفرز خلايا قنوات البنكرياس البيكربونات لمعادلة حموضة المعدة القوية وتهيئة الـ pH المناسب لعمل إنزيمات الهضم (pH 7-8).",
+      "questionText_en": "Why is pancreatic juice rich in bicarbonate ions?",
+      "options_en": [
+        "To neutralize acidic stomach chyme in the duodenum",
+        "To kill intestinal cells",
+        "To store calcium",
+        "To manufacture insulin"
+      ],
+      "educationalTip_en": "Bicarbonate neutralizes gastric acid, creating an optimal alkaline environment for enzymes.",
+      "questionText_fr": "Pourquoi le suc pancréatique est-il très riche en bicarbonate ?",
+      "options_fr": [
+        "Pour neutraliser l'acidité du chyme gastrique",
+        "Pour détruire l'intestin",
+        "Pour stocker le calcium",
+        "Pour fabriquer l'insuline"
+      ],
+      "educationalTip_fr": "Le bicarbonate neutralise l'acide gastrique afin d'activer les enzymes digestives."
+    },
+    {
+      "id": 149,
+      "organId": 2,
+      "stageId": 2,
+      "questionText": "في أي شكل يخزن الكبد الفائض من سكر الجلوكوز لاستخدامه وقت الصيام والنشاط؟",
+      "options": [
+        "الجليكوجين (Glycogen)",
+        "الألبومين",
+        "الكوليسترول",
+        "الأحماض النووية"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "يحول الكبد الجلوكوز الزائد إلى جليكوجين ويخزنه، وعند الصيام يفككه ويعيده كجلوكوز للدم للحفاظ على طاقة الدماغ والجسم.",
+      "questionText_en": "In what form does the liver store surplus glucose for fasting periods?",
+      "options_en": [
+        "Glycogen",
+        "Albumin",
+        "Cholesterol",
+        "Nucleic acids"
+      ],
+      "educationalTip_en": "The liver synthesizes and stores glycogen, releasing glucose as needed into circulation.",
+      "questionText_fr": "Sous quelle forme le foie stocke-t-il le glucose en réserve ?",
+      "options_fr": [
+        "Le glycogène",
+        "L'albumine",
+        "Le cholestérol",
+        "L'acide nucléique"
+      ],
+      "educationalTip_fr": "Le foie met en réserve le sucre sous forme de glycogène hépatique."
+    },
+    {
+      "id": 150,
+      "organId": 2,
+      "stageId": 2,
+      "questionText": "ما هو الإنزيم البنكرياسي المسؤول عن تكسير الدهون المستحلبة إلى أحماض دهنية؟",
+      "options": [
+        "الليباز البنكرياسي (Pancreatic Lipase)",
+        "التربسين",
+        "الأميلاز",
+        "البيبسين"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الليباز البنكرياسي هو أقوى إنزيم هاضم للدهون في الجسم ولا يمكن للجسم امتصاص الزيوت والشحوم بدونه.",
+      "questionText_en": "Which pancreatic enzyme breaks down emulsified fats into fatty acids?",
+      "options_en": [
+        "Pancreatic lipase",
+        "Trypsin",
+        "Amylase",
+        "Pepsin"
+      ],
+      "educationalTip_en": "Pancreatic lipase hydrolyzes dietary triglycerides into absorbable monoglycerides and fatty acids.",
+      "questionText_fr": "Quelle enzyme pancréatique découpe les graisses émulsionnées en acides gras ?",
+      "options_fr": [
+        "La lipase pancréatique",
+        "La trypsine",
+        "L'amylase",
+        "La pepsine"
+      ],
+      "educationalTip_fr": "La lipase pancréatique est l'enzyme clé de la digestion de tous les lipides."
+    },
+    {
+      "id": 151,
+      "organId": 2,
+      "stageId": 2,
+      "questionText": "ما هي البروتينات الرئيسية في بلازما الدم التي يصنعها الكبد حصرياً؟",
+      "options": [
+        "الألبومين وعوامل تخثر الدم",
+        "الكيراتين والميوسين",
+        "الكولاجين فقط",
+        "الهيموجلوبين في الرئتين"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الكبد مصنع كيميائي عملاق ينتج كل الألبومين (الذي يحافظ على ضغط الدم السوائلي) وجميع بروتينات تجلط الدم لمنع النزيف.",
+      "questionText_en": "Which vital blood plasma proteins are manufactured exclusively by the liver?",
+      "options_en": [
+        "Albumin and clotting factors",
+        "Keratin and mucin",
+        "Collagen alone",
+        "Hemoglobin in lungs"
+      ],
+      "educationalTip_en": "The liver synthesizes albumin, fibrinogen, and prothrombin essential for hemostasis.",
+      "questionText_fr": "Quelles protéines plasmatiques vitales sont fabriquées par le foie ?",
+      "options_fr": [
+        "L'albumine et les facteurs de coagulation",
+        "La kératine et la mucine",
+        "Le collagène",
+        "L'hémoglobine"
+      ],
+      "educationalTip_fr": "Le foie produit l'albumine et l'ensemble des facteurs empêchant les hémorragies."
+    },
+    {
+      "id": 152,
+      "organId": 2,
+      "stageId": 2,
+      "questionText": "ماذا يفعل الكبد بالأمونيا السامة الناتجة عن تكسير واستهلاك البروتينات؟",
+      "options": [
+        "يحولها إلى مادة اليوريا الأقل سمية لتطرحها الكلى",
+        "يخزنها في العظام",
+        "يحولها إلى غاز في الرئة",
+        "يحولها إلى فيتامينات"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تعتبر الأمونيا سامة جداً للدماغ، ويقوم الكبد بدورة اليوريا الحيوية لتحويلها إلى بولينا (يوريا) تفرز عبر البول بأمان.",
+      "questionText_en": "How does the liver detoxify toxic ammonia from protein catabolism?",
+      "options_en": [
+        "Converts it into less toxic urea for kidney excretion",
+        "Stores it in bones",
+        "Vaporizes it through lungs",
+        "Turns it to vitamins"
+      ],
+      "educationalTip_en": "Through the urea cycle, the liver converts neurotoxic ammonia into urea for renal excretion.",
+      "questionText_fr": "Comment le foie détoxifie-t-il l'ammoniac toxique issu des protéines ?",
+      "options_fr": [
+        "En le transformant en urée éliminée par les reins",
+        "En le stockant dans les os",
+        "En le vaporisant",
+        "En vitamines"
+      ],
+      "educationalTip_fr": "Le cycle de l'urée hépatique transforme l'ammoniac neurotoxique en urée éliminable."
+    },
+    {
+      "id": 153,
+      "organId": 2,
+      "stageId": 2,
+      "questionText": "ما اسم الخلايا البنكرياسية المسؤولة عن إفراز العصارة الهضمية في القنوات؟",
+      "options": [
+        "الخلايا العنيبية (Acinar Cells)",
+        "خلايا بيتا",
+        "خلايا ألفا",
+        "خلايا الدم الحمراء"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تمثل الخلايا العنيبية (Acini) 98% من كتلة البنكرياس وتفرز أقوى ترسانة من الإنزيمات الهاضمة (التربسين، الليباز، الأميلاز).",
+      "questionText_en": "Which pancreatic cells secrete digestive enzymes into pancreatic ducts?",
+      "options_en": [
+        "Acinar cells",
+        "Beta cells",
+        "Alpha cells",
+        "Red blood cells"
+      ],
+      "educationalTip_en": "Acinar cells constitute the exocrine pancreas, synthesizing and secreting digestive enzymes.",
+      "questionText_fr": "Quelles cellules pancréatiques fabriquent les sucs digestifs déversés dans les canaux ?",
+      "options_fr": [
+        "Les cellules acineuses",
+        "Les cellules bêta",
+        "Les cellules alpha",
+        "Les globules rouges"
+      ],
+      "educationalTip_fr": "Les acinus pancréatiques représentent la portion exocrine digestive de l'organe."
+    },
+    {
+      "id": 154,
+      "organId": 2,
+      "stageId": 2,
+      "questionText": "ما هي الفيتامينات الذائبة في الدهون التي يخزنها الكبد لأشهر وسنوات؟",
+      "options": [
+        "فيتامينات A و D و E و K",
+        "فيتامين C وفيتامين B فقط",
+        "حمض الفوليك وحده",
+        "لا يخزن الكبد فيتامينات"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "يخزن الكبد الفيتامينات الذائبة بالدهون (A, D, E, K) بالإضافة لفيتامين B12 بكميات تكفي الجسم لفترات طويلة.",
+      "questionText_en": "Which fat-soluble vitamins does the liver store for months or years?",
+      "options_en": [
+        "Vitamins A, D, E, and K",
+        "Vitamins C and B only",
+        "Folic acid alone",
+        "The liver stores no vitamins"
+      ],
+      "educationalTip_en": "The liver maintains vast reserves of fat-soluble vitamins (A, D, E, K) and vitamin B12.",
+      "questionText_fr": "Quelles vitamines liposolubles le foie peut-il stocker durablement ?",
+      "options_fr": [
+        "Les vitamines A, D, E et K",
+        "La vitamine C et B",
+        "L'acide folique seul",
+        "Aucune vitamine"
+      ],
+      "educationalTip_fr": "Le foie emmagasine de grandes réserves des vitamines A, D, E et K."
+    },
+    {
+      "id": 155,
+      "organId": 2,
+      "stageId": 2,
+      "questionText": "ما هو الهرمون المعوي الذي يحفز انقباض المرارة لإفراز الصفراء بعد تناول الدهون؟",
+      "options": [
+        "الكوليسيستوكينين (CCK)",
+        "الأنسولين",
+        "الكورتيزون",
+        "الميلاتونين"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "عند دخول الدهون إلى الإثني عشر، يفرز هرمون CCK الذي يحفز تقلص جدار المرارة وارتخاء صمام أودي لتتدفق الصفراء.",
+      "questionText_en": "Which hormone stimulates gallbladder contraction when dietary fat enters the duodenum?",
+      "options_en": [
+        "Cholecystokinin (CCK)",
+        "Insulin",
+        "Cortisone",
+        "Melatonin"
+      ],
+      "educationalTip_en": "CCK triggers gallbladder contraction and relaxes the sphincter of Oddi.",
+      "questionText_fr": "Quelle hormone provoque la contraction de la vésicule après un repas gras ?",
+      "options_fr": [
+        "La cholécystokinine (CCK)",
+        "L'insuline",
+        "La cortisone",
+        "La mélatonine"
+      ],
+      "educationalTip_fr": "La CCK ordonne à la vésicule de se vider pour digérer les graisses."
+    },
+    {
+      "id": 156,
+      "organId": 2,
+      "stageId": 3,
+      "questionText": "ما هي المادة الصفراء التي يؤدي تراكمها في الدم وأنسجة الجسم إلى حدوث اليرقان (الصفار)؟",
+      "options": [
+        "البيليروبين (Bilirubin)",
+        "الهيموجلوبين",
+        "الجلوكوز",
+        "الكولاجين"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "البيليروبين ناتج عن تكسير خلايا الدم الحمراء الهرمة، ويقوم الكبد بتصريفه في الصفراء، وإذا تعطل يصفر بياض العينين والجلد.",
+      "questionText_en": "Which pigment accumulates in blood and tissues to cause jaundice (icterus)?",
+      "options_en": [
+        "Bilirubin",
+        "Hemoglobin",
+        "Glucose",
+        "Collagen"
+      ],
+      "educationalTip_en": "Bilirubin is a breakdown product of heme; liver dysfunction leads to its yellow accumulation.",
+      "questionText_fr": "Quel pigment s'accumule dans le sang et jaunit la peau lors de l'ictère (jaunisse) ?",
+      "options_fr": [
+        "La bilirubine",
+        "L'hémoglobine",
+        "Le glucose",
+        "Le collagène"
+      ],
+      "educationalTip_fr": "La bilirubine provient de la dégradation des globules rouges et s'accumule en cas de jaunisse."
+    },
+    {
+      "id": 157,
+      "organId": 2,
+      "stageId": 3,
+      "questionText": "لغز: عضو مدهش يستطيع تجديد نفسه وإعادة بناء أجزائه المفقودة حتى لو استؤصل منه 70%، ما هو؟",
+      "options": [
+        "الكبد",
+        "البنكرياس",
+        "الطحال",
+        "المرارة"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الكبد يمتلك قدرة فريدة على التجدد الخلوي (Regeneration) حيث يمكنه النمو واستعادة حجمه الكامل خلال أسابيع قليلة.",
+      "questionText_en": "Riddle: An amazing organ that can fully regenerate its original mass even if 70% is removed. What is it?",
+      "options_en": [
+        "The liver",
+        "The pancreas",
+        "The spleen",
+        "The gallbladder"
+      ],
+      "educationalTip_en": "The liver is the only internal organ capable of natural tissue regeneration from remaining lobes.",
+      "questionText_fr": "Énigme : Organe prodigieux capable de repousser et régénérer sa taille même si l'on en retire 70%. Qui suis-je ?",
+      "options_fr": [
+        "Le foie",
+        "Le pancréas",
+        "La rate",
+        "La vésicule"
+      ],
+      "educationalTip_fr": "Le foie possède une capacité de régénération cellulaire unique chez l'être humain."
+    },
+    {
+      "id": 158,
+      "organId": 2,
+      "stageId": 3,
+      "questionText": "ما هي المكونات الأكثر شيوعاً لحصوات المرارة التي قد تسد القنوات الصفراوية؟",
+      "options": [
+        "الكوليسترول المتصلب وأملاح الكالسيوم",
+        "بلورات السكر",
+        "ألياف السيليلوز",
+        "فقاعات الهواء"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تتشكل 80% من حصوات المرارة نتيجة زيادة تركيز الكوليسترول في الصفراء وتبلوره على شكل حصى صلبة.",
+      "questionText_en": "What is the most common component of gallbladder stones (gallstones)?",
+      "options_en": [
+        "Hardened cholesterol and calcium salts",
+        "Sugar crystals",
+        "Cellulose fiber",
+        "Air bubbles"
+      ],
+      "educationalTip_en": "Most gallstones are composed of supersaturated crystallized cholesterol.",
+      "questionText_fr": "De quoi sont principalement formés les calculs biliaires ?",
+      "options_fr": [
+        "De cholestérol cristallisé et de sels calciques",
+        "De sucre",
+        "De fibres",
+        "De bulles d'air"
+      ],
+      "educationalTip_fr": "La majorité des calculs biliaires se forment par précipitation de cholestérol."
+    },
+    {
+      "id": 159,
+      "organId": 2,
+      "stageId": 3,
+      "questionText": "ما هو مرض السكري من النوع الأول وعلاقته بالبنكرياس؟",
+      "options": [
+        "تلف مناعي ذاتي لخلايا بيتا المنتجة للإنسولين في البنكرياس",
+        "زيادة في إفراز الصفراء",
+        "التهاب جرثومي في المعدة",
+        "كسر في عظام القفص الصدري"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "يهاجم جهاز المناعة عن طريق الخطأ خلايا بيتا في البنكرياس ويدمرها، مما يوقف إنتاج الإنسولين تماماً.",
+      "questionText_en": "What causes Type 1 Diabetes in relation to the pancreas?",
+      "options_en": [
+        "Autoimmune destruction of insulin-producing beta cells",
+        "Excess bile production",
+        "Stomach bacterial infection",
+        "Rib bone fracture"
+      ],
+      "educationalTip_en": "Type 1 diabetes results from autoimmune destruction of pancreatic beta cells.",
+      "questionText_fr": "Quelle est la cause du diabète de type 1 liée au pancréas ?",
+      "options_fr": [
+        "La destruction auto-immune des cellules bêta fabriquant l'insuline",
+        "Un excès de bile",
+        "Une bactérie de l'estomac",
+        "Une fracture"
+      ],
+      "educationalTip_fr": "Le système immunitaire détruit les cellules bêta, stoppant net la production d'insuline."
+    },
+    {
+      "id": 160,
+      "organId": 2,
+      "stageId": 3,
+      "questionText": "ما هو التليف الكبدي (Cirrhosis)؟",
+      "options": [
+        "استبدال نسيج الكبد الطبيعي بأنسجة ندبية متليفة نتيجة ضرر مزمن",
+        "زيادة نمو خلايا الكبد المفيدة",
+        "تحول الكبد إلى عظام صلبة",
+        "تراكم الهواء في فصوص الكبد"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "ينتج التليف الكبدي عن التهابات فيروسية مزمنة أو سموم تؤدي لندوب ليفية تعيق تدفق الدم ووظائف الكبد الحيوية.",
+      "questionText_en": "What is liver cirrhosis?",
+      "options_en": [
+        "Replacement of healthy liver tissue by irreversible fibrotic scar tissue",
+        "Healthy cell multiplication",
+        "Liver turning into bone",
+        "Air accumulation"
+      ],
+      "educationalTip_en": "Cirrhosis represents end-stage fibrosis impairing normal hepatic architecture and portal blood flow.",
+      "questionText_fr": "Qu'est-ce que la cirrhose du foie ?",
+      "options_fr": [
+        "Le remplacement du tissu sain par du tissu cicatriciel fibreux",
+        "Une croissance normale",
+        "Une ossification",
+        "De l'air dans le foie"
+      ],
+      "educationalTip_fr": "La cirrhose est une fibrose irréversible altérant le fonctionnement hépatique."
+    },
+    {
+      "id": 161,
+      "organId": 2,
+      "stageId": 3,
+      "questionText": "ماذا يحدث إذا سدت حصوة مرارية القناة المشتركة عند أمبولة فاتر؟",
+      "options": [
+        "قد تسبب يرقاناً انسدادياً والتهاباً حاداً في البنكرياس",
+        "يتوقف نبض القلب فوراً",
+        "تتوقف الرئتان عن التنفس",
+        "يزداد إفراز اللعاب عشرة أضعاف"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "انسداد القناة يمنع تصريف إنزيمات البنكرياس، فتتنشط داخله وتبدأ بهضم أنسجته مسببة التهاب بنكرياس حاد خطير.",
+      "questionText_en": "What happens if a gallstone lodges at the ampulla of Vater?",
+      "options_en": [
+        "It can cause obstructive jaundice and acute pancreatitis",
+        "Immediate heart stoppage",
+        "Lungs stop breathing",
+        "Ten-fold saliva increase"
+      ],
+      "educationalTip_en": "Bile and pancreatic backup activates enzymes within the pancreas, causing acute pancreatitis.",
+      "questionText_fr": "Que se passe-t-il si un calcul obstrue l'ampoule de Vater ?",
+      "options_fr": [
+        "Cela peut déclencher une jaunisse et une pancréatite aiguë grave",
+        "Un arrêt cardiaque",
+        "Un arrêt respiratoire",
+        "Un excès de salive"
+      ],
+      "educationalTip_fr": "Le blocage des sucs digestifs entraîne une autodigestion aiguë du pancréas."
+    },
+    {
+      "id": 162,
+      "organId": 2,
+      "stageId": 3,
+      "questionText": "هل يمكن للإنسان أن يعيش حياة طبيعية بعد استئصال المرارة جراحياً؟",
+      "options": [
+        "نعم، لأن الكبد يظل يفرز الصفراء مباشرة إلى الأمعاء",
+        "لا، يتوقف هضم الطعام تماماً",
+        "نعم، ولكن فقط لمدة أسبوع واحد",
+        "لا، لأن المرارة هي التي تصنع الصفراء"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "المرارة تخزن الصفراء ولا تصنعها؛ عند استئصالها تتدفق الصفراء مباشرة من الكبد إلى الإثني عشر باستمرار.",
+      "questionText_en": "Can a person live a normal life after surgical gallbladder removal (cholecystectomy)?",
+      "options_en": [
+        "Yes, because the liver still secretes bile directly into the intestine",
+        "No, digestion halts completely",
+        "Yes, but for only one week",
+        "No, because the gallbladder makes bile"
+      ],
+      "educationalTip_en": "The liver continues producing bile, which drips continuously into the duodenum.",
+      "questionText_fr": "Peut-on vivre normalement sans vésicule biliaire (cholécystectomie) ?",
+      "options_fr": [
+        "Oui, car le foie continue de produire la bile directement vers l'intestin",
+        "Non, la digestion s'arrête",
+        "Oui, mais pendant une semaine",
+        "Non, car elle fabrique la bile"
+      ],
+      "educationalTip_fr": "Le foie assure toujours la synthèse biliaire et la déverse directement."
+    },
+    {
+      "id": 163,
+      "organId": 2,
+      "stageId": 3,
+      "questionText": "ما الفيروس الكبدي الذي ينتقل غالباً عن طريق الطعام والماء الملوثين؟",
+      "options": [
+        "فيروس التهاب الكبد A (Hepatitis A)",
+        "فيروس الإنفلونزا",
+        "فيروس نقص المناعة",
+        "فيروس الهربس"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "ينتقل فيروس التهاب الكبد الوبائي أ (Hepatitis A) عبر الطريق البرازي-الفموي من خلال الأطعمة والمياه الملوثة.",
+      "questionText_en": "Which hepatitis virus is primarily transmitted through contaminated food and water?",
+      "options_en": [
+        "Hepatitis A virus",
+        "Influenza virus",
+        "HIV",
+        "Herpes virus"
+      ],
+      "educationalTip_en": "Hepatitis A spreads via the fecal-oral route through contaminated ingestion.",
+      "questionText_fr": "Quel virus de l'hépatite s'attrape principalement par de l'eau ou des aliments souillés ?",
+      "options_fr": [
+        "Le virus de l'hépatite A",
+        "La grippe",
+        "Le VIH",
+        "L'herpès"
+      ],
+      "educationalTip_fr": "L'hépatite A se transmet par voie féco-orale lors de l'ingestion d'eau contaminée."
+    },
+    {
+      "id": 164,
+      "organId": 2,
+      "stageId": 3,
+      "questionText": "ما هي خلايا كوبفر (Kupffer Cells) الموجودة داخل أنسجة الكبد؟",
+      "options": [
+        "بلاعم مناعية تلتهم البكتيريا والميكروبات من الدم",
+        "خلايا لتصنيع العظام",
+        "خلايا عضلية للتحرك",
+        "خلايا تفرز اللعاب"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "خلايا كوبفر هي خط دفاع مناعي متخصص في الكبد يقوم ببلعمة الفيروسات والبكتيريا وخلايا الدم القديمة وتنقية الدم.",
+      "questionText_en": "What are hepatic Kupffer cells?",
+      "options_en": [
+        "Specialized macrophages that engulf bacteria and debris from blood",
+        "Bone-making cells",
+        "Muscle cells for motion",
+        "Saliva-secreting cells"
+      ],
+      "educationalTip_en": "Kupffer cells are resident hepatic macrophages filtering intestinal pathogens from portal blood.",
+      "questionText_fr": "Que sont les cellules de Kupffer dans le foie ?",
+      "options_fr": [
+        "Des macrophages immunitaires qui détruisent les bactéries dans le sang",
+        "Des cellules osseuses",
+        "Des muscles",
+        "Des glandes à salive"
+      ],
+      "educationalTip_fr": "Les cellules de Kupffer purifient le sang portal en phagocytant débris et bactéries."
+    },
+    {
+      "id": 165,
+      "organId": 2,
+      "stageId": 3,
+      "questionText": "لغز: غدة صماء وهضمية في آن واحد، تصنع عصارة تهضم كل أنواع الأطعمة، وتصنع هرموناً يمنع غيبوبة السكر، ما هي؟",
+      "options": [
+        "البنكرياس",
+        "المعدة",
+        "المرارة",
+        "اللسان"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "البنكرياس غدة مختلطة (Dual Gland): إفراز خارجي للقناة الهضمية وإفراز داخلي للهرمونات (الإنسولين والجلوكاجون) في الدم.",
+      "questionText_en": "Riddle: A mixed gland producing enzymes for all food types and hormones controlling blood sugar. What is it?",
+      "options_en": [
+        "The pancreas",
+        "The stomach",
+        "The gallbladder",
+        "The tongue"
+      ],
+      "educationalTip_en": "The pancreas serves dual roles as an exocrine digestive factory and endocrine glucose regulator.",
+      "questionText_fr": "Énigme : Glande mixte qui produit des sucs pour tous les aliments et l'hormone régulant le sucre sanguin. Qui suis-je ?",
+      "options_fr": [
+        "Le pancréas",
+        "L'estomac",
+        "La vésicule",
+        "La langue"
+      ],
+      "educationalTip_fr": "Le pancréas est à la fois une glande exocrine digestive et endocrine métabolique."
+    },
+    {
+      "id": 166,
+      "organId": 3,
+      "stageId": 1,
+      "questionText": "كم يبلغ الطول التقريبي للأمعاء الدقيقة عند الإنسان البالغ؟",
+      "options": [
+        "حوالي 6 أمتار",
+        "نصف متر فقط",
+        "20 متراً",
+        "2 سنتيمتر"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الأمعاء الدقيقة يبلغ طولها حوالي 6 أمتار وهي أطول جزء في القناة الهضمية، ومطوية بعناية فائقة داخل تجويف البطن.",
+      "questionText_en": "What is the approximate length of the adult human small intestine?",
+      "options_en": [
+        "About 6 meters (20 feet)",
+        "0.5 meter",
+        "20 meters",
+        "2 centimeters"
+      ],
+      "educationalTip_en": "The small intestine spans approximately 6 meters, folded compactly within the abdomen.",
+      "questionText_fr": "Quelle est la longueur approximative de l'intestin grêle chez l'adulte ?",
+      "options_fr": [
+        "Environ 6 mètres",
+        "50 centimètres",
+        "20 mètres",
+        "2 centimètres"
+      ],
+      "educationalTip_fr": "L'intestin grêle mesure environ 6 mètres de long, replié au centre de l'abdomen."
+    },
+    {
+      "id": 167,
+      "organId": 3,
+      "stageId": 1,
+      "questionText": "ما هي الأقسام التشريحية الثلاثة للأمعاء الدقيقة بالترتيب من المعدة إلى القولون؟",
+      "options": [
+        "الإثني عشر، الصائم، اللفائفي",
+        "القولون، المستقيم، الشرج",
+        "الفؤاد، القاع، البواب",
+        "المرارة، الكبد، البنكرياس"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تبدأ الأمعاء بالإثني عشر (Duodenum)، يليه الصائم (Jejunum)، وتنتهي باللفائفي (Ileum) الذي يصب في القولون.",
+      "questionText_en": "What are the three anatomical segments of the small intestine in order?",
+      "options_en": [
+        "Duodenum, Jejunum, Ileum",
+        "Colon, Rectum, Anus",
+        "Cardia, Fundus, Pylorus",
+        "Gallbladder, Liver, Pancreas"
+      ],
+      "educationalTip_en": "The small intestine progresses sequentially through the duodenum, jejunum, and ileum.",
+      "questionText_fr": "Quelles sont les trois parties de l'intestin grêle dans l'ordre ?",
+      "options_fr": [
+        "Le duodénum, le jéjunum et l'iléon",
+        "Le côlon, le rectum et l'anus",
+        "Le cardia, le fundus et le pylore",
+        "La vésicule, le foie et le pancréas"
+      ],
+      "educationalTip_fr": "Le chyme passe successivement par le duodénum, le jéjunum puis l'iléon."
+    },
+    {
+      "id": 168,
+      "organId": 3,
+      "stageId": 1,
+      "questionText": "ما اسم البروزات المجهرية الشبيهة بالأصابع التي تبطن جدار الأمعاء الدقيقة؟",
+      "options": [
+        "الخملات المعوية (Villi)",
+        "الأهداب التنفسية",
+        "الأضراس",
+        "الأشرطة العضلية"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تبطن ملايين الخملات المعوية (Villi) جدار الأمعاء، وعليها زغيبات دقيقة، لزيادة مساحة سطح الامتصاص بشكل هائل.",
+      "questionText_en": "What tiny finger-like projections line the internal surface of the small intestine?",
+      "options_en": [
+        "Intestinal villi",
+        "Respiratory cilia",
+        "Molars",
+        "Muscle teniae"
+      ],
+      "educationalTip_en": "Millions of microscopic villi drastically expand the absorptive mucosal surface area.",
+      "questionText_fr": "Comment appelle-t-on les replis en forme de doigts tapissant l'intestin grêle ?",
+      "options_fr": [
+        "Les villosités intestinales",
+        "Les cils",
+        "Les molaires",
+        "Les bandelettes"
+      ],
+      "educationalTip_fr": "Des millions de villosités absorbent les nutriments sur une surface gigantesque."
+    },
+    {
+      "id": 169,
+      "organId": 3,
+      "stageId": 1,
+      "questionText": "كم تعادل مساحة سطح الامتصاص الداخلي للأمعاء الدقيقة إذا فُردت بالكامل؟",
+      "options": [
+        "حوالي مساحة ملعب تنس (250 متر مربع)",
+        "مساحة ورقة كتاب صغيرة",
+        "مساحة راحة اليد",
+        "مساحة شاشة هاتف"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "بفضل الثنيات والخملات والزغيبات الدقيقة (Microvilli)، تصل مساحة الامتصاص لحوالي 250 إلى 300 متر مربع.",
+      "questionText_en": "To what is the total absorptive surface area of the small intestine comparable?",
+      "options_en": [
+        "A tennis court (~250 square meters)",
+        "A small sheet of paper",
+        "A palm of a hand",
+        "A phone screen"
+      ],
+      "educationalTip_en": "Villi and microvilli expand the surface area to roughly the size of a tennis court.",
+      "questionText_fr": "À quoi compare-t-on la surface totale d'absorption de l'intestin grêle déplié ?",
+      "options_fr": [
+        "À un court de tennis (~250 m²)",
+        "À une feuille de papier",
+        "À la paume de la main",
+        "À un écran de smartphone"
+      ],
+      "educationalTip_fr": "Grâce aux microvillosités, la surface équivaut à celle d'un court de tennis."
+    },
+    {
+      "id": 170,
+      "organId": 3,
+      "stageId": 1,
+      "questionText": "ما هو الوعاء اللمفاوي المركزي الموجود داخل كل خملة معوية لامتصاص الدهون؟",
+      "options": [
+        "الوعاء اللبني أو الكيلوسي (Lacteal)",
+        "الشريان السباتي",
+        "الوريد الوداجي",
+        "القناة الدمعية"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الوعاء اللبني (Lacteal) يمتص الأحماض الدهنية المعبأة في كيلوميكرونات وينقلها عبر الجهاز اللمفاوي إلى الدم.",
+      "questionText_en": "What central lymphatic capillary inside each villus absorbs dietary fats?",
+      "options_en": [
+        "Lacteal vessel",
+        "Carotid artery",
+        "Jugular vein",
+        "Lacrimal duct"
+      ],
+      "educationalTip_en": "Lacteals absorb fat molecules (chylomicrons) into the lymphatic circulation.",
+      "questionText_fr": "Quel vaisseau lymphatique au cœur de chaque villosité absorbe les lipides ?",
+      "options_fr": [
+        "Le vaisseau chylifère",
+        "La carotide",
+        "La veine jugulaire",
+        "Le canal lacrymal"
+      ],
+      "educationalTip_fr": "Le chylifère central transporte les graisses absorbées vers la lymphe."
+    },
+    {
+      "id": 171,
+      "organId": 3,
+      "stageId": 1,
+      "questionText": "ما هو الغشاء الشحمي المروحي الذي يثبت حلقات الأمعاء الدقيقة بجدار البطن الخلفي ويغذيها بالأوعية؟",
+      "options": [
+        "المساريق (Mesentery)",
+        "البلفورة",
+        "السحايا",
+        "المحفظة الزلالية"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "المساريق (Mesentery) غشاء بريتوني مزدوج يحمل الشرايين والأوردة والأعصاب ويمنع التواء حلقات الأمعاء.",
+      "questionText_en": "What fan-shaped peritoneal fold anchors the small intestine loops to the abdominal wall?",
+      "options_en": [
+        "The mesentery",
+        "Pleura",
+        "Meninges",
+        "Synovial capsule"
+      ],
+      "educationalTip_en": "The mesentery suspends the small bowel, carrying neurovascular bundles to all loops.",
+      "questionText_fr": "Quel repli péritonéal en éventail retient l'intestin grêle et l'alimente en sang ?",
+      "options_fr": [
+        "Le mésentère",
+        "La plèvre",
+        "Les méninges",
+        "La capsule"
+      ],
+      "educationalTip_fr": "Le mésentère rattache les anses intestinales et achemine les vaisseaux."
+    },
+    {
+      "id": 172,
+      "organId": 3,
+      "stageId": 1,
+      "questionText": "ما اسم الصمام العضلي الذي يفصل نهاية اللفائفي عن بداية الأمعاء الغليظة (الأعور)؟",
+      "options": [
+        "الصمام اللفائفي الأعوري (Ileocecal Valve)",
+        "الصمام التاجي",
+        "صمام الفؤاد",
+        "عاصرة أودي"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الصمام اللفائفي الأعوري يسمح بمرور الفضلات باتجاه واحد نحو القولون ويمنع ارتداد بكتيريا القولون إلى الأمعاء الدقيقة.",
+      "questionText_en": "What sphincter connects the terminal ileum to the cecum of the large intestine?",
+      "options_en": [
+        "Ileocecal valve",
+        "Mitral valve",
+        "Cardiac sphincter",
+        "Sphincter of Oddi"
+      ],
+      "educationalTip_en": "The ileocecal valve prevents backward flux of bacterial-rich contents from the colon.",
+      "questionText_fr": "Quel sphincter relie l'iléon au cæcum du gros intestin ?",
+      "options_fr": [
+        "La valvule iléo-cæcale (de Bauhin)",
+        "La valvule mitrale",
+        "Le cardia",
+        "Le sphincter d'Oddi"
+      ],
+      "educationalTip_fr": "La valvule iléo-cæcale empêche le reflux des bactéries coliques vers le grêle."
+    },
+    {
+      "id": 173,
+      "organId": 3,
+      "stageId": 1,
+      "questionText": "ما هي التجمعات اللمفاوية المناعية المنتشرة في جدار اللفائفي لحماية الأمعاء من الميكروبات؟",
+      "options": [
+        "صفائح باير (Peyer's patches)",
+        "العقد الدرقية",
+        "الجزر الصفراوية",
+        "حويصلات الرئة"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "صفائح باير (Peyer's patches) جزء حيوي من جهاز المناعة المعوي (GALT) يراقب البكتيريا المعوية ويمنع غزوها.",
+      "questionText_en": "What aggregated lymphoid follicles monitor pathogens in the ileum wall?",
+      "options_en": [
+        "Peyer's patches",
+        "Thyroid nodules",
+        "Bile islets",
+        "Pulmonary alveoli"
+      ],
+      "educationalTip_en": "Peyer's patches form gut-associated lymphoid tissue (GALT) surveying intestinal microbes.",
+      "questionText_fr": "Quels amas de follicules lymphatiques surveillent les microbes dans l'iléon ?",
+      "options_fr": [
+        "Les plaques de Peyer",
+        "Les nodules thyroïdiens",
+        "Les îlots biliaires",
+        "Les alvéoles"
+      ],
+      "educationalTip_fr": "Les plaques de Peyer constituent les sentinelles immunitaires de la muqueuse."
+    },
+    {
+      "id": 174,
+      "organId": 3,
+      "stageId": 1,
+      "questionText": "ما هو الجزء الأقصر والأول من الأمعاء الدقيقة الذي يشبه حدوة الحصان؟",
+      "options": [
+        "الإثني عشر (Duodenum)",
+        "اللفائفي",
+        "الصائم",
+        "المستقيم"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الإثني عشر يبلغ طوله حوالي 25 سم (12 إصبعاً) ويستقبل عصارة المعدة والصفراء وعصارة البنكرياس معاً.",
+      "questionText_en": "What C-shaped first segment of the small intestine curves around the pancreas?",
+      "options_en": [
+        "Duodenum",
+        "Ileum",
+        "Jejunum",
+        "Rectum"
+      ],
+      "educationalTip_en": "The duodenum spans ~25 cm, serving as the mixing chamber for chyme, bile, and pancreatic juice.",
+      "questionText_fr": "Quel segment initial en forme de C mesure environ 25 centimètres ?",
+      "options_fr": [
+        "Le duodénum",
+        "L'iléon",
+        "Le jéjunum",
+        "Le rectum"
+      ],
+      "educationalTip_fr": "Le duodénum entoure la tête du pancréas et reçoit les sucs digestifs."
+    },
+    {
+      "id": 175,
+      "organId": 3,
+      "stageId": 1,
+      "questionText": "ما هي الغدد الأنبوبية الواقعة بين قواعد الخملات المعوية التي تفرز السائل المعوي؟",
+      "options": [
+        "خبايا ليبركون (Crypts of Lieberkühn)",
+        "غدد كوبر",
+        "غدد بارثولين",
+        "غدد ميبوميوس"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "خبايا ليبركون تحتوي على خلايا جذعية تجدد بطانة الأمعاء وخلايا بانيث (Paneth) التي تفرز إنزيمات مضادة للبكتيريا.",
+      "questionText_en": "What intestinal glands located between villi bases secrete intestinal juice?",
+      "options_en": [
+        "Crypts of Lieberkühn",
+        "Cowper's glands",
+        "Bartholin's glands",
+        "Meibomian glands"
+      ],
+      "educationalTip_en": "Crypts of Lieberkühn generate new epithelial cells and secrete enzymes and mucus.",
+      "questionText_fr": "Quelles cryptes situées au pied des villosités renouvellent l'épithélium ?",
+      "options_fr": [
+        "Les cryptes de Lieberkühn",
+        "Les glandes de Cowper",
+        "Les glandes de Bartholin",
+        "Les glandes lacrymales"
+      ],
+      "educationalTip_fr": "Les cryptes de Lieberkühn abritent les cellules souches de l'épithélium."
+    },
+    {
+      "id": 176,
+      "organId": 3,
+      "stageId": 2,
+      "questionText": "أين تتم الغالبية العظمى (حوالي 90%) من عمليات هضم وامتصاص الغذاء في جسم الإنسان؟",
+      "options": [
+        "في الأمعاء الدقيقة",
+        "في الفم",
+        "في المعدة",
+        "في الأمعاء الغليظة"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تعتبر الأمعاء الدقيقة المركز الرئيسي لامتصاص الأحماض الأمينية، السكريات، الأحماض الدهنية، والفيتامينات والمعادن.",
+      "questionText_en": "Where does approximately 90% of all food digestion and nutrient absorption occur?",
+      "options_en": [
+        "In the small intestine",
+        "In the mouth",
+        "In the stomach",
+        "In the large intestine"
+      ],
+      "educationalTip_en": "The small intestine absorbs the vast majority of dietary nutrients into circulation.",
+      "questionText_fr": "Où se déroule la majeure partie (90%) de la digestion et de l'absorption ?",
+      "options_fr": [
+        "Dans l'intestin grêle",
+        "Dans la bouche",
+        "Dans l'estomac",
+        "Dans le côlon"
+      ],
+      "educationalTip_fr": "L'intestin grêle est le site exclusif d'absorption de la plupart des nutriments."
+    },
+    {
+      "id": 177,
+      "organId": 3,
+      "stageId": 2,
+      "questionText": "ما هو الإنزيم المعوي المسؤول عن تفكيك سكر الحليب (اللاكتوز) إلى جلوكوز وجلاكتوز؟",
+      "options": [
+        "اللاكتاز (Lactase)",
+        "الأميلاز",
+        "المالتاز",
+        "السكراز"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "إنزيم اللاكتاز يتواجد على حواف زغيبات الأمعاء، ونقصه يؤدي لحالة عدم تحمل اللاكتوز (Lactose Intolerance).",
+      "questionText_en": "Which brush-border enzyme breaks down milk sugar (lactose)?",
+      "options_en": [
+        "Lactase",
+        "Amylase",
+        "Maltase",
+        "Sucrase"
+      ],
+      "educationalTip_en": "Lactase cleaves lactose into glucose and galactose; its deficiency causes intolerance.",
+      "questionText_fr": "Quelle enzyme intestinale hydrolyse le lactose en glucose et galactose ?",
+      "options_fr": [
+        "La lactase",
+        "L'amylase",
+        "La maltase",
+        "La sucrase"
+      ],
+      "educationalTip_fr": "La lactase permet la digestion normale des produits laitiers."
+    },
+    {
+      "id": 178,
+      "organId": 3,
+      "stageId": 2,
+      "questionText": "كيف تنتقل السكريات الأحادية والأحماض الأمينية الممتصة من الأمعاء الدقيقة إلى الكبد؟",
+      "options": [
+        "عبر الشعيرات الدموية إلى الوريد البابي الكبدي",
+        "عبر الجهاز العصبي",
+        "عبر القصبة الهوائية",
+        "عبر الغدد العرقية"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تمتص الشعيرات الدموية في الخملات الجلوكوز والأحماض الأمينية وتصب في الوريد البابي ليتولى الكبد معالجتها.",
+      "questionText_en": "How are monosaccharides and amino acids transported from the villi to the liver?",
+      "options_en": [
+        "Via capillary beds into the hepatic portal vein",
+        "Via nerves",
+        "Via trachea",
+        "Via sweat ducts"
+      ],
+      "educationalTip_en": "Capillaries inside villi funnel water-soluble nutrients directly into the portal vein.",
+      "questionText_fr": "Comment les sucres et acides aminés absorbés gagnent-ils le foie ?",
+      "options_fr": [
+        "Par les capillaires sanguins vers la veine porte",
+        "Par les nerfs",
+        "Par la trachée",
+        "Par la sueur"
+      ],
+      "educationalTip_fr": "Les nutriments hydrosolubles empruntent le système veineux porte."
+    },
+    {
+      "id": 179,
+      "organId": 3,
+      "stageId": 2,
+      "questionText": "ما هي الحزم البروتينية الدهنية التي تنقل الدهون الممتصة عبر اللمف إلى مجرى الدم؟",
+      "options": [
+        "الكيلوميكرونات (Chylomicrons)",
+        "الهيموجلوبين",
+        "الألبومين",
+        "الجلوبيولينات"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تغلف الأمعاء الدهون بأغلفة بروتينية لتشكيل 'الكيلوميكرونات' لأن الدهون لا تذوب في ماء الدم بدون هذا الغلاف.",
+      "questionText_en": "What lipoprotein particles transport dietary lipids via lymph into the bloodstream?",
+      "options_en": [
+        "Chylomicrons",
+        "Hemoglobin",
+        "Albumin",
+        "Globulins"
+      ],
+      "educationalTip_en": "Chylomicrons package triglycerides and cholesterol for transport through lymphatic lacteals.",
+      "questionText_fr": "Quelles lipoprotéines transportent les graisses de la lymphe vers le sang ?",
+      "options_fr": [
+        "Les chylomicrons",
+        "L'hémoglobine",
+        "L'albumine",
+        "Les globulines"
+      ],
+      "educationalTip_fr": "Les chylomicrons emballent les lipides insolubles pour leur transport sanguin."
+    },
+    {
+      "id": 180,
+      "organId": 3,
+      "stageId": 2,
+      "questionText": "في أي جزء من الأمعاء الدقيقة يتم امتصاص فيتامين B12 والأملاح الصفراوية حصرياً؟",
+      "options": [
+        "اللفائفي النهائي (Terminal Ileum)",
+        "الإثني عشر",
+        "المعدة",
+        "المستقيم"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "يمتلك اللفائفي النهائي مستقبلات خاصة تمتص مركب فيتامين B12 مع العامل الداخلي، كما يعيد تدوير 95% من أملاح الصفراء للكبد.",
+      "questionText_en": "In which part of the small intestine are vitamin B12 and bile salts specifically absorbed?",
+      "options_en": [
+        "Terminal ileum",
+        "Duodenum",
+        "Stomach",
+        "Rectum"
+      ],
+      "educationalTip_en": "The terminal ileum houses specific receptors for intrinsic factor-B12 complexes and bile salts.",
+      "questionText_fr": "Où la vitamine B12 et les sels biliaires sont-ils spécifiquement absorbés ?",
+      "options_fr": [
+        "L'iléon terminal",
+        "Le duodénum",
+        "L'estomac",
+        "Le rectum"
+      ],
+      "educationalTip_fr": "L'iléon terminal possède les récepteurs indispensables au recyclage biliaire et à la B12."
+    },
+    {
+      "id": 181,
+      "organId": 3,
+      "stageId": 2,
+      "questionText": "ما هي الحركة المعوية غير الدافعة التي تقسم الكيموس وتمزجه جيداً بالعصارات الهاضمة؟",
+      "options": [
+        "حركة التجزئة (Segmentation)",
+        "التمعج السريع",
+        "السقوط الحر",
+        "الارتجاع"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "التجزئة (Segmentation) هي انقباضات موضعية لعضلات الأمعاء الدائرية تمزج الطعام بالعصارات وتدفعه لملامسة الخملات.",
+      "questionText_en": "What non-propulsive rhythmic movement mixes chyme with digestive enzymes?",
+      "options_en": [
+        "Segmentation",
+        "Rapid peristalsis",
+        "Free fall",
+        "Reflux"
+      ],
+      "educationalTip_en": "Segmentation contracts alternating circular muscle rings, sloshing chyme over microvilli.",
+      "questionText_fr": "Quel mouvement non propulsif mélange intiment le chyme aux sucs digestifs ?",
+      "options_fr": [
+        "La segmentation",
+        "Le péristaltisme rapide",
+        "La chute libre",
+        "Le reflux"
+      ],
+      "educationalTip_fr": "La segmentation brasse le contenu contre les villosités sans le faire avancer trop vite."
+    },
+    {
+      "id": 182,
+      "organId": 3,
+      "stageId": 2,
+      "questionText": "ما الإنزيم الذي يفرزه الغشاء المخاطي المعوي لتنشيط إنزيم التربسينوجين البنكرياسي؟",
+      "options": [
+        "الإنتروكيناز (Enterokinase / Enteropeptidase)",
+        "البيبسين",
+        "الأميلاز",
+        "الليباز"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الإنتروكيناز هو مفتاح الأمان المعوي؛ يحول التربسينوجين الخامل إلى تربسين نشط، والذي يقوم بدوره بتنشيط باقي إنزيمات البنكرياس.",
+      "questionText_en": "Which mucosal enzyme activates pancreatic trypsinogen into active trypsin?",
+      "options_en": [
+        "Enterokinase (Enteropeptidase)",
+        "Pepsin",
+        "Amylase",
+        "Lipase"
+      ],
+      "educationalTip_en": "Enteropeptidase on duodenal microvilli cleaves trypsinogen to ignite protein digestion.",
+      "questionText_fr": "Quelle enzyme de la muqueuse active le trypsinogène pancréatique en trypsine ?",
+      "options_fr": [
+        "L'entérokinase (entéropeptidase)",
+        "La pepsine",
+        "L'amylase",
+        "La lipase"
+      ],
+      "educationalTip_fr": "L'entérokinase déclenche la cascade d'activation des protéases pancréatiques."
+    },
+    {
+      "id": 183,
+      "organId": 3,
+      "stageId": 2,
+      "questionText": "ما هو المعدن الحيوي الذي يُمتص بشكل أساسي في الإثني عشر وبداية الصائم بمساعدة فيتامين C؟",
+      "options": [
+        "الحديد (Iron)",
+        "الرصاص",
+        "الذهب",
+        "الزئبق"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "يمتص الحديد في الإثني عشر بصورته الثنائية (Fe2+)، ويساعد حمض المعدة وفيتامين C على تحويله لهذه الصورة سهلة الامتصاص.",
+      "questionText_en": "Which essential trace mineral is predominantly absorbed in the duodenum aided by vitamin C?",
+      "options_en": [
+        "Iron",
+        "Lead",
+        "Gold",
+        "Mercury"
+      ],
+      "educationalTip_en": "Duodenal enterocytes absorb ferrous iron (Fe2+), enhanced by dietary ascorbic acid.",
+      "questionText_fr": "Quel minéral essentiel est absorbé dans le duodénum grâce à la vitamine C ?",
+      "options_fr": [
+        "Le fer",
+        "Le plomb",
+        "L'or",
+        "Le mercure"
+      ],
+      "educationalTip_fr": "Le fer est préférentiellement absorbé au niveau du duodénum sous forme ferreuse."
+    },
+    {
+      "id": 184,
+      "organId": 3,
+      "stageId": 2,
+      "questionText": "ما هي الزغيبات الدقيقة (Microvilli) وما دورها في الامتصاص؟",
+      "options": [
+        "بروزات مجهرية على أسطح خلايا الخملات تشكل حافة الفرشاة وتضاعف الامتصاص",
+        "عظام صغيرة",
+        "أوردة دموية كبيرة",
+        "أعصاب حسية"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تحتوي كل خلية معوية على حوالي 3000 زغيبة مجهرية تشكل 'حافة الفرشاة' (Brush Border) المحملة بالإنزيمات الهاضمة النهائية.",
+      "questionText_en": "What are microvilli and what is their role?",
+      "options_en": [
+        "Microscopic cell projections forming the brush border to amplify absorption",
+        "Tiny bones",
+        "Large veins",
+        "Sensory nerves"
+      ],
+      "educationalTip_en": "Microvilli cover enterocyte surfaces, creating a brush border packed with final digestive enzymes.",
+      "questionText_fr": "Que sont les microvillosités formant la bordure en brosse ?",
+      "options_fr": [
+        "Des replis membranaires microscopiques décuplant la surface d'échange",
+        "Des petits os",
+        "Des veines",
+        "Des récepteurs"
+      ],
+      "educationalTip_fr": "Chaque entérocyte porte des milliers de microvillosités intégrant les enzymes terminales."
+    },
+    {
+      "id": 185,
+      "organId": 3,
+      "stageId": 2,
+      "questionText": "كم لتراً من السوائل والعصارات الهضمية تمتص الأمعاء الدقيقة يومياً؟",
+      "options": [
+        "حوالي 7 إلى 8 لترات",
+        "ربع لتر فقط",
+        "100 لتر",
+        "صفر"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تدخل الأمعاء الدقيقة يومياً حوالي 9 لترات من السوائل (طعام وشراب وعصارات)، فتمتص منها نحو 7 إلى 8 لترات وتعبر الباقي للقولون.",
+      "questionText_en": "About how many liters of fluid does the small intestine absorb daily?",
+      "options_en": [
+        "About 7 to 8 liters",
+        "0.25 liter",
+        "100 liters",
+        "Zero"
+      ],
+      "educationalTip_en": "The small bowel reabsorbs roughly 7-8 liters of fluid from ingested food and digestive secretions.",
+      "questionText_fr": "Combien de litres de liquides l'intestin grêle réabsorbe-t-il par jour ?",
+      "options_fr": [
+        "Environ 7 à 8 litres",
+        "250 ml",
+        "100 litres",
+        "Zéro"
+      ],
+      "educationalTip_fr": "Sur les 9 litres de liquide transitant chaque jour, le grêle en réabsorbe près de 8 litres."
+    },
+    {
+      "id": 186,
+      "organId": 3,
+      "stageId": 3,
+      "questionText": "ما هو مرض حساسية القمح (الداء الزلاقي / Celiac Disease)؟",
+      "options": [
+        "مرض مناعي ذاتي يسبب تلف خملات الأمعاء عند تناول بروتين الجلوتين",
+        "حساسية من سكر اللاكتوز",
+        "التهاب جرثومي في الزائدة",
+        "انسداد في المرارة"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "في مرض السيلياك، يهاجم جهاز المناعة خملات الأمعاء الدقيقة ويسطحها عند تناول الجلوتين (الموجود بالقمح والشعير)، مما يعطل الامتصاص.",
+      "questionText_en": "What is Celiac Disease (Gluten-sensitive enteropathy)?",
+      "options_en": [
+        "An autoimmune disease where gluten ingestion damages intestinal villi",
+        "Lactose intolerance",
+        "Appendix infection",
+        "Gallstone blockage"
+      ],
+      "educationalTip_en": "In celiac disease, immune responses to gluten flatten intestinal villi, causing malabsorption.",
+      "questionText_fr": "Qu'est-ce que la maladie cœliaque (intolérance au gluten) ?",
+      "options_fr": [
+        "Une maladie auto-immune détruisant les villosités lors de la consommation de gluten",
+        "Une allergie au lactose",
+        "Une appendicite",
+        "Un calcul biliaire"
+      ],
+      "educationalTip_fr": "L'ingestion de gluten provoque une atrophie des villosités et une malabsorption."
+    },
+    {
+      "id": 187,
+      "organId": 3,
+      "stageId": 3,
+      "questionText": "لغز: أنا أطول طريق في جسمك، طولي 6 أمتار ومع ذلك أختبئ في مساحة صغيرة، وفردتني غطيت ملعب تنس، من أنا؟",
+      "options": [
+        "الأمعاء الدقيقة",
+        "المريء",
+        "المعدة",
+        "القولون"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الأمعاء الدقيقة هي أطول عضو مجوف بفضل ملايين الخملات والزغيبات الدقيقة التي تمنحها مساحة سطح هائلة.",
+      "questionText_en": "Riddle: I am the longest tube in your body (~6 meters), tucked in a small space, with surface area of a tennis court. Who am I?",
+      "options_en": [
+        "The small intestine",
+        "The esophagus",
+        "The stomach",
+        "The colon"
+      ],
+      "educationalTip_en": "The small intestine spans 6 meters with vast microscopic folds yielding huge surface area.",
+      "questionText_fr": "Énigme : Tube le plus long du corps (6 m) tenant dans un petit ventre et couvrant un court de tennis. Qui suis-je ?",
+      "options_fr": [
+        "L'intestin grêle",
+        "L'œsophage",
+        "L'estomac",
+        "Le côlon"
+      ],
+      "educationalTip_fr": "L'intestin grêle compense son diamètre étroit par une longueur et une surface colossales."
+    },
+    {
+      "id": 188,
+      "organId": 3,
+      "stageId": 3,
+      "questionText": "ما هو داء كرون (Crohn's Disease)؟",
+      "options": [
+        "التهاب مناعي مزمن قد يصيب أي جزء من الجهاز الهضمي خاصة اللفائفي",
+        "تصلب في شرايين الدماغ",
+        "عدوى فيروسية في الأسنان",
+        "تجمع الغازات في المعدة"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "داء كرون هو أحد أمراض الأمعاء الالتهابية المزمنة (IBD) ويتميز بالتهاب عميق يشمل كافة طبقات جدار الأمعاء.",
+      "questionText_en": "What is Crohn's disease?",
+      "options_en": [
+        "A chronic inflammatory bowel disease affecting any GI part, especially the ileum",
+        "Cerebral arteriosclerosis",
+        "Tooth viral infection",
+        "Stomach gas"
+      ],
+      "educationalTip_en": "Crohn's disease causes transmural inflammation that can skip segments throughout the GI tract.",
+      "questionText_fr": "Qu'est-ce que la maladie de Crohn ?",
+      "options_fr": [
+        "Une maladie inflammatoire chronique touchant souvent l'iléon",
+        "Une artériosclérose",
+        "Une carie virale",
+        "De l'aérophagie"
+      ],
+      "educationalTip_fr": "La maladie de Crohn est une affection inflammatoire transmurale du tube digestif."
+    },
+    {
+      "id": 189,
+      "organId": 3,
+      "stageId": 3,
+      "questionText": "ما هي متلازمة سوء الامتصاص (Malabsorption Syndrome)؟",
+      "options": [
+        "فشل الأمعاء الدقيقة في امتصاص العناصر الغذائية مما يسبب نقص الوزن وفقر الدم",
+        "زيادة سريعة في الوزن",
+        "توقف حركة اللسان",
+        "تصلب الجلد"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تحدث عند تلف الخملات المعوية أو نقص الإنزيمات، مما يؤدي لخروج الغذاء غير الممتص مع الفضلات ونقص الفيتامينات.",
+      "questionText_en": "What is malabsorption syndrome?",
+      "options_en": [
+        "Failure of the small intestine to absorb nutrients, causing weight loss and anemia",
+        "Rapid weight gain",
+        "Paralyzed tongue",
+        "Skin hardening"
+      ],
+      "educationalTip_en": "It stems from impaired mucosal absorption or enzyme deficiencies, leading to nutritional deficiencies.",
+      "questionText_fr": "Qu'est-ce que le syndrome de malabsorption ?",
+      "options_fr": [
+        "L'incapacité de l'intestin grêle à absorber les nutriments, provoquant carences et maigreur",
+        "Une prise de poids",
+        "Une paralysie linguale",
+        "Une peau dure"
+      ],
+      "educationalTip_fr": "Il résulte d'une lésion villositaire empêchant le passage des nutriments dans le sang."
+    },
+    {
+      "id": 190,
+      "organId": 3,
+      "stageId": 3,
+      "questionText": "لماذا يصاب مرضى عدم تحمل اللاكتوز بالانتفاخ والإسهال عند شرب الحليب؟",
+      "options": [
+        "لأن بكتيريا الأمعاء تخمر سكر الحليب غير المهضوم وتنتج غازات وتسحب الماء",
+        "لأن الحليب يذيب جدار المعدة",
+        "لأن الحليب يتحول إلى حصوات",
+        "لأن الحليب سام للإنسان"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "غياب إنزيم اللاكتاز يترك اللاكتوز في تجويف الأمعاء، فتتغذى عليه البكتيريا وتنتج غازات هيدروجين وتسحب الماء بالخاصية الأسموزية.",
+      "questionText_en": "Why does lactose intolerance cause bloating and diarrhea?",
+      "options_en": [
+        "Undigested lactose is fermented by gut bacteria, producing gas and drawing water",
+        "Milk melts stomach walls",
+        "Milk turns to stones",
+        "Milk is naturally toxic"
+      ],
+      "educationalTip_en": "Unabsorbed lactose draws water into the bowel via osmosis and is fermented into gas by colonic flora.",
+      "questionText_fr": "Pourquoi l'intolérance au lactose provoque-t-elle ballonnements et diarrhée ?",
+      "options_fr": [
+        "Le lactose non digéré est fermenté par les bactéries, créant des gaz et un appel d'eau",
+        "Le lait brûle l'estomac",
+        "Le lait se pétrifie",
+        "Le lait est un poison"
+      ],
+      "educationalTip_fr": "Le sucre non scindé appelle de l'eau par osmose et fermente abondamment."
+    },
+    {
+      "id": 191,
+      "organId": 3,
+      "stageId": 3,
+      "questionText": "ما هو الانسداد المعوي (Intestinal Obstruction)؟",
+      "options": [
+        "توقف ميكانيكي أو وظيفي لمرور محتويات الأمعاء يتطلب تدخلاً طبياً عاجلاً",
+        "هضم سريع جداً للطعام",
+        "زيادة عدد الخملات المعوية",
+        "تنظيف المعدة الذاتي"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "ينتج الانسداد المعوي عن التصاقات جراحية أو فتق أو التواء معوي، ويسبب ألماً بطنياً شديداً وقيئاً وتوقف الغازات والبراز.",
+      "questionText_en": "What is an intestinal obstruction (ileus)?",
+      "options_en": [
+        "A mechanical or functional blockage impeding GI transit, requiring urgent care",
+        "Ultra-fast digestion",
+        "Multiplication of villi",
+        "Spontaneous stomach wash"
+      ],
+      "educationalTip_en": "Obstruction halts bowel contents, leading to severe abdominal distention, pain, and vomiting.",
+      "questionText_fr": "Qu'est-ce qu'une occlusion intestinale ?",
+      "options_fr": [
+        "Un blocage mécanique ou fonctionnel du transit nécessitant une urgence médicale",
+        "Une digestion ultra-rapide",
+        "Trop de villosités",
+        "Un lavage gastrique"
+      ],
+      "educationalTip_fr": "L'arrêt des matières et des gaz constitue une urgence médico-chirurgicale absolue."
+    },
+    {
+      "id": 192,
+      "organId": 3,
+      "stageId": 3,
+      "questionText": "ما هي كبسولة التنظير اللاسلكية (Capsule Endoscopy) المستخدمة لفحص الأمعاء الدقيقة؟",
+      "options": [
+        "كبسولة بحجم حبة الدواء يبلعها المريض وتحتوي كاميرا مجهرية تلتقط آلاف الصور للأمعاء",
+        "حقنة تؤخذ في الوريد",
+        "عملية جراحية كبرى",
+        "نوع من التخدير العام"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تسافر الكبسولة مع حركات التمعج الطبيعية وتصور الأمعاء الدقيقة بالكامل والتي كان يصعب الوصول إليها بالمنظار التقليدي.",
+      "questionText_en": "What is capsule endoscopy used for small bowel evaluation?",
+      "options_en": [
+        "A pill-sized ingestible camera transmitting thousands of images as it transits",
+        "An intravenous injection",
+        "Major open surgery",
+        "A general anesthetic"
+      ],
+      "educationalTip_en": "The swallowed miniature camera films the entire 6 meters of the previously inaccessible small bowel.",
+      "questionText_fr": "Qu'est-ce que la vidéo-capsule endoscopique du grêle ?",
+      "options_fr": [
+        "Une caméra miniature de la taille d'une gélule qui filme tout le trajet intestinal",
+        "Une injection",
+        "Une lourde chirurgie",
+        "Une anesthésie générale"
+      ],
+      "educationalTip_fr": "Avalée par le patient, elle prend des milliers de clichés lors de son transit naturel."
+    },
+    {
+      "id": 193,
+      "organId": 3,
+      "stageId": 3,
+      "questionText": "ما هي متلازمة الأمعاء القصيرة (Short Bowel Syndrome)؟",
+      "options": [
+        "حالة تحدث بعد استئصال أجزاء كبيرة من الأمعاء الدقيقة جراحياً مما يحد من الامتصاص",
+        "ولادة طفل بدون معدة",
+        "تصلب المريء",
+        "زيادة طول القولون"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "عند فقدان أكثر من نصف الأمعاء الدقيقة، يعجز الجزء المتبقي عن تأمين الاحتياجات الغذائية، ويحتاج المريض للتغذية الوريدية.",
+      "questionText_en": "What is short bowel syndrome?",
+      "options_en": [
+        "Malabsorption resulting from extensive surgical resection of the small intestine",
+        "Being born without a stomach",
+        "Esophageal rigidity",
+        "Elongated colon"
+      ],
+      "educationalTip_en": "Extensive bowel resection leaves insufficient absorptive mucosal area, necessitating parenteral nutrition.",
+      "questionText_fr": "Qu'est-ce que le syndrome du grêle court ?",
+      "options_fr": [
+        "Une malabsorption consécutive à l'ablation chirurgicale d'une large part du grêle",
+        "Une absence d'estomac",
+        "Un œsophage rigide",
+        "Un côlon trop long"
+      ],
+      "educationalTip_fr": "La réduction drastique de la surface d'échange impose une nutrition parentérale."
+    },
+    {
+      "id": 194,
+      "organId": 3,
+      "stageId": 3,
+      "questionText": "ماذا يحدث إذا تلوثت الأمعاء الدقيقة ببكتيريا الكوليرا (Vibrio cholerae)؟",
+      "options": [
+        "تفرز البكتيريا سماً يجعل الخلايا تضخ كميات هائلة من الماء مسببة إسهالاً حاداً وجفافاً",
+        "توقف إفراز اللعاب فقط",
+        "تصلب عظام الجمجمة",
+        "نمو مفرط للأسنان"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "سم الكوليرا يرفع مستوى cAMP في خلايا الأمعاء، مما يدفعها لضخ شوارد الكلوريد والماء بغزارة مسببة إسهالاً مائياً مهدداً للحياة.",
+      "questionText_en": "How does Vibrio cholerae cause life-threatening diarrhea in the small intestine?",
+      "options_en": [
+        "Its toxin triggers massive secretion of electrolytes and water into the lumen",
+        "Halts saliva only",
+        "Hardens cranial bones",
+        "Spurs tooth growth"
+      ],
+      "educationalTip_en": "Cholera toxin activates adenylate cyclase, pumping massive chloride and water into the gut.",
+      "questionText_fr": "Comment la toxine du choléra agit-elle sur l'intestin grêle ?",
+      "options_fr": [
+        "Elle force les cellules à sécréter massivement de l'eau et des électrolytes (diarrhée aiguë)",
+        "Elle coupe la salive",
+        "Elle durcit les os",
+        "Elle fait pousser les dents"
+      ],
+      "educationalTip_fr": "La toxine cholérique entraîne une fuite hydrique majeure pouvant dépasser 10 litres par jour."
+    },
+    {
+      "id": 195,
+      "organId": 3,
+      "stageId": 3,
+      "questionText": "لماذا يعتبر الشاي أو القهوة المباشرة بعد الوجبة ضاراً بامتصاص الحديد في الأمعاء الدقيقة؟",
+      "options": [
+        "لأن مادة التانين ترتبط بالحديد وتشكل مركبات غير قابلة للامتصاص",
+        "لأنها تذيب الخملات",
+        "لأنها تحول الحديد إلى رصاص",
+        "لأنها ترفع حرارة الكبد"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "مادة التانين (Tannins) في الشاي والقهوة تتحد مع الحديد النباتي (غير الهيمي) وتمنع خلايا الأمعاء من امتصاصه، لذا يفضل الانتظار ساعة.",
+      "questionText_en": "Why can drinking tea immediately after meals impair small intestine iron absorption?",
+      "options_en": [
+        "Tannins bind dietary iron into insoluble unabsorbable complexes",
+        "Tannins melt villi",
+        "It transforms iron to lead",
+        "It overheats the liver"
+      ],
+      "educationalTip_en": "Polyphenols like tannins chelate non-heme iron, blocking its enterocyte transport.",
+      "questionText_fr": "Pourquoi le thé pris pendant le repas nuit-il à l'absorption du fer dans l'intestin ?",
+      "options_fr": [
+        "Les tanins chélatent le fer et forment des complexes insolubles inabsorbables",
+        "Il détruit les villosités",
+        "Il change le fer en plomb",
+        "Il échauffe le foie"
+      ],
+      "educationalTip_fr": "Les tanins emprisonnent le fer alimentaire et empêchent son assimilation."
+    },
+    {
+      "id": 196,
+      "organId": 4,
+      "stageId": 1,
+      "questionText": "ما هي الأجزاء التشريحية الرئيسية الأربعة للقولون في الأمعاء الغليظة؟",
+      "options": [
+        "القولون الصاعد، المستعرض، الهابط، والسيني",
+        "الفؤاد، القاع، الجسم، البواب",
+        "الإثني عشر، الصائم، اللفائفي، الأعور",
+        "المرارة، الكبد، البنكرياس، الطحال"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "يحيط القولون بالأمعاء الدقيقة كالإطار: يصعد على اليمين، يعبر مستعرضاً، ينزل على اليسار، ويلتوي كالحرف S (السيني).",
+      "questionText_en": "What are the four sequential segments of the colon?",
+      "options_en": [
+        "Ascending, Transverse, Descending, and Sigmoid colon",
+        "Cardia, Fundus, Body, Pylorus",
+        "Duodenum, Jejunum, Ileum, Cecum",
+        "Gallbladder, Liver, Pancreas, Spleen"
+      ],
+      "educationalTip_en": "The colon frames the abdomen: ascending, transverse, descending, and sigmoid.",
+      "questionText_fr": "Quelles sont les quatre portions principales du côlon ?",
+      "options_fr": [
+        "Le côlon ascendant, transverse, descendant et sigmoïde",
+        "Le cardia, fundus, corps et pylore",
+        "Le duodénum, jéjunum, iléon et cæcum",
+        "La vésicule, foie, pancréas et rate"
+      ],
+      "educationalTip_fr": "Le côlon forme un cadre : ascendant, transverse, descendant et sigmoïde."
+    },
+    {
+      "id": 197,
+      "organId": 4,
+      "stageId": 1,
+      "questionText": "ما هو الجزء الأولي المنتفخ من الأمعاء الغليظة الذي تتصل به الزائدة الدودية؟",
+      "options": [
+        "الأعور (Cecum)",
+        "المستقيم",
+        "القناة الشرجية",
+        "المعدة"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الأعور هو جيب واسع يقع في أسفل الجانب الأيمن من البطن، وتتدلى منه الزائدة الدودية كأنبوب رفيع مغلق.",
+      "questionText_en": "What pouch forms the beginning of the large intestine, bearing the vermiform appendix?",
+      "options_en": [
+        "Cecum",
+        "Rectum",
+        "Anal canal",
+        "Stomach"
+      ],
+      "educationalTip_en": "The cecum is a blind pouch in the lower right abdomen receiving ileal contents.",
+      "questionText_fr": "Quel cul-de-sac forme le début du gros intestin et porte l'appendice ?",
+      "options_fr": [
+        "Le cæcum",
+        "Le rectum",
+        "Le canal anal",
+        "L'estomac"
+      ],
+      "educationalTip_fr": "Le cæcum reçoit le chyme de l'iléon et donne naissance à l'appendice."
+    },
+    {
+      "id": 198,
+      "organId": 4,
+      "stageId": 1,
+      "questionText": "ما هي الأكياس أو الجيوب المميزة التي تقسم وتزين جدار القولون خارجياً؟",
+      "options": [
+        "الحويصلات أو التقببات القولونية (Haustra)",
+        "الخملات المعوية",
+        "الأهداب",
+        "الحليمات اللسانية"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "التقببات (Haustra) هي جيوب متتالية ناتجة عن انقباض الأشرطة العضلية الطولية وتعطي القولون شكله المقطّع المميز.",
+      "questionText_en": "What are the characteristic pocket-like pouches visible along the colon wall?",
+      "options_en": [
+        "Haustra",
+        "Intestinal villi",
+        "Cilia",
+        "Lingual papillae"
+      ],
+      "educationalTip_en": "Haustra are series of pouches created by tonic contractions of the muscular wall.",
+      "questionText_fr": "Comment appelle-t-on les bosselures caractéristiques du côlon ?",
+      "options_fr": [
+        "Les haustrations coliques",
+        "Les villosités",
+        "Les cils",
+        "Les papilles"
+      ],
+      "educationalTip_fr": "Les haustrations donnent au côlon son aspect segmenté en chapelet de poches."
+    },
+    {
+      "id": 199,
+      "organId": 4,
+      "stageId": 1,
+      "questionText": "ما هي الأشرطة العضلية الطولية الثلاثة السميكة التي تمتد على طول القولون؟",
+      "options": [
+        "الأشرطة القولونية (Teniae Coli)",
+        "الحبال الصوتية",
+        "الأربطة الصليبية",
+        "الأوتار الرضفية"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الأشرطة القولونية (Teniae Coli) هي 3 حزم عضلية ملساء أقصر من القولون نفسه، مما يؤدي لظهور الجيوب والتقببات.",
+      "questionText_en": "What three distinct longitudinal bands of smooth muscle run along the colon?",
+      "options_en": [
+        "Teniae coli",
+        "Vocal cords",
+        "Cruciate ligaments",
+        "Patellar tendons"
+      ],
+      "educationalTip_en": "Teniae coli are three ribbon-like muscle bands that bunch the colon wall into haustra.",
+      "questionText_fr": "Quelles sont les 3 bandelettes musculaires longitudinales parcourant le côlon ?",
+      "options_fr": [
+        "Les bandelettes coliques (tænia coli)",
+        "Les cordes vocales",
+        "Les ligaments croisés",
+        "Les tendons rotuliens"
+      ],
+      "educationalTip_fr": "Les tænia coli plissent le côlon sur toute sa longueur."
+    },
+    {
+      "id": 200,
+      "organId": 4,
+      "stageId": 1,
+      "questionText": "ما اسم الجزء المستقيم النهائي من الأمعاء الغليظة الذي يخزن الفضلات قبل خروجها؟",
+      "options": [
+        "المستقيم (Rectum)",
+        "الأعور",
+        "الصائم",
+        "الفؤاد"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "المستقيم يبلغ طوله حوالي 12 إلى 15 سم ويمتلك جداراً عضلياً حساساً للتمدد لتنبيه الدماغ عند امتلائه.",
+      "questionText_en": "What terminal 15 cm portion of the large intestine stores feces before defecation?",
+      "options_en": [
+        "Rectum",
+        "Cecum",
+        "Jejunum",
+        "Cardia"
+      ],
+      "educationalTip_en": "The rectum expands to store fecal matter until defecation reflexes are triggered.",
+      "questionText_fr": "Quel segment terminal droit d'environ 15 cm stocke les selles avant l'expulsion ?",
+      "options_fr": [
+        "Le rectum",
+        "Le cæcum",
+        "Le jéjunum",
+        "Le cardia"
+      ],
+      "educationalTip_fr": "L'ampoule rectale sert de réservoir temporaire avant la défécation."
+    },
+    {
+      "id": 201,
+      "organId": 4,
+      "stageId": 1,
+      "questionText": "كم عدد العضلات العاصرة التي تتحكم في فتحة الشرج وإخراج الفضلات؟",
+      "options": [
+        "عاصرتان (داخلية لاإرادية، وخارجية إرادية)",
+        "عاصرة واحدة فقط",
+        "4 عاصرات",
+        "لا توجد عضلات عاصرة"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "العاصرة الداخلية لاإرادية تسترخي تلقائياً، بينما العاصرة الشرجية الخارجية إرادية يتحكم بها الإنسان لمنع خروج الفضلات حتى الوقت المناسب.",
+      "questionText_en": "How many anal sphincters control the expulsion of feces?",
+      "options_en": [
+        "Two (internal involuntary, external voluntary)",
+        "One only",
+        "Four",
+        "None"
+      ],
+      "educationalTip_en": "An internal involuntary sphincter and an external voluntary striated sphincter control defecation.",
+      "questionText_fr": "Combien de sphincters anaux contrôlent la continence fécale ?",
+      "options_fr": [
+        "Deux (interne involontaire, externe volontaire)",
+        "Un seul",
+        "Quatre",
+        "Aucun"
+      ],
+      "educationalTip_fr": "Le sphincter interne est réflexe tandis que le sphincter externe est contrôlé volontairement."
+    },
+    {
+      "id": 202,
+      "organId": 4,
+      "stageId": 1,
+      "questionText": "ما هي الزوائد الدهنية الصغيرة المغطاة بالبريتون المتدلية من السطح الخارجي للقولون؟",
+      "options": [
+        "الزوائد الثربية (Epiploic Appendices)",
+        "الزوائد الدودية",
+        "الخملات",
+        "الأوردة البابية"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الزوائد الثربية هي أكياس صغيرة مملوءة بالدهن تتدلى على طول القولون ولا توجد في الأمعاء الدقيقة.",
+      "questionText_en": "What small peritoneal pouches filled with fat project from the colon surface?",
+      "options_en": [
+        "Epiploic appendices (omental appendages)",
+        "Vermiform appendices",
+        "Villi",
+        "Portal veins"
+      ],
+      "educationalTip_en": "Epiploic appendices are small peritoneal fat pouches unique to the large intestine.",
+      "questionText_fr": "Que sont les petites franges graisseuses pendantes à la surface du côlon ?",
+      "options_fr": [
+        "Les appendices épiploïques",
+        "Les appendices vermiformes",
+        "Les villosités",
+        "Les veines portes"
+      ],
+      "educationalTip_fr": "Les appendices épiploïques sont de petits sacs adipeux disséminés sur le côlon."
+    },
+    {
+      "id": 203,
+      "organId": 4,
+      "stageId": 1,
+      "questionText": "كم يبلغ الطول التقريبي للأمعاء الغليظة عند الإنسان البالغ؟",
+      "options": [
+        "حوالي 1.5 متر",
+        "10 أمتار",
+        "10 سنتيمترات",
+        "20 متراً"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "يبلغ طول الأمعاء الغليظة نحو 1.5 متر، وهي أقصر بكثير من الأمعاء الدقيقة ولكن قطرها وتجويفها أوسع بكثير.",
+      "questionText_en": "What is the average length of the adult large intestine?",
+      "options_en": [
+        "About 1.5 meters (5 feet)",
+        "10 meters",
+        "10 centimeters",
+        "20 meters"
+      ],
+      "educationalTip_en": "The large intestine measures roughly 1.5 meters, wider in caliber but shorter than the small bowel.",
+      "questionText_fr": "Quelle est la longueur moyenne du gros intestin chez l'adulte ?",
+      "options_fr": [
+        "Environ 1,5 mètre",
+        "10 mètres",
+        "10 centimètres",
+        "20 mètres"
+      ],
+      "educationalTip_fr": "Le gros intestin mesure environ 1,5 mètre et possède un calibre bien plus large."
+    },
+    {
+      "id": 204,
+      "organId": 4,
+      "stageId": 1,
+      "questionText": "ما اسم الانحناءين البارزين اللذين يغير القولون عندهما اتجاهه تحت الكبد والطحال؟",
+      "options": [
+        "الانثناء الكبدي (الأيمن) والانثناء الطحالي (الأيسر)",
+        "الانثناء الفؤادي والبوابي",
+        "الانثناء العظمي",
+        "الانثناء الوريدي"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "ينعطف القولون الصاعد تحت الكبد مشكلاً الانثناء الكبدي، ثم ينعطف القولون المستعرض هابطاً تحت الطحال مشكلاً الانثناء الطحالي.",
+      "questionText_en": "What two sharp flexures turn the colon under the liver and spleen?",
+      "options_en": [
+        "Hepatic (right) and Splenic (left) flexures",
+        "Cardiac and pyloric flexures",
+        "Bone flexures",
+        "Venous flexures"
+      ],
+      "educationalTip_en": "The hepatic flexure turns under the liver; the splenic flexure curves sharply below the spleen.",
+      "questionText_fr": "Quels angles le côlon forme-t-il sous le foie et la rate ?",
+      "options_fr": [
+        "L'angle hépatique (droit) et l'angle splénique (gauche)",
+        "Les angles cardiaques",
+        "Les angles osseux",
+        "Les angles veineux"
+      ],
+      "educationalTip_fr": "L'angle colique droit est situé sous le foie et le gauche sous la rate."
+    },
+    {
+      "id": 205,
+      "organId": 4,
+      "stageId": 1,
+      "questionText": "ما هي الخلايا الإفرازية الوفيرة جداً في بطانة القولون والتي تجعل الفضلات تنزلق بسهولة؟",
+      "options": [
+        "الخلايا الكأسية المفرزة للمخاط (Goblet Cells)",
+        "الخلايا الجدارية للحمض",
+        "خلايا بيتا للإنسولين",
+        "خلايا العظام"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تفتقر الأمعاء الغليظة للخملات ولكنها غنية بالخلايا الكأسية التي تفرز كميات وفيرة من المخاط لترطيب البراز الجاف وحماية الجدار.",
+      "questionText_en": "What abundant cells in the colonic mucosa secrete lubricating mucus?",
+      "options_en": [
+        "Goblet cells",
+        "Parietal acid cells",
+        "Beta insulin cells",
+        "Bone osteocytes"
+      ],
+      "educationalTip_en": "Goblet cells heavily populate crypts to coat dehydrating stool with protective mucus.",
+      "questionText_fr": "Quelles cellules abondantes sécrètent le mucus facilitant le glissement des selles ?",
+      "options_fr": [
+        "Les cellules caliciformes à mucus",
+        "Les cellules pariétales",
+        "Les cellules bêta",
+        "Les ostéocytes"
+      ],
+      "educationalTip_fr": "Les cellules caliciformes sécrètent un mucus lubrifiant qui protège la muqueuse."
+    },
+    {
+      "id": 206,
+      "organId": 4,
+      "stageId": 2,
+      "questionText": "ما هي الوظيفة الفسيولوجية الأكثر أهمية للأمعاء الغليظة؟",
+      "options": [
+        "امتصاص الماء والأملاح وتكثيف الفضلات لتشكيل البراز",
+        "هضم البروتينات بالإنزيمات",
+        "إفراز الصفراء",
+        "تكسير الدهون باللعاب"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "يمتص القولون حوالي 1.5 إلى 2 لتر من الماء يومياً ليحول الكيموس السائل إلى كتلة صلبة متماسكة جاهزة للتخلص منها.",
+      "questionText_en": "What is the paramount physiological function of the large intestine?",
+      "options_en": [
+        "Reabsorbing water and electrolytes to compact stool",
+        "Digesting proteins with enzymes",
+        "Secreting bile",
+        "Breaking fat with saliva"
+      ],
+      "educationalTip_en": "The colon reabsorbs water and salts, transforming liquid residue into formed feces.",
+      "questionText_fr": "Quel est le rôle physiologique majeur du gros intestin ?",
+      "options_fr": [
+        "Réabsorber l'eau et les sels minéraux pour compacter les selles",
+        "Digérer les protéines",
+        "Sécréter la bile",
+        "Émulsionner les graisses"
+      ],
+      "educationalTip_fr": "Le côlon déshydrate les résidus digestifs en récupérant l'eau vitale pour l'organisme."
+    },
+    {
+      "id": 207,
+      "organId": 4,
+      "stageId": 2,
+      "questionText": "ما هي الميكروبيوم المعوي (Gut Microbiome / الفلورا المعوية)؟",
+      "options": [
+        "تريليونات البكتيريا المفيدة الصديقة التي تعيش في تناغم داخل القولون",
+        "ديدان ضارة تسبب الأمراض",
+        "فيروسات تدمر خلايا الجسم",
+        "خلايا دهنية ميتة"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "يحتوي القولون على أكثر من 100 تريليون بكتيريا نافعة تفوق عدد خلايا جسم الإنسان وتصنع فيتامينات وتحمي من العدوى.",
+      "questionText_en": "What is the gut microbiome (intestinal microflora)?",
+      "options_en": [
+        "Trillions of beneficial symbiotic bacteria residing in the colon",
+        "Parasitic disease-causing worms",
+        "Lethal cellular viruses",
+        "Dead adipocytes"
+      ],
+      "educationalTip_en": "Over 100 trillion commensal bacteria digest fiber, produce vitamins, and train the immune system.",
+      "questionText_fr": "Qu'est-ce que le microbiote intestinal (flore intestinale) ?",
+      "options_fr": [
+        "Des milliers de milliards de bactéries symbiotiques bénéfiques dans le côlon",
+        "Des vers parasites",
+        "Des virus mortels",
+        "Des cellules mortes"
+      ],
+      "educationalTip_fr": "Le microbiote rassemble plus de 100 000 milliards de bactéries indispensables à la santé."
+    },
+    {
+      "id": 208,
+      "organId": 4,
+      "stageId": 2,
+      "questionText": "ما هي الفيتامينات الأساسية التي تصنعها بكتيريا القولون النافعة ويمتصها جسمنا؟",
+      "options": [
+        "فيتامين K وبعض فيتامينات B (مثل البيوتين)",
+        "فيتامين C وفيتامين D",
+        "فيتامين A والكالسيوم",
+        "الحديد والفسفور"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "بكتيريا القولون تصنع فيتامين K الضروري جداً لتخثر الدم وتجلطه ومنع النزيف، بالإضافة للبيوتين (فيتامين B7).",
+      "questionText_en": "Which essential vitamins are synthesized by beneficial colon bacteria?",
+      "options_en": [
+        "Vitamin K and certain B vitamins (biotin)",
+        "Vitamin C and Vitamin D",
+        "Vitamin A and Calcium",
+        "Iron and Phosphorus"
+      ],
+      "educationalTip_en": "Colonic bacteria synthesize essential vitamin K (crucial for clotting) and B vitamins.",
+      "questionText_fr": "Quelles vitamines essentielles la flore colique fabrique-t-elle pour notre corps ?",
+      "options_fr": [
+        "La vitamine K et des vitamines B (biotine)",
+        "La vitamine C et D",
+        "La vitamine A",
+        "Le fer"
+      ],
+      "educationalTip_fr": "Les bactéries produisent notamment la vitamine K essentielle pour coaguler le sang."
+    },
+    {
+      "id": 209,
+      "organId": 4,
+      "stageId": 2,
+      "questionText": "كيف تتعامل بكتيريا القولون مع الألياف الغذائية النباتية (السيليلوز) التي عجزت أمعاؤنا عن هضمها؟",
+      "options": [
+        "تخمرها وتنتج أحماضاً دهنية قصيرة السلسلة (SCFA) تغذي خلايا القولون",
+        "تحولها إلى دهون ضارة",
+        "تذيبها في الدم مباشرة",
+        "تحولها إلى كحول سام"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تخمر الفلورا الألياف وتنتج حمض البيوتيرات والأسيتات والبروبيونات التي تعد الغذاء الأساسي لخلايا جدار القولون.",
+      "questionText_en": "How do colon bacteria utilize undigested dietary plant fibers (cellulose)?",
+      "options_en": [
+        "Ferment them into short-chain fatty acids (SCFAs) nourishing colonocytes",
+        "Convert them to harmful fat",
+        "Dissolve them into blood",
+        "Turn them into poison"
+      ],
+      "educationalTip_en": "Bacterial fermentation generates beneficial SCFAs (butyrate, acetate) fueling mucosal cells.",
+      "questionText_fr": "Comment le microbiote traite-t-il les fibres végétales non digérées ?",
+      "options_fr": [
+        "Il les fermente en acides gras à chaîne courte (AGCC) nourrissant le côlon",
+        "Il les transforme en graisse",
+        "Il les dissout",
+        "En poison"
+      ],
+      "educationalTip_fr": "La fermentation des fibres produit du butyrate qui nourrit les cellules de la paroi."
+    },
+    {
+      "id": 210,
+      "organId": 4,
+      "stageId": 2,
+      "questionText": "ما هي الغازات التي تنتجها بكتيريا القولون كناتج طبيعي لعملية تخمير الألياف؟",
+      "options": [
+        "النيتروجين والميثان وثاني أكسيد الكربون والهيدروجين",
+        "الأكسجين النقي فقط",
+        "غاز الخردل السام",
+        "غاز الهيليوم للبالونات"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تنتج بكتيريا القولون يومياً حوالي نصف لتر إلى لتر من الغازات نتيجة تخمير الكربوهيدرات المعقدة غير الممتصة.",
+      "questionText_en": "What gases are produced by colonic bacteria during carbohydrate fermentation?",
+      "options_en": [
+        "Nitrogen, methane, carbon dioxide, and hydrogen",
+        "Pure oxygen only",
+        "Mustard gas",
+        "Helium gas"
+      ],
+      "educationalTip_en": "Fermentation of unabsorbed sugars generates CO2, methane, hydrogen, and trace hydrogen sulfide.",
+      "questionText_fr": "Quels gaz sont naturellement émis par la fermentation bactérienne dans le côlon ?",
+      "options_fr": [
+        "L'azote, le méthane, le CO2 et l'hydrogène",
+        "De l'oxygène pur",
+        "Du gaz moutarde",
+        "De l'hélium"
+      ],
+      "educationalTip_fr": "La fermentation normale produit de l'hydrogène, du méthane et du dioxyde de carbone."
+    },
+    {
+      "id": 211,
+      "organId": 4,
+      "stageId": 2,
+      "questionText": "ماذا تمثل كتلة البراز الجاف الخارج من الأمعاء الغليظة في الغالب؟",
+      "options": [
+        "حوالي 30% إلى 50% منها بكتيريا حية وميتة وألياف ومخاط",
+        "ماء مقطر نقي",
+        "معادن ذهبية نقية",
+        "طعام سليم لم يلمس"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "يتكون البراز من 75% ماء و25% مادة صلبة، وتصل نسبة البكتيريا إلى ثلث أو نصف وزن الكتلة الصلبة الجافة.",
+      "questionText_en": "What constitutes the major dry solid portion of normal human feces?",
+      "options_en": [
+        "About 30% to 50% live and dead bacteria, fiber, and mucus",
+        "Pure distilled water",
+        "Precious minerals",
+        "Intact untouched food"
+      ],
+      "educationalTip_en": "Fecal dry weight is roughly one-third to one-half bacterial biomass along with indigestible fiber.",
+      "questionText_fr": "De quoi est composée la matière sèche des selles normales ?",
+      "options_fr": [
+        "De 30% à 50% de bactéries (mortes et vivantes), fibres et mucus",
+        "D'eau distillée",
+        "D'or",
+        "D'aliments intacts"
+      ],
+      "educationalTip_fr": "La biomasse bactérienne représente jusqu'à la moitié du poids sec des matières fécales."
+    },
+    {
+      "id": 212,
+      "organId": 4,
+      "stageId": 2,
+      "questionText": "ما هي الحركات الكتلية القوية (Mass Movements) التي تحدث في القولون عدة مرات يومياً؟",
+      "options": [
+        "موجات انقباضية واسعة تدفع الفضلات لمسافات طويلة نحو المستقيم خاصة بعد الوجبات",
+        "حركات دائرية موضعية فقط",
+        "رجوع الطعام للمعدة",
+        "اهتزازات عشوائية"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "المنعكس المعدي القولوني (Gastrocolic reflex) يحفز حركات كتلية تدفع الفضلات دفعة واحدة إلى المستقيم لتهيئته للإخراج.",
+      "questionText_en": "What are colonic mass movements occurring a few times daily?",
+      "options_en": [
+        "Powerful peristaltic waves sweeping contents over long distances into the rectum",
+        "Gentle local rings only",
+        "Food reflux to stomach",
+        "Random twitching"
+      ],
+      "educationalTip_en": "Mass movements occur 1-3 times daily, triggered by the gastrocolic reflex to fill the rectum.",
+      "questionText_fr": "Que sont les mouvements de masse coliques déclenchés après les repas ?",
+      "options_fr": [
+        "De puissantes ondes propulsant les matières sur une longue distance vers le rectum",
+        "Des petites vibrations",
+        "Un reflux gastrique",
+        "Des tremblements"
+      ],
+      "educationalTip_fr": "Le réflexe gastro-colique déclenche de puissantes contractions pour vider le côlon."
+    },
+    {
+      "id": 213,
+      "organId": 4,
+      "stageId": 2,
+      "questionText": "ما هي البروبيوتيك (Probiotics) المفيدة للأمعاء الغليظة؟",
+      "options": [
+        "كائنات دقيقة حية مفيدة (مثل بكتيريا الزبادي) تعزز صحة الميكروبيوم",
+        "مضادات حيوية كيميائية",
+        "صبغات ملونة للطعام",
+        "مواد حافظة مصنعة"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تناول البروبيوتيك (مثل الموجود في اللبن الرائب والأغذية المخمرة) يعيد التوازن للفلورا المعوية ويقوي مناعة الجهاز الهضمي.",
+      "questionText_en": "What are probiotics and their benefit to the large intestine?",
+      "options_en": [
+        "Live beneficial microorganisms (e.g. in yogurt) supporting healthy microbiome",
+        "Synthetic antibiotics",
+        "Food food colorants",
+        "Chemical preservatives"
+      ],
+      "educationalTip_en": "Probiotics are live cultures replenishing beneficial gut flora and inhibiting pathogens.",
+      "questionText_fr": "Que sont les probiotiques bénéfiques pour le côlon ?",
+      "options_fr": [
+        "Des micro-organismes vivants (comme dans le yaourt) qui enrichissent la flore",
+        "Des antibiotiques",
+        "Des colorants",
+        "Des conservateurs"
+      ],
+      "educationalTip_fr": "Les probiotiques apportent de bonnes bactéries pour rééquilibrer le microbiote."
+    },
+    {
+      "id": 214,
+      "organId": 4,
+      "stageId": 2,
+      "questionText": "ما هي البريبايوتيك (Prebiotics)؟",
+      "options": [
+        "ألياف ومغذيات غير قابلة للهضم تغذي وتنشط نمو البكتيريا النافعة في القولون",
+        "أدوية لقتل البكتيريا",
+        "فيتامينات للرئة",
+        "معادن ثقيلة سامة"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "البريبايوتيك (مثل الإينولين في البصل والثوم والشوفان) هي الغذاء المفضل للفلورا المعوية لإنتاج مركبات صحية للجسم.",
+      "questionText_en": "What are prebiotics?",
+      "options_en": [
+        "Non-digestible plant fibers that selectively nourish beneficial gut bacteria",
+        "Bactericidal drugs",
+        "Lung vitamins",
+        "Toxic heavy metals"
+      ],
+      "educationalTip_en": "Prebiotics serve as specialized fermentable fuel for symbiotic probiotic bacteria.",
+      "questionText_fr": "Que sont les prébiotiques ?",
+      "options_fr": [
+        "Des fibres alimentaires servant de nourriture aux bonnes bactéries coliques",
+        "Des tueurs de bactéries",
+        "Des vitamines",
+        "Des métaux toxiques"
+      ],
+      "educationalTip_fr": "Les prébiotiques sont le carburant dont raffolent les bactéries amies de l'intestin."
+    },
+    {
+      "id": 215,
+      "organId": 4,
+      "stageId": 2,
+      "questionText": "ما هو التوازن الأسموزي في القولون وماذا يحدث إذا لم يمتص القولون الماء الكافي؟",
+      "options": [
+        "يحدث الإسهال المائي ويفقد الجسم سوائله وأملاحه الحيوية",
+        "يحدث الإمساك الشديد",
+        "يتجمد البراز تماماً",
+        "تتوقف نبضات القلب فجأة"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "إذا تسارعت حركة القولون ولم يمتص الماء، تخرج الفضلات سائلة مسببة الإسهال الذي قد يؤدي للجفاف إذا لم يعوض.",
+      "questionText_en": "What happens if the large intestine fails to reabsorb sufficient water?",
+      "options_en": [
+        "Watery diarrhea occurs, risking dehydration and electrolyte loss",
+        "Severe constipation",
+        "Stool completely calcifies",
+        "Heart instantly stops"
+      ],
+      "educationalTip_en": "Inadequate water reabsorption causes diarrhea, leading to rapid dehydration.",
+      "questionText_fr": "Que se passe-t-il si le côlon ne réabsorbe pas assez d'eau ?",
+      "options_fr": [
+        "Une diarrhée liquide survient, risquant de déshydrater l'organisme",
+        "Une constipation",
+        "Les selles se solidifient",
+        "Le cœur s'arrête"
+      ],
+      "educationalTip_fr": "Le défaut d'absorption de l'eau entraîne des selles liquides et une déshydratation."
+    },
+    {
+      "id": 216,
+      "organId": 4,
+      "stageId": 3,
+      "questionText": "ما هي الزائدة الدودية (Appendix) وماذا يحدث عند التهابها الحاد؟",
+      "options": [
+        "جيب لمفاوي متدلٍ من الأعور يسبب التهابه ألماً حاداً أسفل يمين البطن يستدعي الجراحة",
+        "عظم زائد في الحوض",
+        "شريان ينبض بالدم",
+        "عضلة للركض"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "التهاب الزائدة الدودية (Appendicitis) حالة شائعة تبدأ بألم حول السرة ثم يستقر أسفل يمين البطن ويتطلب استئصالاً سريعاً.",
+      "questionText_en": "What is the vermiform appendix and its acute inflammation?",
+      "options_en": [
+        "A lymphoid pouch on the cecum whose acute inflammation causes lower right pain",
+        "A pelvic bone",
+        "A pulsing artery",
+        "A sprinting muscle"
+      ],
+      "educationalTip_en": "Appendicitis presents with periumbilical pain shifting to McBurney's point in the right lower quadrant.",
+      "questionText_fr": "Qu'est-ce que l'appendice et que provoque son inflammation aiguë ?",
+      "options_fr": [
+        "Un diverticule lymphoïde du cæcum dont l'infection donne une vive douleur en fosse iliaque droite",
+        "Un os du bassin",
+        "Une artère",
+        "Un muscle"
+      ],
+      "educationalTip_fr": "L'appendicite aiguë nécessite une intervention chirurgicale rapide pour éviter la péritonite."
+    },
+    {
+      "id": 217,
+      "organId": 4,
+      "stageId": 3,
+      "questionText": "لغز: أنا مثل إطار الصورة أحيط ببطنك، أمتص آخر قطرات الماء لأصنع قالباً متماسكاً، من أنا؟",
+      "options": [
+        "القولون (الأمعاء الغليظة)",
+        "المريء",
+        "الكبد",
+        "المرارة"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "القولون يحيط بالأمعاء الدقيقة كالإطار الرباعي ويمتص السوائل ليحافظ على ترطيب جسم الإنسان.",
+      "questionText_en": "Riddle: Framing your belly like a picture frame, I reclaim the last drops of water. Who am I?",
+      "options_en": [
+        "The colon (large intestine)",
+        "The esophagus",
+        "The liver",
+        "The gallbladder"
+      ],
+      "educationalTip_en": "The colon frames the small intestine on right, top, left, and pelvis to extract remaining water.",
+      "questionText_fr": "Énigme : Je cadre l'abdomen comme un tableau et récupère les dernières gouttes d'eau. Qui suis-je ?",
+      "options_fr": [
+        "Le côlon (gros intestin)",
+        "L'œsophage",
+        "Le foie",
+        "La vésicule"
+      ],
+      "educationalTip_fr": "Le côlon encadre le grêle et parachève la réabsorption hydrique."
+    },
+    {
+      "id": 218,
+      "organId": 4,
+      "stageId": 3,
+      "questionText": "ما هو الإمساك (Constipation) وكيف تساعد الألياف وشرب الماء في الوقاية منه؟",
+      "options": [
+        "صعوبة خروج البراز بسبب بقائه طويلاً وامتصاص كل مائه، وتساعد الألياف والماء في تليينه وتكبير حجمه",
+        "زيادة سريعة في التبرز",
+        "التهاب في اللوزتين",
+        "فقدان الشهية العصبي"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الألياف غير القابلة للذوبان تمتص الماء وتزيد من حجم البراز، مما يحفز جدران القولون على التمعج السلس وتفريغ الفضلات بسهولة.",
+      "questionText_en": "What causes constipation and how do fiber and hydration prevent it?",
+      "options_en": [
+        "Prolonged transit extracts too much water; dietary fiber retains water to bulk stool",
+        "Rapid defecation",
+        "Tonsillitis",
+        "Anorexia nervosa"
+      ],
+      "educationalTip_en": "Insoluble fiber draws water, bulking stool and stimulating peristaltic clearance.",
+      "questionText_fr": "Qu'est-ce que la constipation et comment l'eau et les fibres la préviennent-elles ?",
+      "options_fr": [
+        "Un transit ralenti rendant les selles dures et sèches ; les fibres retiennent l'eau",
+        "Une accélération du transit",
+        "Une angine",
+        "L'anorexie"
+      ],
+      "educationalTip_fr": "Les fibres agissent comme des éponges en gardant l'eau dans la lumière colique."
+    },
+    {
+      "id": 219,
+      "organId": 4,
+      "stageId": 3,
+      "questionText": "ما هي البواسير (Hemorrhoids)؟",
+      "options": [
+        "أوردة متضخمة ومنتفخة في أسفل المستقيم وفتحة الشرج قد تنزف أو تسبب ألماً",
+        "أورام عظمية",
+        "بكتيريا نافعة في الأمعاء",
+        "إنزيمات هاضمة"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "تنتج البواسير عن زيادة الضغط في أوردة الحوض بسبب الإجهاد أثناء الإمساك المزمن أو الجلوس لفترات طويلة أو الحمل.",
+      "questionText_en": "What are hemorrhoids (piles)?",
+      "options_en": [
+        "Swollen dilated vascular veins in the lower rectum and anus",
+        "Bone tumors",
+        "Beneficial gut bacteria",
+        "Digestive enzymes"
+      ],
+      "educationalTip_en": "Hemorrhoids are engorged venous plexuses caused by increased pelvic pressure or chronic straining.",
+      "questionText_fr": "Que sont les hémorroïdes ?",
+      "options_fr": [
+        "Des varices veineuses dilatées au niveau du rectum et de l'anus",
+        "Des tumeurs osseuses",
+        "Des bactéries",
+        "Des enzymes"
+      ],
+      "educationalTip_fr": "Les hémorroïdes sont des dilatations veineuses favorisées par la constipation et la sédentarité."
+    },
+    {
+      "id": 220,
+      "organId": 4,
+      "stageId": 3,
+      "questionText": "ما هو منظار القولون (Colonoscopy) وما أهميته الطبية الوقائية؟",
+      "options": [
+        "فحص بكاميرا مرنة للقولون بالكامل للكشف المبكر عن السلائل (Polyps) وعلاجها قبل تحولها لأورام",
+        "فحص بالموجات الصوتية لليد",
+        "فحص لمينا الأسنان",
+        "فحص لنبضات القلب"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "يعتبر تنظير القولون الفحص الذهبي للوقاية من سرطان القولون عبر استئصال اللحميات الصغيرة (Polyps) أثناء الفحص نفسه.",
+      "questionText_en": "What is a colonoscopy and its primary screening benefit?",
+      "options_en": [
+        "Endoscopic inspection of the entire colon to identify and excise precancerous polyps",
+        "Hand ultrasound",
+        "Dental enamel test",
+        "Heart rhythm test"
+      ],
+      "educationalTip_en": "Colonoscopy directly visualizes the mucosa, enabling early detection and polypectomy.",
+      "questionText_fr": "Qu'est-ce que la coloscopie et quel est son intérêt préventif ?",
+      "options_fr": [
+        "L'examen endoscopique de tout le côlon pour dépister et réséquer les polypes",
+        "Une échographie de la main",
+        "Un contrôle dentaire",
+        "Un électrocardiogramme"
+      ],
+      "educationalTip_fr": "La coloscopie permet de retirer les polypes avant qu'ils ne dégénèrent."
+    },
+    {
+      "id": 221,
+      "organId": 4,
+      "stageId": 3,
+      "questionText": "ما هي متلازمة القولون العصبي (IBS / Irritable Bowel Syndrome)؟",
+      "options": [
+        "اضطراب وظيفي في حركة القولون وحساسيته للأعصاب يسبب انتفاخاً وتقلصات وتناوب الإسهال والإمساك",
+        "تلف في كبد المريض",
+        "كسر في عظام الحوض",
+        "انسداد كامل في المريء"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "القولون العصبي ينتج عن اضطراب في محور الدماغ-الأمعاء (Brain-Gut Axis) ويتأثر بشدة بالتوتر النفسي ونوعية الغذاء دون وجود تلف عضوي.",
+      "questionText_en": "What is Irritable Bowel Syndrome (IBS)?",
+      "options_en": [
+        "A functional disorder of brain-gut interaction causing abdominal cramps, bloating, and altered bowel habits",
+        "Liver failure",
+        "Pelvic fracture",
+        "Total esophageal obstruction"
+      ],
+      "educationalTip_en": "IBS stems from gut hypersensitivity and altered motility without identifiable organic pathology.",
+      "questionText_fr": "Qu'est-ce que le syndrome de l'intestin irritable (colopathie fonctionnelle) ?",
+      "options_fr": [
+        "Un trouble fonctionnel de la motricité colique avec spasmes, ballonnements et transit perturbé",
+        "Une cirrhose",
+        "Une fracture du bassin",
+        "Un blocage de l'œsophage"
+      ],
+      "educationalTip_fr": "Le côlon irritable est un dysfonctionnement sans lésion visible, très influencé par le stress."
+    },
+    {
+      "id": 222,
+      "organId": 4,
+      "stageId": 3,
+      "questionText": "لماذا ينصح الأطباء بتناول البروبيوتيك أو اللبن بعد كورس علاج بالمضادات الحيوية القوية؟",
+      "options": [
+        "لإعادة بناء واستعمار الفلورا المعوية النافعة التي قضت عليها المضادات الحيوية",
+        "لقتل خلايا القولون",
+        "لتسريع نبضات القلب",
+        "لتخزين الدهون"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "المضادات الحيوية واسعة النطاق تقضي على البكتيريا الضارة والنافعة معاً، مما قد يسبب إسهالاً ويترك المجال للميكروبات الانتهازية.",
+      "questionText_en": "Why is taking probiotics recommended following an intensive antibiotic course?",
+      "options_en": [
+        "To replenish and restore beneficial gut flora depleted by antibiotics",
+        "To destroy colon cells",
+        "To accelerate heart rate",
+        "To accumulate fat"
+      ],
+      "educationalTip_en": "Antibiotics inadvertently wipe out commensal bacteria; probiotics help re-establish healthy diversity.",
+      "questionText_fr": "Pourquoi conseille-t-on des probiotiques après une antibiothérapie ?",
+      "options_fr": [
+        "Pour repeupler la flore intestinale amie détruite par les antibiotiques",
+        "Pour tuer les cellules",
+        "Pour accélérer le cœur",
+        "Pour stocker les graisses"
+      ],
+      "educationalTip_fr": "Les antibiotiques altèrent la flore ; les probiotiques rétablissent l'équilibre."
+    },
+    {
+      "id": 223,
+      "organId": 4,
+      "stageId": 3,
+      "questionText": "ما هو التهاب الرتج (Diverticulitis) في الأمعاء الغليظة؟",
+      "options": [
+        "التهاب أكياس وجيوب صغيرة بارزة خارج جدار القولون مسببة ألماً شديداً في أسفل يسار البطن",
+        "التهاب في اللسان",
+        "تجمع الغازات في المرارة",
+        "نزيف في الركبة"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "الرتوج (Diverticula) هي فتق في بطانة القولون عبر نقاط ضعف في طبقته العضلية، وعند احتباس البراز فيها تلتهب بشدة.",
+      "questionText_en": "What is diverticulitis in the large intestine?",
+      "options_en": [
+        "Inflammation or infection of small outpouchings (diverticula) in the colon wall",
+        "Tongue inflammation",
+        "Gallbladder air trapping",
+        "Knee bleeding"
+      ],
+      "educationalTip_en": "Diverticulitis occurs when small pouches in the colon wall become inflamed, typically causing left lower quadrant pain.",
+      "questionText_fr": "Qu'est-ce que la diverticulite colique ?",
+      "options_fr": [
+        "L'inflammation de petites hernies ou poches de la paroi colique (diverticules)",
+        "Une inflammation linguale",
+        "De l'air dans la vésicule",
+        "Un saignement au genou"
+      ],
+      "educationalTip_fr": "Elle se manifeste par des douleurs intenses en fosse iliaque gauche et de la fièvre."
+    },
+    {
+      "id": 224,
+      "organId": 4,
+      "stageId": 3,
+      "questionText": "ما هو الغاز ذو الرائحة المميزة الذي تنتجه بعض بكتيريا القولون عند هضم مركبات الكبريت؟",
+      "options": [
+        "كبريتيد الهيدروجين (Hydrogen sulfide)",
+        "الأكسجين النقي",
+        "بخار الماء المعطر",
+        "غاز النيتروجين الخامل"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "مركبات الكبريت الموجودة في البيض واللحوم والبصل تتحول بفعل بكتيريا القولون إلى غاز كبريتيد الهيدروجين ذي الرائحة النفاذة.",
+      "questionText_en": "Which pungent gas is produced by gut bacteria fermenting sulfur-containing foods?",
+      "options_en": [
+        "Hydrogen sulfide",
+        "Pure oxygen",
+        "Aromatic water vapor",
+        "Inert nitrogen"
+      ],
+      "educationalTip_en": "Bacterial breakdown of sulfur-rich amino acids produces trace amounts of pungent hydrogen sulfide.",
+      "questionText_fr": "Quel gaz sulfuré odorant est produit par les bactéries lors de la digestion d'œufs ou d'ail ?",
+      "options_fr": [
+        "Le sulfure d'hydrogène",
+        "L'oxygène pur",
+        "La vapeur d'eau",
+        "L'azote inerte"
+      ],
+      "educationalTip_fr": "Le sulfure d'hydrogène donne son odeur caractéristique aux gaz intestinaux."
+    },
+    {
+      "id": 225,
+      "organId": 4,
+      "stageId": 3,
+      "questionText": "لغز: حارسان في نهاية الرحلة، أحدهما يسترخي دون إذنك، والآخر لا يفتح إلا بأمر عقلك الإرادي، من هما؟",
+      "options": [
+        "العاصرة الشرجية الداخلية والعاصرة الشرجية الخارجية",
+        "البواب والفؤاد",
+        "اللسان والأسنان",
+        "المرارة والبنكرياس"
+      ],
+      "correctOptionIndex": 0,
+      "educationalTip": "العاصرة الداخلية تستجيب لمنعكس التبرز التلقائي، بينما العاصرة الخارجية تمنحك التحكم الإرادي الكامل لتختار الوقت المناسب.",
+      "questionText_en": "Riddle: Two guardians at journey's end: one opens automatically, the other obeys only your voluntary command. Who are they?",
+      "options_en": [
+        "Internal and external anal sphincters",
+        "Pylorus and cardia",
+        "Tongue and teeth",
+        "Gallbladder and pancreas"
+      ],
+      "educationalTip_en": "The internal sphincter reflexively relaxes; the external striated sphincter provides voluntary continence.",
+      "questionText_fr": "Énigme : Deux gardiens au terme du voyage : l'un involontaire et l'autre soumis à votre volonté. Qui sont-ils ?",
+      "options_fr": [
+        "Le sphincter anal interne et le sphincter anal externe",
+        "Le pylore et le cardia",
+        "La langue et les dents",
+        "La vésicule et le pancréas"
+      ],
+      "educationalTip_fr": "Le sphincter interne est végétatif et l'externe est sous contrôle volontaire conscient."
     }
   ]
 }

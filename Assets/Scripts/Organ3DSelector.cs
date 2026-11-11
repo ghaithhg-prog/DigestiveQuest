@@ -1,111 +1,202 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 /// <summary>
-/// سكربت التفاعل ولمس الأعضاء ثلاثية الأبعاد (Organ3DSelector).
-/// هذا الكود مسؤول عن:
-/// 1. التقاط نقرات الفأرة على أجهزة الحاسوب (PC Mouse Clicks).
-/// 2. التقاط لمسات الأصابع على شاشات هواتف الأندرويد (Android Touch Screen).
-/// 3. إضاءة أو تمييز العضو بلون توهجي لطيف عند وضع المؤشر عليه في الحاسوب.
-/// 4. منع التداخل مع عناصر واجهة المستخدم (UI) عند الضغط على الأزرار.
+/// سكربت التفاعل ولمس وإضاءة الأعضاء ثلاثية الأبعاد (Organ3DSelector).
+/// - استشعار النقر بالماوس أو اللمس بالأصابع.
+/// - إضاءة العضو باللون الذهبي المشع عند اختياره (Golden Emission Glow).
+/// - إضاءة ناعمة عند تحويم الماوس فوق العضو.
+/// - التنسيق مع واجهة المستخدم لفتح المراحل وتمييز البطاقات.
 /// </summary>
 public class Organ3DSelector : MonoBehaviour
 {
-    [Header("بيانات العضو")]
-    [Tooltip("اسم العضو باللغة العربية")]
-    public string organArabicName = "المعدة";
+    public static List<Organ3DSelector> AllSelectors = new List<Organ3DSelector>();
+    public static Organ3DSelector CurrentSelected = null;
 
-    [Tooltip("رقم العضو من 0 إلى 4: \n0: الفم والمريء\n1: المعدة\n2: الكبد والبنكرياس والمرارة\n3: الأمعاء الدقيقة\n4: الأمعاء الغليظة")]
+    [Header("بيانات العضو")]
+    public string organArabicName = "المعدة";
     public int organId = 1;
 
-    [Header("مواد التمييز والتأثير البصري")]
-    [Tooltip("المادة الأصلية للعضو")]
-    private Material originalMaterial;
-
-    [Tooltip("المادة التوهجية المضيئة عند تحويم الفأرة أو لمس العضو")]
-    [SerializeField] private Material hoverHighlightMaterial;
-
-    // مكون الريندر الخاص بالمجسم لتغيير لونه
     private MeshRenderer meshRenderer;
+    private Color[] originalMainColors;
+    private Color[] originalEmissionColors;
+    private bool isSelected = false;
+    private bool isHovered = false;
+    private Coroutine pulseCoroutine = null;
 
-    /// <summary>
-    /// دالة البدء Start:
-    /// مهمتها: حفظ المادة ولون العضو الأصلي للاسترجاع لاحقاً.
-    /// </summary>
+    private void Awake()
+    {
+        if (!AllSelectors.Contains(this))
+        {
+            AllSelectors.Add(this);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        AllSelectors.Remove(this);
+    }
+
     private void Start()
     {
         meshRenderer = GetComponent<MeshRenderer>();
         if (meshRenderer != null)
         {
-            originalMaterial = meshRenderer.material;
+            Material[] mats = meshRenderer.materials;
+            originalMainColors = new Color[mats.Length];
+            originalEmissionColors = new Color[mats.Length];
+
+            for (int i = 0; i < mats.Length; i++)
+            {
+                if (mats[i].HasProperty("_Color"))
+                    originalMainColors[i] = mats[i].GetColor("_Color");
+                else
+                    originalMainColors[i] = Color.white;
+
+                if (mats[i].HasProperty("_EmissionColor"))
+                    originalEmissionColors[i] = mats[i].GetColor("_EmissionColor");
+                else
+                    originalEmissionColors[i] = Color.black;
+            }
         }
 
-        // التأكد من وجود مصادم ثلاثي الأبعاد (Collider) لتمكين الضغط واللمس
         if (GetComponent<Collider>() == null)
         {
-            gameObject.AddComponent<MeshCollider>();
+            MeshCollider mc = gameObject.AddComponent<MeshCollider>();
+            mc.convex = false;
         }
     }
 
     /// <summary>
-    /// دالة تحويم الفأرة على العضو (خاصة بالحاسوب PC):
-    /// مهمتها: تغيير لون العضو إلى اللون المتوهج عند مرور سهم الفأرة فوقه.
+    /// إضاءة العضو باللون الذهبي المشع عند اختياره
     /// </summary>
-    private void OnMouseEnter()
+    public void SetSelectedGlow(bool selected)
     {
-        // إذا كان مؤشر الفأرة فوق قائمة من قوائم الـ UI لا نغير اللون
-        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
-            return;
+        isSelected = selected;
 
-        if (hoverHighlightMaterial != null && meshRenderer != null)
+        if (meshRenderer == null || originalMainColors == null) return;
+        Material[] mats = meshRenderer.materials;
+
+        if (pulseCoroutine != null)
         {
-            meshRenderer.material = hoverHighlightMaterial;
+            StopCoroutine(pulseCoroutine);
+            pulseCoroutine = null;
         }
-    }
 
-    /// <summary>
-    /// دالة مغادرة الفأرة للعضو (خاصة بالحاسوب PC):
-    /// مهمتها: إعادة العضو إلى لونه الطبيعي فور ابتعاد الفأرة عنه.
-    /// </summary>
-    private void OnMouseExit()
-    {
-        if (originalMaterial != null && meshRenderer != null)
+        if (selected)
         {
-            meshRenderer.material = originalMaterial;
-        }
-    }
-
-    /// <summary>
-    /// دالة الضغط على العضو (تعمل على الحاسوب والأندرويد معاً):
-    /// مهمتها: استشعار نقرة الماوس أو لمسة الإصبع وفتح نافذة مراحل هذا العضو.
-    /// </summary>
-    private void OnMouseDown()
-    {
-        // 1. فحص هل ضغط اللاعب على زر في واجهة المستخدم (UI)؟
-        // هذا السطر يمنع النقر بالخطأ على العضو إذا كان هناك نافذة مفتوحة فوقه
-        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
-            return;
-
-        OnOrganSelected();
-    }
-
-    /// <summary>
-    /// دالة اختيار العضو وتأكيد الضغط:
-    /// مهمتها: فتح نافذة اختيار المراحل الثلاث الخاصة بهذا العضو للطفل.
-    /// </summary>
-    public void OnOrganSelected()
-    {
-        Debug.Log($"[Organ3DSelector] تم لمس واختيار: {organArabicName} (معرف العضو: {organId})");
-
-        // البحث عن مدير واجهة استكشاف الجسم في المشهد واستدعاء نافذة المراحل
-        BodyExplorerUI explorerUI = FindAnyObjectByType<BodyExplorerUI>();
-        if (explorerUI != null)
-        {
-            explorerUI.OpenStagesModal(organId, organArabicName);
+            CurrentSelected = this;
+            for (int i = 0; i < mats.Length; i++)
+            {
+                mats[i].EnableKeyword("_EMISSION");
+                mats[i].SetColor("_Color", new Color(1.0f, 0.88f, 0.40f)); // لون ذهبي مشرق
+                mats[i].SetColor("_EmissionColor", new Color(1.0f, 0.82f, 0.20f) * 1.5f);
+            }
+            pulseCoroutine = StartCoroutine(PulseGlowRoutine());
         }
         else
         {
-            Debug.LogWarning("[Organ3DSelector] لم يتم العثور على سكربت BodyExplorerUI في المشهد!");
+            if (CurrentSelected == this) CurrentSelected = null;
+            for (int i = 0; i < mats.Length; i++)
+            {
+                mats[i].SetColor("_Color", originalMainColors[i]);
+                mats[i].SetColor("_EmissionColor", originalEmissionColors[i]);
+                if (originalEmissionColors[i] == Color.black)
+                {
+                    mats[i].DisableKeyword("_EMISSION");
+                }
+            }
+        }
+    }
+
+    /// <summary>
+    /// إضاءة ناعمة عند تحويم الماوس
+    /// </summary>
+    public void SetHoverGlow(bool hover)
+    {
+        if (isSelected) return; // العضو المختار مضاء بذهبي كامل مسبقاً
+        if (isHovered == hover) return;
+        isHovered = hover;
+
+        if (meshRenderer == null || originalMainColors == null) return;
+        Material[] mats = meshRenderer.materials;
+
+        for (int i = 0; i < mats.Length; i++)
+        {
+            if (hover)
+            {
+                mats[i].EnableKeyword("_EMISSION");
+                Color hoverGold = Color.Lerp(originalMainColors[i], new Color(1.0f, 0.9f, 0.5f), 0.45f);
+                mats[i].SetColor("_Color", hoverGold);
+                mats[i].SetColor("_EmissionColor", new Color(0.85f, 0.70f, 0.15f) * 0.8f);
+            }
+            else
+            {
+                mats[i].SetColor("_Color", originalMainColors[i]);
+                mats[i].SetColor("_EmissionColor", originalEmissionColors[i]);
+                if (originalEmissionColors[i] == Color.black)
+                {
+                    mats[i].DisableKeyword("_EMISSION");
+                }
+            }
+        }
+    }
+
+    private IEnumerator PulseGlowRoutine()
+    {
+        while (isSelected)
+        {
+            if (meshRenderer != null)
+            {
+                float wave = (Mathf.Sin(Time.time * 3.5f) + 1.0f) * 0.5f; // 0 to 1
+                Color goldGlow = Color.Lerp(new Color(1.0f, 0.75f, 0.15f), new Color(1.0f, 0.95f, 0.45f), wave);
+                float intensity = 1.2f + 0.9f * wave;
+
+                Material[] mats = meshRenderer.materials;
+                for (int i = 0; i < mats.Length; i++)
+                {
+                    mats[i].SetColor("_EmissionColor", goldGlow * intensity);
+                }
+            }
+            yield return null;
+        }
+    }
+
+    public void OnOrganSelected()
+    {
+        BodyExplorerUI explorerUI = FindFirstObjectByType<BodyExplorerUI>();
+        if (explorerUI != null)
+        {
+            explorerUI.SelectOrgan(organId);
+        }
+    }
+
+    /// <summary>
+    /// دالة استدعاء عامة لتمييز عضو بالمعرف ID
+    /// </summary>
+    public static void HighlightOrganById(int targetOrganId)
+    {
+        for (int i = 0; i < AllSelectors.Count; i++)
+        {
+            if (AllSelectors[i] != null)
+            {
+                bool isTarget = (AllSelectors[i].organId == targetOrganId);
+                AllSelectors[i].SetSelectedGlow(isTarget);
+            }
+        }
+    }
+
+    public static void ClearAllHighlights()
+    {
+        for (int i = 0; i < AllSelectors.Count; i++)
+        {
+            if (AllSelectors[i] != null)
+            {
+                AllSelectors[i].SetSelectedGlow(false);
+                AllSelectors[i].SetHoverGlow(false);
+            }
         }
     }
 }

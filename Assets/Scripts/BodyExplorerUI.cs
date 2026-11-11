@@ -3,6 +3,8 @@ using UnityEngine.UI;
 
 /// <summary>
 /// سكربت واجهة استكشاف الجسم والمراحل (BodyExplorerUI) مع دعم اللغات الثلاث.
+/// - إضاءة العضو باللون الذهبي المشع فور النقر على بطاقته أو النقر عليه مباشرة.
+/// - تمييز البطاقات الجانبية والتفاعل الملموس معها بنسبة 100%.
 /// </summary>
 public class BodyExplorerUI : MonoBehaviour
 {
@@ -26,9 +28,12 @@ public class BodyExplorerUI : MonoBehaviour
     public Text[] stageStarTexts;
     public Button closeModalButton;
 
-    [Header("أزرار اختيار الأعضاء السريعة في أسفل الشاشة")]
+    [Header("أزرار وبطاقات اختيار الأعضاء الجانبية")]
     public Button[] bottomOrganButtons;
     public Text[] bottomOrganTexts;
+    public GameObject[] organCardRoots;
+    public Image[] organCardAccents;
+    public Color[] defaultAccentColors;
 
     [Header("المتحكم بالأسئلة")]
     public QuizGameController quizController;
@@ -62,7 +67,7 @@ public class BodyExplorerUI : MonoBehaviour
             btnLangFrench.onClick.AddListener(() => LocalizationManager.SetLanguage(AppLanguage.French));
         }
 
-        // ربط أزرار الأعضاء السريعة
+        // ربط أزرار الأعضاء الجانبية
         if (bottomOrganButtons != null)
         {
             for (int i = 0; i < bottomOrganButtons.Length; i++)
@@ -71,7 +76,7 @@ public class BodyExplorerUI : MonoBehaviour
                 {
                     int organIdx = i;
                     bottomOrganButtons[i].onClick.RemoveAllListeners();
-                    bottomOrganButtons[i].onClick.AddListener(() => OpenStagesModal(organIdx));
+                    bottomOrganButtons[i].onClick.AddListener(() => SelectOrgan(organIdx));
                 }
             }
         }
@@ -111,9 +116,58 @@ public class BodyExplorerUI : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// اختيار العضو: إضاءته باللون الذهبي المشع، تمييز بطاقته، وفتح المراحل
+    /// </summary>
+    public void SelectOrgan(int organId)
+    {
+        selectedOrganId = organId;
+
+        // 1. إضاءة العضو ثلاثي الأبعاد باللون الذهبي المشع
+        Organ3DSelector.HighlightOrganById(organId);
+
+        // 2. تمييز البطاقة الجانبية المختارة
+        HighlightSideCard(organId);
+
+        // 3. فتح نافذة المراحل
+        OpenStagesModal(organId);
+    }
+
+    public void HighlightSideCard(int organId)
+    {
+        if (organCardRoots == null) return;
+        for (int i = 0; i < organCardRoots.Length; i++)
+        {
+            if (organCardRoots[i] != null)
+            {
+                Image bg = organCardRoots[i].GetComponent<Image>();
+                bool isSelected = (i == organId);
+                if (bg != null)
+                {
+                    bg.color = isSelected ? new Color(0.18f, 0.28f, 0.44f, 0.98f) : new Color(0.10f, 0.15f, 0.24f, 0.94f);
+                }
+
+                if (organCardAccents != null && i < organCardAccents.Length && organCardAccents[i] != null)
+                {
+                    if (isSelected)
+                    {
+                        organCardAccents[i].color = new Color(1.0f, 0.85f, 0.2f); // شريط ذهبي مشع
+                    }
+                    else if (defaultAccentColors != null && i < defaultAccentColors.Length)
+                    {
+                        organCardAccents[i].color = defaultAccentColors[i];
+                    }
+                }
+            }
+        }
+    }
+
     public void OpenStagesModal(int organId, string organName = "")
     {
         selectedOrganId = organId;
+        Organ3DSelector.HighlightOrganById(organId);
+        HighlightSideCard(organId);
+
         if (stagesModalPanel != null) stagesModalPanel.SetActive(true);
         UpdateModalContent();
     }
@@ -136,7 +190,6 @@ public class BodyExplorerUI : MonoBehaviour
             {
                 stageButtons[i].interactable = isUnlocked;
 
-                // تحديث لون الزر حسب القفل
                 Image btnImg = stageButtons[i].GetComponent<Image>();
                 if (btnImg != null)
                 {
@@ -202,5 +255,7 @@ public class BodyExplorerUI : MonoBehaviour
     public void CloseModal()
     {
         if (stagesModalPanel != null) stagesModalPanel.SetActive(false);
+        Organ3DSelector.ClearAllHighlights();
+        HighlightSideCard(-1);
     }
 }

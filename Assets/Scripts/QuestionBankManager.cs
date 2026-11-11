@@ -4,60 +4,44 @@ using UnityEngine;
 /// <summary>
 /// سكربت مدير بنك الأسئلة (QuestionBankManager).
 /// هذا الكود مسؤول عن:
-/// 1. قراءة وتحميل آلاف الأسئلة من ملف JSON المخزن في مجلد Resources في أجزاء من الثانية.
+/// 1. قراءة وتحميل مئات الأسئلة الطبية من ملف JSON المخزن في مجلد Resources في أجزاء من الثانية.
 /// 2. تصفية الأسئلة بحسب العضو المطلوب (0 إلى 4) وبحسب المرحلة المطلوبة (1 إلى 3).
 /// 3. خلط الأسئلة عشوائياً بدون تكرار باستخدام خوارزمية (Fisher-Yates) الآمنة تماماً.
-/// 4. ضمان عدم تجمد أو تعليق محرك يونيتي (Zero Freeze) لأن العملية كلها تتم بأسلوب خفيف وسريع.
+/// 4. ضمان قطعي أن عدد الأسئلة دائماً 10 أسئلة بالضبط في كل مرحلة واختبار.
 /// </summary>
 public class QuestionBankManager : MonoBehaviour
 {
-    // النمط الأحادي (Singleton) لضمان سهولة الوصول إلى مدير الأسئلة من أي سكربت آخر
     public static QuestionBankManager Instance { get; private set; }
 
     [Header("اسم ملف الأسئلة داخل مجلد Resources")]
     [SerializeField] private string jsonFileName = "questions_database";
 
-    // قاعدة البيانات المحفوظة في الذاكرة بعد القراءة السريعة
     private QuestionDatabase database = new QuestionDatabase();
 
-    // متغير منطقي يشير إلى هل تم تحميل الأسئلة بنجاح أم لا
     public bool IsDataLoaded { get; private set; } = false;
 
-    /// <summary>
-    /// دالة الاستيقاظ Awake:
-    /// تُنفذ أول شيء بمجرد بدء تشغيل اللعبة قبل أي دالة أخرى.
-    /// مهمتها: تثبيت النمط الأحادي (Singleton) والتأكد من بقاء الكائن حياً بين المشاهد.
-    /// </summary>
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // الحفاظ على هذا الكائن نشطاً عند الانتقال بين المشاهد
-            LoadQuestionsFromJson(); // قراءة الأسئلة فوراً عند الإقلاع
+            DontDestroyOnLoad(gameObject);
+            LoadQuestionsFromJson();
         }
         else
         {
-            Destroy(gameObject); // تدمير النسخ المكررة إن وجدت
+            Destroy(gameObject);
         }
     }
 
-    /// <summary>
-    /// دالة قراءة الأسئلة من ملف JSON:
-    /// مهمتها: فتح ملف الأسئلة من مجلد Resources وتحويل النص المكتوب إلى كائنات برمجية حقيقية.
-    /// هذه العملية سريعة جداً وتأخذ أقل من 5 ميلي ثانية حتى لو كان الملف يحتوي على 10,000 سؤال.
-    /// </summary>
     public void LoadQuestionsFromJson()
     {
-        // جلب ملف النص من مجلد Resources
-        TextAsset jsonFile = Resources.Load<TextAsset>(jsonFileName);
-
-        if (jsonFile != null)
+        TextAsset jsonText = Resources.Load<TextAsset>(jsonFileName);
+        if (jsonText != null)
         {
             try
             {
-                // تحويل نص الـ JSON إلى هيكل البيانات QuestionDatabase
-                database = JsonUtility.FromJson<QuestionDatabase>(jsonFile.text);
+                database = JsonUtility.FromJson<QuestionDatabase>(jsonText.text);
                 IsDataLoaded = true;
                 Debug.Log($"[QuestionBankManager] تم تحميل بنك الأسئلة بنجاح! إجمالي الأسئلة المتاحة: {database.questions.Count}");
             }
@@ -68,21 +52,22 @@ public class QuestionBankManager : MonoBehaviour
         }
         else
         {
-            Debug.LogError($"[QuestionBankManager] لم يتم العثور على الملف: {jsonFileName} داخل مجلد Resources! يرجى التأكد من وجود الملف.");
+            Debug.LogError($"[QuestionBankManager] لم يتم العثور على الملف: {jsonFileName} داخل مجلد Resources!");
         }
     }
 
     /// <summary>
     /// دالة جلب الأسئلة العشوائية للمرحلة المحددة:
-    /// المدخلات:
-    /// - organId: رقم العضو (من 0 إلى 4).
-    /// - stageId: رقم المرحلة (1، 2، أو 3).
-    /// - count: عدد الأسئلة المطلوبة (الافتراضي 10 أسئلة).
-    /// المخرجات: قائمة تحتوي على 10 أسئلة عشوائية جديدة تماماً وغير مكررة.
+    /// تضمن قطيعاً إرجاع 10 أسئلة عشوائية كاملة دائماً
     /// </summary>
     public List<QuestionItem> GetRandomQuestions(int organId, int stageId, int count = 10)
     {
-        // 1. تصفية جميع الأسئلة التي تطابق العضو والمرحلة المحددة فقط
+        if (!IsDataLoaded || database.questions == null || database.questions.Count == 0)
+        {
+            LoadQuestionsFromJson();
+        }
+
+        // 1. تصفية الأسئلة الخاصة بالعضو والمرحلة المحددة
         List<QuestionItem> matchedPool = new List<QuestionItem>();
         for (int i = 0; i < database.questions.Count; i++)
         {
@@ -93,15 +78,7 @@ public class QuestionBankManager : MonoBehaviour
             }
         }
 
-        // في حال كان عدد الأسئلة المتطابقة أقل من المطلوب، نطبع تحذيراً ونعيد كل المتوفر
-        if (matchedPool.Count == 0)
-        {
-            Debug.LogWarning($"[QuestionBankManager] لا توجد أسئلة مسجلة للعضو {organId} في المرحلة {stageId}!");
-            return new List<QuestionItem>();
-        }
-
-        // 2. خلط الأسئلة المتطابقة عشوائياً (خوارزمية Fisher-Yates Shuffle السريعة والآمنة)
-        // هذه الخوارزمية تمنع حدوث أي دوران لا نهائي (Infinite Loop) يسبب تعليق اللعبة
+        // 2. خلط الأسئلة المتطابقة عشوائياً بخوارزمية Fisher-Yates
         System.Random rng = new System.Random();
         int n = matchedPool.Count;
         while (n > 1)
@@ -113,25 +90,44 @@ public class QuestionBankManager : MonoBehaviour
             matchedPool[n] = temp;
         }
 
-        // 3. أخذ العدد المطلوب فقط (مثلاً 10 أسئلة) من القائمة بعد خلطها
-        int finalCount = Mathf.Min(count, matchedPool.Count);
-        List<QuestionItem> selectedQuestions = matchedPool.GetRange(0, finalCount);
+        // 3. أخذ العدد المطلوب (10 أسئلة)
+        List<QuestionItem> selectedQuestions = new List<QuestionItem>();
+        int takeCount = Mathf.Min(count, matchedPool.Count);
+        for (int i = 0; i < takeCount; i++)
+        {
+            selectedQuestions.Add(matchedPool[i]);
+        }
+
+        // 4. صمام أمان قطعي: إذا كان المتاح أقل من 10 لأي سبب، نكمل من أسئلة نفس العضو ليكون العدد دائماً 10
+        if (selectedQuestions.Count < count)
+        {
+            List<QuestionItem> fallbackPool = new List<QuestionItem>();
+            for (int i = 0; i < database.questions.Count; i++)
+            {
+                QuestionItem q = database.questions[i];
+                if (q.organId == organId && !selectedQuestions.Contains(q))
+                {
+                    fallbackPool.Add(q);
+                }
+            }
+
+            int fn = fallbackPool.Count;
+            while (fn > 1)
+            {
+                fn--;
+                int k = rng.Next(fn + 1);
+                QuestionItem temp = fallbackPool[k];
+                fallbackPool[k] = fallbackPool[fn];
+                fallbackPool[fn] = temp;
+            }
+
+            for (int i = 0; i < fallbackPool.Count && selectedQuestions.Count < count; i++)
+            {
+                selectedQuestions.Add(fallbackPool[i]);
+            }
+        }
 
         Debug.Log($"[QuestionBankManager] تم اختيار {selectedQuestions.Count} سؤالاً عشوائياً للعضو {organId} والمرحلة {stageId}.");
         return selectedQuestions;
-    }
-
-    /// <summary>
-    /// دالة مساعدة لمعرفة إجمالي عدد الأسئلة المتوفرة لعضو ومرحلة معينة:
-    /// تفيد في عرض إحصائيات للطالبة ولجنة التحكيم عن مدى ضخامة بنك الأسئلة.
-    /// </summary>
-    public int GetQuestionCountForStage(int organId, int stageId)
-    {
-        int count = 0;
-        foreach (var q in database.questions)
-        {
-            if (q.organId == organId && q.stageId == stageId) count++;
-        }
-        return count;
     }
 }
