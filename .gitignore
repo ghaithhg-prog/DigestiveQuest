@@ -23,3 +23,6 @@ desktop.ini
 
 # Builds backup
 Builds/Android/*_BackUpThisFolder_ButDontShipItWithYourGame/
+
+*.log
+

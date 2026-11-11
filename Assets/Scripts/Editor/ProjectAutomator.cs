@@ -22,8 +22,8 @@ public static class ProjectAutomator
         Camera cam = camGo.AddComponent<Camera>();
         cam.clearFlags = CameraClearFlags.SolidColor;
         cam.backgroundColor = new Color(0.06f, 0.08f, 0.13f);
-        camGo.transform.position = new Vector3(0, 0.18f, -3.25f);
-        camGo.transform.rotation = Quaternion.Euler(3.5f, 0f, 0f);
+        camGo.transform.position = new Vector3(0, 0.05f, -2.60f);
+        camGo.transform.rotation = Quaternion.Euler(2.0f, 0f, 0f);
         camGo.tag = "MainCamera";
 
         // إضافة سكربت النقر المباشر على الكاميرا
@@ -55,21 +55,22 @@ public static class ProjectAutomator
         GameObject systemsGo = new GameObject("Systems");
         systemsGo.AddComponent<QuestionBankManager>();
         systemsGo.AddComponent<LocalizationManager>();
+        WindowController windowCtrl = systemsGo.AddComponent<WindowController>();
 
         // 4. EventSystem
         GameObject eventSysGo = new GameObject("EventSystem");
         eventSysGo.AddComponent<UnityEngine.EventSystems.EventSystem>();
         eventSysGo.AddComponent<UnityEngine.EventSystems.StandaloneInputModule>();
 
-        // 5. استيراد المجسم التشريحي المتناسق
+        // 5. استيراد المجسم التشريحي الطبي الواقعي
         GameObject modelPrefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Models/DigestiveSystemFull.fbx");
         if (modelPrefab != null)
         {
             GameObject digestiveModel = (GameObject)PrefabUtility.InstantiatePrefab(modelPrefab);
             digestiveModel.name = "DigestiveSystem_3D";
             // ضبط الحجم والموضع بدقة ليكون في منتصف الشاشة تماماً دون أي تغطية من الأشرطة
-            digestiveModel.transform.position = new Vector3(0, -0.08f, 0);
-            digestiveModel.transform.localScale = Vector3.one * 0.92f;
+            digestiveModel.transform.position = new Vector3(0, -0.02f, 0);
+            digestiveModel.transform.localScale = Vector3.one * 0.95f;
             digestiveModel.AddComponent<ModelRotator>();
 
             SetupOrgan(digestiveModel, "Organ_Mouth_Esophagus", 0, "الفم والمريء");
@@ -91,17 +92,27 @@ public static class ProjectAutomator
 
         Font defaultFont = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
 
-        // --- أ. الشريط العلوي (بدون أي إيموجي مشوه) ---
+        // --- أ. الشريط العلوي مع أزرار اللغات وأزرار النافذة ---
         GameObject headerPanel = CreateUIBox("HeaderPanel", canvasGo.transform, new Vector2(1860, 90), new Vector2(0, 485), new Color(0.09f, 0.13f, 0.22f, 0.95f));
 
-        Text titleText = CreateText("TitleText", headerPanel.transform, new Vector2(1100, 42), new Vector2(-150, 16), ArabicTextFixer.Fix("مغامرة استكشاف الجهاز الهضمي - Digestive Quest"), 30, new Color(1.0f, 0.85f, 0.2f), defaultFont, TextAnchor.MiddleCenter);
-        Text subText = CreateText("SubText", headerPanel.transform, new Vector2(1100, 30), new Vector2(-150, -20), ArabicTextFixer.Fix("انقر على أي عضو في المجسم أو اختر من الأزرار بالأسفل لبدء التحدي!"), 20, new Color(0.85f, 0.92f, 1.0f), defaultFont, TextAnchor.MiddleCenter);
+        Text titleText = CreateText("TitleText", headerPanel.transform, new Vector2(1000, 42), new Vector2(-220, 16), ArabicTextFixer.Fix("مغامرة استكشاف الجهاز الهضمي - Digestive Quest"), 30, new Color(1.0f, 0.85f, 0.2f), defaultFont, TextAnchor.MiddleCenter);
+        Text subText = CreateText("SubText", headerPanel.transform, new Vector2(1000, 30), new Vector2(-220, -20), ArabicTextFixer.Fix("انقر على أي عضو في المجسم أو اختر من الأزرار بالأسفل لبدء التحدي!"), 20, new Color(0.85f, 0.92f, 1.0f), defaultFont, TextAnchor.MiddleCenter);
 
         // أزرار اللغات
-        GameObject langContainer = CreateUIBox("LanguageBar", headerPanel.transform, new Vector2(380, 60), new Vector2(680, 0), new Color(0.14f, 0.20f, 0.32f, 0.85f));
-        Button btnAr = CreateButton("Btn_Arabic", langContainer.transform, new Vector2(115, 48), new Vector2(-120, 0), new Color(0.18f, 0.55f, 0.32f), ArabicTextFixer.Fix("العربية"), Color.white, 19, defaultFont);
-        Button btnEn = CreateButton("Btn_English", langContainer.transform, new Vector2(115, 48), new Vector2(0, 0), new Color(0.20f, 0.40f, 0.65f), "English", Color.white, 19, defaultFont);
-        Button btnFr = CreateButton("Btn_French", langContainer.transform, new Vector2(115, 48), new Vector2(120, 0), new Color(0.65f, 0.35f, 0.20f), "Français", Color.white, 19, defaultFont);
+        GameObject langContainer = CreateUIBox("LanguageBar", headerPanel.transform, new Vector2(360, 54), new Vector2(490, 0), new Color(0.14f, 0.20f, 0.32f, 0.85f));
+        Button btnAr = CreateButton("Btn_Arabic", langContainer.transform, new Vector2(110, 44), new Vector2(-115, 0), new Color(0.18f, 0.55f, 0.32f), ArabicTextFixer.Fix("العربية"), Color.white, 19, defaultFont);
+        Button btnEn = CreateButton("Btn_English", langContainer.transform, new Vector2(110, 44), new Vector2(0, 0), new Color(0.20f, 0.40f, 0.65f), "English", Color.white, 19, defaultFont);
+        Button btnFr = CreateButton("Btn_French", langContainer.transform, new Vector2(110, 44), new Vector2(115, 0), new Color(0.65f, 0.35f, 0.20f), "Français", Color.white, 19, defaultFont);
+
+        // أزرار التحكم بالنافذة في أقصى اليمين (تصغير، تكبير، إغلاق)
+        GameObject winBar = CreateUIBox("WindowControlsBar", headerPanel.transform, new Vector2(190, 54), new Vector2(795, 0), new Color(0.12f, 0.16f, 0.26f, 0.90f));
+        Button btnMin = CreateButton("Btn_WinMinimize", winBar.transform, new Vector2(52, 44), new Vector2(-60, 0), new Color(0.22f, 0.28f, 0.40f), "—", Color.white, 22, defaultFont);
+        Button btnMax = CreateButton("Btn_WinMaximize", winBar.transform, new Vector2(52, 44), new Vector2(0, 0), new Color(0.22f, 0.28f, 0.40f), "[ ]", Color.white, 17, defaultFont);
+        Button btnClose = CreateButton("Btn_WinClose", winBar.transform, new Vector2(52, 44), new Vector2(60, 0), new Color(0.85f, 0.22f, 0.22f), "X", Color.white, 20, defaultFont);
+
+        btnMin.onClick.AddListener(() => windowCtrl.MinimizeWindow());
+        btnMax.onClick.AddListener(() => windowCtrl.ToggleMaximizeWindow());
+        btnClose.onClick.AddListener(() => windowCtrl.CloseApplication());
 
         // --- ب. أزرار الأعضاء السريعة في أسفل الشاشة ---
         GameObject bottomBar = CreateUIBox("BottomOrganBar", canvasGo.transform, new Vector2(1860, 90), new Vector2(0, -485), new Color(0.09f, 0.13f, 0.22f, 0.95f));
@@ -371,7 +382,7 @@ public static class ProjectAutomator
 
             var col = child.gameObject.GetComponent<MeshCollider>();
             if (col == null) col = child.gameObject.AddComponent<MeshCollider>();
-            col.convex = true; // جعل المصادم محدباً ليلتقط Physics.Raycast بدقة تامة وبلا أي خطأ
+            col.convex = false; // التقاط شعاعي فيزيائي دقيق 100% بكامل تفاصيل النموذج الطبي
         }
     }
 
@@ -383,6 +394,15 @@ public static class ProjectAutomator
         string buildDir = "Builds/Windows";
         if (!Directory.Exists(buildDir)) Directory.CreateDirectory(buildDir);
         string exePath = Path.Combine(buildDir, "DigestiveQuest.exe");
+
+        // ضبط إعدادات المشغل لدعم وضع النافذة القياسية القابلة للتكبير والتصغير والإغلاق
+        PlayerSettings.defaultIsFullScreen = false;
+        PlayerSettings.defaultScreenWidth = 1366;
+        PlayerSettings.defaultScreenHeight = 768;
+        PlayerSettings.resizableWindow = true;
+        PlayerSettings.visibleInBackground = true;
+        PlayerSettings.allowFullscreenSwitch = true;
+        PlayerSettings.fullScreenMode = FullScreenMode.Windowed;
 
         Debug.Log("[ProjectAutomator] جاري بناء نسخة الحاسوب...");
         BuildPlayerOptions options = new BuildPlayerOptions
