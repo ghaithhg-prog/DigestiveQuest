@@ -173,9 +173,7 @@ public class BodyExplorerUI : MonoBehaviour
                 }
                 else
                 {
-                    string starStr = "";
-                    for (int s = 0; s < stars; s++) starStr += "⭐";
-                    stageStarTexts[i].text = LocalizationManager.Get("status_unlocked") + starStr;
+                    stageStarTexts[i].text = LocalizationManager.Get("status_unlocked") + $"{stars}/3";
                 }
             }
         }
