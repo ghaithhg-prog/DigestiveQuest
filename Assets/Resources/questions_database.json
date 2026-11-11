@@ -5,869 +5,2850 @@
       "organId": 0,
       "stageId": 1,
       "questionText": "أين تبدأ أولى خطوات رحلة هضم الطعام في جسم الإنسان؟",
-      "options": ["في المعدة", "في الفم", "في الأمعاء", "في المريء"],
+      "options": [
+        "في المعدة",
+        "في الفم",
+        "في الأمعاء",
+        "في المريء"
+      ],
       "correctOptionIndex": 1,
-      "educationalTip": "يبدأ الهضم دائماً في الفم حيث يقوم الأسنان واللعاب بتجهيز الطعام."
+      "educationalTip": "يبدأ الهضم دائماً في الفم حيث يقوم الأسنان واللعاب بتجهيز الطعام.",
+      "questionText_en": "Where does the journey of food digestion begin in the human body?",
+      "options_en": [
+        "In the Stomach",
+        "In the Mouth",
+        "In the Intestines",
+        "In the Esophagus"
+      ],
+      "educationalTip_en": "Digestion begins in the mouth where teeth chew and saliva moistens food.",
+      "questionText_fr": "Où commence le voyage de la digestion des aliments dans le corps humain ?",
+      "options_fr": [
+        "Dans l'estomac",
+        "Dans la bouche",
+        "Dans les intestins",
+        "Dans l'œsophage"
+      ],
+      "educationalTip_fr": "La digestion commence dans la bouche où les dents mastiquent et la salive humidifie les aliments."
     },
     {
       "id": 2,
       "organId": 0,
       "stageId": 1,
       "questionText": "ما هي الأدوات الحادة في الفم التي تقوم بتقطيع الطعام وطحنه؟",
-      "options": ["الأسنان", "اللسان", "الشفاه", "الحنك"],
+      "options": [
+        "الأسنان",
+        "اللسان",
+        "الشفاه",
+        "الحنك"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "الأسنان تقوم بالهضم الميكانيكي عبر التقطيع والطحن لتسهيل البلع."
+      "educationalTip": "الأسنان تقوم بالهضم الميكانيكي عبر التقطيع والطحن لتسهيل البلع.",
+      "questionText_en": "What are the sharp tools in the mouth that cut and grind food?",
+      "options_en": [
+        "Teeth",
+        "Tongue",
+        "Lips",
+        "Palate"
+      ],
+      "educationalTip_en": "Teeth perform mechanical digestion by cutting and grinding food.",
+      "questionText_fr": "Quels sont les outils tranchants dans la bouche qui coupent et broient les aliments ?",
+      "options_fr": [
+        "Les dents",
+        "La langue",
+        "Les lèvres",
+        "Le palais"
+      ],
+      "educationalTip_fr": "Les dents effectuent la digestion mécanique en coupant et broyant les aliments."
     },
     {
       "id": 3,
       "organId": 0,
       "stageId": 1,
       "questionText": "ما هو الأنبوب العضلي الطويل الذي يربط بين الفم والمعدة؟",
-      "options": ["القصبة الهوائية", "المريء", "الشريان", "الأمعاء"],
+      "options": [
+        "القصبة الهوائية",
+        "المريء",
+        "الشريان",
+        "الأمعاء"
+      ],
       "correctOptionIndex": 1,
-      "educationalTip": "المريء هو ممر عضلي ينقل بلعة الطعام مباشرة من البلعوم إلى المعدة."
+      "educationalTip": "المريء هو ممر عضلي ينقل بلعة الطعام مباشرة من البلعوم إلى المعدة.",
+      "questionText_en": "What is the muscular tube connecting the mouth to the stomach?",
+      "options_en": [
+        "Trachea",
+        "Esophagus",
+        "Artery",
+        "Intestine"
+      ],
+      "educationalTip_en": "The esophagus is a muscular passage moving the food bolus to the stomach.",
+      "questionText_fr": "Quel est le tube musculaire reliant la bouche à l'estomac ?",
+      "options_fr": [
+        "La trachée",
+        "L'œsophage",
+        "L'artère",
+        "L'intestin"
+      ],
+      "educationalTip_fr": "L'œsophage est un conduit musculaire transportant le bol alimentaire vers l'estomac."
     },
     {
       "id": 4,
       "organId": 0,
       "stageId": 1,
       "questionText": "ما هو العضو العضلي المرن في الفم الذي يساعدنا على تذوق الطعام وتقليبه؟",
-      "options": ["اللسان", "اللثة", "البلعوم", "الأسنان"],
+      "options": [
+        "اللسان",
+        "اللثة",
+        "البلعوم",
+        "الأسنان"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "اللسان يحتوي على براعم التذوق ويساعد في دفع الطعام نحو البلعوم."
+      "educationalTip": "اللسان يحتوي على براعم التذوق ويساعد في دفع الطعام نحو البلعوم.",
+      "questionText_en": "What flexible muscular organ in the mouth helps taste and roll food?",
+      "options_en": [
+        "Tongue",
+        "Gums",
+        "Pharynx",
+        "Teeth"
+      ],
+      "educationalTip_en": "The tongue contains taste buds and pushes food toward the pharynx.",
+      "questionText_fr": "Quel organe musculaire flexible dans la bouche aide à goûter et remuer les aliments ?",
+      "options_fr": [
+        "La langue",
+        "Les gencives",
+        "Le pharynx",
+        "Les dents"
+      ],
+      "educationalTip_fr": "La langue contient des papilles gustatives et pousse la nourriture vers le pharynx."
     },
     {
       "id": 5,
       "organId": 0,
       "stageId": 1,
       "questionText": "كم يبلغ عدد الأسنان الدائمة عند الإنسان البالغ؟",
-      "options": ["20 سناً", "32 سناً", "40 سناً", "28 سناً"],
+      "options": [
+        "20 سناً",
+        "32 سناً",
+        "40 سناً",
+        "28 سناً"
+      ],
       "correctOptionIndex": 1,
-      "educationalTip": "يمتلك الإنسان البالغ 32 سناً، بينما يمتلك الطفل 20 سناً لبنياً."
+      "educationalTip": "يمتلك الإنسان البالغ 32 سناً، بينما يمتلك الطفل 20 سناً لبنياً.",
+      "questionText_en": "How many permanent teeth does an adult human have?",
+      "options_en": [
+        "20 teeth",
+        "32 teeth",
+        "40 teeth",
+        "28 teeth"
+      ],
+      "educationalTip_en": "An adult has 32 permanent teeth, while children have 20 milk teeth.",
+      "questionText_fr": "Combien de dents permanentes un être humain adulte possède-t-il ?",
+      "options_fr": [
+        "20 dents",
+        "32 dents",
+        "40 dents",
+        "28 dents"
+      ],
+      "educationalTip_fr": "Un adulte possède 32 dents permanentes, tandis que les enfants ont 20 dents de lait."
     },
     {
       "id": 6,
       "organId": 0,
       "stageId": 1,
       "questionText": "ما هو صمام الأمان الذي يغلق مجرى التنفس أثناء بلع الطعام حتى لا نختنق؟",
-      "options": ["لسان المزمار", "الحبال الصوتية", "اللهاة", "اللوزتان"],
+      "options": [
+        "لسان المزمار",
+        "الحبال الصوتية",
+        "اللهاة",
+        "اللوزتان"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "لسان المزمار يغلق الحنجرة فوراً أثناء البلع ليمر الطعام في المريء فقط."
+      "educationalTip": "لسان المزمار يغلق الحنجرة فوراً أثناء البلع ليمر الطعام في المريء فقط.",
+      "questionText_en": "What safety valve closes the airway during swallowing so we don't choke?",
+      "options_en": [
+        "Epiglottis",
+        "Vocal Cords",
+        "Uvula",
+        "Tonsils"
+      ],
+      "educationalTip_en": "The epiglottis covers the larynx during swallowing to prevent choking.",
+      "questionText_fr": "Quelle valve de sécurité ferme les voies respiratoires pendant la déglutition pour éviter l'étouffement ?",
+      "options_fr": [
+        "L'épiglotte",
+        "Les cordes vocales",
+        "La luette",
+        "Les amygdales"
+      ],
+      "educationalTip_fr": "L'épiglotte recouvre le larynx lors de la déglutition pour empêcher l'étouffement."
     },
     {
       "id": 7,
       "organId": 0,
       "stageId": 1,
       "questionText": "ما السائل الرطب الذي تفرزه الغدد داخل الفم للمساعدة في البلع؟",
-      "options": ["الدم", "اللعاب", "الدموع", "الصفراء"],
+      "options": [
+        "الدم",
+        "اللعاب",
+        "الدموع",
+        "الصفراء"
+      ],
       "correctOptionIndex": 1,
-      "educationalTip": "اللعاب يرطب الطعام ويحتوي على إنزيمات هاضمة للنشويات."
+      "educationalTip": "اللعاب يرطب الطعام ويحتوي على إنزيمات هاضمة للنشويات.",
+      "questionText_en": "Where does the journey of food digestion begin in the human body?",
+      "options_en": [
+        "In the Stomach",
+        "In the Mouth",
+        "In the Intestines",
+        "In the Esophagus"
+      ],
+      "educationalTip_en": "Digestion begins in the mouth where teeth chew and saliva moistens food.",
+      "questionText_fr": "Où commence le voyage de la digestion des aliments dans le corps humain ?",
+      "options_fr": [
+        "Dans l'estomac",
+        "Dans la bouche",
+        "Dans les intestins",
+        "Dans l'œsophage"
+      ],
+      "educationalTip_fr": "La digestion commence dans la bouche où les dents mastiquent et la salive humidifie les aliments."
     },
     {
       "id": 8,
       "organId": 0,
       "stageId": 1,
       "questionText": "كم عدد الغدد اللعابية الرئيسية الموجودة في فم الإنسان؟",
-      "options": ["زوج واحد", "3 أزواج", "5 أزواج", "زوجان"],
+      "options": [
+        "زوج واحد",
+        "3 أزواج",
+        "5 أزواج",
+        "زوجان"
+      ],
       "correctOptionIndex": 1,
-      "educationalTip": "توجد 3 أزواج من الغدد اللعابية: النكفية، وتحت الفك، وتحت اللسان."
+      "educationalTip": "توجد 3 أزواج من الغدد اللعابية: النكفية، وتحت الفك، وتحت اللسان.",
+      "questionText_en": "What are the sharp tools in the mouth that cut and grind food?",
+      "options_en": [
+        "Teeth",
+        "Tongue",
+        "Lips",
+        "Palate"
+      ],
+      "educationalTip_en": "Teeth perform mechanical digestion by cutting and grinding food.",
+      "questionText_fr": "Quels sont les outils tranchants dans la bouche qui coupent et broient les aliments ?",
+      "options_fr": [
+        "Les dents",
+        "La langue",
+        "Les lèvres",
+        "Le palais"
+      ],
+      "educationalTip_fr": "Les dents effectuent la digestion mécanique en coupant et broyant les aliments."
     },
     {
       "id": 9,
       "organId": 0,
       "stageId": 1,
       "questionText": "ما الجزء العضلي الذي يقع خلف الفم مباشرة ويعتبر ممراً مشتركاً للهواء والطعام؟",
-      "options": ["البلعوم", "المعدة", "الأنف", "الحجاب الحاجز"],
+      "options": [
+        "البلعوم",
+        "المعدة",
+        "الأنف",
+        "الحجاب الحاجز"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "البلعوم ممر يمر منه الطعام إلى المريء والهواء إلى الحنجرة."
+      "educationalTip": "البلعوم ممر يمر منه الطعام إلى المريء والهواء إلى الحنجرة.",
+      "questionText_en": "What is the muscular tube connecting the mouth to the stomach?",
+      "options_en": [
+        "Trachea",
+        "Esophagus",
+        "Artery",
+        "Intestine"
+      ],
+      "educationalTip_en": "The esophagus is a muscular passage moving the food bolus to the stomach.",
+      "questionText_fr": "Quel est le tube musculaire reliant la bouche à l'estomac ?",
+      "options_fr": [
+        "La trachée",
+        "L'œsophage",
+        "L'artère",
+        "L'intestin"
+      ],
+      "educationalTip_fr": "L'œsophage est un conduit musculaire transportant le bol alimentaire vers l'estomac."
     },
     {
       "id": 10,
       "organId": 0,
       "stageId": 1,
       "questionText": "كم يستغرق مرور لقمة الطعام عبر المريء للوصول إلى المعدة تقريباً؟",
-      "options": ["ساعة كاملة", "من 4 إلى 8 ثوانٍ", "دقيقة كاملة", "أقل من ثانية واحدة"],
+      "options": [
+        "ساعة كاملة",
+        "من 4 إلى 8 ثوانٍ",
+        "دقيقة كاملة",
+        "أقل من ثانية واحدة"
+      ],
       "correctOptionIndex": 1,
-      "educationalTip": "عضلات المريء سريعة وتدفع اللقمة في بضع ثوانٍ فقط نحو المعدة."
+      "educationalTip": "عضلات المريء سريعة وتدفع اللقمة في بضع ثوانٍ فقط نحو المعدة.",
+      "questionText_en": "What flexible muscular organ in the mouth helps taste and roll food?",
+      "options_en": [
+        "Tongue",
+        "Gums",
+        "Pharynx",
+        "Teeth"
+      ],
+      "educationalTip_en": "The tongue contains taste buds and pushes food toward the pharynx.",
+      "questionText_fr": "Quel organe musculaire flexible dans la bouche aide à goûter et remuer les aliments ?",
+      "options_fr": [
+        "La langue",
+        "Les gencives",
+        "Le pharynx",
+        "Les dents"
+      ],
+      "educationalTip_fr": "La langue contient des papilles gustatives et pousse la nourriture vers le pharynx."
     },
     {
       "id": 11,
       "organId": 0,
       "stageId": 1,
       "questionText": "ما نوع العظام أو الأنسجة التي تثبت فيها جذور الأسنان بإحكام؟",
-      "options": ["عظام الفكين", "الجمجمة فقط", "الغضاريف", "عضلات الرقبة"],
+      "options": [
+        "عظام الفكين",
+        "الجمجمة فقط",
+        "الغضاريف",
+        "عضلات الرقبة"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "تثبت الأسنان في عظام الفك العلوي والسفلي ومغطاة باللثة."
+      "educationalTip": "تثبت الأسنان في عظام الفك العلوي والسفلي ومغطاة باللثة.",
+      "questionText_en": "How many permanent teeth does an adult human have?",
+      "options_en": [
+        "20 teeth",
+        "32 teeth",
+        "40 teeth",
+        "28 teeth"
+      ],
+      "educationalTip_en": "An adult has 32 permanent teeth, while children have 20 milk teeth.",
+      "questionText_fr": "Combien de dents permanentes un être humain adulte possède-t-il ?",
+      "options_fr": [
+        "20 dents",
+        "32 dents",
+        "40 dents",
+        "28 dents"
+      ],
+      "educationalTip_fr": "Un adulte possède 32 dents permanentes, tandis que les enfants ont 20 dents de lait."
     },
     {
       "id": 12,
       "organId": 0,
       "stageId": 1,
       "questionText": "ما الطبقة البيضاء الصلبة الخارجية التي تحمي السن من التسوس؟",
-      "options": ["طبقة المينا", "طبقة العاج", "لب السن", "الجذر"],
+      "options": [
+        "طبقة المينا",
+        "طبقة العاج",
+        "لب السن",
+        "الجذر"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "مينا الأسنان هي أصلب مادة في جسم الإنسان وتحمي السن من التآكل."
+      "educationalTip": "مينا الأسنان هي أصلب مادة في جسم الإنسان وتحمي السن من التآكل.",
+      "questionText_en": "What safety valve closes the airway during swallowing so we don't choke?",
+      "options_en": [
+        "Epiglottis",
+        "Vocal Cords",
+        "Uvula",
+        "Tonsils"
+      ],
+      "educationalTip_en": "The epiglottis covers the larynx during swallowing to prevent choking.",
+      "questionText_fr": "Quelle valve de sécurité ferme les voies respiratoires pendant la déglutition pour éviter l'étouffement ?",
+      "options_fr": [
+        "L'épiglotte",
+        "Les cordes vocales",
+        "La luette",
+        "Les amygdales"
+      ],
+      "educationalTip_fr": "L'épiglotte recouvre le larynx lors de la déglutition pour empêcher l'étouffement."
     },
-
     {
       "id": 13,
       "organId": 0,
       "stageId": 2,
       "questionText": "ما المادة الغذائية التي يبدأ تفكيكها كيميائياً في الفم بفضل اللعاب؟",
-      "options": ["البروتينات", "النشويات والسكريات", "الدهون والزيوت", "الألياف"],
+      "options": [
+        "البروتينات",
+        "النشويات والسكريات",
+        "الدهون والزيوت",
+        "الألياف"
+      ],
       "correctOptionIndex": 1,
-      "educationalTip": "يحتوي اللعاب على إنزيم الأميليز الذي يحول النشا إلى سكريات بسيطة."
+      "educationalTip": "يحتوي اللعاب على إنزيم الأميليز الذي يحول النشا إلى سكريات بسيطة.",
+      "questionText_en": "What nutrient begins chemical digestion in the mouth thanks to saliva?",
+      "options_en": [
+        "Proteins",
+        "Starches and Sugars",
+        "Fats and Oils",
+        "Fibers"
+      ],
+      "educationalTip_en": "Saliva contains amylase which breaks starches into simple sugars.",
+      "questionText_fr": "Quel nutriment commence sa digestion chimique dans la bouche grâce à la salive ?",
+      "options_fr": [
+        "Les protéines",
+        "Les féculents et sucres",
+        "Les graisses et huiles",
+        "Les fibres"
+      ],
+      "educationalTip_fr": "La salive contient de l'amylase qui décompose les amidons en sucres simples."
     },
     {
       "id": 14,
       "organId": 0,
       "stageId": 2,
       "questionText": "كيف يتحرك الطعام في المريء حتى لو كان الشخص مستلقياً أو مقلوباً؟",
-      "options": ["بالجاذبية الأرضية فقط", "بالحركة الدودية لعضلات المريء", "بدفع الهواء", "بضغط الماء"],
+      "options": [
+        "بالجاذبية الأرضية فقط",
+        "بالحركة الدودية لعضلات المريء",
+        "بدفع الهواء",
+        "بضغط الماء"
+      ],
       "correctOptionIndex": 1,
-      "educationalTip": "الحركة الدودية (Peristalsis) هي انقباضات عضلية تدفع الطعام حتماً باتجاه المعدة."
+      "educationalTip": "الحركة الدودية (Peristalsis) هي انقباضات عضلية تدفع الطعام حتماً باتجاه المعدة.",
+      "questionText_en": "How does food move down the esophagus even when standing on your head?",
+      "options_en": [
+        "Gravity only",
+        "Peristalsis muscle waves",
+        "Air pressure",
+        "Water pressure"
+      ],
+      "educationalTip_en": "Peristalsis is muscular contraction pushing food toward the stomach regardless of gravity.",
+      "questionText_fr": "Comment la nourriture descend-elle dans l'œsophage même la tête en bas ?",
+      "options_fr": [
+        "Par gravité seulement",
+        "Par ondes musculaires péristaltiques",
+        "Par pression d'air",
+        "Par pression d'eau"
+      ],
+      "educationalTip_fr": "Le péristaltisme est une contraction musculaire poussant les aliments vers l'estomac."
     },
     {
       "id": 15,
       "organId": 0,
       "stageId": 2,
       "questionText": "ما اسم الإنزيم اللعابي الشهير المسؤول عن هضم النشا في الفم؟",
-      "options": ["البيبسين", "الأميليز اللعابي", "اللايبيز", "الأنسولين"],
+      "options": [
+        "البيبسين",
+        "الأميليز اللعابي",
+        "اللايبيز",
+        "الأنسولين"
+      ],
       "correctOptionIndex": 1,
-      "educationalTip": "إنزيم الأميليز هو أول مقص كيميائي يفكك سلاسل النشا الطويلة في الفم."
+      "educationalTip": "إنزيم الأميليز هو أول مقص كيميائي يفكك سلاسل النشا الطويلة في الفم.",
+      "questionText_en": "What famous enzyme in saliva breaks down starch in the mouth?",
+      "options_en": [
+        "Pepsin",
+        "Salivary Amylase",
+        "Lipase",
+        "Insulin"
+      ],
+      "educationalTip_en": "Amylase is the first chemical scissor cutting complex starches.",
+      "questionText_fr": "Quelle enzyme célèbre de la salive décompose l'amidon dans la bouche ?",
+      "options_fr": [
+        "La pepsine",
+        "L'amylase salivaire",
+        "La lipase",
+        "L'insuline"
+      ],
+      "educationalTip_fr": "L'amylase est le premier ciseau chimique découpant l'amidon complexe."
     },
     {
       "id": 16,
       "organId": 0,
       "stageId": 2,
       "questionText": "ماذا نطلق على كتلة الطعام الممضوغة والمخلوطة باللعاب بعد بلعها؟",
-      "options": ["الكيموس", "البلعة الغذائية", "الفيتامينات", "الدهون"],
+      "options": [
+        "الكيموس",
+        "البلعة الغذائية",
+        "الفيتامينات",
+        "الدهون"
+      ],
       "correctOptionIndex": 1,
-      "educationalTip": "تسمى اللقمة الممضوغة بالبلعة (Bolus) وتتحول لاحقاً في المعدة لكيموس."
+      "educationalTip": "تسمى اللقمة الممضوغة بالبلعة (Bolus) وتتحول لاحقاً في المعدة لكيموس.",
+      "questionText_en": "What nutrient begins chemical digestion in the mouth thanks to saliva?",
+      "options_en": [
+        "Proteins",
+        "Starches and Sugars",
+        "Fats and Oils",
+        "Fibers"
+      ],
+      "educationalTip_en": "Saliva contains amylase which breaks starches into simple sugars.",
+      "questionText_fr": "Quel nutriment commence sa digestion chimique dans la bouche grâce à la salive ?",
+      "options_fr": [
+        "Les protéines",
+        "Les féculents et sucres",
+        "Les graisses et huiles",
+        "Les fibres"
+      ],
+      "educationalTip_fr": "La salive contient de l'amylase qui décompose les amidons en sucres simples."
     },
     {
       "id": 17,
       "organId": 0,
       "stageId": 2,
       "questionText": "ماذا تفعل الصمامات العضلية الموجودة في نهاية المريء بعد دخول الطعام للمعدة؟",
-      "options": ["تظل مفتوحة دائماً", "تنغلق بإحكام لمنع ارتداد الحمض", "تفرز ماءً", "تتصل بالرئتين"],
+      "options": [
+        "تظل مفتوحة دائماً",
+        "تنغلق بإحكام لمنع ارتداد الحمض",
+        "تفرز ماءً",
+        "تتصل بالرئتين"
+      ],
       "correctOptionIndex": 1,
-      "educationalTip": "العضلة العاصرة للمريء تنغلق لمنع عصارة المعدة الحامضة من الرجوع للحلق."
+      "educationalTip": "العضلة العاصرة للمريء تنغلق لمنع عصارة المعدة الحامضة من الرجوع للحلق.",
+      "questionText_en": "How does food move down the esophagus even when standing on your head?",
+      "options_en": [
+        "Gravity only",
+        "Peristalsis muscle waves",
+        "Air pressure",
+        "Water pressure"
+      ],
+      "educationalTip_en": "Peristalsis is muscular contraction pushing food toward the stomach regardless of gravity.",
+      "questionText_fr": "Comment la nourriture descend-elle dans l'œsophage même la tête en bas ?",
+      "options_fr": [
+        "Par gravité seulement",
+        "Par ondes musculaires péristaltiques",
+        "Par pression d'air",
+        "Par pression d'eau"
+      ],
+      "educationalTip_fr": "Le péristaltisme est une contraction musculaire poussant les aliments vers l'estomac."
     },
     {
       "id": 18,
       "organId": 0,
       "stageId": 2,
       "questionText": "إذا مضغت قطعة خبز خالية من السكر لفترة طويلة، لماذا تصبح حلوة المذاق؟",
-      "options": ["لأن اللعاب يفرز سكراً", "لأن إنزيم الأميليز فكك النشا إلى سكر بسيط", "لأن اللسان يفرز عسلاً", "بسبب حرارة الفم فقط"],
+      "options": [
+        "لأن اللعاب يفرز سكراً",
+        "لأن إنزيم الأميليز فكك النشا إلى سكر بسيط",
+        "لأن اللسان يفرز عسلاً",
+        "بسبب حرارة الفم فقط"
+      ],
       "correctOptionIndex": 1,
-      "educationalTip": "تحول سلاسل النشا المعقدة في الخبز إلى مالتوز وسكريات بسيطة بواسطة اللعاب."
+      "educationalTip": "تحول سلاسل النشا المعقدة في الخبز إلى مالتوز وسكريات بسيطة بواسطة اللعاب.",
+      "questionText_en": "What famous enzyme in saliva breaks down starch in the mouth?",
+      "options_en": [
+        "Pepsin",
+        "Salivary Amylase",
+        "Lipase",
+        "Insulin"
+      ],
+      "educationalTip_en": "Amylase is the first chemical scissor cutting complex starches.",
+      "questionText_fr": "Quelle enzyme célèbre de la salive décompose l'amidon dans la bouche ?",
+      "options_fr": [
+        "La pepsine",
+        "L'amylase salivaire",
+        "La lipase",
+        "L'insuline"
+      ],
+      "educationalTip_fr": "L'amylase est le premier ciseau chimique découpant l'amidon complexe."
     },
     {
       "id": 19,
       "organId": 0,
       "stageId": 2,
       "questionText": "ما الدور الحيوي الذي يلعبه اللعاب بجانب هضم النشويات؟",
-      "options": ["تنظيف الفم ومحاربة الجراثيم", "تغيير لون الأسنان", "تبريد المعدة", "هضم العظام"],
+      "options": [
+        "تنظيف الفم ومحاربة الجراثيم",
+        "تغيير لون الأسنان",
+        "تبريد المعدة",
+        "هضم العظام"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "يحتوي اللعاب على مواد مضادة للميكروبات تحمي الأسنان واللثة من البكتيريا."
+      "educationalTip": "يحتوي اللعاب على مواد مضادة للميكروبات تحمي الأسنان واللثة من البكتيريا.",
+      "questionText_en": "What nutrient begins chemical digestion in the mouth thanks to saliva?",
+      "options_en": [
+        "Proteins",
+        "Starches and Sugars",
+        "Fats and Oils",
+        "Fibers"
+      ],
+      "educationalTip_en": "Saliva contains amylase which breaks starches into simple sugars.",
+      "questionText_fr": "Quel nutriment commence sa digestion chimique dans la bouche grâce à la salive ?",
+      "options_fr": [
+        "Les protéines",
+        "Les féculents et sucres",
+        "Les graisses et huiles",
+        "Les fibres"
+      ],
+      "educationalTip_fr": "La salive contient de l'amylase qui décompose les amidons en sucres simples."
     },
     {
       "id": 20,
       "organId": 0,
       "stageId": 2,
       "questionText": "أي نوع من أنواع الهضم تمثله حركة الأسنان وطحن الطعام؟",
-      "options": ["هضم كيميائي", "هضم ميكانيكي / آلي", "هضم إشعاعي", "هضم بكتيري"],
+      "options": [
+        "هضم كيميائي",
+        "هضم ميكانيكي / آلي",
+        "هضم إشعاعي",
+        "هضم بكتيري"
+      ],
       "correctOptionIndex": 1,
-      "educationalTip": "الهضم الميكانيكي هو تفتيت الطعام فيزيائياً دون تغيير في تركيبه الكيميائي."
+      "educationalTip": "الهضم الميكانيكي هو تفتيت الطعام فيزيائياً دون تغيير في تركيبه الكيميائي.",
+      "questionText_en": "How does food move down the esophagus even when standing on your head?",
+      "options_en": [
+        "Gravity only",
+        "Peristalsis muscle waves",
+        "Air pressure",
+        "Water pressure"
+      ],
+      "educationalTip_en": "Peristalsis is muscular contraction pushing food toward the stomach regardless of gravity.",
+      "questionText_fr": "Comment la nourriture descend-elle dans l'œsophage même la tête en bas ?",
+      "options_fr": [
+        "Par gravité seulement",
+        "Par ondes musculaires péristaltiques",
+        "Par pression d'air",
+        "Par pression d'eau"
+      ],
+      "educationalTip_fr": "Le péristaltisme est une contraction musculaire poussant les aliments vers l'estomac."
     },
     {
       "id": 21,
       "organId": 0,
       "stageId": 2,
       "questionText": "أي نوع من أنواع الهضم يمثله تفاعل الإنزيمات مع النشا؟",
-      "options": ["هضم ميكانيكي", "هضم كيميائي", "هضم مغناطيسي", "هضم سطحي"],
+      "options": [
+        "هضم ميكانيكي",
+        "هضم كيميائي",
+        "هضم مغناطيسي",
+        "هضم سطحي"
+      ],
       "correctOptionIndex": 1,
-      "educationalTip": "الهضم الكيميائي يغير الروابط الجزيئية للطعام ويحوله لمواد أبسط."
+      "educationalTip": "الهضم الكيميائي يغير الروابط الجزيئية للطعام ويحوله لمواد أبسط.",
+      "questionText_en": "What famous enzyme in saliva breaks down starch in the mouth?",
+      "options_en": [
+        "Pepsin",
+        "Salivary Amylase",
+        "Lipase",
+        "Insulin"
+      ],
+      "educationalTip_en": "Amylase is the first chemical scissor cutting complex starches.",
+      "questionText_fr": "Quelle enzyme célèbre de la salive décompose l'amidon dans la bouche ?",
+      "options_fr": [
+        "La pepsine",
+        "L'amylase salivaire",
+        "La lipase",
+        "L'insuline"
+      ],
+      "educationalTip_fr": "L'amylase est le premier ciseau chimique découpant l'amidon complexe."
     },
     {
       "id": 22,
       "organId": 0,
       "stageId": 2,
       "questionText": "ما الذي يساعد لسان المزمار على التحرك لأعلى ولأسفل أثناء البلع؟",
-      "options": ["تنسيق عصبي وعضلي دقيق", "الرياح", "ضغط السوائل", "قوة الشفط فقط"],
+      "options": [
+        "تنسيق عصبي وعضلي دقيق",
+        "الرياح",
+        "ضغط السوائل",
+        "قوة الشفط فقط"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "رد الفعل المنعكس لعملية البلع يرسل إشارات عصبية تحرك الحنجرة ولسان المزمار."
+      "educationalTip": "رد الفعل المنعكس لعملية البلع يرسل إشارات عصبية تحرك الحنجرة ولسان المزمار.",
+      "questionText_en": "What nutrient begins chemical digestion in the mouth thanks to saliva?",
+      "options_en": [
+        "Proteins",
+        "Starches and Sugars",
+        "Fats and Oils",
+        "Fibers"
+      ],
+      "educationalTip_en": "Saliva contains amylase which breaks starches into simple sugars.",
+      "questionText_fr": "Quel nutriment commence sa digestion chimique dans la bouche grâce à la salive ?",
+      "options_fr": [
+        "Les protéines",
+        "Les féculents et sucres",
+        "Les graisses et huiles",
+        "Les fibres"
+      ],
+      "educationalTip_fr": "La salive contient de l'amylase qui décompose les amidons en sucres simples."
     },
-
     {
       "id": 23,
       "organId": 0,
       "stageId": 3,
       "questionText": "لغز: ما هي العادة الصحية الأهم أثناء تناول الطعام لمساعدة المعدة والوقاية من عسر الهضم؟",
-      "options": ["الأكل بسرعة كبيرة", "مضغ الطعام ببطء وجيداً", "شرب لترات من الماء مع كل لقمة", "النوم فور الانتهاء"],
+      "options": [
+        "الأكل بسرعة كبيرة",
+        "مضغ الطعام ببطء وجيداً",
+        "شرب لترات من الماء مع كل لقمة",
+        "النوم فور الانتهاء"
+      ],
       "correctOptionIndex": 1,
-      "educationalTip": "مضغ الطعام جيداً يقلل العبء على المعدة ويسهل امتصاص العناصر الغذائية."
+      "educationalTip": "مضغ الطعام جيداً يقلل العبء على المعدة ويسهل امتصاص العناصر الغذائية.",
+      "questionText_en": "Puzzle: What is the most important healthy habit when eating to prevent indigestion?",
+      "options_en": [
+        "Eating very fast",
+        "Chewing food slowly and well",
+        "Drinking liters of soda",
+        "Sleeping right away"
+      ],
+      "educationalTip_en": "Chewing food thoroughly relieves the stomach and aids digestion.",
+      "questionText_fr": "Énigme : Quelle est l'habitude saine la plus importante lors des repas pour éviter l'indigestion ?",
+      "options_fr": [
+        "Manger très vite",
+        "Bien mâcher lentement",
+        "Boire des litres de soda",
+        "Dormir aussitôt"
+      ],
+      "educationalTip_fr": "Bien mâcher les aliments soulage l'estomac et facilite l'absorption."
     },
     {
       "id": 24,
       "organId": 0,
       "stageId": 3,
       "questionText": "ماذا يحدث للأسنان إذا أكثر الطفل من أكل الحلوى دون تنظيف أسنانه بالفرشاة؟",
-      "options": ["تصبح أقوى وأصلب", "تتغذى البكتيريا على السكر وتفرز أحماضاً تسوس الأسنان", "يتحول لونها إلى أزرق", "تتضاعف عدد الأسنان"],
+      "options": [
+        "تصبح أقوى وأصلب",
+        "تتغذى البكتيريا على السكر وتفرز أحماضاً تسوس الأسنان",
+        "يتحول لونها إلى أزرق",
+        "تتضاعف عدد الأسنان"
+      ],
       "correctOptionIndex": 1,
-      "educationalTip": "البكتيريا تنتج حمضاً يهاجم طبقة المينا الصلبة ويسبب تسوس الأسنان وألمها."
+      "educationalTip": "البكتيريا تنتج حمضاً يهاجم طبقة المينا الصلبة ويسبب تسوس الأسنان وألمها.",
+      "questionText_en": "What happens to teeth when eating sweets without brushing?",
+      "options_en": [
+        "They grow stronger",
+        "Bacteria feed on sugar and produce acid causing cavities",
+        "They turn blue",
+        "They multiply"
+      ],
+      "educationalTip_en": "Bacteria produce acid that damages tooth enamel leading to cavities.",
+      "questionText_fr": "Que se passe-t-il pour les dents lorsqu'on mange des sucreries sans brossage ?",
+      "options_fr": [
+        "Elles deviennent plus fortes",
+        "Les bactéries créent des acides causant des caries",
+        "Elles deviennent bleues",
+        "Elles se multiplient"
+      ],
+      "educationalTip_fr": "Les bactéries produisent des acides attaquant l'émail et causant des caries."
     },
     {
       "id": 25,
       "organId": 0,
       "stageId": 3,
       "questionText": "لماذا يحذر الأطباء من التحدث والضحك بصوت عالٍ أثناء بلع الطعام؟",
-      "options": ["لأن الطعام قد يدخل خطأ في مجرى التنفس ويسبب الاختناق", "لأن اللعاب يختفي تماماً", "لأن الأسنان تتكسر", "لأن المعدة تنغلق"],
+      "options": [
+        "لأن الطعام قد يدخل خطأ في مجرى التنفس ويسبب الاختناق",
+        "لأن اللعاب يختفي تماماً",
+        "لأن الأسنان تتكسر",
+        "لأن المعدة تنغلق"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "عند التحدث ينفتح لسان المزمار لمرور الهواء، مما قد يسمح بدخول فتات الطعام للرئتين."
+      "educationalTip": "عند التحدث ينفتح لسان المزمار لمرور الهواء، مما قد يسمح بدخول فتات الطعام للرئتين.",
+      "questionText_en": "Puzzle: What is the most important healthy habit when eating to prevent indigestion?",
+      "options_en": [
+        "Eating very fast",
+        "Chewing food slowly and well",
+        "Drinking liters of soda",
+        "Sleeping right away"
+      ],
+      "educationalTip_en": "Chewing food thoroughly relieves the stomach and aids digestion.",
+      "questionText_fr": "Énigme : Quelle est l'habitude saine la plus importante lors des repas pour éviter l'indigestion ?",
+      "options_fr": [
+        "Manger très vite",
+        "Bien mâcher lentement",
+        "Boire des litres de soda",
+        "Dormir aussitôt"
+      ],
+      "educationalTip_fr": "Bien mâcher les aliments soulage l'estomac et facilite l'absorption."
     },
     {
       "id": 26,
       "organId": 0,
       "stageId": 3,
       "questionText": "لغز: أنا مادة يوصى بوجودها في معجون الأسنان لحمايتها من التآكل، فمن أنا؟",
-      "options": ["السكر", "الفلورايد", "الملح الخشن", "الفلفل الحار"],
+      "options": [
+        "السكر",
+        "الفلورايد",
+        "الملح الخشن",
+        "الفلفل الحار"
+      ],
       "correctOptionIndex": 1,
-      "educationalTip": "الفلورايد يعيد تقوية طبقة مينا الأسنان ويحميها من الأحماض."
+      "educationalTip": "الفلورايد يعيد تقوية طبقة مينا الأسنان ويحميها من الأحماض.",
+      "questionText_en": "What happens to teeth when eating sweets without brushing?",
+      "options_en": [
+        "They grow stronger",
+        "Bacteria feed on sugar and produce acid causing cavities",
+        "They turn blue",
+        "They multiply"
+      ],
+      "educationalTip_en": "Bacteria produce acid that damages tooth enamel leading to cavities.",
+      "questionText_fr": "Que se passe-t-il pour les dents lorsqu'on mange des sucreries sans brossage ?",
+      "options_fr": [
+        "Elles deviennent plus fortes",
+        "Les bactéries créent des acides causant des caries",
+        "Elles deviennent bleues",
+        "Elles se multiplient"
+      ],
+      "educationalTip_fr": "Les bactéries produisent des acides attaquant l'émail et causant des caries."
     },
     {
       "id": 27,
       "organId": 0,
       "stageId": 3,
       "questionText": "كم مرة في اليوم على الأقل ينصح أطباء الأسنان بتنظيف الأسنان بالفرشاة والمعجون؟",
-      "options": ["مرة في الأسبوع", "مرتين على الأقل (صباحاً ومساءً)", "مرة في الشهر", "لا داعي لتنظيفها"],
+      "options": [
+        "مرة في الأسبوع",
+        "مرتين على الأقل (صباحاً ومساءً)",
+        "مرة في الشهر",
+        "لا داعي لتنظيفها"
+      ],
       "correctOptionIndex": 1,
-      "educationalTip": "مرتين يومياً لمدة دقيقتين تحافظ على صحة الفم واللثة والأسنان مدى الحياة."
+      "educationalTip": "مرتين يومياً لمدة دقيقتين تحافظ على صحة الفم واللثة والأسنان مدى الحياة.",
+      "questionText_en": "Puzzle: What is the most important healthy habit when eating to prevent indigestion?",
+      "options_en": [
+        "Eating very fast",
+        "Chewing food slowly and well",
+        "Drinking liters of soda",
+        "Sleeping right away"
+      ],
+      "educationalTip_en": "Chewing food thoroughly relieves the stomach and aids digestion.",
+      "questionText_fr": "Énigme : Quelle est l'habitude saine la plus importante lors des repas pour éviter l'indigestion ?",
+      "options_fr": [
+        "Manger très vite",
+        "Bien mâcher lentement",
+        "Boire des litres de soda",
+        "Dormir aussitôt"
+      ],
+      "educationalTip_fr": "Bien mâcher les aliments soulage l'estomac et facilite l'absorption."
     },
     {
       "id": 28,
       "organId": 0,
       "stageId": 3,
       "questionText": "ما هو الشعور الحارق في الصدر الذي قد يصيب من يأكل أطعمة حارة أو ينام بعد الأكل مباشرة؟",
-      "options": ["الحموضة / ارتجاع المريء", "الصداع النصفي", "الإنفلونزا", "التواء الكاحل"],
+      "options": [
+        "الحموضة / ارتجاع المريء",
+        "الصداع النصفي",
+        "الإنفلونزا",
+        "التواء الكاحل"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "يحدث الارتجاع عندما يتسرب حمض المعدة إلى المريء الحساس ويسبب حرقة الصدر."
+      "educationalTip": "يحدث الارتجاع عندما يتسرب حمض المعدة إلى المريء الحساس ويسبب حرقة الصدر.",
+      "questionText_en": "What happens to teeth when eating sweets without brushing?",
+      "options_en": [
+        "They grow stronger",
+        "Bacteria feed on sugar and produce acid causing cavities",
+        "They turn blue",
+        "They multiply"
+      ],
+      "educationalTip_en": "Bacteria produce acid that damages tooth enamel leading to cavities.",
+      "questionText_fr": "Que se passe-t-il pour les dents lorsqu'on mange des sucreries sans brossage ?",
+      "options_fr": [
+        "Elles deviennent plus fortes",
+        "Les bactéries créent des acides causant des caries",
+        "Elles deviennent bleues",
+        "Elles se multiplient"
+      ],
+      "educationalTip_fr": "Les bactéries produisent des acides attaquant l'émail et causant des caries."
     },
     {
       "id": 29,
       "organId": 0,
       "stageId": 3,
       "questionText": "ما الفيتامين المهم جداً لصحة اللثة ومنع نزيفها ونجده في البرتقال والليمون؟",
-      "options": ["فيتامين سي (Vitamin C)", "فيتامين د", "فيتامين ب 12", "الحديد"],
+      "options": [
+        "فيتامين سي (Vitamin C)",
+        "فيتامين د",
+        "فيتامين ب 12",
+        "الحديد"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "فيتامين سي يقوي الأوعية الدموية في اللثة ويمنع مرض الإسقربوط ونزيف الفم."
+      "educationalTip": "فيتامين سي يقوي الأوعية الدموية في اللثة ويمنع مرض الإسقربوط ونزيف الفم.",
+      "questionText_en": "Puzzle: What is the most important healthy habit when eating to prevent indigestion?",
+      "options_en": [
+        "Eating very fast",
+        "Chewing food slowly and well",
+        "Drinking liters of soda",
+        "Sleeping right away"
+      ],
+      "educationalTip_en": "Chewing food thoroughly relieves the stomach and aids digestion.",
+      "questionText_fr": "Énigme : Quelle est l'habitude saine la plus importante lors des repas pour éviter l'indigestion ?",
+      "options_fr": [
+        "Manger très vite",
+        "Bien mâcher lentement",
+        "Boire des litres de soda",
+        "Dormir aussitôt"
+      ],
+      "educationalTip_fr": "Bien mâcher les aliments soulage l'estomac et facilite l'absorption."
     },
     {
       "id": 30,
       "organId": 0,
       "stageId": 3,
       "questionText": "لغز: شيء موجود في الفم، إن لم تشرب الماء الكافي يصبح جافاً ويقل تدفقه، فمن هو؟",
-      "options": ["اللعاب", "العظم", "الشعر", "الأظافر"],
+      "options": [
+        "اللعاب",
+        "العظم",
+        "الشعر",
+        "الأظافر"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "شرب الماء بكثرة ضروري جداً لإنتاج اللعاب والحفاظ على رطوبة وصحة الفم."
+      "educationalTip": "شرب الماء بكثرة ضروري جداً لإنتاج اللعاب والحفاظ على رطوبة وصحة الفم.",
+      "questionText_en": "What happens to teeth when eating sweets without brushing?",
+      "options_en": [
+        "They grow stronger",
+        "Bacteria feed on sugar and produce acid causing cavities",
+        "They turn blue",
+        "They multiply"
+      ],
+      "educationalTip_en": "Bacteria produce acid that damages tooth enamel leading to cavities.",
+      "questionText_fr": "Que se passe-t-il pour les dents lorsqu'on mange des sucreries sans brossage ?",
+      "options_fr": [
+        "Elles deviennent plus fortes",
+        "Les bactéries créent des acides causant des caries",
+        "Elles deviennent bleues",
+        "Elles se multiplient"
+      ],
+      "educationalTip_fr": "Les bactéries produisent des acides attaquant l'émail et causant des caries."
     },
-
     {
       "id": 31,
       "organId": 1,
       "stageId": 1,
       "questionText": "ما هو الشكل التقريبي لعضو المعدة في جسم الإنسان؟",
-      "options": ["يشبه حرف J اللاتيني", "يشبه المربع تماماً", "يشبه الدائرة المغلقة", "يشبه الخط المستقيم"],
+      "options": [
+        "يشبه حرف J اللاتيني",
+        "يشبه المربع تماماً",
+        "يشبه الدائرة المغلقة",
+        "يشبه الخط المستقيم"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "المعدة كيس عضلي مرن يشبه حرف J يقع في الجزء العلوي الأيسر من البطن."
+      "educationalTip": "المعدة كيس عضلي مرن يشبه حرف J يقع في الجزء العلوي الأيسر من البطن.",
+      "questionText_en": "What approximate shape does the human stomach resemble?",
+      "options_en": [
+        "The letter J",
+        "A square",
+        "A closed circle",
+        "A straight line"
+      ],
+      "educationalTip_en": "The stomach is a muscular J-shaped pouch in the upper-left abdomen.",
+      "questionText_fr": "Quelle forme approximative l'estomac humain a-t-il ?",
+      "options_fr": [
+        "La lettre J",
+        "Un carré",
+        "Un cercle fermé",
+        "Une ligne droite"
+      ],
+      "educationalTip_fr": "L'estomac est une poche musculaire en forme de J située en haut à gauche de l'abdomen."
     },
     {
       "id": 32,
       "organId": 1,
       "stageId": 1,
       "questionText": "أين تقع المعدة داخل جسم الإنسان؟",
-      "options": ["في الرأس", "في الجزء العلوي الأيسر من التجويف البطني", "في القدمين", "في الصدر الأيمن"],
+      "options": [
+        "في الرأس",
+        "في الجزء العلوي الأيسر من التجويف البطني",
+        "في القدمين",
+        "في الصدر الأيمن"
+      ],
       "correctOptionIndex": 1,
-      "educationalTip": "تقع المعدة تحت الحجاب الحاجز مباشرة في الناحية اليسرى العلوية من البطن."
+      "educationalTip": "تقع المعدة تحت الحجاب الحاجز مباشرة في الناحية اليسرى العلوية من البطن.",
+      "questionText_en": "Where is the stomach located in the human body?",
+      "options_en": [
+        "In the head",
+        "In upper left abdominal cavity",
+        "In the legs",
+        "In right chest"
+      ],
+      "educationalTip_en": "The stomach sits right below the diaphragm on the upper left side.",
+      "questionText_fr": "Où se situe l'estomac dans le corps humain ?",
+      "options_fr": [
+        "Dans la tête",
+        "En haut à gauche de la cavité abdominale",
+        "Dans les jambes",
+        "Dans la poitrine droite"
+      ],
+      "educationalTip_fr": "L'estomac se trouve sous le diaphragme dans la partie supérieure gauche de l'abdomen."
     },
     {
       "id": 33,
       "organId": 1,
       "stageId": 1,
       "questionText": "ما هي الفتحة أو الصمام الذي يدخل منه الطعام من المريء إلى المعدة؟",
-      "options": ["فتحة الفؤاد (Cardiac Sphincter)", "فتحة البواب", "المرارة", "الزائدة الدودية"],
+      "options": [
+        "فتحة الفؤاد (Cardiac Sphincter)",
+        "فتحة البواب",
+        "المرارة",
+        "الزائدة الدودية"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "تسمى فتحة الفؤاد لأنها قريبة من جهة القلب وتسمح بدخول الطعام وتمنع رجوعه."
+      "educationalTip": "تسمى فتحة الفؤاد لأنها قريبة من جهة القلب وتسمح بدخول الطعام وتمنع رجوعه.",
+      "questionText_en": "What approximate shape does the human stomach resemble?",
+      "options_en": [
+        "The letter J",
+        "A square",
+        "A closed circle",
+        "A straight line"
+      ],
+      "educationalTip_en": "The stomach is a muscular J-shaped pouch in the upper-left abdomen.",
+      "questionText_fr": "Quelle forme approximative l'estomac humain a-t-il ?",
+      "options_fr": [
+        "La lettre J",
+        "Un carré",
+        "Un cercle fermé",
+        "Une ligne droite"
+      ],
+      "educationalTip_fr": "L'estomac est une poche musculaire en forme de J située en haut à gauche de l'abdomen."
     },
     {
       "id": 34,
       "organId": 1,
       "stageId": 1,
       "questionText": "ما هو الصمام السفلي الذي يخرج منه الطعام المهضوم من المعدة إلى الأمعاء الدقيقة؟",
-      "options": ["فتحة الفؤاد", "فتحة البواب (Pyloric Sphincter)", "البلعوم", "القصبة"],
+      "options": [
+        "فتحة الفؤاد",
+        "فتحة البواب (Pyloric Sphincter)",
+        "البلعوم",
+        "القصبة"
+      ],
       "correctOptionIndex": 1,
-      "educationalTip": "فتحة البواب تنظم خروج الكيموس على دفعات صغيرة ومحسوبة نحو الأمعاء."
+      "educationalTip": "فتحة البواب تنظم خروج الكيموس على دفعات صغيرة ومحسوبة نحو الأمعاء.",
+      "questionText_en": "Where is the stomach located in the human body?",
+      "options_en": [
+        "In the head",
+        "In upper left abdominal cavity",
+        "In the legs",
+        "In right chest"
+      ],
+      "educationalTip_en": "The stomach sits right below the diaphragm on the upper left side.",
+      "questionText_fr": "Où se situe l'estomac dans le corps humain ?",
+      "options_fr": [
+        "Dans la tête",
+        "En haut à gauche de la cavité abdominale",
+        "Dans les jambes",
+        "Dans la poitrine droite"
+      ],
+      "educationalTip_fr": "L'estomac se trouve sous le diaphragme dans la partie supérieure gauche de l'abdomen."
     },
     {
       "id": 35,
       "organId": 1,
       "stageId": 1,
       "questionText": "مما يتكون جدار المعدة الذي يساعدها على خض الطعام وطحنه بقوة؟",
-      "options": ["عظام قاسية", "طبقات سميكة من العضلات الملساء اللاإرادية", "غضاريف شفافة", "ألياف خشبية"],
+      "options": [
+        "عظام قاسية",
+        "طبقات سميكة من العضلات الملساء اللاإرادية",
+        "غضاريف شفافة",
+        "ألياف خشبية"
+      ],
       "correctOptionIndex": 1,
-      "educationalTip": "تتكون المعدة من 3 طبقات من العضلات القوية تنقبض في كل الاتجاهات لطحن الطعام."
+      "educationalTip": "تتكون المعدة من 3 طبقات من العضلات القوية تنقبض في كل الاتجاهات لطحن الطعام.",
+      "questionText_en": "What approximate shape does the human stomach resemble?",
+      "options_en": [
+        "The letter J",
+        "A square",
+        "A closed circle",
+        "A straight line"
+      ],
+      "educationalTip_en": "The stomach is a muscular J-shaped pouch in the upper-left abdomen.",
+      "questionText_fr": "Quelle forme approximative l'estomac humain a-t-il ?",
+      "options_fr": [
+        "La lettre J",
+        "Un carré",
+        "Un cercle fermé",
+        "Une ligne droite"
+      ],
+      "educationalTip_fr": "L'estomac est une poche musculaire en forme de J située en haut à gauche de l'abdomen."
     },
     {
       "id": 36,
       "organId": 1,
       "stageId": 1,
       "questionText": "ماذا يسمى السائل الكثيف الشبيه بالحساء الذي يتحول إليه الطعام داخل المعدة؟",
-      "options": ["الكيموس (Chyme)", "الدم", "الليمف", "الماء المقطر"],
+      "options": [
+        "الكيموس (Chyme)",
+        "الدم",
+        "الليمف",
+        "الماء المقطر"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "الكيموس هو خليط الطعام المهضوم جزئياً والممزوج بأحماض وإنزيمات المعدة."
+      "educationalTip": "الكيموس هو خليط الطعام المهضوم جزئياً والممزوج بأحماض وإنزيمات المعدة.",
+      "questionText_en": "Where is the stomach located in the human body?",
+      "options_en": [
+        "In the head",
+        "In upper left abdominal cavity",
+        "In the legs",
+        "In right chest"
+      ],
+      "educationalTip_en": "The stomach sits right below the diaphragm on the upper left side.",
+      "questionText_fr": "Où se situe l'estomac dans le corps humain ?",
+      "options_fr": [
+        "Dans la tête",
+        "En haut à gauche de la cavité abdominale",
+        "Dans les jambes",
+        "Dans la poitrine droite"
+      ],
+      "educationalTip_fr": "L'estomac se trouve sous le diaphragme dans la partie supérieure gauche de l'abdomen."
     },
     {
       "id": 37,
       "organId": 1,
       "stageId": 1,
       "questionText": "كم تتسع معدة الإنسان البالغ تقريباً عند امتلائها بالوجبة؟",
-      "options": ["من 1 إلى 1.5 لتر تقريباً", "50 لتراً", "فنجان صغير فقط", "10 لترات"],
+      "options": [
+        "من 1 إلى 1.5 لتر تقريباً",
+        "50 لتراً",
+        "فنجان صغير فقط",
+        "10 لترات"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "المعدة مرنة جداً وتتمدد لاستيعاب نحو 1 إلى 2 لتر من الطعام والسوائل."
+      "educationalTip": "المعدة مرنة جداً وتتمدد لاستيعاب نحو 1 إلى 2 لتر من الطعام والسوائل.",
+      "questionText_en": "What approximate shape does the human stomach resemble?",
+      "options_en": [
+        "The letter J",
+        "A square",
+        "A closed circle",
+        "A straight line"
+      ],
+      "educationalTip_en": "The stomach is a muscular J-shaped pouch in the upper-left abdomen.",
+      "questionText_fr": "Quelle forme approximative l'estomac humain a-t-il ?",
+      "options_fr": [
+        "La lettre J",
+        "Un carré",
+        "Un cercle fermé",
+        "Une ligne droite"
+      ],
+      "educationalTip_fr": "L'estomac est une poche musculaire en forme de J située en haut à gauche de l'abdomen."
     },
     {
       "id": 38,
       "organId": 1,
       "stageId": 1,
       "questionText": "ما الطبقة التي تغلف جدار المعدة الداخلي من الداخل لحمايتها؟",
-      "options": ["الغشاء المخاطي السميك", "طبقة من الجلد الجاف", "طبقة من الشمع", "ألياف قطنية"],
+      "options": [
+        "الغشاء المخاطي السميك",
+        "طبقة من الجلد الجاف",
+        "طبقة من الشمع",
+        "ألياف قطنية"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "الغشاء المخاطي يفرز سائلاً قلوياً يحمي جدار المعدة من أحماضها الحارقة."
+      "educationalTip": "الغشاء المخاطي يفرز سائلاً قلوياً يحمي جدار المعدة من أحماضها الحارقة.",
+      "questionText_en": "Where is the stomach located in the human body?",
+      "options_en": [
+        "In the head",
+        "In upper left abdominal cavity",
+        "In the legs",
+        "In right chest"
+      ],
+      "educationalTip_en": "The stomach sits right below the diaphragm on the upper left side.",
+      "questionText_fr": "Où se situe l'estomac dans le corps humain ?",
+      "options_fr": [
+        "Dans la tête",
+        "En haut à gauche de la cavité abdominale",
+        "Dans les jambes",
+        "Dans la poitrine droite"
+      ],
+      "educationalTip_fr": "L'estomac se trouve sous le diaphragme dans la partie supérieure gauche de l'abdomen."
     },
     {
       "id": 39,
       "organId": 1,
       "stageId": 1,
       "questionText": "كم ساعة يبقى الطعام داخل المعدة تقريباً ليتم هضمه وطحنه؟",
-      "options": ["من 2 إلى 4 ساعات", "أسبوع كامل", "ثانية واحدة فقط", "24 ساعة"],
+      "options": [
+        "من 2 إلى 4 ساعات",
+        "أسبوع كامل",
+        "ثانية واحدة فقط",
+        "24 ساعة"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "يبقى الطعام عموماً بين ساعتين إلى أربع ساعات حسب نوع الوجبة ودسامتها."
+      "educationalTip": "يبقى الطعام عموماً بين ساعتين إلى أربع ساعات حسب نوع الوجبة ودسامتها.",
+      "questionText_en": "What approximate shape does the human stomach resemble?",
+      "options_en": [
+        "The letter J",
+        "A square",
+        "A closed circle",
+        "A straight line"
+      ],
+      "educationalTip_en": "The stomach is a muscular J-shaped pouch in the upper-left abdomen.",
+      "questionText_fr": "Quelle forme approximative l'estomac humain a-t-il ?",
+      "options_fr": [
+        "La lettre J",
+        "Un carré",
+        "Un cercle fermé",
+        "Une ligne droite"
+      ],
+      "educationalTip_fr": "L'estomac est une poche musculaire en forme de J située en haut à gauche de l'abdomen."
     },
     {
       "id": 40,
       "organId": 1,
       "stageId": 1,
       "questionText": "ما هو لون العصارة المعدية النقية في المعدة؟",
-      "options": ["سائل شفاف عديم اللون تقريباً أو مائل للصفرة الخفيفة", "أحمر داكن كالدم", "أزرق فاقع", "أسود تماماً"],
+      "options": [
+        "سائل شفاف عديم اللون تقريباً أو مائل للصفرة الخفيفة",
+        "أحمر داكن كالدم",
+        "أزرق فاقع",
+        "أسود تماماً"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "العصارة المعدية سائل شفاف حمضي للغاية يحتوي على الماء والأحماض والإنزيمات."
+      "educationalTip": "العصارة المعدية سائل شفاف حمضي للغاية يحتوي على الماء والأحماض والإنزيمات.",
+      "questionText_en": "Where is the stomach located in the human body?",
+      "options_en": [
+        "In the head",
+        "In upper left abdominal cavity",
+        "In the legs",
+        "In right chest"
+      ],
+      "educationalTip_en": "The stomach sits right below the diaphragm on the upper left side.",
+      "questionText_fr": "Où se situe l'estomac dans le corps humain ?",
+      "options_fr": [
+        "Dans la tête",
+        "En haut à gauche de la cavité abdominale",
+        "Dans les jambes",
+        "Dans la poitrine droite"
+      ],
+      "educationalTip_fr": "L'estomac se trouve sous le diaphragme dans la partie supérieure gauche de l'abdomen."
     },
-
     {
       "id": 41,
       "organId": 1,
       "stageId": 2,
       "questionText": "ما اسم الحمض القوي جداً الذي تفرزه خلايا جدار المعدة لقتل الجراثيم وتنشيط الهضم؟",
-      "options": ["حمض الهيدروكلوريك (HCl)", "حمض الليمون", "حمض الخليك", "الماء العذب"],
+      "options": [
+        "حمض الهيدروكلوريك (HCl)",
+        "حمض الليمون",
+        "حمض الخليك",
+        "الماء العذب"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "حمض الهيدروكلوريك شديد الحموضة ويقضي على معظم البكتيريا الضارة التي قد تأتي مع الطعام."
+      "educationalTip": "حمض الهيدروكلوريك شديد الحموضة ويقضي على معظم البكتيريا الضارة التي قد تأتي مع الطعام.",
+      "questionText_en": "What strong acid does the stomach produce to kill germs and activate digestion?",
+      "options_en": [
+        "Hydrochloric acid (HCl)",
+        "Citric acid",
+        "Acetic acid",
+        "Pure water"
+      ],
+      "educationalTip_en": "HCl creates an acidic environment that kills bacteria and activates pepsin.",
+      "questionText_fr": "Quel acide puissant l'estomac produit-il pour tuer les microbes et activer la digestion ?",
+      "options_fr": [
+        "L'acide chlorhydrique (HCl)",
+        "L'acide citrique",
+        "L'acide acétique",
+        "L'eau pure"
+      ],
+      "educationalTip_fr": "L'acide chlorhydrique détruit les bactéries nocives et active la pepsine."
     },
     {
       "id": 42,
       "organId": 1,
       "stageId": 2,
       "questionText": "ما هو الإنزيم الرئيسي في المعدة الذي يقوم بتكسير سلاسل البروتينات (كاللحم والبيض)؟",
-      "options": ["إنزيم البيبسين (Pepsin)", "الأميليز", "اللاكتوز", "المالتيز"],
+      "options": [
+        "إنزيم البيبسين (Pepsin)",
+        "الأميليز",
+        "اللاكتوز",
+        "المالتيز"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "يفرز كببسينوجين خامل وينشطه الحمض ليصبح بيبسين يفكك البروتينات بكفاءة."
+      "educationalTip": "يفرز كببسينوجين خامل وينشطه الحمض ليصبح بيبسين يفكك البروتينات بكفاءة.",
+      "questionText_en": "What main enzyme in the stomach breaks down protein chains?",
+      "options_en": [
+        "Pepsin",
+        "Amylase",
+        "Lactase",
+        "Maltase"
+      ],
+      "educationalTip_en": "Pepsin breaks complex proteins into smaller peptides.",
+      "questionText_fr": "Quelle est l'enzyme principale de l'estomac qui découpe les protéines ?",
+      "options_fr": [
+        "La pepsine",
+        "L'amylase",
+        "La lactase",
+        "La maltase"
+      ],
+      "educationalTip_fr": "La pepsine décompose les protéines complexes en peptides plus petits."
     },
     {
       "id": 43,
       "organId": 1,
       "stageId": 2,
       "questionText": "لغز: المعدة تهضم اللحوم، فلماذا لا تهضم المعدة نفسها وهي مكونة من عضلات ولحم؟",
-      "options": ["لأنها محمية ببطانة مخاطية عازلة تتجدد باستمرار", "لأن المعدة مصنوعة من البلاستيك", "لأنها لا تحتوي على دم", "لأن الحمض يختفي"],
+      "options": [
+        "لأنها محمية ببطانة مخاطية عازلة تتجدد باستمرار",
+        "لأن المعدة مصنوعة من البلاستيك",
+        "لأنها لا تحتوي على دم",
+        "لأن الحمض يختفي"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "جدار المعدة مبطن بمخاط غني بالبيكربونات يحميه من تأثير الحمض والإنزيمات."
+      "educationalTip": "جدار المعدة مبطن بمخاط غني بالبيكربونات يحميه من تأثير الحمض والإنزيمات.",
+      "questionText_en": "What strong acid does the stomach produce to kill germs and activate digestion?",
+      "options_en": [
+        "Hydrochloric acid (HCl)",
+        "Citric acid",
+        "Acetic acid",
+        "Pure water"
+      ],
+      "educationalTip_en": "HCl creates an acidic environment that kills bacteria and activates pepsin.",
+      "questionText_fr": "Quel acide puissant l'estomac produit-il pour tuer les microbes et activer la digestion ?",
+      "options_fr": [
+        "L'acide chlorhydrique (HCl)",
+        "L'acide citrique",
+        "L'acide acétique",
+        "L'eau pure"
+      ],
+      "educationalTip_fr": "L'acide chlorhydrique détruit les bactéries nocives et active la pepsine."
     },
     {
       "id": 44,
       "organId": 1,
       "stageId": 2,
       "questionText": "أي من الأطعمة التالية يستغرق وقتاً أطول للهضم في المعدة؟",
-      "options": ["الأطعمة الدسمة والغنية بالدهون والبروتينات", "عصير التفاح الخفيف", "الماء النقي", "قطعة سكر صغيرة"],
+      "options": [
+        "الأطعمة الدسمة والغنية بالدهون والبروتينات",
+        "عصير التفاح الخفيف",
+        "الماء النقي",
+        "قطعة سكر صغيرة"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "الدهون والبروتينات تحتاج إلى وقت أطول وخض عضلي أكبر لتتفكك داخل المعدة."
+      "educationalTip": "الدهون والبروتينات تحتاج إلى وقت أطول وخض عضلي أكبر لتتفكك داخل المعدة.",
+      "questionText_en": "What main enzyme in the stomach breaks down protein chains?",
+      "options_en": [
+        "Pepsin",
+        "Amylase",
+        "Lactase",
+        "Maltase"
+      ],
+      "educationalTip_en": "Pepsin breaks complex proteins into smaller peptides.",
+      "questionText_fr": "Quelle est l'enzyme principale de l'estomac qui découpe les protéines ?",
+      "options_fr": [
+        "La pepsine",
+        "L'amylase",
+        "La lactase",
+        "La maltase"
+      ],
+      "educationalTip_fr": "La pepsine décompose les protéines complexes en peptides plus petits."
     },
     {
       "id": 45,
       "organId": 1,
       "stageId": 2,
       "questionText": "ماذا يحدث لنشاط إنزيم الأميليز اللعابي القادم من الفم بمجرد وصوله لبيئة المعدة شديدة الحموضة؟",
-      "options": ["يتوقف عن العمل بسبب شدة الحموضة", "يعمل أسرع بعشر مرات", "يتحول إلى بروتين", "ينفجر"],
+      "options": [
+        "يتوقف عن العمل بسبب شدة الحموضة",
+        "يعمل أسرع بعشر مرات",
+        "يتحول إلى بروتين",
+        "ينفجر"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "حمض المعدة يغير تركيبة الأميليز اللعابي فيتوقف هضم النشويات حتى وصولها للأمعاء."
+      "educationalTip": "حمض المعدة يغير تركيبة الأميليز اللعابي فيتوقف هضم النشويات حتى وصولها للأمعاء.",
+      "questionText_en": "What strong acid does the stomach produce to kill germs and activate digestion?",
+      "options_en": [
+        "Hydrochloric acid (HCl)",
+        "Citric acid",
+        "Acetic acid",
+        "Pure water"
+      ],
+      "educationalTip_en": "HCl creates an acidic environment that kills bacteria and activates pepsin.",
+      "questionText_fr": "Quel acide puissant l'estomac produit-il pour tuer les microbes et activer la digestion ?",
+      "options_fr": [
+        "L'acide chlorhydrique (HCl)",
+        "L'acide citrique",
+        "L'acide acétique",
+        "L'eau pure"
+      ],
+      "educationalTip_fr": "L'acide chlorhydrique détruit les bactéries nocives et active la pepsine."
     },
-
     {
       "id": 46,
       "organId": 1,
       "stageId": 3,
       "questionText": "ما المرض الذي يصيب بطانة المعدة بالتآكل عندما يضعف الغشاء المخاطي الحامي لها؟",
-      "options": ["قرحة المعدة (Gastric Ulcer)", "الربو", "تسوس الأسنان", "هشاشة العظام"],
+      "options": [
+        "قرحة المعدة (Gastric Ulcer)",
+        "الربو",
+        "تسوس الأسنان",
+        "هشاشة العظام"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "تنتج القرحة غالباً عن بكتيريا تسمى جرثومة المعدة (Helicobacter pylori) أو المسكنات."
+      "educationalTip": "تنتج القرحة غالباً عن بكتيريا تسمى جرثومة المعدة (Helicobacter pylori) أو المسكنات.",
+      "questionText_en": "Why doesn't the stomach digest its own muscular walls with its strong acid?",
+      "options_en": [
+        "It has a thick protective mucus lining",
+        "It is made of plastic",
+        "It has no blood",
+        "Acid disappears"
+      ],
+      "educationalTip_en": "The gastric mucosa secretes alkaline mucus protecting the stomach lining.",
+      "questionText_fr": "Pourquoi l'estomac ne se digère-t-il pas lui-même avec son acide fort ?",
+      "options_fr": [
+        "Il possède une muqueuse protectrice épaisse",
+        "Il est en plastique",
+        "Il n'a pas de sang",
+        "L'acide disparaît"
+      ],
+      "educationalTip_fr": "La muqueuse gastrique sécrète un mucus alcalin protégeant les parois stomacales."
     },
     {
       "id": 47,
       "organId": 1,
       "stageId": 3,
       "questionText": "لماذا ينصح الأطباء بتجنب تناول وجبات دسمة وثقيلة جداً قبل النوم مباشرة؟",
-      "options": ["لأن النوم يبطئ الهضم ويزيد من احتمالية ارتجاع الحمض وحرقة الفؤاد", "لأن العينين تتأثران", "لأن المعدة تختفي أثناء النوم", "لا يوجد أي ضرر"],
+      "options": [
+        "لأن النوم يبطئ الهضم ويزيد من احتمالية ارتجاع الحمض وحرقة الفؤاد",
+        "لأن العينين تتأثران",
+        "لأن المعدة تختفي أثناء النوم",
+        "لا يوجد أي ضرر"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "الاستلقاء مع معدة ممتلئة يضغط على صمام المريء فيتسرب الحمض مسبباً حرقة وأرقاً."
+      "educationalTip": "الاستلقاء مع معدة ممتلئة يضغط على صمام المريء فيتسرب الحمض مسبباً حرقة وأرقاً.",
+      "questionText_en": "Why doesn't the stomach digest its own muscular walls with its strong acid?",
+      "options_en": [
+        "It has a thick protective mucus lining",
+        "It is made of plastic",
+        "It has no blood",
+        "Acid disappears"
+      ],
+      "educationalTip_en": "The gastric mucosa secretes alkaline mucus protecting the stomach lining.",
+      "questionText_fr": "Pourquoi l'estomac ne se digère-t-il pas lui-même avec son acide fort ?",
+      "options_fr": [
+        "Il possède une muqueuse protectrice épaisse",
+        "Il est en plastique",
+        "Il n'a pas de sang",
+        "L'acide disparaît"
+      ],
+      "educationalTip_fr": "La muqueuse gastrique sécrète un mucus alcalin protégeant les parois stomacales."
     },
     {
       "id": 48,
       "organId": 1,
       "stageId": 3,
       "questionText": "ما هو التصرف الصحي السليم عند الشعور بحرقة المعدة المتكررة؟",
-      "options": ["تناول وجبات صغيرة والابتعاد عن التوابل الزائدة واستشارة الطبيب", "شرب لتر من الخل المركز", "أكل شطة حارة", "عدم شرب الماء إطلاقاً"],
+      "options": [
+        "تناول وجبات صغيرة والابتعاد عن التوابل الزائدة واستشارة الطبيب",
+        "شرب لتر من الخل المركز",
+        "أكل شطة حارة",
+        "عدم شرب الماء إطلاقاً"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "تقسيم الوجبات وتجنب الدهون الحارة يساعد في راحة المعدة والتئام بطانتها."
+      "educationalTip": "تقسيم الوجبات وتجنب الدهون الحارة يساعد في راحة المعدة والتئام بطانتها.",
+      "questionText_en": "Why doesn't the stomach digest its own muscular walls with its strong acid?",
+      "options_en": [
+        "It has a thick protective mucus lining",
+        "It is made of plastic",
+        "It has no blood",
+        "Acid disappears"
+      ],
+      "educationalTip_en": "The gastric mucosa secretes alkaline mucus protecting the stomach lining.",
+      "questionText_fr": "Pourquoi l'estomac ne se digère-t-il pas lui-même avec son acide fort ?",
+      "options_fr": [
+        "Il possède une muqueuse protectrice épaisse",
+        "Il est en plastique",
+        "Il n'a pas de sang",
+        "L'acide disparaît"
+      ],
+      "educationalTip_fr": "La muqueuse gastrique sécrète un mucus alcalin protégeant les parois stomacales."
     },
     {
       "id": 49,
       "organId": 1,
       "stageId": 3,
       "questionText": "لغز: تصدر المعدة أحياناً أصوات قرقعة مضحكة عندما نكون جائعين، فما سبب هذا الصوت؟",
-      "options": ["حركة عضلات المعدة الفارغة وتحريكها للهواء والسوائل", "تكسر العظام", "نبضات القلب العالية", "اللسان يتحرك"],
+      "options": [
+        "حركة عضلات المعدة الفارغة وتحريكها للهواء والسوائل",
+        "تكسر العظام",
+        "نبضات القلب العالية",
+        "اللسان يتحرك"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "تسمى هذه الأصوات القرقرة المعوية الناتجة عن انقباض جدران المعدة لتنظيف نفسها."
+      "educationalTip": "تسمى هذه الأصوات القرقرة المعوية الناتجة عن انقباض جدران المعدة لتنظيف نفسها.",
+      "questionText_en": "Why doesn't the stomach digest its own muscular walls with its strong acid?",
+      "options_en": [
+        "It has a thick protective mucus lining",
+        "It is made of plastic",
+        "It has no blood",
+        "Acid disappears"
+      ],
+      "educationalTip_en": "The gastric mucosa secretes alkaline mucus protecting the stomach lining.",
+      "questionText_fr": "Pourquoi l'estomac ne se digère-t-il pas lui-même avec son acide fort ?",
+      "options_fr": [
+        "Il possède une muqueuse protectrice épaisse",
+        "Il est en plastique",
+        "Il n'a pas de sang",
+        "L'acide disparaît"
+      ],
+      "educationalTip_fr": "La muqueuse gastrique sécrète un mucus alcalin protégeant les parois stomacales."
     },
     {
       "id": 50,
       "organId": 1,
       "stageId": 3,
       "questionText": "ما المشروب الذي ينصح بالتقليل منه لأنه يهيج بطانة المعدة ويزيد إفراز الحمض؟",
-      "options": ["المشروبات الغازية والمنبهات المركزة", "الحليب الخفيف", "الماء النقي", "عصير الجزر الطبيعي"],
+      "options": [
+        "المشروبات الغازية والمنبهات المركزة",
+        "الحليب الخفيف",
+        "الماء النقي",
+        "عصير الجزر الطبيعي"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "المشروبات الغازية تحتوي على أحماض وغازات تزيد الضغط وتهيج جدران المعدة."
+      "educationalTip": "المشروبات الغازية تحتوي على أحماض وغازات تزيد الضغط وتهيج جدران المعدة.",
+      "questionText_en": "Why doesn't the stomach digest its own muscular walls with its strong acid?",
+      "options_en": [
+        "It has a thick protective mucus lining",
+        "It is made of plastic",
+        "It has no blood",
+        "Acid disappears"
+      ],
+      "educationalTip_en": "The gastric mucosa secretes alkaline mucus protecting the stomach lining.",
+      "questionText_fr": "Pourquoi l'estomac ne se digère-t-il pas lui-même avec son acide fort ?",
+      "options_fr": [
+        "Il possède une muqueuse protectrice épaisse",
+        "Il est en plastique",
+        "Il n'a pas de sang",
+        "L'acide disparaît"
+      ],
+      "educationalTip_fr": "La muqueuse gastrique sécrète un mucus alcalin protégeant les parois stomacales."
     },
-
     {
       "id": 51,
       "organId": 2,
       "stageId": 1,
       "questionText": "ما هو أكبر عضو داخلي صلب في جسم الإنسان؟",
-      "options": ["الكبد", "القلب", "المعدة", "البنكرياس"],
+      "options": [
+        "الكبد",
+        "القلب",
+        "المعدة",
+        "البنكرياس"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "الكبد هو أثقل وأكبر عضو داخلي ويزن حوالي 1.5 كيلوغرام عند البالغين."
+      "educationalTip": "الكبد هو أثقل وأكبر عضو داخلي ويزن حوالي 1.5 كيلوغرام عند البالغين.",
+      "questionText_en": "What is the largest solid internal organ in the human body?",
+      "options_en": [
+        "Liver",
+        "Heart",
+        "Stomach",
+        "Pancreas"
+      ],
+      "educationalTip_en": "The liver is the heaviest and largest internal organ weighing about 1.5 kg.",
+      "questionText_fr": "Quel est le plus grand organe interne solide du corps humain ?",
+      "options_fr": [
+        "Le foie",
+        "Le cœur",
+        "L'estomac",
+        "Le pancréas"
+      ],
+      "educationalTip_fr": "Le foie est l'organe interne le plus lourd et le plus grand, pesant environ 1,5 kg."
     },
     {
       "id": 52,
       "organId": 2,
       "stageId": 1,
       "questionText": "أين يقع الكبد داخل تجويف بطن الإنسان؟",
-      "options": ["في الجزء العلوي الأيمن من البطن تحت القفص الصدري", "في أسفل القدمين", "في الظهر عند العمود الفقري فقط", "في الرقبة"],
+      "options": [
+        "في الجزء العلوي الأيمن من البطن تحت القفص الصدري",
+        "في أسفل القدمين",
+        "في الظهر عند العمود الفقري فقط",
+        "في الرقبة"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "يحتمي الكبد بالأضلاع السفلية للقفص الصدري في الجهة اليمنى."
+      "educationalTip": "يحتمي الكبد بالأضلاع السفلية للقفص الصدري في الجهة اليمنى.",
+      "questionText_en": "What is the small green pouch located directly beneath the liver?",
+      "options_en": [
+        "Gallbladder",
+        "Appendix",
+        "Bladder",
+        "Spleen"
+      ],
+      "educationalTip_en": "The gallbladder stores and concentrates bile produced by the liver.",
+      "questionText_fr": "Quel est le petit sac vert situé directement sous le foie ?",
+      "options_fr": [
+        "La vésicule biliaire",
+        "L'appendice",
+        "La vessie",
+        "La rate"
+      ],
+      "educationalTip_fr": "La vésicule biliaire stocke et concentre la bile produite par le foie."
     },
     {
       "id": 53,
       "organId": 2,
       "stageId": 1,
       "questionText": "ما هو الكيس الأخضر الصغير الذي يقع مباشرة تحت الكبد؟",
-      "options": ["المرارة (الحويصلة الصفراوية)", "الزائدة الدودية", "المثانة", "الطحال"],
+      "options": [
+        "المرارة (الحويصلة الصفراوية)",
+        "الزائدة الدودية",
+        "المثانة",
+        "الطحال"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "المرارة كيس يشبه حبة الكمثرى يخزن ويركز العصارة الصفراوية القادمة من الكبد."
+      "educationalTip": "المرارة كيس يشبه حبة الكمثرى يخزن ويركز العصارة الصفراوية القادمة من الكبد.",
+      "questionText_en": "What is the largest solid internal organ in the human body?",
+      "options_en": [
+        "Liver",
+        "Heart",
+        "Stomach",
+        "Pancreas"
+      ],
+      "educationalTip_en": "The liver is the heaviest and largest internal organ weighing about 1.5 kg.",
+      "questionText_fr": "Quel est le plus grand organe interne solide du corps humain ?",
+      "options_fr": [
+        "Le foie",
+        "Le cœur",
+        "L'estomac",
+        "Le pancréas"
+      ],
+      "educationalTip_fr": "Le foie est l'organe interne le plus lourd et le plus grand, pesant environ 1,5 kg."
     },
     {
       "id": 54,
       "organId": 2,
       "stageId": 1,
       "questionText": "ما هو العضو الإسفنجي الممتد أفقياً خلف المعدة ويشبه ورقة الشجر أو قطعة الذرة؟",
-      "options": ["البنكرياس", "الكبد", "القلب", "الرئة"],
+      "options": [
+        "البنكرياس",
+        "الكبد",
+        "القلب",
+        "الرئة"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "البنكرياس غدة حيوية تجمع بين إفراز هرمونات الدم وإنزيمات الهضم القوية."
+      "educationalTip": "البنكرياس غدة حيوية تجمع بين إفراز هرمونات الدم وإنزيمات الهضم القوية.",
+      "questionText_en": "What is the small green pouch located directly beneath the liver?",
+      "options_en": [
+        "Gallbladder",
+        "Appendix",
+        "Bladder",
+        "Spleen"
+      ],
+      "educationalTip_en": "The gallbladder stores and concentrates bile produced by the liver.",
+      "questionText_fr": "Quel est le petit sac vert situé directement sous le foie ?",
+      "options_fr": [
+        "La vésicule biliaire",
+        "L'appendice",
+        "La vessie",
+        "La rate"
+      ],
+      "educationalTip_fr": "La vésicule biliaire stocke et concentre la bile produite par le foie."
     },
     {
       "id": 55,
       "organId": 2,
       "stageId": 1,
       "questionText": "هل يمر الطعام الحقيقي داخل الكبد أو البنكرياس أثناء رحلة الهضم؟",
-      "options": ["لا، لا يدخلهما الطعام بل يفرزان عصاراتهما في الأمعاء", "نعم يمر الطعام بهما كاملاً", "يمر الطعام بالكبد فقط", "يمر الطعام بالبنكرياس فقط"],
+      "options": [
+        "لا، لا يدخلهما الطعام بل يفرزان عصاراتهما في الأمعاء",
+        "نعم يمر الطعام بهما كاملاً",
+        "يمر الطعام بالكبد فقط",
+        "يمر الطعام بالبنكرياس فقط"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "تسمى بالأعضاء الملحقة لأنها مصانع كيميائية تضخ إنزيماتها عبر قنوات للأمعاء."
+      "educationalTip": "تسمى بالأعضاء الملحقة لأنها مصانع كيميائية تضخ إنزيماتها عبر قنوات للأمعاء.",
+      "questionText_en": "What is the largest solid internal organ in the human body?",
+      "options_en": [
+        "Liver",
+        "Heart",
+        "Stomach",
+        "Pancreas"
+      ],
+      "educationalTip_en": "The liver is the heaviest and largest internal organ weighing about 1.5 kg.",
+      "questionText_fr": "Quel est le plus grand organe interne solide du corps humain ?",
+      "options_fr": [
+        "Le foie",
+        "Le cœur",
+        "L'estomac",
+        "Le pancréas"
+      ],
+      "educationalTip_fr": "Le foie est l'organe interne le plus lourd et le plus grand, pesant environ 1,5 kg."
     },
-
     {
       "id": 56,
       "organId": 2,
       "stageId": 2,
       "questionText": "ما هي العصارة الخاصة التي يصنعها الكبد وتخزنها المرارة لتفتيت الدهون؟",
-      "options": ["العصارة الصفراوية (الصفراء)", "العصارة المعدية", "اللعاب", "العرق"],
+      "options": [
+        "العصارة الصفراوية (الصفراء)",
+        "العصارة المعدية",
+        "اللعاب",
+        "العرق"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "العصارة الصفراوية تحول قطرات الزيت الكبيرة إلى مستحلب دهني دقيق يسهل هضمه."
+      "educationalTip": "العصارة الصفراوية تحول قطرات الزيت الكبيرة إلى مستحلب دهني دقيق يسهل هضمه.",
+      "questionText_en": "What famous hormone does the pancreas secrete to regulate blood sugar?",
+      "options_en": [
+        "Insulin",
+        "Adrenaline",
+        "Melatonin",
+        "Pepsin"
+      ],
+      "educationalTip_en": "Insulin allows body cells to absorb glucose from the bloodstream for energy.",
+      "questionText_fr": "Quelle hormone célèbre le pancréas sécrète-t-il pour réguler le sucre sanguin ?",
+      "options_fr": [
+        "L'insuline",
+        "L'adrénaline",
+        "La mélatonine",
+        "La pepsine"
+      ],
+      "educationalTip_fr": "L'insuline permet aux cellules d'absorber le glucose sanguin pour produire de l'énergie."
     },
     {
       "id": 57,
       "organId": 2,
       "stageId": 2,
       "questionText": "ما الهرمون الحيوي الشهير الذي يفرزه البنكرياس لتنظيم وخفض مستوى السكر في الدم؟",
-      "options": ["الأنسولين (Insulin)", "الأدرينالين", "الميلاتونين", "البيبسين"],
+      "options": [
+        "الأنسولين (Insulin)",
+        "الأدرينالين",
+        "الميلاتونين",
+        "البيبسين"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "الأنسولين يسمح لخلايا الجسم بامتصاص الجلوكوز من الدم واستخدامه كطاقة."
+      "educationalTip": "الأنسولين يسمح لخلايا الجسم بامتصاص الجلوكوز من الدم واستخدامه كطاقة.",
+      "questionText_en": "What substance made by the liver breaks down dietary fats?",
+      "options_en": [
+        "Bile juice",
+        "Gastric juice",
+        "Saliva",
+        "Sweat"
+      ],
+      "educationalTip_en": "Bile emulsifies large fat globules into tiny droplets for lipase enzymes.",
+      "questionText_fr": "Quelle substance fabriquée par le foie permet de décomposer les graisses ?",
+      "options_fr": [
+        "La bile",
+        "Le suc gastrique",
+        "La salive",
+        "La sueur"
+      ],
+      "educationalTip_fr": "La bile émulsifie les graisses pour faciliter leur digestion par les enzymes lipases."
     },
     {
       "id": 58,
       "organId": 2,
       "stageId": 2,
       "questionText": "ما الدور الهام الذي يلعبه الكبد كمركز تنقية وتطهير في الجسم؟",
-      "options": ["تصفية الدم والتخلص من السموم والأدوية الزائدة", "ضخ الهواء", "تخزين الهواء النقي", "إنتاج العظام"],
+      "options": [
+        "تصفية الدم والتخلص من السموم والأدوية الزائدة",
+        "ضخ الهواء",
+        "تخزين الهواء النقي",
+        "إنتاج العظام"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "يعمل الكبد كأكبر محطة تكرير ومعالجة للسموم والمخلفات الكيميائية في الجسم."
+      "educationalTip": "يعمل الكبد كأكبر محطة تكرير ومعالجة للسموم والمخلفات الكيميائية في الجسم.",
+      "questionText_en": "What famous hormone does the pancreas secrete to regulate blood sugar?",
+      "options_en": [
+        "Insulin",
+        "Adrenaline",
+        "Melatonin",
+        "Pepsin"
+      ],
+      "educationalTip_en": "Insulin allows body cells to absorb glucose from the bloodstream for energy.",
+      "questionText_fr": "Quelle hormone célèbre le pancréas sécrète-t-il pour réguler le sucre sanguin ?",
+      "options_fr": [
+        "L'insuline",
+        "L'adrénaline",
+        "La mélatonine",
+        "La pepsine"
+      ],
+      "educationalTip_fr": "L'insuline permet aux cellules d'absorber le glucose sanguin pour produire de l'énergie."
     },
     {
       "id": 59,
       "organId": 2,
       "stageId": 2,
       "questionText": "في أي صورة يخزن الكبد السكر الزائد عن حاجة الجسم لاستخدامه وقت الصيام والرياضة؟",
-      "options": ["جليكوجين (Glycogen)", "دهون صلبة فقط", "ماء", "كالسيوم"],
+      "options": [
+        "جليكوجين (Glycogen)",
+        "دهون صلبة فقط",
+        "ماء",
+        "كالسيوم"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "الجليكوجين هو نشا حيواني يخزنه الكبد والعضلات ويفككه لجلوكوز عند الحاجة للطاقة."
+      "educationalTip": "الجليكوجين هو نشا حيواني يخزنه الكبد والعضلات ويفككه لجلوكوز عند الحاجة للطاقة.",
+      "questionText_en": "What substance made by the liver breaks down dietary fats?",
+      "options_en": [
+        "Bile juice",
+        "Gastric juice",
+        "Saliva",
+        "Sweat"
+      ],
+      "educationalTip_en": "Bile emulsifies large fat globules into tiny droplets for lipase enzymes.",
+      "questionText_fr": "Quelle substance fabriquée par le foie permet de décomposer les graisses ?",
+      "options_fr": [
+        "La bile",
+        "Le suc gastrique",
+        "La salive",
+        "La sueur"
+      ],
+      "educationalTip_fr": "La bile émulsifie les graisses pour faciliter leur digestion par les enzymes lipases."
     },
     {
       "id": 60,
       "organId": 2,
       "stageId": 2,
       "questionText": "ما الإنزيم الذي يفرزه البنكرياس لهضم وتفكيك الدهون في الأمعاء؟",
-      "options": ["إنزيم اللايبيز (Lipase)", "الأميليز", "الرينين", "الميوسين"],
+      "options": [
+        "إنزيم اللايبيز (Lipase)",
+        "الأميليز",
+        "الرينين",
+        "الميوسين"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "اللايبيز البنكرياسي يفكك الدهون بعد استحلابها بواسطة الصفراء."
+      "educationalTip": "اللايبيز البنكرياسي يفكك الدهون بعد استحلابها بواسطة الصفراء.",
+      "questionText_en": "What famous hormone does the pancreas secrete to regulate blood sugar?",
+      "options_en": [
+        "Insulin",
+        "Adrenaline",
+        "Melatonin",
+        "Pepsin"
+      ],
+      "educationalTip_en": "Insulin allows body cells to absorb glucose from the bloodstream for energy.",
+      "questionText_fr": "Quelle hormone célèbre le pancréas sécrète-t-il pour réguler le sucre sanguin ?",
+      "options_fr": [
+        "L'insuline",
+        "L'adrénaline",
+        "La mélatonine",
+        "La pepsine"
+      ],
+      "educationalTip_fr": "L'insuline permet aux cellules d'absorber le glucose sanguin pour produire de l'énergie."
     },
-
     {
       "id": 61,
       "organId": 2,
       "stageId": 3,
       "questionText": "ما المرض المزمن الذي يحدث عندما يعجز البنكرياس عن إنتاج كمية كافية من هرمون الأنسولين؟",
-      "options": ["مرض السكري (Diabetes)", "الربو الشعبي", "فقر الدم", "التهاب المفاصل"],
+      "options": [
+        "مرض السكري (Diabetes)",
+        "الربو الشعبي",
+        "فقر الدم",
+        "التهاب المفاصل"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "مرض السكري يؤدي لارتفاع نسبة السكر في الدم ويحتاج لضبط غذائي وأنسولين."
+      "educationalTip": "مرض السكري يؤدي لارتفاع نسبة السكر في الدم ويحتاج لضبط غذائي وأنسولين.",
+      "questionText_en": "What chronic condition occurs when the pancreas cannot produce enough insulin?",
+      "options_en": [
+        "Diabetes",
+        "Asthma",
+        "Anemia",
+        "Arthritis"
+      ],
+      "educationalTip_en": "Diabetes leads to elevated blood glucose and requires medical management.",
+      "questionText_fr": "Quelle maladie chronique survient lorsque le pancréas ne produit pas assez d'insuline ?",
+      "options_fr": [
+        "Le diabète",
+        "L'asthme",
+        "L'anémie",
+        "L'arthrite"
+      ],
+      "educationalTip_fr": "Le diabète entraîne un taux élevé de sucre dans le sang nécessitant un suivi médical."
     },
     {
       "id": 62,
       "organId": 2,
       "stageId": 3,
       "questionText": "ما الذي يمكن أن يتشكل داخل المرارة ويسبب ألماً شديداً عند تناول وجبات غنية بالدهون؟",
-      "options": ["حصوات المرارة (Gallstones)", "تسوس المرارة", "حبوب اللقاح", "الماء المثلج"],
+      "options": [
+        "حصوات المرارة (Gallstones)",
+        "تسوس المرارة",
+        "حبوب اللقاح",
+        "الماء المثلج"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "تتكون الحصوات من ترسب الكوليسترول والأملاح الصفراوية الزائدة في المرارة."
+      "educationalTip": "تتكون الحصوات من ترسب الكوليسترول والأملاح الصفراوية الزائدة في المرارة.",
+      "questionText_en": "What chronic condition occurs when the pancreas cannot produce enough insulin?",
+      "options_en": [
+        "Diabetes",
+        "Asthma",
+        "Anemia",
+        "Arthritis"
+      ],
+      "educationalTip_en": "Diabetes leads to elevated blood glucose and requires medical management.",
+      "questionText_fr": "Quelle maladie chronique survient lorsque le pancréas ne produit pas assez d'insuline ?",
+      "options_fr": [
+        "Le diabète",
+        "L'asthme",
+        "L'anémie",
+        "L'arthrite"
+      ],
+      "educationalTip_fr": "Le diabète entraîne un taux élevé de sucre dans le sang nécessitant un suivi médical."
     },
     {
       "id": 63,
       "organId": 2,
       "stageId": 3,
       "questionText": "كيف نحافظ على صحة الكبد والبنكرياس ونحميهما من تراكم الدهون؟",
-      "options": ["ممارسة الرياضة وتقليل السكريات والدهون المشبعة وشرب الماء", "أكل الوجبات السريعة يومياً", "عدم شرب الماء", "النوم طوال النهار"],
+      "options": [
+        "ممارسة الرياضة وتقليل السكريات والدهون المشبعة وشرب الماء",
+        "أكل الوجبات السريعة يومياً",
+        "عدم شرب الماء",
+        "النوم طوال النهار"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "الغذاء المتوازن الغني بالخضار والنشاط البدني يمنع الكبد الدهني ويحمي البنكرياس."
+      "educationalTip": "الغذاء المتوازن الغني بالخضار والنشاط البدني يمنع الكبد الدهني ويحمي البنكرياس.",
+      "questionText_en": "What chronic condition occurs when the pancreas cannot produce enough insulin?",
+      "options_en": [
+        "Diabetes",
+        "Asthma",
+        "Anemia",
+        "Arthritis"
+      ],
+      "educationalTip_en": "Diabetes leads to elevated blood glucose and requires medical management.",
+      "questionText_fr": "Quelle maladie chronique survient lorsque le pancréas ne produit pas assez d'insuline ?",
+      "options_fr": [
+        "Le diabète",
+        "L'asthme",
+        "L'anémie",
+        "L'arthrite"
+      ],
+      "educationalTip_fr": "Le diabète entraîne un taux élevé de sucre dans le sang nécessitant un suivi médical."
     },
     {
       "id": 64,
       "organId": 2,
       "stageId": 3,
       "questionText": "لغز: عضو عجيب في جسم الإنسان، إذا استؤصل جزء منه فإنه قادر على إعادة النمو والتجدد، فمن هو؟",
-      "options": ["الكبد", "القلب", "السن", "العين"],
+      "options": [
+        "الكبد",
+        "القلب",
+        "السن",
+        "العين"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "الكبد يمتلك قدرة استثنائية على تجديد خلاياه إذا بقي منه جزء سليم كافٍ."
+      "educationalTip": "الكبد يمتلك قدرة استثنائية على تجديد خلاياه إذا بقي منه جزء سليم كافٍ.",
+      "questionText_en": "What chronic condition occurs when the pancreas cannot produce enough insulin?",
+      "options_en": [
+        "Diabetes",
+        "Asthma",
+        "Anemia",
+        "Arthritis"
+      ],
+      "educationalTip_en": "Diabetes leads to elevated blood glucose and requires medical management.",
+      "questionText_fr": "Quelle maladie chronique survient lorsque le pancréas ne produit pas assez d'insuline ?",
+      "options_fr": [
+        "Le diabète",
+        "L'asthme",
+        "L'anémie",
+        "L'arthrite"
+      ],
+      "educationalTip_fr": "Le diabète entraîne un taux élevé de sucre dans le sang nécessitant un suivi médical."
     },
     {
       "id": 65,
       "organId": 2,
       "stageId": 3,
       "questionText": "لماذا يحذر من الإفراط في تناول الأدوية والمسكنات دون استشارة طبية؟",
-      "options": ["لأن الكبد هو الذي يعالجها والإفراط فيها قد يؤدي لتسمم وتلف خلايا الكبد", "لأنها تزيد الشعر", "لأنها تقوي الأسنان", "لا يوجد ضرر"],
+      "options": [
+        "لأن الكبد هو الذي يعالجها والإفراط فيها قد يؤدي لتسمم وتلف خلايا الكبد",
+        "لأنها تزيد الشعر",
+        "لأنها تقوي الأسنان",
+        "لا يوجد ضرر"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "يجب الالتزام بالجرعات الدقيقة لحماية الكبد والكلى من التسمم الدوائي."
+      "educationalTip": "يجب الالتزام بالجرعات الدقيقة لحماية الكبد والكلى من التسمم الدوائي.",
+      "questionText_en": "What chronic condition occurs when the pancreas cannot produce enough insulin?",
+      "options_en": [
+        "Diabetes",
+        "Asthma",
+        "Anemia",
+        "Arthritis"
+      ],
+      "educationalTip_en": "Diabetes leads to elevated blood glucose and requires medical management.",
+      "questionText_fr": "Quelle maladie chronique survient lorsque le pancréas ne produit pas assez d'insuline ?",
+      "options_fr": [
+        "Le diabète",
+        "L'asthme",
+        "L'anémie",
+        "L'arthrite"
+      ],
+      "educationalTip_fr": "Le diabète entraîne un taux élevé de sucre dans le sang nécessitant un suivi médical."
     },
-
     {
       "id": 66,
       "organId": 3,
       "stageId": 1,
       "questionText": "كم يبلغ طول الأمعاء الدقيقة تقريباً في جسم الإنسان البالغ؟",
-      "options": ["حوالي 6 أمتار", "10 سنتيمترات فقط", "50 متراً", "نصف متر"],
+      "options": [
+        "حوالي 6 أمتار",
+        "10 سنتيمترات فقط",
+        "50 متراً",
+        "نصف متر"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "الأمعاء الدقيقة طويلة وملتفة جداً لتوفير مساحة شاسعة لامتصاص الطعام."
+      "educationalTip": "الأمعاء الدقيقة طويلة وملتفة جداً لتوفير مساحة شاسعة لامتصاص الطعام.",
+      "questionText_en": "What velvety carpet-like structures line the inside of the small intestine?",
+      "options_en": [
+        "Intestinal Villi",
+        "Hard stones",
+        "Sharp thorns",
+        "Fat layer"
+      ],
+      "educationalTip_en": "Millions of microscopic villi absorb digested nutrients into the bloodstream.",
+      "questionText_fr": "Quelles structures tapissent l'intérieur de l'intestin grêle comme un tapis velouté ?",
+      "options_fr": [
+        "Les villosités intestinales",
+        "Des pierres",
+        "Des épines",
+        "Du gras"
+      ],
+      "educationalTip_fr": "Des millions de villosités microscopiques absorbent les nutriments dans le sang."
     },
     {
       "id": 67,
       "organId": 3,
       "stageId": 1,
       "questionText": "ما هو الجزء الأول من الأمعاء الدقيقة المتصل مباشرة بالمعدة؟",
-      "options": ["الاثنا عشر (العفج - Duodenum)", "اللفائفي", "القولون", "المريء"],
+      "options": [
+        "الاثنا عشر (العفج - Duodenum)",
+        "اللفائفي",
+        "القولون",
+        "المريء"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "الاثنا عشر يستقبل الكيموس من المعدة وتصب فيه عصارة البنكرياس والصفراء."
+      "educationalTip": "الاثنا عشر يستقبل الكيموس من المعدة وتصب فيه عصارة البنكرياس والصفراء.",
+      "questionText_en": "How long is the adult human small intestine approximately?",
+      "options_en": [
+        "About 6 meters",
+        "10 cm",
+        "50 meters",
+        "Half a meter"
+      ],
+      "educationalTip_en": "The small intestine is 6 meters long, compactly coiled in the abdominal cavity.",
+      "questionText_fr": "Quelle est la longueur approximative de l'intestin grêle chez l'adulte ?",
+      "options_fr": [
+        "Environ 6 mètres",
+        "10 cm",
+        "50 mètres",
+        "Un demi-mètre"
+      ],
+      "educationalTip_fr": "L'intestin grêle mesure environ 6 mètres de long, replié au centre de l'abdomen."
     },
     {
       "id": 68,
       "organId": 3,
       "stageId": 1,
       "questionText": "ما هي الأجزاء الثلاثة الرئيسية التي تتكون منها الأمعاء الدقيقة بالترتيب؟",
-      "options": ["الاثنا عشر، ثم الصائم، ثم اللفائفي", "الفم، ثم المعدة، ثم القولون", "المرارة، الكبد، الطحال", "المريء، القصبة، الرئة"],
+      "options": [
+        "الاثنا عشر، ثم الصائم، ثم اللفائفي",
+        "الفم، ثم المعدة، ثم القولون",
+        "المرارة، الكبد، الطحال",
+        "المريء، القصبة، الرئة"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "الاثنا عشر (Duodenum)، الصائم (Jejunum)، واللفائفي (Ileum)."
+      "educationalTip": "الاثنا عشر (Duodenum)، الصائم (Jejunum)، واللفائفي (Ileum).",
+      "questionText_en": "What velvety carpet-like structures line the inside of the small intestine?",
+      "options_en": [
+        "Intestinal Villi",
+        "Hard stones",
+        "Sharp thorns",
+        "Fat layer"
+      ],
+      "educationalTip_en": "Millions of microscopic villi absorb digested nutrients into the bloodstream.",
+      "questionText_fr": "Quelles structures tapissent l'intérieur de l'intestin grêle comme un tapis velouté ?",
+      "options_fr": [
+        "Les villosités intestinales",
+        "Des pierres",
+        "Des épines",
+        "Du gras"
+      ],
+      "educationalTip_fr": "Des millions de villosités microscopiques absorbent les nutriments dans le sang."
     },
     {
       "id": 69,
       "organId": 3,
       "stageId": 1,
       "questionText": "لماذا تسمى بالأمعاء 'الدقيقة' رغم أنها أطول بكثير من الأمعاء الغليظة؟",
-      "options": ["لأن قطرها الداخلي دقيق وضيق مقارنة بالأمعاء الغليظة", "لأنها خفية لا ترى", "لأنها سريعة في المشي", "لأنها مصنوعة من خيوط"],
+      "options": [
+        "لأن قطرها الداخلي دقيق وضيق مقارنة بالأمعاء الغليظة",
+        "لأنها خفية لا ترى",
+        "لأنها سريعة في المشي",
+        "لأنها مصنوعة من خيوط"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "التسمية تعتمد على اتساع وقطر الأنبوب (حوالي 2.5 سم) وليس على طوله."
+      "educationalTip": "التسمية تعتمد على اتساع وقطر الأنبوب (حوالي 2.5 سم) وليس على طوله.",
+      "questionText_en": "How long is the adult human small intestine approximately?",
+      "options_en": [
+        "About 6 meters",
+        "10 cm",
+        "50 meters",
+        "Half a meter"
+      ],
+      "educationalTip_en": "The small intestine is 6 meters long, compactly coiled in the abdominal cavity.",
+      "questionText_fr": "Quelle est la longueur approximative de l'intestin grêle chez l'adulte ?",
+      "options_fr": [
+        "Environ 6 mètres",
+        "10 cm",
+        "50 mètres",
+        "Un demi-mètre"
+      ],
+      "educationalTip_fr": "L'intestin grêle mesure environ 6 mètres de long, replié au centre de l'abdomen."
     },
     {
       "id": 70,
       "organId": 3,
       "stageId": 1,
       "questionText": "ماذا نجد على الجدار الداخلي للأمعاء الدقيقة يشبه سجادة مخملية ناعمة؟",
-      "options": ["الخملات المعوية الدقيقة (Villi)", "حجارة صلبة", "أشواك حادة", "طبقة من الشحم فقط"],
+      "options": [
+        "الخملات المعوية الدقيقة (Villi)",
+        "حجارة صلبة",
+        "أشواك حادة",
+        "طبقة من الشحم فقط"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "ملايين الخملات المعوية الصغيرة تمتص جزيئات الطعام المهضومة إلى مجرى الدم."
+      "educationalTip": "ملايين الخملات المعوية الصغيرة تمتص جزيئات الطعام المهضومة إلى مجرى الدم.",
+      "questionText_en": "What velvety carpet-like structures line the inside of the small intestine?",
+      "options_en": [
+        "Intestinal Villi",
+        "Hard stones",
+        "Sharp thorns",
+        "Fat layer"
+      ],
+      "educationalTip_en": "Millions of microscopic villi absorb digested nutrients into the bloodstream.",
+      "questionText_fr": "Quelles structures tapissent l'intérieur de l'intestin grêle comme un tapis velouté ?",
+      "options_fr": [
+        "Les villosités intestinales",
+        "Des pierres",
+        "Des épines",
+        "Du gras"
+      ],
+      "educationalTip_fr": "Des millions de villosités microscopiques absorbent les nutriments dans le sang."
     },
-
     {
       "id": 71,
       "organId": 3,
       "stageId": 2,
       "questionText": "ما هي الوظيفة الأساسية والأعظم للأمعاء الدقيقة في جسم الإنسان؟",
-      "options": ["استكمال هضم الغذاء وامتصاص العناصر المفيدة إلى الدم", "إنتاج الصوت", "حاسة الشم", "تخزين الأكسجين"],
+      "options": [
+        "استكمال هضم الغذاء وامتصاص العناصر المفيدة إلى الدم",
+        "إنتاج الصوت",
+        "حاسة الشم",
+        "تخزين الأكسجين"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "أكثر من 90% من عملية امتصاص العناصر الغذائية والفيتامينات تتم في الأمعاء الدقيقة."
+      "educationalTip": "أكثر من 90% من عملية امتصاص العناصر الغذائية والفيتامينات تتم في الأمعاء الدقيقة.",
+      "questionText_en": "What is the primary function of the small intestine?",
+      "options_en": [
+        "Completing digestion and absorbing nutrients into blood",
+        "Voice production",
+        "Sense of smell",
+        "Storing oxygen"
+      ],
+      "educationalTip_en": "Over 90% of nutrient and vitamin absorption happens in the small intestine.",
+      "questionText_fr": "Quelle est la fonction principale de l'intestin grêle ?",
+      "options_fr": [
+        "Compléter la digestion et absorber les nutriments",
+        "Produire la voix",
+        "L'odorat",
+        "Stocker l'oxygène"
+      ],
+      "educationalTip_fr": "Plus de 90 % de l'absorption des nutriments et vitamines a lieu dans l'intestin grêle."
     },
     {
       "id": 72,
       "organId": 3,
       "stageId": 2,
       "questionText": "ما فائدة وجود ملايين الخملات المعوية البارزة في جدار الأمعاء؟",
-      "options": ["زيادة مساحة سطح الامتصاص بشكل هائل لتصل لمساحة ملعب تنس!", "إبطاء تدفق الدم", "تخزين الماء الزائد", "تبريد الجسم"],
+      "options": [
+        "زيادة مساحة سطح الامتصاص بشكل هائل لتصل لمساحة ملعب تنس!",
+        "إبطاء تدفق الدم",
+        "تخزين الماء الزائد",
+        "تبريد الجسم"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "البروزات الدقيقة تزيد المساحة السطحية مئات المرات لامتصاص سريع وفائق للكفاءة."
+      "educationalTip": "البروزات الدقيقة تزيد المساحة السطحية مئات المرات لامتصاص سريع وفائق للكفاءة.",
+      "questionText_en": "What is the primary function of the small intestine?",
+      "options_en": [
+        "Completing digestion and absorbing nutrients into blood",
+        "Voice production",
+        "Sense of smell",
+        "Storing oxygen"
+      ],
+      "educationalTip_en": "Over 90% of nutrient and vitamin absorption happens in the small intestine.",
+      "questionText_fr": "Quelle est la fonction principale de l'intestin grêle ?",
+      "options_fr": [
+        "Compléter la digestion et absorber les nutriments",
+        "Produire la voix",
+        "L'odorat",
+        "Stocker l'oxygène"
+      ],
+      "educationalTip_fr": "Plus de 90 % de l'absorption des nutriments et vitamines a lieu dans l'intestin grêle."
     },
     {
       "id": 73,
       "organId": 3,
       "stageId": 2,
       "questionText": "إلى أين تنتقل السكريات البسيطة والأحماض الأمينية فور امتصاصها من الخملات؟",
-      "options": ["إلى الشعيرات الدموية ومنها مباشرة إلى الكبد", "إلى الرئتين", "إلى الشعر والأظافر مباشرة", "إلى الخارج"],
+      "options": [
+        "إلى الشعيرات الدموية ومنها مباشرة إلى الكبد",
+        "إلى الرئتين",
+        "إلى الشعر والأظافر مباشرة",
+        "إلى الخارج"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "ينقلها الوريد البابي الكبدي للكبد ليقوم بتوزيعها وتنقيتها وتخزين الزائد منها."
+      "educationalTip": "ينقلها الوريد البابي الكبدي للكبد ليقوم بتوزيعها وتنقيتها وتخزين الزائد منها.",
+      "questionText_en": "What is the primary function of the small intestine?",
+      "options_en": [
+        "Completing digestion and absorbing nutrients into blood",
+        "Voice production",
+        "Sense of smell",
+        "Storing oxygen"
+      ],
+      "educationalTip_en": "Over 90% of nutrient and vitamin absorption happens in the small intestine.",
+      "questionText_fr": "Quelle est la fonction principale de l'intestin grêle ?",
+      "options_fr": [
+        "Compléter la digestion et absorber les nutriments",
+        "Produire la voix",
+        "L'odorat",
+        "Stocker l'oxygène"
+      ],
+      "educationalTip_fr": "Plus de 90 % de l'absorption des nutriments et vitamines a lieu dans l'intestin grêle."
     },
     {
       "id": 74,
       "organId": 3,
       "stageId": 2,
       "questionText": "إلى أي وعاء يتم امتصاص معظم الأحماض الدهنية والدهون المفككة في الخملات؟",
-      "options": ["الأوعية اللمفاوية (Lacteal Vessels)", "الشرايين التاجية", "القصبات الهوائية", "المثانة"],
+      "options": [
+        "الأوعية اللمفاوية (Lacteal Vessels)",
+        "الشرايين التاجية",
+        "القصبات الهوائية",
+        "المثانة"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "الدهون تسلك طريق الأوعية اللمفاوية اللبنية قبل أن تصب في الدورة الدموية."
+      "educationalTip": "الدهون تسلك طريق الأوعية اللمفاوية اللبنية قبل أن تصب في الدورة الدموية.",
+      "questionText_en": "What is the primary function of the small intestine?",
+      "options_en": [
+        "Completing digestion and absorbing nutrients into blood",
+        "Voice production",
+        "Sense of smell",
+        "Storing oxygen"
+      ],
+      "educationalTip_en": "Over 90% of nutrient and vitamin absorption happens in the small intestine.",
+      "questionText_fr": "Quelle est la fonction principale de l'intestin grêle ?",
+      "options_fr": [
+        "Compléter la digestion et absorber les nutriments",
+        "Produire la voix",
+        "L'odorat",
+        "Stocker l'oxygène"
+      ],
+      "educationalTip_fr": "Plus de 90 % de l'absorption des nutriments et vitamines a lieu dans l'intestin grêle."
     },
     {
       "id": 75,
       "organId": 3,
       "stageId": 2,
       "questionText": "ما الإنزيم الذي تفكك به الأمعاء سكر الحليب حتى يتمكن الطفل من امتصاصه؟",
-      "options": ["إنزيم اللاكتيز (Lactase)", "البيبسين", "الأميليز", "الكولاجين"],
+      "options": [
+        "إنزيم اللاكتيز (Lactase)",
+        "البيبسين",
+        "الأميليز",
+        "الكولاجين"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "نقص إنزيم اللاكتيز يسبب ما يعرف بعدم تحمل اللاكتوز ومغص عند شرب الحليب."
+      "educationalTip": "نقص إنزيم اللاكتيز يسبب ما يعرف بعدم تحمل اللاكتوز ومغص عند شرب الحليب.",
+      "questionText_en": "What is the primary function of the small intestine?",
+      "options_en": [
+        "Completing digestion and absorbing nutrients into blood",
+        "Voice production",
+        "Sense of smell",
+        "Storing oxygen"
+      ],
+      "educationalTip_en": "Over 90% of nutrient and vitamin absorption happens in the small intestine.",
+      "questionText_fr": "Quelle est la fonction principale de l'intestin grêle ?",
+      "options_fr": [
+        "Compléter la digestion et absorber les nutriments",
+        "Produire la voix",
+        "L'odorat",
+        "Stocker l'oxygène"
+      ],
+      "educationalTip_fr": "Plus de 90 % de l'absorption des nutriments et vitamines a lieu dans l'intestin grêle."
     },
-
     {
       "id": 76,
       "organId": 3,
       "stageId": 3,
       "questionText": "ما هو المرض المناعي الذي تتلف فيه خملات الأمعاء الدقيقة عند تناول بروتين الجلوتين الموجود في القمح؟",
-      "options": ["حساسية القمح / مرض السيلياك (Celiac Disease)", "التهاب اللوزتين", "الإنفلونزا", "الرمد الربيعي"],
+      "options": [
+        "حساسية القمح / مرض السيلياك (Celiac Disease)",
+        "التهاب اللوزتين",
+        "الإنفلونزا",
+        "الرمد الربيعي"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "يحتاج مريض السيلياك إلى حمية خالية تماماً من الجلوتين لتلتئم خملات أمعائه."
+      "educationalTip": "يحتاج مريض السيلياك إلى حمية خالية تماماً من الجلوتين لتلتئم خملات أمعائه.",
+      "questionText_en": "What autoimmune disorder damages intestinal villi when gluten is consumed?",
+      "options_en": [
+        "Celiac Disease",
+        "Tonsillitis",
+        "Flu",
+        "Allergic Rhinitis"
+      ],
+      "educationalTip_en": "Celiac disease causes the immune system to attack villi when exposed to wheat gluten.",
+      "questionText_fr": "Quelle maladie auto-immune endommage les villosités intestinales lors de l'ingestion de gluten ?",
+      "options_fr": [
+        "La maladie cœliaque",
+        "L'angine",
+        "La grippe",
+        "La rhinite"
+      ],
+      "educationalTip_fr": "La maladie cœliaque attaque les villosités intestinales lors de la consommation de gluten."
     },
     {
       "id": 77,
       "organId": 3,
       "stageId": 3,
       "questionText": "ماذا يحدث للشخص إذا تلفت خملات أمعائه الدقيقة وعجزت عن الامتصاص؟",
-      "options": ["يصاب بسوء التغذية ونقص الفيتامينات وضعف النمو", "يصبح خارق القوة", "يزداد وزنه بشكل مفرط", "لا يتأثر جسمه إطلاقاً"],
+      "options": [
+        "يصاب بسوء التغذية ونقص الفيتامينات وضعف النمو",
+        "يصبح خارق القوة",
+        "يزداد وزنه بشكل مفرط",
+        "لا يتأثر جسمه إطلاقاً"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "بدون خملات سليمة يفقد الجسم القدرة على الاستفادة من الغذاء مهما تناول من طعام."
+      "educationalTip": "بدون خملات سليمة يفقد الجسم القدرة على الاستفادة من الغذاء مهما تناول من طعام.",
+      "questionText_en": "What autoimmune disorder damages intestinal villi when gluten is consumed?",
+      "options_en": [
+        "Celiac Disease",
+        "Tonsillitis",
+        "Flu",
+        "Allergic Rhinitis"
+      ],
+      "educationalTip_en": "Celiac disease causes the immune system to attack villi when exposed to wheat gluten.",
+      "questionText_fr": "Quelle maladie auto-immune endommage les villosités intestinales lors de l'ingestion de gluten ?",
+      "options_fr": [
+        "La maladie cœliaque",
+        "L'angine",
+        "La grippe",
+        "La rhinite"
+      ],
+      "educationalTip_fr": "La maladie cœliaque attaque les villosités intestinales lors de la consommation de gluten."
     },
     {
       "id": 78,
       "organId": 3,
       "stageId": 3,
       "questionText": "كيف نحافظ على صحة أمعائنا ونقوي البكتيريا النافعة الموجودة فيها؟",
-      "options": ["تناول الزبادي الطبيعي والأطعمة الغنية بالألياف كالخضار والفواكه", "شرب الزيوت الحارة", "أكل الوجبات السريعة المقرمشة فقط", "تناول السكر الأبيض بكثرة"],
+      "options": [
+        "تناول الزبادي الطبيعي والأطعمة الغنية بالألياف كالخضار والفواكه",
+        "شرب الزيوت الحارة",
+        "أكل الوجبات السريعة المقرمشة فقط",
+        "تناول السكر الأبيض بكثرة"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "الألياف الطبيعية والبروبيوتيك (كالزبادي) تغذي بطانة الأمعاء وتدعم مناعتها."
+      "educationalTip": "الألياف الطبيعية والبروبيوتيك (كالزبادي) تغذي بطانة الأمعاء وتدعم مناعتها.",
+      "questionText_en": "What autoimmune disorder damages intestinal villi when gluten is consumed?",
+      "options_en": [
+        "Celiac Disease",
+        "Tonsillitis",
+        "Flu",
+        "Allergic Rhinitis"
+      ],
+      "educationalTip_en": "Celiac disease causes the immune system to attack villi when exposed to wheat gluten.",
+      "questionText_fr": "Quelle maladie auto-immune endommage les villosités intestinales lors de l'ingestion de gluten ?",
+      "options_fr": [
+        "La maladie cœliaque",
+        "L'angine",
+        "La grippe",
+        "La rhinite"
+      ],
+      "educationalTip_fr": "La maladie cœliaque attaque les villosités intestinales lors de la consommation de gluten."
     },
     {
       "id": 79,
       "organId": 3,
       "stageId": 3,
       "questionText": "لغز: أنا عنصر معدني مهم أصنع منه كرات الدم الحمراء، ويتم امتصاصي في الأمعاء الدقيقة، فمن أنا؟",
-      "options": ["الحديد (Iron)", "الفحم", "الرصاص", "الذهب"],
+      "options": [
+        "الحديد (Iron)",
+        "الفحم",
+        "الرصاص",
+        "الذهب"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "امتصاص الحديد في الأمعاء الدقيقة يقي من فقر الدم (الأنيميا) والكسل والتعب."
+      "educationalTip": "امتصاص الحديد في الأمعاء الدقيقة يقي من فقر الدم (الأنيميا) والكسل والتعب.",
+      "questionText_en": "What autoimmune disorder damages intestinal villi when gluten is consumed?",
+      "options_en": [
+        "Celiac Disease",
+        "Tonsillitis",
+        "Flu",
+        "Allergic Rhinitis"
+      ],
+      "educationalTip_en": "Celiac disease causes the immune system to attack villi when exposed to wheat gluten.",
+      "questionText_fr": "Quelle maladie auto-immune endommage les villosités intestinales lors de l'ingestion de gluten ?",
+      "options_fr": [
+        "La maladie cœliaque",
+        "L'angine",
+        "La grippe",
+        "La rhinite"
+      ],
+      "educationalTip_fr": "La maladie cœliaque attaque les villosités intestinales lors de la consommation de gluten."
     },
     {
       "id": 80,
       "organId": 3,
       "stageId": 3,
       "questionText": "لماذا ينصح بشرب فيتامين سي (كالبرتقال) مع الأغذية الغنية بالحديد؟",
-      "options": ["لأنه يساعد الأمعاء على امتصاص الحديد بشكل أفضل وأسرع", "لأنه يغير لون الطعام", "لأنه يوقف عمل المعدة", "ليس له أي علاقة"],
+      "options": [
+        "لأنه يساعد الأمعاء على امتصاص الحديد بشكل أفضل وأسرع",
+        "لأنه يغير لون الطعام",
+        "لأنه يوقف عمل المعدة",
+        "ليس له أي علاقة"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "فيتامين سي يحول الحديد إلى شكل كيميائي سهل الامتصاص في جدار الأمعاء."
+      "educationalTip": "فيتامين سي يحول الحديد إلى شكل كيميائي سهل الامتصاص في جدار الأمعاء.",
+      "questionText_en": "What autoimmune disorder damages intestinal villi when gluten is consumed?",
+      "options_en": [
+        "Celiac Disease",
+        "Tonsillitis",
+        "Flu",
+        "Allergic Rhinitis"
+      ],
+      "educationalTip_en": "Celiac disease causes the immune system to attack villi when exposed to wheat gluten.",
+      "questionText_fr": "Quelle maladie auto-immune endommage les villosités intestinales lors de l'ingestion de gluten ?",
+      "options_fr": [
+        "La maladie cœliaque",
+        "L'angine",
+        "La grippe",
+        "La rhinite"
+      ],
+      "educationalTip_fr": "La maladie cœliaque attaque les villosités intestinales lors de la consommation de gluten."
     },
-
     {
       "id": 81,
       "organId": 4,
       "stageId": 1,
       "questionText": "ما هو الاسم الآخر المعروف للأمعاء الغليظة؟",
-      "options": ["القولون (Colon)", "المريء", "الحنجرة", "المثانة"],
+      "options": [
+        "القولون (Colon)",
+        "المريء",
+        "الحنجرة",
+        "المثانة"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "تتكون الأمعاء الغليظة من القولون والمستقيم وتشكل إطاراً حول الأمعاء الدقيقة."
+      "educationalTip": "تتكون الأمعاء الغليظة من القولون والمستقيم وتشكل إطاراً حول الأمعاء الدقيقة.",
+      "questionText_en": "What is the other common medical name for the large intestine?",
+      "options_en": [
+        "Colon",
+        "Esophagus",
+        "Larynx",
+        "Bladder"
+      ],
+      "educationalTip_en": "The large intestine consists mainly of the colon and rectum.",
+      "questionText_fr": "Quel est l'autre nom médical courant du gros intestin ?",
+      "options_fr": [
+        "Le côlon",
+        "L'œsophage",
+        "Le larynx",
+        "La vessie"
+      ],
+      "educationalTip_fr": "Le gros intestin se compose principalement du côlon et du rectum."
     },
     {
       "id": 82,
       "organId": 4,
       "stageId": 1,
       "questionText": "كم يبلغ طول الأمعاء الغليظة تقريباً في الإنسان البالغ؟",
-      "options": ["حوالي 1.5 متر", "10 أمتار", "10 سنتيمترات فقط", "30 متراً"],
+      "options": [
+        "حوالي 1.5 متر",
+        "10 أمتار",
+        "10 سنتيمترات فقط",
+        "30 متراً"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "الأمعاء الغليظة أقصر بكثير من الدقيقة (1.5 متر مقابل 6 أمتار) لكنها أوسع قطراً."
+      "educationalTip": "الأمعاء الغليظة أقصر بكثير من الدقيقة (1.5 متر مقابل 6 أمتار) لكنها أوسع قطراً.",
+      "questionText_en": "How long is the large intestine approximately?",
+      "options_en": [
+        "About 1.5 meters",
+        "10 meters",
+        "10 cm",
+        "30 meters"
+      ],
+      "educationalTip_en": "The large intestine is wider but much shorter than the small intestine (1.5 m vs 6 m).",
+      "questionText_fr": "Quelle est la longueur approximative du gros intestin ?",
+      "options_fr": [
+        "Environ 1,5 mètre",
+        "10 mètres",
+        "10 cm",
+        "30 mètres"
+      ],
+      "educationalTip_fr": "Le gros intestin est plus large mais beaucoup plus court que l'intestin grêle (1,5 m contre 6 m)."
     },
     {
       "id": 83,
       "organId": 4,
       "stageId": 1,
       "questionText": "ما هي الأجزاء الأربعة الرئيسية المكونة للقولون؟",
-      "options": ["القولون الصاعد، المستعرض، الهابط، والقولون السيني", "الأسنان، اللسان، الفك، الحلق", "الكبد، المرارة، البنكرياس، المعدة", "القلب، الرئة، الشرايين، الأوردة"],
+      "options": [
+        "القولون الصاعد، المستعرض، الهابط، والقولون السيني",
+        "الأسنان، اللسان، الفك، الحلق",
+        "الكبد، المرارة، البنكرياس، المعدة",
+        "القلب، الرئة، الشرايين، الأوردة"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "يشكل القولون إطاراً يبدأ صاعداً في اليمين، ثم مستعرضاً، ثم هابطاً في اليسار."
+      "educationalTip": "يشكل القولون إطاراً يبدأ صاعداً في اليمين، ثم مستعرضاً، ثم هابطاً في اليسار.",
+      "questionText_en": "What is the other common medical name for the large intestine?",
+      "options_en": [
+        "Colon",
+        "Esophagus",
+        "Larynx",
+        "Bladder"
+      ],
+      "educationalTip_en": "The large intestine consists mainly of the colon and rectum.",
+      "questionText_fr": "Quel est l'autre nom médical courant du gros intestin ?",
+      "options_fr": [
+        "Le côlon",
+        "L'œsophage",
+        "Le larynx",
+        "La vessie"
+      ],
+      "educationalTip_fr": "Le gros intestin se compose principalement du côlon et du rectum."
     },
     {
       "id": 84,
       "organId": 4,
       "stageId": 1,
       "questionText": "ما هو الجزء الأخير المستقيم في نهاية الأمعاء الغليظة الذي يجمع الفضلات قبل خروجها؟",
-      "options": ["المستقيم (Rectum)", "المريء", "الاثنا عشر", "الصائم"],
+      "options": [
+        "المستقيم (Rectum)",
+        "المريء",
+        "الاثنا عشر",
+        "الصائم"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "المستقيم بطول 12-15 سم تقريباً وظيفته تخزين الفضلات وإرسال إشارات التبرز."
+      "educationalTip": "المستقيم بطول 12-15 سم تقريباً وظيفته تخزين الفضلات وإرسال إشارات التبرز.",
+      "questionText_en": "How long is the large intestine approximately?",
+      "options_en": [
+        "About 1.5 meters",
+        "10 meters",
+        "10 cm",
+        "30 meters"
+      ],
+      "educationalTip_en": "The large intestine is wider but much shorter than the small intestine (1.5 m vs 6 m).",
+      "questionText_fr": "Quelle est la longueur approximative du gros intestin ?",
+      "options_fr": [
+        "Environ 1,5 mètre",
+        "10 mètres",
+        "10 cm",
+        "30 mètres"
+      ],
+      "educationalTip_fr": "Le gros intestin est plus large mais beaucoup plus court que l'intestin grêle (1,5 m contre 6 m)."
     },
     {
       "id": 85,
       "organId": 4,
       "stageId": 1,
       "questionText": "ما هو الأنبوب الصغير الشبيه بالإصبع المتصل ببداية القولون في أسفل اليمين؟",
-      "options": ["الزائدة الدودية (Appendix)", "المرارة", "اللهاة", "اللسان"],
+      "options": [
+        "الزائدة الدودية (Appendix)",
+        "المرارة",
+        "اللهاة",
+        "اللسان"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "الزائدة الدودية تقع في بداية الأعور وقد تلتهب أحياناً وتحتاج إلى استئصال جراحي."
+      "educationalTip": "الزائدة الدودية تقع في بداية الأعور وقد تلتهب أحياناً وتحتاج إلى استئصال جراحي.",
+      "questionText_en": "What is the other common medical name for the large intestine?",
+      "options_en": [
+        "Colon",
+        "Esophagus",
+        "Larynx",
+        "Bladder"
+      ],
+      "educationalTip_en": "The large intestine consists mainly of the colon and rectum.",
+      "questionText_fr": "Quel est l'autre nom médical courant du gros intestin ?",
+      "options_fr": [
+        "Le côlon",
+        "L'œsophage",
+        "Le larynx",
+        "La vessie"
+      ],
+      "educationalTip_fr": "Le gros intestin se compose principalement du côlon et du rectum."
     },
-
     {
       "id": 86,
       "organId": 4,
       "stageId": 2,
       "questionText": "ما هي الوظيفة الأساسية للأمعاء الغليظة على بقايا الطعام غير المهضوم؟",
-      "options": ["إعادة امتصاص الماء والأملاح المعدنية وتجفيف الفضلات", "هضم البروتينات واللحوم", "إفراز حمض الهيدروكلوريك", "تذوق الطعام"],
+      "options": [
+        "إعادة امتصاص الماء والأملاح المعدنية وتجفيف الفضلات",
+        "هضم البروتينات واللحوم",
+        "إفراز حمض الهيدروكلوريك",
+        "تذوق الطعام"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "تعيد الأمعاء الغليظة امتصاص معظم الماء إلى الدم حتى لا يصاب الجسم بالجفاف."
+      "educationalTip": "تعيد الأمعاء الغليظة امتصاص معظم الماء إلى الدم حتى لا يصاب الجسم بالجفاف.",
+      "questionText_en": "What friendly microorganisms live in billions inside the colon helping our health?",
+      "options_en": [
+        "Beneficial Gut Bacteria (Microbiota)",
+        "Harmful viruses",
+        "Dangerous worms",
+        "Insects"
+      ],
+      "educationalTip_en": "Gut microbiota ferments fibers, produces vitamin K, and supports the immune system.",
+      "questionText_fr": "Quels micro-organismes amis vivent par milliards dans le côlon et protègent notre santé ?",
+      "options_fr": [
+        "Les bactéries bénéfiques (microbiote)",
+        "Des virus nocifs",
+        "Des vers dangereux",
+        "Des insectes"
+      ],
+      "educationalTip_fr": "Le microbiote intestinal fermente les fibres, produit la vitamine K et protège l'immunité."
     },
     {
       "id": 87,
       "organId": 4,
       "stageId": 2,
       "questionText": "ما هو الكائن الحي المفيد جداً الذي يعيش بمليارات الأعداد داخل القولون ويساعد في صحتنا؟",
-      "options": ["البكتيريا النافعة (الميكروبيوتا المعوية)", "الفيروسات الضارة", "الديدان الخطيرة", "الحشرات الدقيقة"],
+      "options": [
+        "البكتيريا النافعة (الميكروبيوتا المعوية)",
+        "الفيروسات الضارة",
+        "الديدان الخطيرة",
+        "الحشرات الدقيقة"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "البكتيريا النافعة تخمر الألياف وتنتج فيتامينات هامة كفيتامين K وتحمي مناعتنا."
+      "educationalTip": "البكتيريا النافعة تخمر الألياف وتنتج فيتامينات هامة كفيتامين K وتحمي مناعتنا.",
+      "questionText_en": "What is the main function of the large intestine on undigested food?",
+      "options_en": [
+        "Reabsorbing water and minerals to form solid waste",
+        "Digesting proteins",
+        "Secreting acid",
+        "Tasting food"
+      ],
+      "educationalTip_en": "The colon reabsorbs water back into the body to prevent dehydration.",
+      "questionText_fr": "Quelle est la fonction principale du gros intestin sur les restes non digérés ?",
+      "options_fr": [
+        "Réabsorber l'eau et les minéraux pour former les selles",
+        "Digérer les protéines",
+        "Sécréter de l'acide",
+        "Goûter les aliments"
+      ],
+      "educationalTip_fr": "Le côlon réabsorbe l'eau dans le corps pour éviter la déshydratation."
     },
     {
       "id": 88,
       "organId": 4,
       "stageId": 2,
       "questionText": "ما الفيتامين المهم جداً لتجلط الدم والتئام الجروح الذي تصنعه بكتيريا القولون الصديقة؟",
-      "options": ["فيتامين ك (Vitamin K)", "فيتامين سي", "فيتامين أ", "الكالسيوم"],
+      "options": [
+        "فيتامين ك (Vitamin K)",
+        "فيتامين سي",
+        "فيتامين أ",
+        "الكالسيوم"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "بكتيريا الأمعاء الغليظة النافعة توفر نسبة كبيرة من حاجة الإنسان اليومية لفيتامين K."
+      "educationalTip": "بكتيريا الأمعاء الغليظة النافعة توفر نسبة كبيرة من حاجة الإنسان اليومية لفيتامين K.",
+      "questionText_en": "What friendly microorganisms live in billions inside the colon helping our health?",
+      "options_en": [
+        "Beneficial Gut Bacteria (Microbiota)",
+        "Harmful viruses",
+        "Dangerous worms",
+        "Insects"
+      ],
+      "educationalTip_en": "Gut microbiota ferments fibers, produces vitamin K, and supports the immune system.",
+      "questionText_fr": "Quels micro-organismes amis vivent par milliards dans le côlon et protègent notre santé ?",
+      "options_fr": [
+        "Les bactéries bénéfiques (microbiote)",
+        "Des virus nocifs",
+        "Des vers dangereux",
+        "Des insectes"
+      ],
+      "educationalTip_fr": "Le microbiote intestinal fermente les fibres, produit la vitamine K et protège l'immunité."
     },
     {
       "id": 89,
       "organId": 4,
       "stageId": 2,
       "questionText": "ما الذي يساعد في دفع الفضلات المتماسكة ببطء وانتظام عبر القولون؟",
-      "options": ["انقباضات الحركة الدودية البطيئة لجدار القولون", "ضغط الدم فقط", "الجاذبية الأرضية وحدها", "التنفس العميق فقط"],
+      "options": [
+        "انقباضات الحركة الدودية البطيئة لجدار القولون",
+        "ضغط الدم فقط",
+        "الجاذبية الأرضية وحدها",
+        "التنفس العميق فقط"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "عضلات القولون تنقبض بانقباضات دافعة كتلية (Mass Movements) تدفع الفضلات للمستقيم."
+      "educationalTip": "عضلات القولون تنقبض بانقباضات دافعة كتلية (Mass Movements) تدفع الفضلات للمستقيم.",
+      "questionText_en": "What is the main function of the large intestine on undigested food?",
+      "options_en": [
+        "Reabsorbing water and minerals to form solid waste",
+        "Digesting proteins",
+        "Secreting acid",
+        "Tasting food"
+      ],
+      "educationalTip_en": "The colon reabsorbs water back into the body to prevent dehydration.",
+      "questionText_fr": "Quelle est la fonction principale du gros intestin sur les restes non digérés ?",
+      "options_fr": [
+        "Réabsorber l'eau et les minéraux pour former les selles",
+        "Digérer les protéines",
+        "Sécréter de l'acide",
+        "Goûter les aliments"
+      ],
+      "educationalTip_fr": "Le côlon réabsorbe l'eau dans le corps pour éviter la déshydratation."
     },
     {
       "id": 90,
       "organId": 4,
       "stageId": 2,
       "questionText": "ماذا يحدث للفضلات إذا بقيت وقتاً أطول من اللازم داخل الأمعاء الغليظة؟",
-      "options": ["يمتص القولون منها ماءً زائداً وتصبح جافة وصلبة ويحدث الإمساك", "تتحول إلى سوائل نقية", "تختفي تماماً", "تتحول إلى دم"],
+      "options": [
+        "يمتص القولون منها ماءً زائداً وتصبح جافة وصلبة ويحدث الإمساك",
+        "تتحول إلى سوائل نقية",
+        "تختفي تماماً",
+        "تتحول إلى دم"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "الامتصاص المستمر للماء يجعل البراز جافاً وقاسياً مما يسبب صعوبة الإخراج."
+      "educationalTip": "الامتصاص المستمر للماء يجعل البراز جافاً وقاسياً مما يسبب صعوبة الإخراج.",
+      "questionText_en": "What friendly microorganisms live in billions inside the colon helping our health?",
+      "options_en": [
+        "Beneficial Gut Bacteria (Microbiota)",
+        "Harmful viruses",
+        "Dangerous worms",
+        "Insects"
+      ],
+      "educationalTip_en": "Gut microbiota ferments fibers, produces vitamin K, and supports the immune system.",
+      "questionText_fr": "Quels micro-organismes amis vivent par milliards dans le côlon et protègent notre santé ?",
+      "options_fr": [
+        "Les bactéries bénéfiques (microbiote)",
+        "Des virus nocifs",
+        "Des vers dangereux",
+        "Des insectes"
+      ],
+      "educationalTip_fr": "Le microbiote intestinal fermente les fibres, produit la vitamine K et protège l'immunité."
     },
-
     {
       "id": 91,
       "organId": 4,
       "stageId": 3,
       "questionText": "ما هو الغذاء السحري الطبيعي الذي يمنع الإمساك ويسهل حركة القولون وخروج الفضلات بلطف؟",
-      "options": ["الألياف الغذائية في الخضراوات والفواكه والحبوب الكاملة", "الحلويات المصنعة", "المشروبات الغازية", "اللحوم المعلبة"],
+      "options": [
+        "الألياف الغذائية في الخضراوات والفواكه والحبوب الكاملة",
+        "الحلويات المصنعة",
+        "المشروبات الغازية",
+        "اللحوم المعلبة"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "الألياف النباتية تمتص الماء وتزيد من حجم وليونة الفضلات مما يريح عضلات القولون."
+      "educationalTip": "الألياف النباتية تمتص الماء وتزيد من حجم وليونة الفضلات مما يريح عضلات القولون.",
+      "questionText_en": "What dietary component prevents constipation and keeps bowel movements healthy?",
+      "options_en": [
+        "Dietary fibers from fruits and vegetables",
+        "Processed candy",
+        "Soda",
+        "Canned meats"
+      ],
+      "educationalTip_en": "Fiber absorbs water and adds bulk to stool, ensuring smooth bowel transit.",
+      "questionText_fr": "Quel élément nutritionnel prévient la constipation et assure un bon transit intestinal ?",
+      "options_fr": [
+        "Les fibres des fruits et légumes",
+        "Les bonbons industriels",
+        "Les sodas",
+        "Les viandes en boîte"
+      ],
+      "educationalTip_fr": "Les fibres absorbent l'eau et facilitent le transit intestinal régulier."
     },
     {
       "id": 92,
       "organId": 4,
       "stageId": 3,
       "questionText": "ماذا يحدث للجسم إذا أصيب بالإسهال الشديد المتكرر دون شرب سوائل كافية لتعويضها؟",
-      "options": ["يصاب بالجفاف وفقدان الأملاح الحيوية ويشعر بالإعياء", "يزداد نشاطه وقوته", "يكتسب وزناً سريعاً", "لا يتأثر نهائياً"],
+      "options": [
+        "يصاب بالجفاف وفقدان الأملاح الحيوية ويشعر بالإعياء",
+        "يزداد نشاطه وقوته",
+        "يكتسب وزناً سريعاً",
+        "لا يتأثر نهائياً"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "يجب شرب محاليل الجفاف والماء عند الإسهال لتعويض السوائل التي عجز القولون عن امتصاصها."
+      "educationalTip": "يجب شرب محاليل الجفاف والماء عند الإسهال لتعويض السوائل التي عجز القولون عن امتصاصها.",
+      "questionText_en": "What dietary component prevents constipation and keeps bowel movements healthy?",
+      "options_en": [
+        "Dietary fibers from fruits and vegetables",
+        "Processed candy",
+        "Soda",
+        "Canned meats"
+      ],
+      "educationalTip_en": "Fiber absorbs water and adds bulk to stool, ensuring smooth bowel transit.",
+      "questionText_fr": "Quel élément nutritionnel prévient la constipation et assure un bon transit intestinal ?",
+      "options_fr": [
+        "Les fibres des fruits et légumes",
+        "Les bonbons industriels",
+        "Les sodas",
+        "Les viandes en boîte"
+      ],
+      "educationalTip_fr": "Les fibres absorbent l'eau et facilitent le transit intestinal régulier."
     },
     {
       "id": 93,
       "organId": 4,
       "stageId": 3,
       "questionText": "لماذا يحذر الأطباء من الإفراط في تناول المضادات الحيوية دون حاجة طبية حقيقية؟",
-      "options": ["لأنها قد تقتل البكتيريا النافعة في القولون وتسبب اضطرابات معوية وإسهالاً", "لأنها تزيد الذكاء", "لأنها تجعل الأسنان أطول", "ليس لها أثر على الأمعاء"],
+      "options": [
+        "لأنها قد تقتل البكتيريا النافعة في القولون وتسبب اضطرابات معوية وإسهالاً",
+        "لأنها تزيد الذكاء",
+        "لأنها تجعل الأسنان أطول",
+        "ليس لها أثر على الأمعاء"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "المضادات الحيوية لا تفرق بين الجراثيم الضارة والبكتيريا النافعة المعوية الحامية."
+      "educationalTip": "المضادات الحيوية لا تفرق بين الجراثيم الضارة والبكتيريا النافعة المعوية الحامية.",
+      "questionText_en": "What dietary component prevents constipation and keeps bowel movements healthy?",
+      "options_en": [
+        "Dietary fibers from fruits and vegetables",
+        "Processed candy",
+        "Soda",
+        "Canned meats"
+      ],
+      "educationalTip_en": "Fiber absorbs water and adds bulk to stool, ensuring smooth bowel transit.",
+      "questionText_fr": "Quel élément nutritionnel prévient la constipation et assure un bon transit intestinal ?",
+      "options_fr": [
+        "Les fibres des fruits et légumes",
+        "Les bonbons industriels",
+        "Les sodas",
+        "Les viandes en boîte"
+      ],
+      "educationalTip_fr": "Les fibres absorbent l'eau et facilitent le transit intestinal régulier."
     },
     {
       "id": 94,
       "organId": 4,
       "stageId": 3,
       "questionText": "لغز: سائل شفاف لا غنى عنه، كلما شربت منه كمية كافية (6 إلى 8 أكواب يومياً) ارتاح جهازك الهضمي بالكامل، فمن هو؟",
-      "options": ["الماء النقي", "الزيت", "المشروبات الغازية", "القهوة"],
+      "options": [
+        "الماء النقي",
+        "الزيت",
+        "المشروبات الغازية",
+        "القهوة"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "الماء هو شريان الحياة للجهاز الهضمي، يذيب الغذاء ويمنع الإمساك ويطرد السموم."
+      "educationalTip": "الماء هو شريان الحياة للجهاز الهضمي، يذيب الغذاء ويمنع الإمساك ويطرد السموم.",
+      "questionText_en": "What dietary component prevents constipation and keeps bowel movements healthy?",
+      "options_en": [
+        "Dietary fibers from fruits and vegetables",
+        "Processed candy",
+        "Soda",
+        "Canned meats"
+      ],
+      "educationalTip_en": "Fiber absorbs water and adds bulk to stool, ensuring smooth bowel transit.",
+      "questionText_fr": "Quel élément nutritionnel prévient la constipation et assure un bon transit intestinal ?",
+      "options_fr": [
+        "Les fibres des fruits et légumes",
+        "Les bonbons industriels",
+        "Les sodas",
+        "Les viandes en boîte"
+      ],
+      "educationalTip_fr": "Les fibres absorbent l'eau et facilitent le transit intestinal régulier."
     },
     {
       "id": 95,
       "organId": 4,
       "stageId": 3,
       "questionText": "ما هو السلوك الصحي الذي يجب تعويد الأطفال عليه عند الشعور بالحاجة لاستخدام المرحاض؟",
-      "options": ["الذهاب فوراً وعدم تأجيل أو كتم الحاجة لمنع تمدد القولون والإمساك", "الانتظار لساعات طويلة", "إهمال الأمر تماماً", "اللعب وتجاهل الإشارات"],
+      "options": [
+        "الذهاب فوراً وعدم تأجيل أو كتم الحاجة لمنع تمدد القولون والإمساك",
+        "الانتظار لساعات طويلة",
+        "إهمال الأمر تماماً",
+        "اللعب وتجاهل الإشارات"
+      ],
       "correctOptionIndex": 0,
-      "educationalTip": "تأجيل التبرز المتكرر يضعف رد الفعل العصبي المنعكس للقولون ويؤدي لإمساك مزمن."
+      "educationalTip": "تأجيل التبرز المتكرر يضعف رد الفعل العصبي المنعكس للقولون ويؤدي لإمساك مزمن.",
+      "questionText_en": "What dietary component prevents constipation and keeps bowel movements healthy?",
+      "options_en": [
+        "Dietary fibers from fruits and vegetables",
+        "Processed candy",
+        "Soda",
+        "Canned meats"
+      ],
+      "educationalTip_en": "Fiber absorbs water and adds bulk to stool, ensuring smooth bowel transit.",
+      "questionText_fr": "Quel élément nutritionnel prévient la constipation et assure un bon transit intestinal ?",
+      "options_fr": [
+        "Les fibres des fruits et légumes",
+        "Les bonbons industriels",
+        "Les sodas",
+        "Les viandes en boîte"
+      ],
+      "educationalTip_fr": "Les fibres absorbent l'eau et facilitent le transit intestinal régulier."
     }
   ]
 }

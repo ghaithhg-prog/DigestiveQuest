@@ -3,47 +3,62 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// هذا السكربت يحتوي على الهياكل البيانية (Data Models) لتخزين الأسئلة وبنك الأسئلة الضخم.
-/// تم تصميمه ليكون قابلاً للتسلسل (Serializable) ليتم تحويله من وإلى ملفات JSON بسرعة فائقة
-/// دون أي استهلاك زائد لذاكرة الجهاز، مما يمنع تعليق يونيتي تماماً حتى لو احتوى البنك على 10,000 سؤال.
+/// نموذج بيانات السؤال متعدد اللغات (عربي، إنجليزي، فرنسي)
 /// </summary>
-
 [System.Serializable]
 public class QuestionItem
 {
-    // المعرف الرقمي الفريد لكل سؤال (ID)
     public int id;
-
-    // العضو المستهدف من الأعضاء الـ 5:
-    // 0 = الفم والمريء
-    // 1 = المعدة
-    // 2 = الكبد والبنكرياس والمرارة
-    // 3 = الأمعاء الدقيقة
-    // 4 = الأمعاء الغليظة والمستقيم
     public int organId;
-
-    // المرحلة المستهدفة من المراحل الـ 3:
-    // 1 = المرحلة الأولى (تشريح وموقع - سهل)
-    // 2 = المرحلة الثانية (وظيفة وإنزيمات - متوسط)
-    // 3 = المرحلة الثالثة (صحة وألغاز - صعب)
     public int stageId;
 
-    // نص السؤال باللغة العربية
+    [Header("اللغة العربية")]
     public string questionText;
-
-    // مصفوفة تحتوي على خيارات الإجابة (عادة 4 خيارات)
     public string[] options;
-
-    // رقم الإجابة الصحيحة (0، 1، 2، أو 3)
     public int correctOptionIndex;
-
-    // شرح وتعليل علمي مبسط يظهر للطفل بعد الإجابة لتعزيز المعلومة
     public string educationalTip;
+
+    [Header("English")]
+    public string questionText_en;
+    public string[] options_en;
+    public string educationalTip_en;
+
+    [Header("Français")]
+    public string questionText_fr;
+    public string[] options_fr;
+    public string educationalTip_fr;
+
+    public string GetQuestionText(AppLanguage lang)
+    {
+        if (lang == AppLanguage.English && !string.IsNullOrEmpty(questionText_en)) return questionText_en;
+        if (lang == AppLanguage.French && !string.IsNullOrEmpty(questionText_fr)) return questionText_fr;
+        return ArabicTextFixer.Fix(questionText);
+    }
+
+    public string[] GetOptions(AppLanguage lang)
+    {
+        if (lang == AppLanguage.English && options_en != null && options_en.Length > 0) return options_en;
+        if (lang == AppLanguage.French && options_fr != null && options_fr.Length > 0) return options_fr;
+
+        if (options == null) return new string[0];
+        string[] fixedOpts = new string[options.Length];
+        for (int i = 0; i < options.Length; i++)
+        {
+            fixedOpts[i] = ArabicTextFixer.Fix(options[i]);
+        }
+        return fixedOpts;
+    }
+
+    public string GetTip(AppLanguage lang)
+    {
+        if (lang == AppLanguage.English && !string.IsNullOrEmpty(educationalTip_en)) return educationalTip_en;
+        if (lang == AppLanguage.French && !string.IsNullOrEmpty(educationalTip_fr)) return educationalTip_fr;
+        return ArabicTextFixer.Fix(educationalTip);
+    }
 }
 
 [System.Serializable]
 public class QuestionDatabase
 {
-    // قائمة تحتوي على جميع الأسئلة المحملة من الملف (تتسع لآلاف الأسئلة دون أي مشكلة)
     public List<QuestionItem> questions = new List<QuestionItem>();
 }

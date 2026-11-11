@@ -4,9 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
-/// سكربت متحكم واجهة اللعبة والأسئلة (QuizGameController).
-/// تم تصميمه باستخدام نظام Unity UI القياسي (UnityEngine.UI.Text و Button) لضمان العمل بنسبة 100%
-/// على جميع نسخ الويندوز وهواتف الأندرويد دون الحاجة لأي مكاتب خارجية.
+/// سكربت متحكم واجهة اللعبة والأسئلة (QuizGameController) مع دعم كامل للغات الثلاث والشكل العربي السليم.
 /// </summary>
 public class QuizGameController : MonoBehaviour
 {
@@ -14,49 +12,33 @@ public class QuizGameController : MonoBehaviour
     public GameObject quizPanel;
 
     [Header("عناصر واجهة المستخدم - بطاقة السؤال")]
-    [Tooltip("النص الذي يظهر فيه السؤال للطفل")]
     public Text questionTextUI;
-
-    [Tooltip("النص الذي يوضح رقم السؤال الحالي (مثلاً: السؤال 3 من 10)")]
     public Text progressCounterTextUI;
-
-    [Tooltip("نص يعرض اسم العضو والمرحلة في أعلى شاشة الأسئلة")]
     public Text stageTitleTextUI;
-
-    [Tooltip("شريط التقدم البصري الذي يمتلئ مع كل سؤال يجيب عليه الطفل")]
     public Slider progressBarUI;
 
     [Header("أزرار الإجابات")]
-    [Tooltip("مصفوفة تحتوي على أزرار الخيارات الأربعة")]
     public Button[] optionButtons;
-
-    [Tooltip("نصوص أزرار الخيارات")]
     public Text[] optionTexts;
 
     [Header("نافذة التغذية الراجعة (التشجيع والشرح)")]
-    [Tooltip("لوحة التغذية الراجعة المنبثقة بعد كل نقرة إجابة")]
     public GameObject feedbackPanel;
-
-    [Tooltip("عنوان الرسالة (أحسنت / حاول مرة أخرى)")]
     public Text feedbackTitleText;
-
-    [Tooltip("نص الشرح العلمي المبسط للطفل")]
     public Text feedbackTipText;
 
     [Header("نافذة إنهاء المرحلة والاحتفال")]
-    [Tooltip("اللوحة الكبيرة التي تظهر عند إنهاء الـ 10 أسئلة")]
     public GameObject stageCompletePanel;
-
-    [Tooltip("نص إجمالي النقاط والنتيجة")]
+    public Text stageCompleteTitleText;
     public Text finalScoreText;
-
-    [Tooltip("صور النجوم التقديرية (1 إلى 3 نجوم)")]
     public GameObject[] starIcons;
 
     [Header("أزرار التنقل")]
     public Button closeQuizButton;
+    public Text closeQuizButtonText;
     public Button retryButton;
+    public Text retryButtonText;
     public Button backToMapButton;
+    public Text backToMapButtonText;
 
     [Header("بيانات الجلسة الحالية")]
     public int currentOrganId = 0;
@@ -65,14 +47,6 @@ public class QuizGameController : MonoBehaviour
     private List<QuestionItem> activeQuestions = new List<QuestionItem>();
     private int currentQuestionIndex = 0;
     private int correctAnswersCount = 0;
-
-    private readonly string[] organNames = {
-        "الفم والمريء",
-        "المعدة",
-        "الكبد والبنكرياس والمرارة",
-        "الأمعاء الدقيقة",
-        "الأمعاء الغليظة والمستقيم"
-    };
 
     private void Start()
     {
@@ -91,12 +65,15 @@ public class QuizGameController : MonoBehaviour
             backToMapButton.onClick.RemoveAllListeners();
             backToMapButton.onClick.AddListener(CloseQuiz);
         }
+
+        LocalizationManager.OnLanguageChanged += RefreshCurrentView;
     }
 
-    /// <summary>
-    /// دالة بدء جولة جديدة (StartNewQuizSession):
-    /// تجلب 10 أسئلة عشوائية مختلفة تماماً من البنك المركزي وتعرض الواجهة.
-    /// </summary>
+    private void OnDestroy()
+    {
+        LocalizationManager.OnLanguageChanged -= RefreshCurrentView;
+    }
+
     public void StartNewQuizSession(int organId, int stageId)
     {
         currentOrganId = organId;
@@ -107,12 +84,6 @@ public class QuizGameController : MonoBehaviour
         if (quizPanel != null) quizPanel.SetActive(true);
         if (feedbackPanel != null) feedbackPanel.SetActive(false);
         if (stageCompletePanel != null) stageCompletePanel.SetActive(false);
-
-        string organName = (currentOrganId >= 0 && currentOrganId < organNames.Length) ? organNames[currentOrganId] : "الجهاز الهضمي";
-        if (stageTitleTextUI != null)
-        {
-            stageTitleTextUI.text = $"{organName} - المستوى {currentStageId}";
-        }
 
         if (QuestionBankManager.Instance != null)
         {
@@ -129,38 +100,62 @@ public class QuizGameController : MonoBehaviour
         DisplayCurrentQuestion();
     }
 
-    /// <summary>
-    /// دالة عرض السؤال الحالي وتوزيع الخيارات على الأزرار
-    /// </summary>
+    private void RefreshCurrentView()
+    {
+        if (quizPanel != null && quizPanel.activeSelf)
+        {
+            DisplayCurrentQuestion();
+        }
+    }
+
     private void DisplayCurrentQuestion()
     {
+        AppLanguage lang = LocalizationManager.CurrentLanguage;
+
+        // تحديث عنوان الشريط العلوي
+        if (stageTitleTextUI != null)
+        {
+            string organName = LocalizationManager.Get($"organ_{currentOrganId}");
+            string stageName = LocalizationManager.Get($"stage_{currentStageId}_name");
+            stageTitleTextUI.text = $"{organName} | {stageName}";
+        }
+
+        if (closeQuizButtonText != null)
+            closeQuizButtonText.text = LocalizationManager.Get("btn_exit_quiz");
+
         if (currentQuestionIndex < activeQuestions.Count)
         {
             QuestionItem q = activeQuestions[currentQuestionIndex];
 
+            // 1. نص السؤال المترجم والمشكل باللغة المطلوبة
             if (questionTextUI != null)
-                questionTextUI.text = q.questionText;
+                questionTextUI.text = q.GetQuestionText(lang);
 
+            // 2. عداد الأسئلة
             if (progressCounterTextUI != null)
-                progressCounterTextUI.text = $"السؤال: {currentQuestionIndex + 1} من {activeQuestions.Count}";
+            {
+                progressCounterTextUI.text = LocalizationManager.Get("question_prefix") + (currentQuestionIndex + 1) + LocalizationManager.Get("of_prefix") + activeQuestions.Count;
+            }
 
+            // 3. شريط التقدم
             if (progressBarUI != null)
                 progressBarUI.value = currentQuestionIndex;
 
+            // 4. خيارات الإجابة
+            string[] opts = q.GetOptions(lang);
             for (int i = 0; i < optionButtons.Length; i++)
             {
-                if (i < q.options.Length && !string.IsNullOrEmpty(q.options[i]))
+                if (i < opts.Length && !string.IsNullOrEmpty(opts[i]))
                 {
                     optionButtons[i].gameObject.SetActive(true);
                     optionButtons[i].interactable = true;
-                    
-                    // إعادة لون الزر الطبيعي
+
                     Image btnImg = optionButtons[i].GetComponent<Image>();
-                    if (btnImg != null) btnImg.color = new Color(0.2f, 0.45f, 0.75f);
+                    if (btnImg != null) btnImg.color = new Color(0.18f, 0.40f, 0.70f);
 
                     if (i < optionTexts.Length && optionTexts[i] != null)
                     {
-                        optionTexts[i].text = q.options[i];
+                        optionTexts[i].text = opts[i];
                     }
 
                     int optionIndex = i;
@@ -179,9 +174,6 @@ public class QuizGameController : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// فحص خيار الطفل وتلوين الأزرار بالأخضر أو الأحمر
-    /// </summary>
     public void OnOptionButtonClicked(int selectedOptionIndex)
     {
         foreach (var btn in optionButtons)
@@ -189,6 +181,7 @@ public class QuizGameController : MonoBehaviour
             btn.interactable = false;
         }
 
+        AppLanguage lang = LocalizationManager.CurrentLanguage;
         QuestionItem currentQ = activeQuestions[currentQuestionIndex];
         bool isCorrect = (selectedOptionIndex == currentQ.correctOptionIndex);
 
@@ -198,29 +191,33 @@ public class QuizGameController : MonoBehaviour
             Image selectedImg = optionButtons[selectedOptionIndex].GetComponent<Image>();
             if (selectedImg != null)
             {
-                selectedImg.color = isCorrect ? new Color(0.18f, 0.7f, 0.3f) : new Color(0.85f, 0.25f, 0.2f);
+                selectedImg.color = isCorrect ? new Color(0.18f, 0.72f, 0.32f) : new Color(0.88f, 0.25f, 0.2f);
             }
         }
 
-        // تلوين الزر الصحيح بالأخضر إذا أخطأ الطفل
+        // تلوين الزر الصحيح بالأخضر إذا أخطأ
         if (!isCorrect && currentQ.correctOptionIndex < optionButtons.Length)
         {
             Image correctImg = optionButtons[currentQ.correctOptionIndex].GetComponent<Image>();
             if (correctImg != null)
             {
-                correctImg.color = new Color(0.18f, 0.7f, 0.3f);
+                correctImg.color = new Color(0.18f, 0.72f, 0.32f);
             }
         }
+
+        string[] opts = currentQ.GetOptions(lang);
+        string tip = currentQ.GetTip(lang);
 
         if (isCorrect)
         {
             correctAnswersCount++;
-            ShowFeedback(true, "إجابة رائعة وصحيحة! 🌟", currentQ.educationalTip);
+            ShowFeedback(true, LocalizationManager.Get("feedback_correct"), tip);
         }
         else
         {
-            string correctAnswerText = currentQ.options[currentQ.correctOptionIndex];
-            ShowFeedback(false, "حاول ثانية! 💡", $"الإجابة الصحيحة هي: ({correctAnswerText})\n\n{currentQ.educationalTip}");
+            string correctAnswerText = (currentQ.correctOptionIndex < opts.Length) ? opts[currentQ.correctOptionIndex] : "";
+            string feedbackStr = LocalizationManager.Get("correct_was") + $"({correctAnswerText})\n\n" + tip;
+            ShowFeedback(false, LocalizationManager.Get("feedback_wrong"), feedbackStr);
         }
     }
 
@@ -232,7 +229,7 @@ public class QuizGameController : MonoBehaviour
             if (feedbackTitleText != null)
             {
                 feedbackTitleText.text = title;
-                feedbackTitleText.color = isCorrect ? new Color(0.1f, 0.6f, 0.2f) : new Color(0.8f, 0.3f, 0.1f);
+                feedbackTitleText.color = isCorrect ? new Color(0.2f, 0.85f, 0.35f) : new Color(1.0f, 0.6f, 0.2f);
             }
             if (feedbackTipText != null) feedbackTipText.text = explanation;
         }
@@ -242,7 +239,7 @@ public class QuizGameController : MonoBehaviour
 
     private IEnumerator TransitionToNextQuestionRoutine()
     {
-        yield return new WaitForSeconds(2.8f);
+        yield return new WaitForSeconds(3.0f);
 
         if (feedbackPanel != null)
             feedbackPanel.SetActive(false);
@@ -260,8 +257,19 @@ public class QuizGameController : MonoBehaviour
         {
             stageCompletePanel.SetActive(true);
 
+            if (stageCompleteTitleText != null)
+                stageCompleteTitleText.text = LocalizationManager.Get("win_title");
+
             if (finalScoreText != null)
-                finalScoreText.text = $"أحسنت يا بطل! حصلت على {correctAnswersCount} من {activeQuestions.Count} إجابات صحيحة.";
+            {
+                finalScoreText.text = LocalizationManager.Get("win_score_prefix") + correctAnswersCount + LocalizationManager.Get("of_prefix") + activeQuestions.Count + LocalizationManager.Get("win_score_suffix");
+            }
+
+            if (retryButtonText != null)
+                retryButtonText.text = LocalizationManager.Get("btn_retry");
+
+            if (backToMapButtonText != null)
+                backToMapButtonText.text = LocalizationManager.Get("btn_back_map");
 
             int earnedStars = 1;
             if (correctAnswersCount >= 8) earnedStars = 3;
